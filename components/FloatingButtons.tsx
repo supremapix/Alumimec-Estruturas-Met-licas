@@ -42,7 +42,7 @@ const FloatingButtons: React.FC = () => {
           aria-label="Ligar Agora"
         >
           <Phone size={28} />
-          <span className="absolute left-16 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-3 py-1 rounded-md shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold">
+          <span className="absolute left-16 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-3 py-1 rounded-md shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold pointer-events-none">
             Ligar Agora
           </span>
         </button>
@@ -54,7 +54,7 @@ const FloatingButtons: React.FC = () => {
           aria-label="Fale no WhatsApp"
         >
           <MessageCircle size={32} />
-          <span className="absolute left-16 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-3 py-1 rounded-md shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold">
+          <span className="absolute left-16 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-3 py-1 rounded-md shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-bold pointer-events-none">
             Orçamento Online
           </span>
         </button>

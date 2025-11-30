@@ -60,18 +60,45 @@ const SEO: React.FC<SEOProps> = ({ title, description, canonical, keywords }) =>
         "@type": "AdministrativeArea",
         "name": "Paraná"
       }
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de Estruturas Metálicas",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Galpões Industriais"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Coberturas Metálicas"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mezaninos"
+          }
+        }
+      ]
+    }
   };
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={`https://alumimec.com.br${canonical}`} />
+      <link rel="canonical" href={`https://alumimec-estruturas-met-licas.vercel.app${canonical}`} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://alumimec.com.br${canonical}`} />
+      <meta property="og:url" content={`https://alumimec-estruturas-met-licas.vercel.app${canonical}`} />
       <meta property="og:image" content="https://i.postimg.cc/zGbKgF4q/barracao-sao-jose-dos-pinhais.jpg" />
       <meta property="og:locale" content="pt_BR" />
       {keywords && <meta name="keywords" content={keywords} />}

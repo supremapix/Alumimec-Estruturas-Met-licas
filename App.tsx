@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
@@ -9,7 +9,7 @@ import LocationPage from './pages/LocationPage';
 // ScrollToTop component for route changes
 const ScrollToTop = () => {
   const { pathname } = useLocation();
-
+  
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -18,7 +18,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
         <ScrollToTop />
         <Header />
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <Footer />
         <FloatingButtons />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
