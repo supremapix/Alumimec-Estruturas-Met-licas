@@ -12,7 +12,7 @@ export const COMPANY_INFO = {
   facebook: "https://www.facebook.com/61566509445362",
   instagram: "https://www.instagram.com/alumimec/",
   responsible: "Eduardo dos Santos",
-  logo: "https://i.imgur.com/7K9fO0o.png" // Placeholder for logo-alumimec-alt.jpg
+  logo: "assets/images/logo-alumimec-alt.jpg"
 };
 
 export const CITIES = [
@@ -138,6 +138,7 @@ export const COMPARISON_DATA: ModelComparison[] = [
   { feature: "Resíduos", modelA: "Alto desperdício", modelB: "Obra limpa e sustentável" },
   { feature: "Custo-Benefício", modelA: "Alto custo de manutenção", modelB: "Baixa manutenção" },
   { feature: "Flexibilidade", modelA: "Rígida (difícil alterar)", modelB: "Modular (fácil ampliação)" },
+  { feature: "Retorno do Investimento", modelA: "Longo prazo", modelB: "Médio prazo (obra rápida)" },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

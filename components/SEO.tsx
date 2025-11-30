@@ -14,9 +14,13 @@ const SEO: React.FC<SEOProps> = ({ title, description, canonical, keywords }) =>
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": COMPANY_INFO.name,
-    "image": COMPANY_INFO.logo,
-    "telephone": COMPANY_INFO.phone1Display,
+    "image": [
+      "https://i.postimg.cc/zGbKgF4q/barracao-sao-jose-dos-pinhais.jpg",
+      "assets/images/logo-alumimec-alt.jpg"
+    ],
+    "telephone": "+55" + COMPANY_INFO.phone1,
     "email": COMPANY_INFO.email,
+    "url": "https://alumimec.com.br",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "R. Dep. Arnaldo Faivro Busato",
@@ -42,7 +46,21 @@ const SEO: React.FC<SEOProps> = ({ title, description, canonical, keywords }) =>
       "opens": "08:00",
       "closes": "17:30"
     },
-    "priceRange": "$$$"
+    "priceRange": "$$$",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Curitiba"
+      },
+      {
+        "@type": "City",
+        "name": "São José dos Pinhais"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Paraná"
+      }
+    ]
   };
 
   return (
@@ -54,7 +72,8 @@ const SEO: React.FC<SEOProps> = ({ title, description, canonical, keywords }) =>
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={`https://alumimec.com.br${canonical}`} />
-      <meta property="og:image" content={COMPANY_INFO.logo} />
+      <meta property="og:image" content="https://i.postimg.cc/zGbKgF4q/barracao-sao-jose-dos-pinhais.jpg" />
+      <meta property="og:locale" content="pt_BR" />
       {keywords && <meta name="keywords" content={keywords} />}
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>

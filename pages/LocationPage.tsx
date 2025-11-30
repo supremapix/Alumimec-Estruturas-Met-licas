@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { COMPANY_INFO, SERVICES } from '../constants';
-import { Check, ArrowRight } from 'lucide-react';
+import { COMPANY_INFO, SERVICES, GALLERY_IMAGES } from '../constants';
+import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building } from 'lucide-react';
 
 interface LocationPageProps {
   type: 'city' | 'neighborhood';
@@ -17,9 +17,10 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
   
   const isCity = type === 'city';
   const term = isCity ? "na cidade de" : "no bairro";
+  const locationSuffix = isCity ? `em ${titleName}` : `no bairro ${titleName}`;
   
   const pageTitle = `Estruturas Metálicas em ${titleName} | Alumimec`;
-  const description = `Procurando Estruturas Metálicas em ${titleName}? A Alumimec é especialista em Galpões, Coberturas e Serralheria Industrial com atendimento em ${titleName}.`;
+  const description = `Procurando Estruturas Metálicas ${locationSuffix}? A Alumimec é especialista em Galpões, Coberturas e Serralheria Industrial com atendimento ${locationSuffix}. Orçamento Grátis.`;
 
   return (
     <>
@@ -27,126 +28,268 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
         title={pageTitle}
         description={description}
         canonical={`/${isCity ? 'cidade' : 'bairro'}/${locationName}`}
-        keywords={`estruturas metálicas ${titleName}, galpão ${titleName}, serralheria ${titleName}, cobertura metálica ${titleName}`}
+        keywords={`estruturas metálicas ${titleName}, galpão industrial ${titleName}, serralheria ${titleName}, cobertura metálica ${titleName}, mezanino ${titleName}, alumimec ${titleName}`}
       />
 
       {/* Header Location */}
-      <section className="bg-primary text-white py-20 relative overflow-hidden">
+      <section className="bg-primary text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531834685032-c34bf0d84c7c?q=80&w=1920&fit=crop')] opacity-20 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-90"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <span className="bg-accent text-white px-3 py-1 rounded text-sm font-bold uppercase mb-4 inline-block">Atendimento em {titleName}</span>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Estruturas Metálicas {term} <span className="text-accent">{titleName}</span>
+          <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-6 inline-block shadow-lg tracking-wider">
+            Atendimento Exclusivo {locationSuffix}
+          </span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-shadow">
+            Estruturas Metálicas <br/> <span className="text-accent">{titleName}</span>
           </h1>
-          <p className="text-xl max-w-2xl mx-auto text-gray-200">
-            Qualidade industrial, segurança e os melhores prazos para sua obra na região.
+          <p className="text-xl max-w-2xl mx-auto text-gray-200 font-light">
+            Líder em galpões industriais, coberturas e soluções em aço. Trazendo qualidade e tecnologia construtiva para sua obra {locationSuffix}.
           </p>
+          <div className="mt-8 flex justify-center gap-4">
+            <a href="#contato" className="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
+              Solicitar Orçamento
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16 bg-white">
+      {/* Main Content Area - 4 SEO Texts with Images */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Content Left */}
-            <div className="lg:col-span-2 space-y-12">
+          <div className="grid lg:grid-cols-3 gap-16">
+            
+            {/* Main Column */}
+            <div className="lg:col-span-2 space-y-20">
               
-              {/* Text Block 1 */}
-              <div>
-                <h2 className="text-2xl font-bold text-primary mb-4">Soluções em Aço para {titleName}</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  A <strong>Alumimec</strong> traz para {titleName} o que há de mais moderno em construção metálica. Se você planeja construir ou reformar {term} {titleName}, nossa equipe técnica oferece suporte completo, desde o projeto de engenharia até a montagem final.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  As estruturas metálicas oferecem rapidez na execução e redução de desperdícios, sendo a escolha ideal para o crescimento acelerado da região de {titleName}.
-                </p>
-              </div>
+              {/* TEXTO 1: Introdução e Expertise */}
+              <article className="flex flex-col gap-6">
+                <div className="relative">
+                  <h2 className="text-3xl font-heading font-bold text-primary mb-2">
+                    Expertise em Construção Metálica {locationSuffix}
+                  </h2>
+                  <div className="w-20 h-1 bg-accent mb-6"></div>
+                </div>
+                
+                <img 
+                  src={GALLERY_IMAGES[0].image} 
+                  alt={`Obra de estrutura metálica ${locationSuffix}`} 
+                  className="w-full h-[400px] object-cover rounded-xl shadow-lg mb-4 hover:scale-[1.01] transition-transform duration-500"
+                />
 
-              {/* Image Break */}
-              <img 
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&h=400&fit=crop" 
-                alt={`Estrutura metálica obra em ${titleName}`} 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
-              />
+                <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
+                  <p>
+                    A <strong>Alumimec Estruturas Metálicas</strong> orgulha-se de ser uma referência no setor de construção civil, agora reforçando sua presença e atendimento personalizado <strong>{locationSuffix}</strong>. Com mais de uma década de experiência, entendemos que cada região possui suas especificidades, seja em relação ao solo, clima ou logística urbana. Por isso, trazemos soluções sob medida para quem busca durabilidade, segurança e custo-benefício em obras de aço.
+                  </p>
+                  <p className="mt-4">
+                    Optar por estruturas metálicas ao construir <strong>{locationSuffix}</strong> é uma decisão inteligente. O aço oferece uma relação peso-resistência superior ao concreto armado, permitindo fundações mais leves e econômicas. Além disso, a precisão milimétrica de nossas peças, fabricadas em ambiente controlado e apenas montadas no local, reduz drasticamente o desperdício de materiais e o tempo de canteiro de obra. Isso significa menos entulho, menos barulho e uma entrega muito mais rápida para o seu empreendimento.
+                  </p>
+                  <p className="mt-4">
+                    Nossa equipe de engenheiros e técnicos está preparada para atender desde pequenas ampliações comerciais até grandes complexos industriais na região. Seguimos rigorosamente todas as normas técnicas vigentes (ABNT NBR 8800, NBR 6123) e normas de segurança (NR-35), garantindo que sua estrutura não seja apenas esteticamente moderna, mas também robusta e segura para suportar as cargas e intempéries locais.
+                  </p>
+                </div>
+              </article>
 
-              {/* Text Block 2 */}
-              <div>
-                <h2 className="text-2xl font-bold text-primary mb-4">Galpões Industriais e Comerciais em {titleName}</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Empresas e comércios de {titleName} optam cada vez mais por galpões metálicos devido ao custo-benefício e versatilidade. Nossas estruturas permitem grandes vãos livres, facilitando o layout interno e a logística do seu negócio local.
-                </p>
-                <ul className="grid sm:grid-cols-2 gap-2 mt-4">
-                  <li className="flex items-center gap-2 text-gray-700"><Check size={18} className="text-accent"/> Vencimento de grandes vãos</li>
-                  <li className="flex items-center gap-2 text-gray-700"><Check size={18} className="text-accent"/> Alta resistência estrutural</li>
-                  <li className="flex items-center gap-2 text-gray-700"><Check size={18} className="text-accent"/> Menor carga na fundação</li>
-                  <li className="flex items-center gap-2 text-gray-700"><Check size={18} className="text-accent"/> Valorização do imóvel em {titleName}</li>
+              {/* TEXTO 2: Galpões e Indústria */}
+              <article className="flex flex-col gap-6 bg-gray-50 p-8 rounded-2xl border-l-4 border-primary">
+                <div className="relative">
+                  <h2 className="text-3xl font-heading font-bold text-primary mb-2 flex items-center gap-3">
+                    <Building className="text-accent" size={32} /> Galpões Industriais e Comerciais
+                  </h2>
+                </div>
+
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  <div className="prose prose-lg text-gray-600 leading-relaxed text-justify flex-1">
+                    <p>
+                      O desenvolvimento econômico <strong>{locationSuffix}</strong> demanda espaços amplos e versáteis. A Alumimec é especialista na fabricação e montagem de <strong>galpões metálicos</strong>, a solução ideal para centros logísticos, fábricas, armazéns e centros comerciais na região. Ao contrário das construções convencionais, nossos pórticos metálicos permitem vencer grandes vãos livres sem a necessidade de pilares centrais, otimizando o aproveitamento de 100% da área interna.
+                    </p>
+                    <p className="mt-4">
+                      Para empresários e investidores <strong>{locationSuffix}</strong>, o tempo é dinheiro. Nossos galpões são pré-fabricados, o que permite que a montagem ocorra de forma paralela à preparação do terreno e fundação. Entregamos sua obra pronta para operação em um prazo significativamente menor do que a alvenaria tradicional. Além disso, a flexibilidade do aço permite futuras expansões facilitadas, acompanhando o crescimento do seu negócio sem a necessidade de demolições complexas.
+                    </p>
+                  </div>
+                  <img 
+                    src={GALLERY_IMAGES[1].image} 
+                    alt={`Galpão industrial metálico ${locationSuffix}`} 
+                    className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+                  />
+                </div>
+                
+                <ul className="grid sm:grid-cols-2 gap-4 mt-4">
+                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Estruturas para Ponte Rolante</li>
+                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Pé Direito Duplo ou Triplo</li>
+                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Fechamentos Metálicos ou Misto</li>
+                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Ventilação Natural (Lanternim)</li>
                 </ul>
-              </div>
+              </article>
 
-              {/* Text Block 3 */}
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-primary">
-                <h2 className="text-xl font-bold text-primary mb-3">Coberturas Termoacústicas</h2>
-                <p className="text-gray-600 mb-4">
-                  O conforto térmico é essencial. Em nossas obras em {titleName}, utilizamos telhas sanduíche (EPS/PIR) que reduzem drasticamente o calor e o ruído externo, ideal para indústrias e residências na região.
-                </p>
-                <a href={`https://wa.me/55${COMPANY_INFO.phone1}`} className="text-accent font-bold hover:underline flex items-center gap-1">
-                  Pedir cotação de cobertura <ArrowRight size={16}/>
-                </a>
-              </div>
+              {/* TEXTO 3: Coberturas e Conforto */}
+              <article className="flex flex-col gap-6">
+                <div className="relative">
+                  <h2 className="text-3xl font-heading font-bold text-primary mb-2 flex items-center gap-3">
+                    <Shield className="text-accent" size={32} /> Coberturas Termoacústicas Premium
+                  </h2>
+                  <div className="w-20 h-1 bg-accent mb-6"></div>
+                </div>
 
-              {/* Text Block 4 */}
-              <div>
-                <h2 className="text-2xl font-bold text-primary mb-4">Por que contratar a Alumimec em {titleName}?</h2>
-                <p className="text-gray-600 leading-relaxed">
-                  Com mais de 14 anos de mercado, conhecemos as especificidades do solo e clima de Curitiba e Região Metropolitana. Atender {titleName} com agilidade é nossa prioridade. Possuímos frota própria e equipes de montagem certificadas com NR-35 (Trabalho em Altura), garantindo que sua obra em {titleName} seja segura e siga todas as normas vigentes.
-                </p>
-              </div>
+                <img 
+                  src={GALLERY_IMAGES[3].image} 
+                  alt={`Cobertura termoacústica ${locationSuffix}`} 
+                  className="w-full h-[350px] object-cover rounded-xl shadow-lg mb-4"
+                />
+
+                <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
+                  <p>
+                    O clima da nossa região exige proteções eficientes. Seja para proteger seu estoque, sua frota ou criar uma área de lazer confortável, as <strong>coberturas metálicas da Alumimec</strong> são projetadas para oferecer a máxima performance <strong>{locationSuffix}</strong>. Trabalhamos com telhas de aço galvanizado e galvalume, materiais de altíssima resistência à corrosão atmosférica, garantindo uma vida útil prolongada mesmo sob sol e chuva constantes.
+                  </p>
+                  <p className="mt-4">
+                    Um dos nossos grandes diferenciais para os clientes <strong>{locationSuffix}</strong> é a utilização de telhas sanduíche (termoacústicas). Compostas por duas chapas de aço e um núcleo isolante (EPS ou PIR), elas funcionam como uma barreira térmica excepcional, reduzindo a temperatura interna nos dias quentes e mantendo o ambiente agradável no inverno. Além disso, reduzem significativamente o ruído de impacto da chuva, proporcionando um ambiente de trabalho ou lazer muito mais silencioso e produtivo.
+                  </p>
+                  <p className="mt-4">
+                    Executamos desde coberturas planas e em arco até sheds industriais e pergolados residenciais sofisticados. Cada projeto é calculado para suportar ventos fortes e tempestades características da região, garantindo a tranquilidade total do proprietário.
+                  </p>
+                </div>
+              </article>
+
+              {/* TEXTO 4: Mezaninos e Otimização */}
+              <article className="flex flex-col gap-6 bg-primary text-white p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-accent opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                
+                <div className="relative z-10">
+                  <h2 className="text-3xl font-heading font-bold mb-6 flex items-center gap-3">
+                    <PenTool className="text-accent" size={32} /> Ampliação Inteligente com Mezaninos
+                  </h2>
+
+                  <div className="flex flex-col lg:flex-row gap-8">
+                     <div className="flex-1 text-gray-100 leading-relaxed text-justify space-y-4">
+                       <p>
+                         A falta de espaço é um problema comum em áreas urbanas valorizadas como <strong>{titleName}</strong>. A solução mais inteligente e econômica para duplicar sua área útil sem a necessidade de mudar de endereço é a instalação de <strong>mezaninos metálicos</strong>. A Alumimec projeta estruturas leves e independentes que se adaptam perfeitamente ao seu imóvel existente.
+                       </p>
+                       <p>
+                         Ideais para escritórios, estoques, lojas de shopping ou áreas de produção, nossos mezaninos são instalados com fixação por parafusos, o que permite uma obra limpa, seca e extremamente rápida. Isso significa que sua empresa <strong>{locationSuffix}</strong> pode continuar operando com o mínimo de interferência durante a montagem.
+                       </p>
+                       <p>
+                         Utilizamos vigas W e painéis wall ou piso metálico xadrez, conforme a necessidade de carga (kg/m²). Transforme o pé-direito ocioso do seu imóvel em metros quadrados rentáveis com a segurança e a engenharia de ponta da Alumimec.
+                       </p>
+                     </div>
+                     <div className="lg:w-1/3">
+                        <img 
+                          src={GALLERY_IMAGES[4].image} 
+                          alt={`Mezanino metálico ${locationSuffix}`} 
+                          className="w-full h-full object-cover rounded-lg border-4 border-white/20 shadow-lg"
+                        />
+                     </div>
+                  </div>
+                  
+                  <div className="mt-8 text-center">
+                    <a 
+                      href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Tenho interesse em um Mezanino ${locationSuffix}`}
+                      className="inline-block bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg"
+                    >
+                      Orçar Mezanino Agora
+                    </a>
+                  </div>
+                </div>
+              </article>
 
             </div>
 
             {/* Sidebar Right */}
             <div className="space-y-8">
-              <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 sticky top-24">
-                <h3 className="text-xl font-bold text-primary mb-4 text-center">Solicite um Orçamento</h3>
-                <p className="text-sm text-gray-500 text-center mb-6">Atendimento prioritário para {titleName}</p>
+              
+              {/* Sticky Contact Card */}
+              <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 sticky top-24 z-10">
+                <div className="text-center mb-6">
+                   <div className="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                     <MapPin size={32} />
+                   </div>
+                   <h3 className="text-xl font-bold text-primary">Atendimento Prioritário</h3>
+                   <p className="text-gray-500 font-medium">{titleName}</p>
+                </div>
+                
+                <p className="text-sm text-gray-500 text-center mb-6">
+                  Equipe técnica pronta para visitar sua obra em {titleName} e realizar um orçamento sem compromisso.
+                </p>
+                
                 <a 
-                  href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá, sou de ${titleName} e gostaria de um orçamento.`}
-                  className="block w-full bg-[#25D366] text-white font-bold py-3 px-4 rounded-lg text-center hover:brightness-105 transition-all shadow-md mb-4"
+                  href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá, sou de ${titleName} e gostaria de agendar uma visita.`}
+                  className="block w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl mb-4 flex items-center justify-center gap-2"
                 >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 filter brightness-0 invert" />
                   Chamar no WhatsApp
                 </a>
-                <div className="text-center">
-                   <p className="font-bold text-primary">{COMPANY_INFO.phone1Display}</p>
+                
+                <div className="text-center border-t border-gray-100 pt-4">
+                   <p className="font-bold text-primary text-lg">{COMPANY_INFO.phone1Display}</p>
                    <p className="text-sm text-gray-500">{COMPANY_INFO.email}</p>
                 </div>
               </div>
 
-              <div className="bg-gray-100 p-6 rounded-xl">
-                 <h4 className="font-bold mb-4 text-primary">Serviços Populares</h4>
-                 <ul className="space-y-2 text-sm">
+              {/* Service List */}
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                 <h4 className="font-bold mb-4 text-primary text-lg flex items-center gap-2">
+                   <Star size={18} className="text-accent" fill="currentColor"/> Serviços em Destaque
+                 </h4>
+                 <ul className="space-y-3">
                    {SERVICES.map(s => (
-                     <li key={s.id} className="border-b border-gray-200 pb-2 last:border-0">
-                       <Link to="/#servicos" className="hover:text-accent transition-colors block">
+                     <li key={s.id} className="border-b border-gray-200 pb-2 last:border-0 hover:pl-2 transition-all">
+                       <Link to="/#servicos" className="hover:text-accent transition-colors block text-gray-700 font-medium">
                          • {s.title}
                        </Link>
                      </li>
                    ))}
                  </ul>
               </div>
+
+              {/* Why Choose Us */}
+              <div className="bg-primary text-white p-6 rounded-xl">
+                <h4 className="font-bold mb-4 text-lg">Por que Alumimec?</h4>
+                <ul className="space-y-4 text-sm">
+                  <li className="flex gap-3">
+                    <Check className="text-accent shrink-0" />
+                    <span>Orçamento transparente sem surpresas no final.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="text-accent shrink-0" />
+                    <span>Cumprimento rigoroso dos prazos acordados.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="text-accent shrink-0" />
+                    <span>Acompanhamento de engenheiro em todas as etapas.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="text-accent shrink-0" />
+                    <span>Materiais certificados com garantia de fábrica.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      <section className="py-12 bg-primary text-white text-center">
+      {/* CTA Bottom */}
+      <section className="py-16 bg-gradient-to-r from-gray-900 to-primary text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6">Pronto para construir em {titleName}?</h2>
-          <a 
-            href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-            className="bg-accent text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-colors inline-block"
-          >
-            Falar com Engenheiro
-          </a>
+          <h2 className="text-3xl font-heading font-bold mb-6">
+            Seu projeto em {titleName} começa aqui
+          </h2>
+          <p className="mb-8 text-gray-300 max-w-2xl mx-auto">
+            Não perca tempo com obras demoradas e com desperdício. Escolha a eficiência das estruturas metálicas Alumimec.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href={`https://wa.me/55${COMPANY_INFO.phone1}`}
+              className="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              Falar com Especialista
+            </a>
+            <Link 
+              to="/#galeria"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all"
+            >
+              Ver Nossas Obras
+            </Link>
+          </div>
         </div>
       </section>
     </>
