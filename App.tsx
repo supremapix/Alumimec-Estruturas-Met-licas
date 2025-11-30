@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, ScrollRestoration } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
@@ -8,8 +8,8 @@ import LocationPage from './pages/LocationPage';
 
 // ScrollToTop component for route changes
 const ScrollToTop = () => {
-  const { pathname } = React.useMemo(() => new URL(window.location.href), []);
-  
+  const { pathname } = useLocation();
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
