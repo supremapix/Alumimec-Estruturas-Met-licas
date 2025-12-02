@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
     title: "Galpões Industriais",
     description: "Estruturas robustas para indústrias e logística, projetadas para durabilidade e grandes vãos livres.",
     benefits: ["Vãos livres amplos", "Montagem rápida", "Alta durabilidade"],
-    image: "/galpoes-industriais-metalicos.png"
+    image: "/Galpões-Industriais-Metálicos.jpg"
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const SERVICES: Service[] = [
     title: "Estruturas Residenciais",
     description: "Inovação para sua casa com estruturas metálicas aparentes, pergolados e garagens modernas.",
     benefits: ["Estética contemporânea", "Obra limpa", "Valorização do imóvel"],
-    image: "/cobertura-metalica-alumimec.png"
+    image: "/estruturas-residenciais.webp"
   },
   {
     id: 4,
@@ -84,27 +84,27 @@ export const SERVICES: Service[] = [
     title: "Escadas Industriais",
     description: "Escadas retas, caracol ou marinheiro, seguindo rigorosamente as normas de segurança NR-12.",
     benefits: ["Segurança total", "Acabamento premium", "Antiderrapante"],
-    image: "/escadas-industriais.jpg"
+    image: "/escadas-industriais copy.jpg"
   },
   {
     id: 6,
     title: "Portões Industriais",
     description: "Segurança e automação para entrada de grandes veículos e controle de acesso.",
     benefits: ["Alta resistência", "Automação compatível", "Baixa manutenção"],
-    image: "/portao-industrial-novo.jpg"
+    image: "/portao-de-grande-porte-de-metal.jpg"
   }
 ];
 
 export const GALLERY_IMAGES: Project[] = [
   { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "/cobertura-metalica.jpg" },
-  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "/alumimec-curitiba-orcamentos.jpg" },
+  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "/Galpões-Industriais-Metálicos.jpg" },
   { id: 3, title: "Mezaninos Metálicos Estruturais", description: "Ampliação de espaço com eficiência.", category: "Mezaninos", image: "/mezaninos-metalicos-estruturais.png" },
-  { id: 4, title: "Portões Industriais Modernos", description: "Segurança e automação garantida.", category: "Portões", image: "/portao-industrial-novo.jpg" },
+  { id: 4, title: "Portões Industriais Modernos", description: "Segurança e automação garantida.", category: "Portões", image: "/portao-de-grande-porte-de-metal.jpg" },
   { id: 5, title: "Portões Metálicos Residenciais", description: "Design e funcionalidade.", category: "Portões", image: "/portoes-metalicos-carmo.jpg" },
   { id: 6, title: "Estruturas em Bairros de Curitiba", description: "Atendimento em toda RMC.", category: "Regional", image: "/bairro.jpg" },
-  { id: 7, title: "Coberturas com Isolamento Térmico", description: "Conforto e eficiência energética.", category: "Coberturas", image: "/cobertura-metalica-alumimec.png" },
+  { id: 7, title: "Estruturas Residenciais", description: "Inovação e design moderno para sua casa.", category: "Residencial", image: "/estruturas-residenciais.webp" },
   { id: 8, title: "Obras Realizadas no Paraná", description: "Projetos em todo o estado.", category: "Portfólio", image: "/alumimec-parana-brasil.png" },
-  { id: 9, title: "Portões Industriais de Grande Porte", description: "Soluções para indústrias.", category: "Industrial", image: "/portao-industrial.jpg" },
+  { id: 9, title: "Escadas Industriais", description: "Segurança e acabamento premium.", category: "Industrial", image: "/escadas-industriais copy.jpg" },
 ];
 
 export const VIDEOS: VideoData[] = [
