@@ -41,39 +41,95 @@ const Home: React.FC = () => {
 
       {/* 1. HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+        {/* Background Image with Animation */}
         <div
-          className="absolute inset-0 bg-cover bg-center z-0 opacity-50"
-          style={{ backgroundImage: `url('/alumimec-curitiba-orcamentos.jpg')` }}
+          className="absolute inset-0 bg-cover bg-center z-0 hero-bg-animate"
+          style={{ backgroundImage: `url('/galpoes-metalicos-pre-fabricados-hero-imagem.jpg')` }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-primary/80 z-10"></div>
-        
+
+        {/* Gradient Overlay with Pattern */}
+        <div className="absolute inset-0 gradient-overlay z-10"></div>
+        <div className="absolute inset-0 hero-pattern z-10"></div>
+
+        {/* Animated Floating Elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
+
+        {/* Main Content */}
         <div className="container mx-auto px-4 z-20 text-center relative">
-          <div className="animate-fade-in-up">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-              Estruturas Metálicas de <span className="text-accent">Alta Performance</span> em Curitiba
+          <div className="max-w-5xl mx-auto">
+            {/* Badge */}
+            <div className="animate-fade-in-down mb-6">
+              <span className="inline-block bg-accent/20 backdrop-blur-sm border border-accent/50 px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider text-accent animate-pulse">
+                +14 Anos de Excelência
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 leading-tight animate-fade-in-up opacity-0 delay-100">
+              Estruturas Metálicas de <span className="text-accent bg-clip-text">Alta Performance</span> em Curitiba
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200 font-light">
+
+            {/* Subtitle */}
+            <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto text-gray-100 font-light animate-fade-in-up opacity-0 delay-200 leading-relaxed">
               Especialistas em Galpões Industriais, Coberturas e Soluções Estruturais. Qualidade, segurança e prazo garantido.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+
+            {/* Features Pills */}
+            <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in-up opacity-0 delay-300">
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <Check size={16} className="text-accent" /> ART e Engenharia
+              </span>
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <Check size={16} className="text-accent" /> Equipe Certificada
+              </span>
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <Check size={16} className="text-accent" /> Entrega no Prazo
+              </span>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in opacity-0 delay-400">
+              <a
                 href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-                className="bg-accent hover:bg-white hover:text-accent text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg transform hover:-translate-y-1"
+                className="group bg-accent hover:bg-white text-white hover:text-accent px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
               >
-                Fale Conosco Agora
+                <span>Fale Conosco Agora</span>
+                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a 
+              <a
                 href="#servicos"
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg"
+                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
               >
-                Nossos Serviços
+                <span>Nossos Serviços</span>
+                <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform" />
               </a>
+            </div>
+
+            {/* Stats Bar */}
+            <div className="mt-16 grid grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in opacity-0 delay-500">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">+850</div>
+                <div className="text-sm text-gray-300">Projetos</div>
+              </div>
+              <div className="text-center border-x border-white/20">
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">14+</div>
+                <div className="text-sm text-gray-300">Anos</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">100%</div>
+                <div className="text-sm text-gray-300">Satisfação</div>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-          <ChevronDown size={32} className="text-white/70" />
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="animate-bounce">
+            <ChevronDown size={32} className="text-white/70" />
+          </div>
+          <p className="text-xs text-white/60 mt-2 animate-pulse">Role para baixo</p>
         </div>
       </section>
 

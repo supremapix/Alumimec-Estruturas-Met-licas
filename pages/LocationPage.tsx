@@ -38,23 +38,81 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
       />
 
       {/* Header Location */}
-      <section className="bg-primary text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/cobertura-metalica.jpg')] opacity-20 bg-cover bg-center"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-90"></div>
+      <section className="bg-primary text-white py-32 relative overflow-hidden min-h-[70vh] flex items-center">
+        {/* Background Image with Animation */}
+        <div className="absolute inset-0 bg-[url('/galpoes-metalicos-pre-fabricados-hero-imagem.jpg')] opacity-30 bg-cover bg-center hero-bg-animate"></div>
+
+        {/* Gradient Overlay with Pattern */}
+        <div className="absolute inset-0 gradient-overlay"></div>
+        <div className="absolute inset-0 hero-pattern"></div>
+
+        {/* Animated Floating Elements */}
+        <div className="absolute top-10 right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-10 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
+
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-6 inline-block shadow-lg tracking-wider">
-            Atendimento Exclusivo {locationSuffix}
-          </span>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-shadow">
-            Estruturas Metálicas <br/> <span className="text-accent">{titleName}</span>
-          </h1>
-          <p className="text-xl max-w-2xl mx-auto text-gray-200 font-light">
-            Líder em galpões industriais, coberturas e soluções em aço. Trazendo qualidade e tecnologia construtiva para sua obra {locationSuffix}.
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <a href="#contato" className="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
-              Solicitar Orçamento
-            </a>
+          <div className="max-w-4xl mx-auto">
+            {/* Badge with Animation */}
+            <div className="animate-fade-in-down mb-6">
+              <span className="bg-accent/20 backdrop-blur-sm border border-accent/50 text-accent px-6 py-2 rounded-full text-sm font-bold uppercase inline-block shadow-lg tracking-wider animate-pulse">
+                <MapPin size={14} className="inline mr-2" />
+                Atendimento Exclusivo {locationSuffix}
+              </span>
+            </div>
+
+            {/* Main Heading with Animation */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 text-shadow animate-fade-in-up opacity-0 delay-100">
+              Estruturas Metálicas <br/>
+              <span className="text-accent">{titleName}</span>
+            </h1>
+
+            {/* Subtitle with Animation */}
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-100 font-light mb-8 animate-fade-in-up opacity-0 delay-200 leading-relaxed">
+              Líder em galpões industriais, coberturas e soluções em aço. Trazendo qualidade e tecnologia construtiva para sua obra {locationSuffix}.
+            </p>
+
+            {/* Features Pills */}
+            <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in-up opacity-0 delay-300">
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <Shield size={16} className="text-accent" /> ART e Engenharia
+              </span>
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <Building size={16} className="text-accent" /> +850 Projetos
+              </span>
+              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
+                <PenTool size={16} className="text-accent" /> 14+ Anos
+              </span>
+            </div>
+
+            {/* CTA Buttons with Animation */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 animate-scale-in opacity-0 delay-400">
+              <a
+                href="#contato"
+                className="group bg-accent hover:bg-white text-white hover:text-accent px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
+              >
+                <span>Solicitar Orçamento</span>
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="#servicos"
+                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <span>Ver Serviços</span>
+                <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform" />
+              </a>
+            </div>
+
+            {/* Local Stats */}
+            <div className="mt-12 flex justify-center gap-8 animate-fade-in opacity-0 delay-500">
+              <div className="flex items-center gap-2">
+                <Star className="text-accent" size={20} fill="currentColor" />
+                <span className="text-sm">Avaliação 5.0</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="text-accent" size={20} />
+                <span className="text-sm">Atendimento Local</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
