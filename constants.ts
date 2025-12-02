@@ -56,55 +56,55 @@ export const SERVICES: Service[] = [
     title: "Galpões Industriais",
     description: "Estruturas robustas para indústrias e logística, projetadas para durabilidade e grandes vãos livres.",
     benefits: ["Vãos livres amplos", "Montagem rápida", "Alta durabilidade"],
-    image: "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/alumimec-curitiba-orcamentos.jpg"
   },
   {
     id: 2,
     title: "Coberturas Metálicas",
     description: "Soluções em coberturas para comércios, quadras esportivas e residências com proteção térmica e acústica.",
     benefits: ["Proteção contra intempéries", "Design moderno", "Materiais certificados"],
-    image: "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/cobertura-metalica.jpg"
   },
   {
     id: 3,
     title: "Estruturas Residenciais",
     description: "Inovação para sua casa com estruturas metálicas aparentes, pergolados e garagens modernas.",
     benefits: ["Estética contemporânea", "Obra limpa", "Valorização do imóvel"],
-    image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/cobertura-metalica-alumimec.png"
   },
   {
     id: 4,
     title: "Mezaninos Metálicos",
     description: "Amplie sua área útil sem grandes reformas. Ideais para escritórios, estoques e lojas.",
     benefits: ["Otimização de espaço", "Estrutura leve", "Instalação ágil"],
-    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/alumimec-curitiba-orcamentos.jpg"
   },
   {
     id: 5,
     title: "Escadas Industriais",
     description: "Escadas retas, caracol ou marinheiro, seguindo rigorosamente as normas de segurança NR-12.",
     benefits: ["Segurança total", "Acabamento premium", "Antiderrapante"],
-    image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/bairro.jpg"
   },
   {
     id: 6,
     title: "Portões Industriais",
     description: "Segurança e automação para entrada de grandes veículos e controle de acesso.",
     benefits: ["Alta resistência", "Automação compatível", "Baixa manutenção"],
-    image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+    image: "/alumimec-curitiba-orcamentos.jpg"
   }
 ];
 
 export const GALLERY_IMAGES: Project[] = [
-  { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 3, title: "Escadas Metálicas Industriais", description: "Design funcional e seguro.", category: "Acessos", image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 4, title: "Coberturas Metálicas Residenciais", description: "Modernidade para áreas de lazer.", category: "Residencial", image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 5, title: "Mezaninos Metálicos Estruturais", description: "Dobrando a área útil com eficiência.", category: "Mezaninos", image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 6, title: "Portões Industriais", description: "Segurança e automação de alta resistência.", category: "Especial", image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 7, title: "Escada Metálica Residencial", description: "Acabamento fino para interiores.", category: "Residencial", image: "https://images.pexels.com/photos/374679/pexels-photo-374679.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 8, title: "Estrutura com Telha Sanduíche", description: "Isolamento térmico garantido.", category: "Comercial", image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
-  { id: 9, title: "Reforço Estrutural Metálico", description: "Segurança estrutural com perfis metálicos.", category: "Reforma", image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "/cobertura-metalica.jpg" },
+  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "/alumimec-curitiba-orcamentos.jpg" },
+  { id: 3, title: "Estruturas Metálicas em Bairros", description: "Atendimento em toda região metropolitana.", category: "Regional", image: "/bairro.jpg" },
+  { id: 4, title: "Coberturas Metálicas Modernas", description: "Soluções com isolamento térmico.", category: "Cobertura", image: "/cobertura-metalica-alumimec.png" },
+  { id: 5, title: "Obras Alumimec Paraná", description: "Projetos realizados em todo o estado.", category: "Paraná", image: "/alumimec-parana-brasil.png" },
+  { id: 6, title: "Galpões e Coberturas Industriais", description: "Grande porte para indústrias.", category: "Industrial", image: "/alumimec-curitiba-orcamentos.jpg" },
+  { id: 7, title: "Estruturas Metálicas Premium", description: "Qualidade e durabilidade garantida.", category: "Premium", image: "/cobertura-metalica.jpg" },
+  { id: 8, title: "Projetos Personalizados", description: "Soluções sob medida para cada cliente.", category: "Personalizado", image: "/cobertura-metalica-alumimec.png" },
+  { id: 9, title: "Obras em Curitiba e Região", description: "Cobertura completa na RMC.", category: "Regional", image: "/bairro.jpg" },
 ];
 
 export const VIDEOS: VideoData[] = [

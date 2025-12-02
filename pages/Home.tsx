@@ -41,9 +41,9 @@ const Home: React.FC = () => {
 
       {/* 1. HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center z-0 opacity-50" 
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1920&fit=crop')` }}
+        <div
+          className="absolute inset-0 bg-cover bg-center z-0 opacity-50"
+          style={{ backgroundImage: `url('/alumimec-curitiba-orcamentos.jpg')` }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-primary/80 z-10"></div>
         
@@ -119,9 +119,9 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full z-0"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&h=800&fit=crop" 
-                alt="Equipe Alumimec" 
+              <img
+                src="/cobertura-metalica-alumimec.png"
+                alt="Obras Alumimec Estruturas Metálicas"
                 className="rounded-lg shadow-2xl relative z-10 w-full h-[500px] object-cover"
               />
               <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur p-6 rounded shadow-lg z-20 border-l-4 border-accent">
@@ -193,9 +193,9 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src="https://i.postimg.cc/zGbKgF4q/barracao-sao-jose-dos-pinhais.jpg" 
-                alt="Obra Forvia São José dos Pinhais" 
+              <img
+                src="/alumimec-parana-brasil.png"
+                alt="Obras Alumimec em São José dos Pinhais e Região"
                 className="rounded-lg shadow-2xl border-4 border-white/20"
               />
             </div>

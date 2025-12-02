@@ -47,10 +47,13 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-           {/* Fallback text if image fails or placeholder needed */}
-           <div className="bg-white p-1 rounded-full w-12 h-12 flex items-center justify-center overflow-hidden border-2 border-accent">
-              <span className="font-heading font-bold text-primary text-2xl">A</span>
+        <Link to="/" className="flex items-center gap-3">
+           <div className="bg-white p-1 rounded-full w-14 h-14 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
+              <img
+                src="/alumimec-parana-brasil.png"
+                alt="Logo Alumimec"
+                className="w-full h-full object-contain"
+              />
            </div>
            <div className="flex flex-col">
              <span className={`font-heading font-bold text-xl leading-none ${scrolled ? 'text-white' : 'text-white drop-shadow-md'}`}>ALUMIMEC</span>

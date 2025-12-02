@@ -39,7 +39,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
 
       {/* Header Location */}
       <section className="bg-primary text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531834685032-c34bf0d84c7c?q=80&w=1920&fit=crop')] opacity-20 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/cobertura-metalica.jpg')] opacity-20 bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-90"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-6 inline-block shadow-lg tracking-wider">
