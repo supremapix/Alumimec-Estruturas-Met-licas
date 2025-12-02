@@ -50,9 +50,9 @@ const Header: React.FC = () => {
         <Link to="/" className="flex items-center gap-3">
            <div className="bg-white p-1 rounded-full w-14 h-14 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
               <img
-                src="/alumimec-parana-brasil.png"
+                src="/logo-alumimec.jpg"
                 alt="Logo Alumimec"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
            </div>
            <div className="flex flex-col">

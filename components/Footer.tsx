@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Col 1: Brand */}
           <div>
-            <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto lg:mx-0 p-2">
+            <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto lg:mx-0 p-1 overflow-hidden">
                <img
-                 src="/alumimec-parana-brasil.png"
+                 src="/logo-alumimec.jpg"
                  alt="Logo Alumimec Estruturas Metálicas"
-                 className="w-full h-full object-contain"
+                 className="w-full h-full object-cover"
                />
             </div>
             <h3 className="text-xl font-heading font-bold mb-4">ALUMIMEC</h3>
@@ -79,9 +79,23 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Alumimec Estruturas Metálicas. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0">Desenvolvido por <span className="text-white font-bold">Suprema Mídia</span></p>
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 mb-4">
+            <p>&copy; {new Date().getFullYear()} Alumimec Estruturas Metálicas. Todos os direitos reservados.</p>
+            <p className="mt-2 md:mt-0 flex items-center gap-2 flex-wrap justify-center md:justify-end">
+              Desenvolvido com
+              <span className="text-red-500 animate-heartbeat text-lg">❤️</span>
+              pela
+              <a
+                href="https://www.supremasite.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-bold hover:text-accent transition-colors underline"
+              >
+                Suprema Sites Express
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
