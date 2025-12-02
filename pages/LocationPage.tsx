@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { COMPANY_INFO, SERVICES, GALLERY_IMAGES } from '../constants';
-import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building } from 'lucide-react';
+import { COMPANY_INFO, SERVICES, GALLERY_IMAGES, FAQs } from '../constants';
+import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building, Play, X, ChevronDown } from 'lucide-react';
 
 interface LocationPageProps {
   type: 'city' | 'neighborhood';
@@ -11,16 +11,22 @@ interface LocationPageProps {
 const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
   const { locationName } = useParams<{ locationName: string }>();
   const decodedName = decodeURIComponent(locationName || '');
-  
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+  const [videoModal, setVideoModal] = useState<boolean>(false);
+
   // Capitalize words
   const titleName = decodedName.toLowerCase().replace(/(^|\s)\S/g, l => l.toUpperCase());
-  
+
   const isCity = type === 'city';
   const term = isCity ? "na cidade de" : "no bairro";
   const locationSuffix = isCity ? `em ${titleName}` : `no bairro ${titleName}`;
-  
+
   const pageTitle = `Estruturas Metálicas em ${titleName} | Alumimec`;
   const description = `Procurando Estruturas Metálicas ${locationSuffix}? A Alumimec é especialista em Galpões, Coberturas e Serralheria Industrial com atendimento ${locationSuffix}. Orçamento Grátis.`;
+
+  const toggleAccordion = (index: number) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
 
   return (
     <>
@@ -267,6 +273,122 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-4 inline-block">Veja na Prática</span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                Estruturas Metálicas que Transformam {titleName}
+              </h2>
+              <p className="text-gray-200 text-lg mb-6 leading-relaxed">
+                Veja como entregamos projetos de alta qualidade com prazos reduzidos. Cada estrutura é fabricada com precisão e montada por profissionais certificados.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check size={16} className="text-white" />
+                  </div>
+                  <span className="text-gray-100">Engenharia de precisão para cada projeto</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check size={16} className="text-white" />
+                  </div>
+                  <span className="text-gray-100">Redução de até 60% no tempo de obra</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check size={16} className="text-white" />
+                  </div>
+                  <span className="text-gray-100">Garantia de 5 anos em todas as estruturas</span>
+                </li>
+              </ul>
+              <a
+                href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá! Vi o vídeo e gostaria de um orçamento para ${titleName}`}
+                className="inline-block bg-accent hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg transform hover:-translate-y-1"
+              >
+                Solicitar Orçamento Agora
+              </a>
+            </div>
+
+            <div className="relative group cursor-pointer" onClick={() => setVideoModal(true)}>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                <img
+                  src="https://img.youtube.com/vi/Zk7W4W0l2yA/maxresdefault.jpg"
+                  alt="Vídeo Alumimec Estruturas Metálicas"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                  <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                    <Play fill="white" className="text-white ml-1" size={32} />
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4 text-center">
+                <p className="text-gray-300 text-sm">Clique para assistir nosso processo de trabalho</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Accordion */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+              Perguntas Frequentes sobre Estruturas Metálicas em {titleName}
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Tire suas dúvidas sobre nossos serviços e processos
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {FAQs.slice(0, 8).map((faq, idx) => (
+              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <button
+                  onClick={() => toggleAccordion(idx)}
+                  className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left"
+                >
+                  <span className="font-bold text-gray-800 pr-4">{faq.question}</span>
+                  <ChevronDown
+                    size={24}
+                    className={`text-primary flex-shrink-0 transform transition-transform duration-300 ${
+                      activeAccordion === idx ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`bg-white px-5 text-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${
+                    activeAccordion === idx ? 'max-h-96 py-5 opacity-100' : 'max-h-0 py-0 opacity-0'
+                  }`}
+                >
+                  <p className="leading-relaxed">{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center bg-gray-50 p-8 rounded-xl">
+            <p className="text-gray-600 mb-4">Não encontrou a resposta que procurava?</p>
+            <a
+              href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Tenho uma dúvida sobre estruturas metálicas em ${titleName}`}
+              className="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold transition-colors"
+            >
+              Fale Diretamente com um Especialista
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Bottom */}
       <section className="py-16 bg-gradient-to-r from-gray-900 to-primary text-white text-center">
         <div className="container mx-auto px-4">
@@ -292,6 +414,32 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
           </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      {videoModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in"
+          onClick={() => setVideoModal(false)}
+        >
+          <div className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+            <button
+              className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors"
+              onClick={() => setVideoModal(false)}
+            >
+              <X size={24} />
+            </button>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/Zk7W4W0l2yA?autoplay=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 };

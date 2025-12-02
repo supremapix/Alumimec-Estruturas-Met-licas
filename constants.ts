@@ -56,55 +56,55 @@ export const SERVICES: Service[] = [
     title: "Galpões Industriais",
     description: "Estruturas robustas para indústrias e logística, projetadas para durabilidade e grandes vãos livres.",
     benefits: ["Vãos livres amplos", "Montagem rápida", "Alta durabilidade"],
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 2,
     title: "Coberturas Metálicas",
     description: "Soluções em coberturas para comércios, quadras esportivas e residências com proteção térmica e acústica.",
     benefits: ["Proteção contra intempéries", "Design moderno", "Materiais certificados"],
-    image: "https://images.unsplash.com/photo-1517646133932-d98c3971e62d?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 3,
     title: "Estruturas Residenciais",
     description: "Inovação para sua casa com estruturas metálicas aparentes, pergolados e garagens modernas.",
     benefits: ["Estética contemporânea", "Obra limpa", "Valorização do imóvel"],
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 4,
     title: "Mezaninos Metálicos",
     description: "Amplie sua área útil sem grandes reformas. Ideais para escritórios, estoques e lojas.",
     benefits: ["Otimização de espaço", "Estrutura leve", "Instalação ágil"],
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 5,
     title: "Escadas Industriais",
     description: "Escadas retas, caracol ou marinheiro, seguindo rigorosamente as normas de segurança NR-12.",
     benefits: ["Segurança total", "Acabamento premium", "Antiderrapante"],
-    image: "https://images.unsplash.com/photo-1505562723652-32b719488331?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     id: 6,
     title: "Portões Industriais",
     description: "Segurança e automação para entrada de grandes veículos e controle de acesso.",
     benefits: ["Alta resistência", "Automação compatível", "Baixa manutenção"],
-    image: "https://images.unsplash.com/photo-1621505348630-333010b98547?q=80&w=600&h=400&fit=crop"
+    image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   }
 ];
 
 export const GALLERY_IMAGES: Project[] = [
-  { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&h=600&fit=crop" },
-  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=600&h=600&fit=crop" },
-  { id: 3, title: "Escadas Metálicas Industriais", description: "Design funcional e seguro.", category: "Acessos", image: "https://images.unsplash.com/photo-1563297769-122e26090747?q=80&w=600&h=600&fit=crop" },
-  { id: 4, title: "Coberturas Metálicas Residenciais", description: "Modernidade para áreas de lazer.", category: "Residencial", image: "https://images.unsplash.com/photo-1621841926671-50e504c5354e?q=80&w=600&h=600&fit=crop" },
-  { id: 5, title: "Mezaninos Metálicos Estruturais", description: "Dobrando a área útil com eficiência.", category: "Mezaninos", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&h=600&fit=crop" },
-  { id: 6, title: "Ponte Perfil U", description: "Suporte de carga elevada.", category: "Especial", image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=600&h=600&fit=crop" },
-  { id: 7, title: "Nova Escada Metálica", description: "Acabamento fino para interiores.", category: "Residencial", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&h=600&fit=crop" },
-  { id: 8, title: "Sigma Motors - Telha Sanduíche", description: "Isolamento térmico garantido.", category: "Comercial", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&h=600&fit=crop" },
-  { id: 9, title: "Reforço Estrutural de Laje", description: "Segurança estrutural com Vigas W.", category: "Reforma", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&h=600&fit=crop" },
+  { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 3, title: "Escadas Metálicas Industriais", description: "Design funcional e seguro.", category: "Acessos", image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 4, title: "Coberturas Metálicas Residenciais", description: "Modernidade para áreas de lazer.", category: "Residencial", image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 5, title: "Mezaninos Metálicos Estruturais", description: "Dobrando a área útil com eficiência.", category: "Mezaninos", image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 6, title: "Portões Industriais", description: "Segurança e automação de alta resistência.", category: "Especial", image: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 7, title: "Escada Metálica Residencial", description: "Acabamento fino para interiores.", category: "Residencial", image: "https://images.pexels.com/photos/374679/pexels-photo-374679.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 8, title: "Estrutura com Telha Sanduíche", description: "Isolamento térmico garantido.", category: "Comercial", image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
+  { id: 9, title: "Reforço Estrutural Metálico", description: "Segurança estrutural com perfis metálicos.", category: "Reforma", image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" },
 ];
 
 export const VIDEOS: VideoData[] = [

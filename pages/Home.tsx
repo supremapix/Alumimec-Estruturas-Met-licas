@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin } from 'lucide-react';
 import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORHOODS, COMPANY_INFO, COMPARISON_DATA } from '../constants';
 import SEO from '../components/SEO';
+import InstagramFeed from '../components/InstagramFeed';
 import { Project } from '../types';
 
 const Home: React.FC = () => {
@@ -406,7 +407,10 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 11. CONTACT */}
+      {/* 11. INSTAGRAM FEED */}
+      <InstagramFeed />
+
+      {/* 12. CONTACT */}
       <section id="contato" className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
