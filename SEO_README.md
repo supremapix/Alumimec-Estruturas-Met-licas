@@ -8,6 +8,7 @@ Seu site agora possui um **sistema completo de SEO profissional** com:
 - ✅ **Meta tags avançadas** específicas para cada página
 - ✅ **Dados estruturados Schema.org** completos
 - ✅ **Sitemap.xml automático** com todas as rotas
+- ✅ **Meta tag de verificação do Google** adicionada
 - ✅ **Pronto para indexação no Google**
 
 ---
@@ -26,7 +27,12 @@ Seu site agora possui um **sistema completo de SEO profissional** com:
    - Como os buscadores veem o site
    - Resultados esperados
 
-3. **PRE_RENDERING_GUIDE.md**
+3. **GOOGLE_SEARCH_CONSOLE_SETUP.md** ⭐
+   - Como verificar o site no Google
+   - Enviar sitemap
+   - Monitoramento e métricas
+
+4. **PRE_RENDERING_GUIDE.md**
    - Guia técnico detalhado
    - Configuração avançada
    - Troubleshooting
@@ -68,14 +74,27 @@ https://alumimec.com.br/cidade/curitiba
 
 ## 🔍 Google Search Console (IMPORTANTE)
 
-### Enviar Sitemap
+### ✅ Meta Tag de Verificação Adicionada
 
-1. Acesse: https://search.google.com/search-console
-2. Adicione propriedade: `alumimec.com.br`
-3. Verifique propriedade
-4. Vá em: Sitemaps > Adicionar novo sitemap
-5. Digite: `sitemap.xml`
-6. Clique em "Enviar"
+A meta tag de verificação já está incluída no código:
+```html
+<meta name="google-site-verification" content="xf-VU0Wu_UloIpnbYPNzlTdfyFLunq_Vevq0Vwj3N6c" />
+```
+
+### Verificar Propriedade
+
+1. **Faça o deploy primeiro** (git push)
+2. Acesse: https://search.google.com/search-console
+3. **Clique em "Verificar"** - a verificação será automática!
+4. ✅ "Propriedade verificada com sucesso"
+
+### Enviar Sitemap (Após Verificação)
+
+1. Vá em: Sitemaps > Adicionar novo sitemap
+2. Digite: `sitemap.xml`
+3. Clique em "Enviar"
+
+📖 **Guia Completo**: Leia `GOOGLE_SEARCH_CONSOLE_SETUP.md` para instruções detalhadas
 
 ### Resultado Esperado
 - 154 URLs descobertas

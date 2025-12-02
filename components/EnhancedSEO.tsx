@@ -291,6 +291,8 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
       <meta name="geo.position" content="-25.4284;-49.2733" />
       <meta name="ICBM" content="-25.4284, -49.2733" />
 
+      <meta name="google-site-verification" content="xf-VU0Wu_UloIpnbYPNzlTdfyFLunq_Vevq0Vwj3N6c" />
+
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
       <meta name="author" content={COMPANY_INFO.name} />
