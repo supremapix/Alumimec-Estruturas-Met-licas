@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import EnhancedSEO from '../components/EnhancedSEO';
 import { COMPANY_INFO, SERVICES, GALLERY_IMAGES, FAQs } from '../constants';
 import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building, Play, X, ChevronDown } from 'lucide-react';
 
@@ -30,11 +30,24 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
 
   return (
     <>
-      <SEO 
+      <EnhancedSEO
         title={pageTitle}
         description={description}
         canonical={`/${isCity ? 'cidade' : 'bairro'}/${locationName}`}
-        keywords={`estruturas metálicas ${titleName}, galpão industrial ${titleName}, serralheria ${titleName}, cobertura metálica ${titleName}, mezanino ${titleName}, alumimec ${titleName}`}
+        keywords={`estruturas metálicas ${titleName}, galpão industrial ${titleName}, serralheria ${titleName}, cobertura metálica ${titleName}, mezanino ${titleName}, alumimec ${titleName}, construção metálica ${titleName}`}
+        ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
+        schemaType="LocalBusiness"
+        locationName={titleName}
+        breadcrumbs={[
+          { name: 'Início', url: '/' },
+          { name: isCity ? 'Cidades' : 'Bairros', url: isCity ? '/cidade' : '/bairro' },
+          { name: titleName, url: `/${isCity ? 'cidade' : 'bairro'}/${locationName}` }
+        ]}
+        faqItems={FAQs.slice(0, 5).map(faq => ({ question: faq.question, answer: faq.answer }))}
+        services={SERVICES.slice(0, 3).map(service => ({
+          name: service.title,
+          description: service.description
+        }))}
       />
 
       {/* Header Location */}

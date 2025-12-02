@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alumimec.com.br/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /_next/
+
+# Allow all bots to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay for slower bots
+User-agent: *
+Crawl-delay: 1

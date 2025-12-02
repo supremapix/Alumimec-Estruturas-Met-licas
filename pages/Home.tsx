@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin } from 'lucide-react';
 import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORHOODS, COMPANY_INFO, COMPARISON_DATA } from '../constants';
-import SEO from '../components/SEO';
+import EnhancedSEO from '../components/EnhancedSEO';
 import InstagramFeed from '../components/InstagramFeed';
 import { Project } from '../types';
 
@@ -32,11 +32,22 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <SEO 
+      <EnhancedSEO
         title="Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba"
         description="Especialistas em estruturas metálicas, galpões industriais e coberturas em Curitiba. Mais de 14 anos de experiência. Orçamento Grátis!"
         canonical="/"
-        keywords="estruturas metálicas, galpões curitiba, cobertura metálica, serralheria industrial"
+        keywords="estruturas metálicas curitiba, galpões industriais, cobertura metálica, mezanino metálico, serralheria industrial, construção metálica, estruturas pré-fabricadas"
+        ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
+        schemaType="WebPage"
+        isHomePage={true}
+        breadcrumbs={[
+          { name: 'Início', url: '/' }
+        ]}
+        faqItems={FAQs.map(faq => ({ question: faq.question, answer: faq.answer }))}
+        services={SERVICES.map(service => ({
+          name: service.title,
+          description: service.description
+        }))}
       />
 
       {/* 1. HERO SECTION */}
