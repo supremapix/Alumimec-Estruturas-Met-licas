@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden pt-20 md:pt-0">
+      <section className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-12">
         {/* Background Image with Animation */}
         <div
           className="absolute inset-0 bg-cover bg-center z-0 hero-bg-animate"
@@ -63,11 +63,11 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 hero-pattern z-10"></div>
 
         {/* Animated Floating Elements */}
-        <div className="absolute top-20 left-4 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-32 left-4 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 right-4 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 z-20 text-center relative py-12 md:py-0">
+        <div className="container mx-auto px-4 z-20 text-center relative">
           <div className="max-w-5xl mx-auto">
             {/* Badge */}
             <div className="animate-fade-in-down mb-4 md:mb-6">
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-4 md:mb-6 leading-tight animate-fade-in-up opacity-0 delay-100 px-2">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold mb-4 md:mb-6 leading-tight animate-fade-in-up opacity-0 delay-100 px-2">
               Estruturas Metálicas de <span className="text-accent bg-clip-text">Alta Performance</span> em Curitiba
             </h1>
 

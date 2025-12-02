@@ -51,7 +51,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
       />
 
       {/* Header Location */}
-      <section className="bg-primary text-white py-24 md:py-32 relative overflow-hidden min-h-[60vh] md:min-h-[70vh] flex items-center pt-20 md:pt-32">
+      <section className="bg-primary text-white py-12 md:py-32 relative overflow-hidden min-h-[60vh] md:min-h-[70vh] flex items-center pt-24 md:pt-28 lg:pt-32 pb-12">
         {/* Background Image with Animation */}
         <div className="absolute inset-0 bg-[url('/galpoes-metalicos-pre-fabricados-hero-imagem.jpg')] opacity-30 bg-cover bg-center hero-bg-animate"></div>
 

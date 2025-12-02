@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-primary/80 backdrop-blur-md py-2 md:py-4'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-primary shadow-md py-2 md:py-3'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 md:gap-3">
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`fixed inset-0 bg-primary/98 backdrop-blur-md z-40 transform transition-transform duration-300 flex flex-col items-center justify-center gap-6 md:gap-8 pt-20 ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
+        <div className={`fixed inset-0 bg-primary z-40 transform transition-transform duration-300 flex flex-col items-center justify-center gap-6 md:gap-8 pt-20 ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
           {navLinks.map((link) => (
             <button
               key={link.name}
