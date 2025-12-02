@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin } from 'lucide-react';
+import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin, MessageCircle } from 'lucide-react';
 import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORHOODS, COMPANY_INFO, COMPARISON_DATA } from '../constants';
 import EnhancedSEO from '../components/EnhancedSEO';
 import InstagramFeed from '../components/InstagramFeed';
@@ -203,18 +203,137 @@ const Home: React.FC = () => {
             </div>
           </div>
           
-          {/* Process Section */}
-          <div className="mt-20 pt-10 border-t border-gray-200">
-            <h3 className="text-center text-2xl font-bold text-primary mb-12">Nosso Processo de Trabalho</h3>
-            <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {['Consultoria', 'Projeto', 'Aprovação', 'Fabricação', 'Montagem', 'Garantia'].map((step, idx) => (
-                <div key={idx} className="text-center group">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 text-primary font-bold text-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent group-hover:text-white transition-colors">
+          {/* Process Section - MODERNIZED */}
+          <div className="mt-20 pt-16 border-t border-gray-200">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <span className="text-accent font-bold uppercase tracking-wider text-sm">Como Trabalhamos</span>
+              <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-3">
+                Nosso Processo de Trabalho
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                Da consultoria inicial à entrega final, cada etapa é cuidadosamente planejada para garantir excelência e satisfação total.
+              </p>
+            </div>
+
+            {/* Process Cards Grid */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+              {[
+                {
+                  step: 'Consultoria',
+                  icon: '💬',
+                  description: 'Entendemos suas necessidades',
+                  details: ['Visita técnica gratuita', 'Análise do projeto', 'Viabilidade técnica']
+                },
+                {
+                  step: 'Projeto',
+                  icon: '📐',
+                  description: 'Desenvolvimento personalizado',
+                  details: ['Desenho técnico detalhado', 'Cálculos estruturais', 'ART e documentação']
+                },
+                {
+                  step: 'Aprovação',
+                  icon: '✓',
+                  description: 'Validação com o cliente',
+                  details: ['Revisão do projeto', 'Aprovação de materiais', 'Cronograma definido']
+                },
+                {
+                  step: 'Fabricação',
+                  icon: '🏭',
+                  description: 'Produção de alta qualidade',
+                  details: ['Matéria-prima certificada', 'Controle de qualidade', 'Tecnologia avançada']
+                },
+                {
+                  step: 'Montagem',
+                  icon: '🔧',
+                  description: 'Instalação profissional',
+                  details: ['Equipe especializada', 'Segurança rigorosa', 'Prazo cumprido']
+                },
+                {
+                  step: 'Garantia',
+                  icon: '🛡️',
+                  description: 'Suporte e assistência',
+                  details: ['Garantia estrutural', 'Manutenção preventiva', 'Suporte contínuo']
+                }
+              ].map((process, idx) => (
+                <div
+                  key={idx}
+                  className="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-accent/50 overflow-hidden min-h-[280px] flex flex-col animate-fade-in-up opacity-0"
+                  style={{ animationDelay: `${idx * 100}ms`, animationFillMode: 'forwards' }}
+                >
+                  {/* Progress Bar on Hover */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="h-full bg-white/50 animate-shimmer"></div>
+                  </div>
+
+                  {/* Background Pattern */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
+                    <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%231e3c72" fill-opacity="1" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E")'}}></div>
+                  </div>
+
+                  {/* Number Badge */}
+                  <div className="absolute -top-3 -right-3 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-2xl shadow-xl group-hover:scale-110 transition-transform duration-300 z-10">
                     {idx + 1}
                   </div>
-                  <h4 className="font-semibold">{step}</h4>
+
+                  {/* Icon */}
+                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {process.icon}
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 flex flex-col">
+                    <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                      {process.step}
+                    </h4>
+                    <p className="text-gray-600 text-sm mb-4 font-medium">
+                      {process.description}
+                    </p>
+
+                    {/* Details List */}
+                    <ul className="space-y-2 mt-auto">
+                      {process.details.map((detail, detailIdx) => (
+                        <li key={detailIdx} className="flex items-start text-xs text-gray-600">
+                          <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 mr-2 flex-shrink-0 group-hover:animate-pulse"></span>
+                          <span>{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Hover Glow Effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent/5 to-transparent"></div>
+                  </div>
                 </div>
               ))}
+            </div>
+
+            {/* CTA Section */}
+            <div className="bg-gradient-to-br from-primary via-blue-800 to-primary-dark rounded-2xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'}}></div>
+              </div>
+
+              <div className="relative z-10">
+                <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
+                  Pronto para Iniciar Seu Projeto?
+                </h3>
+                <p className="text-gray-200 mb-6 max-w-2xl mx-auto text-sm md:text-base">
+                  Nossa equipe está preparada para transformar sua ideia em realidade. Solicite um orçamento sem compromisso e receba atendimento personalizado.
+                </p>
+                <a
+                  href={`https://wa.me/55${COMPANY_INFO.phone1}?text=${encodeURIComponent('Olá! Vi o processo de trabalho no site e gostaria de solicitar um orçamento.')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent hover:bg-white text-white hover:text-accent px-8 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+                >
+                  <MessageCircle size={20} />
+                  <span>Solicite um Orçamento Agora</span>
+                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
