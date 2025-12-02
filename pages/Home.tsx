@@ -189,32 +189,65 @@ const Home: React.FC = () => {
       </section>
 
       {/* 4. FEATURED PROJECT (FORVIA) */}
-      <section className="py-20 bg-primary text-white overflow-hidden relative">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-gray-900 text-white overflow-hidden relative">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'}}></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-8">
+            <div className="bg-accent text-xs font-bold px-4 py-2 rounded-full inline-block mb-4 animate-pulse">ÚLTIMA OBRA REALIZADA</div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Barracão Industrial para Forvia</h2>
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
+              A Alumimec tem orgulho de apresentar mais uma obra concluída com excelência: o barracão industrial desenvolvido especialmente para a unidade da Forvia em São José dos Pinhais.
+            </p>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img
-                src="/alumimec-parana-brasil.png"
-                alt="Obras Alumimec em São José dos Pinhais e Região"
-                className="rounded-lg shadow-2xl border-4 border-white/20"
-              />
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-orange-600 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <img
+                  src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
+                  alt="Barracão Industrial Forvia - São José dos Pinhais"
+                  className="relative rounded-lg shadow-2xl border-4 border-white/20 w-full"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+                  <p className="text-white font-bold text-lg mb-1">Barracão Industrial para Forvia</p>
+                  <p className="text-gray-300 text-sm">São José dos Pinhais/PR</p>
+                </div>
+              </div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="bg-accent text-xs font-bold px-3 py-1 rounded inline-block mb-4">DESTAQUE</div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Barracão Industrial Forvia</h2>
-              <p className="text-gray-300 mb-6 text-lg">
-                Grande projeto executado em São José dos Pinhais para a multinacional Forvia. 
-                Uma estrutura de alta complexidade com grandes vãos livres, pé direito duplo e preparada para pontes rolantes.
-              </p>
-              <ul className="grid grid-cols-2 gap-4 mb-8">
-                <li className="flex items-center gap-2"><div className="w-2 h-2 bg-accent rounded-full"></div> +2.000m² de área</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 bg-accent rounded-full"></div> Prazo recorde</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 bg-accent rounded-full"></div> Aço Estrutural ASTM</li>
-                <li className="flex items-center gap-2"><div className="w-2 h-2 bg-accent rounded-full"></div> Cobertura Termoacústica</li>
-              </ul>
-              <a href="#contato" className="bg-white text-primary px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors inline-block">
-                Quero um Projeto Similar
-              </a>
+              <div className="space-y-6">
+                <p className="text-gray-200 leading-relaxed">
+                  Projetado com foco em <strong className="text-white">eficiência, segurança e durabilidade</strong>, o espaço atende às necessidades operacionais da empresa, contribuindo diretamente para a otimização de seus processos produtivos.
+                </p>
+                <p className="text-gray-200 leading-relaxed">
+                  A estrutura metálica, fornecida e instalada pela Alumimec, segue os mais altos padrões de qualidade e resistência, garantindo confiabilidade e agilidade na execução da obra. Todo o projeto foi realizado em conformidade com normas técnicas, dentro do prazo estipulado e com o compromisso de entregar soluções sob medida.
+                </p>
+                <p className="text-gray-200 leading-relaxed">
+                  Esse projeto reforça a parceria de confiança entre a Alumimec e empresas líderes do setor automotivo, como a <strong className="text-accent">Forvia</strong>, demonstrando a capacidade da nossa equipe em entregar construções industriais com alto desempenho e excelência técnica.
+                </p>
+
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                  <h3 className="text-xl font-bold mb-4 text-accent">Destaques Técnicos</h3>
+                  <ul className="grid grid-cols-2 gap-3">
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Área superior a 2.000m²</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Vãos livres amplos</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Pé-direito duplo</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Prep. ponte rolante</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Aço estrutural ASTM</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Cobertura termoacústica</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Prazo recorde</li>
+                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Normas técnicas</li>
+                  </ul>
+                </div>
+
+                <a href="#contato" className="bg-accent text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-primary transition-all shadow-lg inline-flex items-center gap-2 group">
+                  Quero um Projeto Similar
+                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

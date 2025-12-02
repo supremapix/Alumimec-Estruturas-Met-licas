@@ -48,11 +48,11 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-           <div className="bg-white p-1 rounded-full w-14 h-14 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
+           <div className="bg-white p-0.5 rounded-full w-16 h-16 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
               <img
                 src="/logo-alumimec.jpg"
                 alt="Logo Alumimec"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-full scale-105"
               />
            </div>
            <div className="flex flex-col">

@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
     title: "Galpões Industriais",
     description: "Estruturas robustas para indústrias e logística, projetadas para durabilidade e grandes vãos livres.",
     benefits: ["Vãos livres amplos", "Montagem rápida", "Alta durabilidade"],
-    image: "/alumimec-curitiba-orcamentos.jpg"
+    image: "/galpoes-industriais-metalicos.png"
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const SERVICES: Service[] = [
     title: "Escadas Industriais",
     description: "Escadas retas, caracol ou marinheiro, seguindo rigorosamente as normas de segurança NR-12.",
     benefits: ["Segurança total", "Acabamento premium", "Antiderrapante"],
-    image: "/bairro.jpg"
+    image: "/escadas-industriais.jpg"
   },
   {
     id: 6,
