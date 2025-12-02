@@ -44,11 +44,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-primary/80 backdrop-blur-md py-2 md:py-4'}`}>
+      <div className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-           <div className="bg-white p-0.5 rounded-full w-16 h-16 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
+        <Link to="/" className="flex items-center gap-2 md:gap-3">
+           <div className="bg-white p-0.5 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
               <img
                 src="/logo-alumimec.jpg"
                 alt="Logo Alumimec"
@@ -56,8 +56,8 @@ const Header: React.FC = () => {
               />
            </div>
            <div className="flex flex-col">
-             <span className={`font-heading font-bold text-xl leading-none ${scrolled ? 'text-white' : 'text-white drop-shadow-md'}`}>ALUMIMEC</span>
-             <span className={`text-xs font-light tracking-widest ${scrolled ? 'text-gray-300' : 'text-gray-100 drop-shadow-md'}`}>ESTRUTURAS METÁLICAS</span>
+             <span className="font-heading font-bold text-base md:text-xl leading-none text-white drop-shadow-md">ALUMIMEC</span>
+             <span className="text-[10px] md:text-xs font-light tracking-wider md:tracking-widest text-gray-100 drop-shadow-md">ESTRUTURAS METÁLICAS</span>
            </div>
         </Link>
 
@@ -84,27 +84,30 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Mobile Toggle */}
-        <button 
-          className="lg:hidden text-white z-50"
+        <button
+          className="lg:hidden text-white z-50 p-2 -mr-2"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
         >
-          {isOpen ? <X size={32} /> : <Menu size={32} />}
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`fixed inset-0 bg-primary/95 backdrop-blur-sm z-40 transform transition-transform duration-300 flex flex-col items-center justify-center gap-8 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`fixed inset-0 bg-primary/98 backdrop-blur-md z-40 transform transition-transform duration-300 flex flex-col items-center justify-center gap-6 md:gap-8 pt-20 ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
           {navLinks.map((link) => (
             <button
               key={link.name}
               onClick={() => handleNavClick(link.path)}
-              className="text-white text-2xl font-heading font-bold hover:text-accent"
+              className="text-white text-xl md:text-2xl font-heading font-bold hover:text-accent transition-colors"
             >
               {link.name}
             </button>
           ))}
           <a
             href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-            className="bg-accent text-white px-8 py-3 rounded-full text-xl font-bold mt-4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-accent text-white px-6 md:px-8 py-3 rounded-full text-lg md:text-xl font-bold mt-4 hover:bg-white hover:text-accent transition-colors"
           >
             Solicitar Orçamento
           </a>

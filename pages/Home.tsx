@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden pt-20 md:pt-0">
         {/* Background Image with Animation */}
         <div
           className="absolute inset-0 bg-cover bg-center z-0 hero-bg-animate"
@@ -63,82 +63,84 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 hero-pattern z-10"></div>
 
         {/* Animated Floating Elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
+        <div className="absolute top-20 left-4 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-4 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 z-20 text-center relative">
+        <div className="container mx-auto px-4 z-20 text-center relative py-12 md:py-0">
           <div className="max-w-5xl mx-auto">
             {/* Badge */}
-            <div className="animate-fade-in-down mb-6">
-              <span className="inline-block bg-accent/20 backdrop-blur-sm border border-accent/50 px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider text-accent animate-pulse">
+            <div className="animate-fade-in-down mb-4 md:mb-6">
+              <span className="inline-block bg-accent/20 backdrop-blur-sm border border-accent/50 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider text-accent animate-pulse">
                 +14 Anos de Excelência
               </span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 leading-tight animate-fade-in-up opacity-0 delay-100">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-4 md:mb-6 leading-tight animate-fade-in-up opacity-0 delay-100 px-2">
               Estruturas Metálicas de <span className="text-accent bg-clip-text">Alta Performance</span> em Curitiba
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-4xl mx-auto text-gray-100 font-light animate-fade-in-up opacity-0 delay-200 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 md:mb-8 max-w-4xl mx-auto text-gray-100 font-light animate-fade-in-up opacity-0 delay-200 leading-relaxed px-4">
               Especialistas em Galpões Industriais, Coberturas e Soluções Estruturais. Qualidade, segurança e prazo garantido.
             </p>
 
             {/* Features Pills */}
-            <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in-up opacity-0 delay-300">
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
-                <Check size={16} className="text-accent" /> ART e Engenharia
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 animate-fade-in-up opacity-0 delay-300 px-4">
+              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
+                <Check size={14} className="text-accent flex-shrink-0" /> ART e Engenharia
               </span>
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
-                <Check size={16} className="text-accent" /> Equipe Certificada
+              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
+                <Check size={14} className="text-accent flex-shrink-0" /> Equipe Certificada
               </span>
-              <span className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20 flex items-center gap-2">
-                <Check size={16} className="text-accent" /> Entrega no Prazo
+              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
+                <Check size={14} className="text-accent flex-shrink-0" /> Entrega no Prazo
               </span>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in opacity-0 delay-400">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-scale-in opacity-0 delay-400 px-4">
               <a
                 href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-                className="group bg-accent hover:bg-white text-white hover:text-accent px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-accent hover:bg-white text-white hover:text-accent px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
               >
                 <span>Fale Conosco Agora</span>
-                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#servicos"
-                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
+                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
               >
                 <span>Nossos Serviços</span>
-                <ChevronDown size={20} className="group-hover:translate-y-1 transition-transform" />
+                <ChevronDown size={18} className="group-hover:translate-y-1 transition-transform" />
               </a>
             </div>
 
             {/* Stats Bar */}
-            <div className="mt-16 grid grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in opacity-0 delay-500">
+            <div className="mt-10 md:mt-16 grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto animate-fade-in opacity-0 delay-500 px-4">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">+850</div>
-                <div className="text-sm text-gray-300">Projetos</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">+850</div>
+                <div className="text-xs sm:text-sm text-gray-300">Projetos</div>
               </div>
               <div className="text-center border-x border-white/20">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">14+</div>
-                <div className="text-sm text-gray-300">Anos</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">14+</div>
+                <div className="text-xs sm:text-sm text-gray-300">Anos</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-1">100%</div>
-                <div className="text-sm text-gray-300">Satisfação</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">100%</div>
+                <div className="text-xs sm:text-sm text-gray-300">Satisfação</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 hidden sm:block">
           <div className="animate-bounce">
-            <ChevronDown size={32} className="text-white/70" />
+            <ChevronDown size={28} className="text-white/70 md:w-8 md:h-8" />
           </div>
           <p className="text-xs text-white/60 mt-2 animate-pulse">Role para baixo</p>
         </div>
