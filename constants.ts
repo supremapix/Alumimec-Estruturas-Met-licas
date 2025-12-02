@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
     title: "Mezaninos Metálicos",
     description: "Amplie sua área útil sem grandes reformas. Ideais para escritórios, estoques e lojas.",
     benefits: ["Otimização de espaço", "Estrutura leve", "Instalação ágil"],
-    image: "/alumimec-curitiba-orcamentos.jpg"
+    image: "/mezaninos-metalicos-estruturais.png"
   },
   {
     id: 5,
@@ -91,20 +91,20 @@ export const SERVICES: Service[] = [
     title: "Portões Industriais",
     description: "Segurança e automação para entrada de grandes veículos e controle de acesso.",
     benefits: ["Alta resistência", "Automação compatível", "Baixa manutenção"],
-    image: "/alumimec-curitiba-orcamentos.jpg"
+    image: "/portao-industrial-novo.jpg"
   }
 ];
 
 export const GALLERY_IMAGES: Project[] = [
   { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "/cobertura-metalica.jpg" },
   { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "/alumimec-curitiba-orcamentos.jpg" },
-  { id: 3, title: "Estruturas Metálicas em Bairros", description: "Atendimento em toda região metropolitana.", category: "Regional", image: "/bairro.jpg" },
-  { id: 4, title: "Coberturas Metálicas Modernas", description: "Soluções com isolamento térmico.", category: "Cobertura", image: "/cobertura-metalica-alumimec.png" },
-  { id: 5, title: "Obras Alumimec Paraná", description: "Projetos realizados em todo o estado.", category: "Paraná", image: "/alumimec-parana-brasil.png" },
-  { id: 6, title: "Galpões e Coberturas Industriais", description: "Grande porte para indústrias.", category: "Industrial", image: "/alumimec-curitiba-orcamentos.jpg" },
-  { id: 7, title: "Estruturas Metálicas Premium", description: "Qualidade e durabilidade garantida.", category: "Premium", image: "/cobertura-metalica.jpg" },
-  { id: 8, title: "Projetos Personalizados", description: "Soluções sob medida para cada cliente.", category: "Personalizado", image: "/cobertura-metalica-alumimec.png" },
-  { id: 9, title: "Obras em Curitiba e Região", description: "Cobertura completa na RMC.", category: "Regional", image: "/bairro.jpg" },
+  { id: 3, title: "Mezaninos Metálicos Estruturais", description: "Ampliação de espaço com eficiência.", category: "Mezaninos", image: "/mezaninos-metalicos-estruturais.png" },
+  { id: 4, title: "Portões Industriais Modernos", description: "Segurança e automação garantida.", category: "Portões", image: "/portao-industrial-novo.jpg" },
+  { id: 5, title: "Portões Metálicos Residenciais", description: "Design e funcionalidade.", category: "Portões", image: "/portoes-metalicos-carmo.jpg" },
+  { id: 6, title: "Estruturas em Bairros de Curitiba", description: "Atendimento em toda RMC.", category: "Regional", image: "/bairro.jpg" },
+  { id: 7, title: "Coberturas com Isolamento Térmico", description: "Conforto e eficiência energética.", category: "Coberturas", image: "/cobertura-metalica-alumimec.png" },
+  { id: 8, title: "Obras Realizadas no Paraná", description: "Projetos em todo o estado.", category: "Portfólio", image: "/alumimec-parana-brasil.png" },
+  { id: 9, title: "Portões Industriais de Grande Porte", description: "Soluções para indústrias.", category: "Industrial", image: "/portao-industrial.jpg" },
 ];
 
 export const VIDEOS: VideoData[] = [

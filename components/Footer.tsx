@@ -10,8 +10,12 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Col 1: Brand */}
           <div>
-            <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto lg:mx-0">
-               <span className="text-primary font-bold text-3xl font-heading">A</span>
+            <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6 mx-auto lg:mx-0 p-2">
+               <img
+                 src="/alumimec-parana-brasil.png"
+                 alt="Logo Alumimec Estruturas Metálicas"
+                 className="w-full h-full object-contain"
+               />
             </div>
             <h3 className="text-xl font-heading font-bold mb-4">ALUMIMEC</h3>
             <p className="text-gray-400 mb-6 text-sm">

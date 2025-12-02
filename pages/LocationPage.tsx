@@ -76,9 +76,9 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   <div className="w-20 h-1 bg-accent mb-6"></div>
                 </div>
                 
-                <img 
-                  src={GALLERY_IMAGES[0].image} 
-                  alt={`Obra de estrutura metálica ${locationSuffix}`} 
+                <img
+                  src="/cobertura-metalica.jpg"
+                  alt={`Cobertura metálica Alumimec ${locationSuffix}`}
                   className="w-full h-[400px] object-cover rounded-xl shadow-lg mb-4 hover:scale-[1.01] transition-transform duration-500"
                 />
 
@@ -112,9 +112,9 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                       Para empresários e investidores <strong>{locationSuffix}</strong>, o tempo é dinheiro. Nossos galpões são pré-fabricados, o que permite que a montagem ocorra de forma paralela à preparação do terreno e fundação. Entregamos sua obra pronta para operação em um prazo significativamente menor do que a alvenaria tradicional. Além disso, a flexibilidade do aço permite futuras expansões facilitadas, acompanhando o crescimento do seu negócio sem a necessidade de demolições complexas.
                     </p>
                   </div>
-                  <img 
-                    src={GALLERY_IMAGES[1].image} 
-                    alt={`Galpão industrial metálico ${locationSuffix}`} 
+                  <img
+                    src="/alumimec-curitiba-orcamentos.jpg"
+                    alt={`Galpão industrial metálico ${locationSuffix}`}
                     className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
                   />
                 </div>
@@ -136,9 +136,9 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   <div className="w-20 h-1 bg-accent mb-6"></div>
                 </div>
 
-                <img 
-                  src={GALLERY_IMAGES[3].image} 
-                  alt={`Cobertura termoacústica ${locationSuffix}`} 
+                <img
+                  src="/cobertura-metalica-alumimec.png"
+                  alt={`Cobertura termoacústica ${locationSuffix}`}
                   className="w-full h-[350px] object-cover rounded-xl shadow-lg mb-4"
                 />
 
@@ -177,9 +177,9 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                        </p>
                      </div>
                      <div className="lg:w-1/3">
-                        <img 
-                          src={GALLERY_IMAGES[4].image} 
-                          alt={`Mezanino metálico ${locationSuffix}`} 
+                        <img
+                          src="/mezaninos-metalicos-estruturais.png"
+                          alt={`Mezanino metálico ${locationSuffix}`}
                           className="w-full h-full object-cover rounded-lg border-4 border-white/20 shadow-lg"
                         />
                      </div>
