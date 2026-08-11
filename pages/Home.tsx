@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin, MessageCircle } from 'lucide-react';
+import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin, MessageCircle, MessageSquare, PencilRuler, ClipboardCheck, Factory, Wrench, ShieldCheck } from 'lucide-react';
 import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORHOODS, COMPANY_INFO, COMPARISON_DATA } from '../constants';
 import EnhancedSEO from '../components/EnhancedSEO';
 import InstagramFeed from '../components/InstagramFeed';
@@ -221,64 +221,59 @@ const Home: React.FC = () => {
               {[
                 {
                   step: 'Consultoria',
-                  icon: '💬',
+                  icon: MessageSquare,
                   description: 'Entendemos suas necessidades',
                   details: ['Visita técnica gratuita', 'Análise do projeto', 'Viabilidade técnica']
                 },
                 {
                   step: 'Projeto',
-                  icon: '📐',
+                  icon: PencilRuler,
                   description: 'Desenvolvimento personalizado',
                   details: ['Desenho técnico detalhado', 'Cálculos estruturais', 'ART e documentação']
                 },
                 {
                   step: 'Aprovação',
-                  icon: '✓',
+                  icon: ClipboardCheck,
                   description: 'Validação com o cliente',
                   details: ['Revisão do projeto', 'Aprovação de materiais', 'Cronograma definido']
                 },
                 {
                   step: 'Fabricação',
-                  icon: '🏭',
+                  icon: Factory,
                   description: 'Produção de alta qualidade',
                   details: ['Matéria-prima certificada', 'Controle de qualidade', 'Tecnologia avançada']
                 },
                 {
                   step: 'Montagem',
-                  icon: '🔧',
+                  icon: Wrench,
                   description: 'Instalação profissional',
                   details: ['Equipe especializada', 'Segurança rigorosa', 'Prazo cumprido']
                 },
                 {
                   step: 'Garantia',
-                  icon: '🛡️',
+                  icon: ShieldCheck,
                   description: 'Suporte e assistência',
                   details: ['Garantia estrutural', 'Manutenção preventiva', 'Suporte contínuo']
                 }
-              ].map((process, idx) => (
+              ].map((process, idx) => {
+                const Icon = process.icon;
+                return (
                 <div
                   key={idx}
-                  className="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-accent/50 overflow-hidden min-h-[280px] flex flex-col animate-fade-in-up opacity-0"
+                  className="group relative bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-accent/40 overflow-hidden min-h-[280px] flex flex-col animate-fade-in-up opacity-0"
                   style={{ animationDelay: `${idx * 100}ms`, animationFillMode: 'forwards' }}
                 >
-                  {/* Progress Bar on Hover */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="h-full bg-white/50 animate-shimmer"></div>
-                  </div>
+                  {/* Accent bar on Hover */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                  {/* Background Pattern */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
-                    <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%231e3c72" fill-opacity="1" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E")'}}></div>
-                  </div>
-
-                  {/* Number Badge */}
-                  <div className="absolute -top-3 -right-3 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-2xl shadow-xl group-hover:scale-110 transition-transform duration-300 z-10">
-                    {idx + 1}
-                  </div>
-
-                  {/* Icon */}
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {process.icon}
+                  {/* Number + Icon header */}
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="w-14 h-14 rounded-xl bg-primary/5 group-hover:bg-accent/10 flex items-center justify-center transition-colors duration-300">
+                      <Icon size={28} strokeWidth={1.75} className="text-primary group-hover:text-accent transition-colors duration-300" />
+                    </div>
+                    <span className="text-5xl font-heading font-bold text-gray-100 group-hover:text-accent/20 transition-colors duration-300 leading-none select-none">
+                      {String(idx + 1).padStart(2, '0')}
+                    </span>
                   </div>
 
                   {/* Content */}
@@ -294,19 +289,15 @@ const Home: React.FC = () => {
                     <ul className="space-y-2 mt-auto">
                       {process.details.map((detail, detailIdx) => (
                         <li key={detailIdx} className="flex items-start text-xs text-gray-600">
-                          <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 mr-2 flex-shrink-0 group-hover:animate-pulse"></span>
+                          <Check size={14} className="text-accent mt-0.5 mr-2 flex-shrink-0" strokeWidth={2.5} />
                           <span>{detail}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-
-                  {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent/5 to-transparent"></div>
-                  </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* CTA Section */}
