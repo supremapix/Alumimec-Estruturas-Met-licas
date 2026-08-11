@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MessageSquare } from 'lucide-react';
+import { Menu, X, Phone, MessageSquare, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { COMPANY_INFO } from '../constants';
 
@@ -14,7 +14,6 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
@@ -36,7 +35,6 @@ const Header: React.FC = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       } else if (location.pathname !== '/') {
-        // Navigate to home then scroll
         window.location.hash = `#${id}`;
       }
     }
@@ -44,40 +42,40 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2' : 'bg-primary shadow-md py-2 md:py-3'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-primary/95 backdrop-blur-md shadow-xl py-2' : 'bg-primary py-3 md:py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 md:gap-3">
-           <div className="bg-white p-0.5 rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
+        <Link to="/" className="flex items-center gap-3">
+           <div className="bg-white p-0.5 rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center overflow-hidden border-2 border-accent shadow-lg">
               <img
                 src="/logo-alumimec.jpg"
                 alt="Logo Alumimec"
                 className="w-full h-full object-cover rounded-full scale-105"
               />
            </div>
-           <div className="flex flex-col">
-             <span className="font-heading font-bold text-base md:text-xl leading-none text-white drop-shadow-md">ALUMIMEC</span>
-             <span className="text-[10px] md:text-xs font-light tracking-wider md:tracking-widest text-gray-100 drop-shadow-md">ESTRUTURAS METÁLICAS</span>
+           <div className="flex flex-col leading-none">
+             <span className="font-heading font-bold text-base md:text-xl text-white tracking-wide">ALUMIMEC</span>
+             <span className="text-[9px] md:text-[10px] font-light tracking-[0.2em] md:tracking-[0.25em] text-gray-300 mt-0.5">ESTRUTURAS METÁLICAS</span>
            </div>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => (
             <button
               key={link.name}
               onClick={() => handleNavClick(link.path)}
-              className={`font-medium hover:text-accent transition-colors relative group ${scrolled ? 'text-white' : 'text-white text-shadow'}`}
+              className="font-medium text-white/90 hover:text-accent transition-colors relative group text-[15px]"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1.5 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
             </button>
           ))}
           <a
             href={`https://wa.me/55${COMPANY_INFO.phone1}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-accent hover:bg-white hover:text-accent text-white px-5 py-2 rounded-full font-bold transition-all transform hover:-translate-y-1 shadow-lg flex items-center gap-2"
+            className="bg-accent hover:bg-white hover:text-accent text-white px-6 py-2.5 rounded-full font-bold transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg flex items-center gap-2 text-sm"
           >
             <MessageSquare size={18} /> Orçamento
           </a>
@@ -87,30 +85,68 @@ const Header: React.FC = () => {
         <button
           className="lg:hidden text-white z-50 p-2 -mr-2"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label="Abrir menu"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`fixed inset-0 bg-primary z-40 transform transition-transform duration-300 flex flex-col items-center justify-center gap-6 md:gap-8 pt-20 ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
-          {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => handleNavClick(link.path)}
-              className="text-white text-xl md:text-2xl font-heading font-bold hover:text-accent transition-colors"
-            >
-              {link.name}
+        <div className={`fixed inset-0 bg-primary z-40 transition-transform duration-300 flex flex-col lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          {/* Top bar with close */}
+          <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b border-white/10">
+            <span className="text-white font-heading font-bold text-lg">Menu</span>
+            <button onClick={() => setIsOpen(false)} aria-label="Fechar menu" className="text-white p-2">
+              <X size={28} />
             </button>
-          ))}
-          <a
-            href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-accent text-white px-6 md:px-8 py-3 rounded-full text-lg md:text-xl font-bold mt-4 hover:bg-white hover:text-accent transition-colors"
-          >
-            Solicitar Orçamento
-          </a>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-col px-6 py-6 gap-1">
+            {navLinks.map((link, idx) => (
+              <button
+                key={link.name}
+                onClick={() => handleNavClick(link.path)}
+                className="text-white text-xl font-heading font-semibold hover:text-accent transition-colors py-4 border-b border-white/5 flex items-center justify-between text-left"
+              >
+                <span className="flex items-center gap-4">
+                  <span className="text-accent text-sm font-bold w-6">{String(idx + 1).padStart(2, '0')}</span>
+                  {link.name}
+                </span>
+                <ChevronRight size={20} className="text-white/30" />
+              </button>
+            ))}
+          </nav>
+
+          {/* Quick Contact Buttons for Elderly Accessibility */}
+          <div className="mt-auto px-6 pb-8 space-y-4">
+            <p className="text-white/50 text-xs uppercase tracking-wider font-bold">Contatos Rápidos</p>
+            <a
+              href={`tel:${COMPANY_INFO.phone1Display.replace(/\D/g, '')}`}
+              className="flex items-center gap-4 bg-white/10 hover:bg-white/15 border border-white/20 rounded-xl px-5 py-4 transition-colors"
+            >
+              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                <Phone size={24} className="text-white" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-white/60 text-xs">Ligar agora</span>
+                <span className="text-white font-bold text-lg">{COMPANY_INFO.phone1Display}</span>
+              </div>
+            </a>
+            <a
+              href={`https://wa.me/55${COMPANY_INFO.phone1}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-accent hover:bg-accent/90 rounded-xl px-5 py-4 transition-colors shadow-lg"
+            >
+              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <MessageSquare size={24} className="text-white" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-white/70 text-xs">Solicitar Orçamento</span>
+                <span className="text-white font-bold text-lg">WhatsApp</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </header>
