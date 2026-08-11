@@ -189,7 +189,7 @@ const Home: React.FC = () => {
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full z-0"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
               <img
-                src="/cobertura-metalica-alumimec.png"
+                src="/professional_construction_banner copy copy.webp"
                 alt="Obras Alumimec Estruturas Metálicas"
                 className="rounded-lg shadow-2xl relative z-10 w-full h-[500px] object-cover"
               />
