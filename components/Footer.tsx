@@ -26,8 +26,8 @@ const Footer: React.FC = () => {
               Especialistas em estruturas metálicas, galpões e coberturas industriais. Qualidade e compromisso desde 2010.
             </p>
             <div className="flex gap-3 md:gap-4 justify-center sm:justify-start">
-              <a href={COMPANY_INFO.facebook} target="_blank" rel="noreferrer" className="bg-primary hover:bg-accent p-2 rounded transition-colors"><Facebook size={18} className="md:w-5 md:h-5" /></a>
-              <a href={COMPANY_INFO.instagram} target="_blank" rel="noreferrer" className="bg-primary hover:bg-accent p-2 rounded transition-colors"><Instagram size={18} className="md:w-5 md:h-5" /></a>
+              <a href={COMPANY_INFO.facebook} target="_blank" rel="noreferrer" aria-label="Facebook da Alumimec" className="bg-primary hover:bg-accent p-2 rounded transition-colors"><Facebook size={18} className="md:w-5 md:h-5" /></a>
+              <a href={COMPANY_INFO.instagram} target="_blank" rel="noreferrer" aria-label="Instagram da Alumimec" className="bg-primary hover:bg-accent p-2 rounded transition-colors"><Instagram size={18} className="md:w-5 md:h-5" /></a>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 md:space-y-3 text-gray-300 text-sm">
               {SERVICES.map(s => (
                 <li key={s.id}>
-                  <Link to={`/#servicos`} className="hover:text-accent transition-colors flex items-center gap-2 justify-center sm:justify-start">
+                  <Link to={`/#servicos`} className="hover:text-accent transition-colors flex items-center gap-2 justify-center sm:justify-start py-1.5">
                     <span className="w-1.5 h-1.5 bg-accent rounded-full flex-shrink-0"></span> {s.title}
                   </Link>
                 </li>

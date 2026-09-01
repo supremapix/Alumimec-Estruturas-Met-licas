@@ -1,384 +1,431 @@
-# Relatório de auditoria e correção — SEO / GEO / AIO / Favicons
+# Relatório final — auditoria e correção definitiva
 
 **Projeto:** Alumimec Estruturas Metálicas
 **Repositório:** `supremapix/Alumimec-Estruturas-Met-licas`
-**Site oficial:** https://www.alumimec.com.br/
+**Site:** https://www.alumimec.com.br/
 **Data:** 01/09/2026
-**Escopo:** auditoria → correção → build → validação
+**Rodada:** 2 (revisão final sobre a rodada 1, já publicada)
 
 ---
 
-## 0. O que o projeto era antes
+## === NAP ===
 
-O repositório é uma SPA React + Vite (não existem os arquivos `/agua-verde.html`,
-`/batel-soho.html` etc. citados no briefing — essas URLs pertencem a uma versão
-anterior do site; a versão publicada hoje usa as rotas `/cidade/*` e `/bairro/*`).
+**Nome:** Alumimec Estruturas Metálicas
 
-O HTML entregue ao crawler continha **apenas** `<title>Alumimec Estruturas Metálicas</title>`
-e um `<div id="root">` vazio. Sem meta description, sem canonical, sem H1, sem
-conteúdo, sem Schema e **sem nenhum favicon**.
-
----
-
-## 1. Auditoria — matriz de URLs
-
-| Grupo | Qtde | Intenção | Indexável | Schema | Risco de canibalização | Ação aplicada |
-|---|---|---|---|---|---|---|
-| `/` (home) | 1 | Empresa de estruturas metálicas em Curitiba | Sim | Organization+LocalBusiness, WebSite, WebPage, Breadcrumb, FAQPage, 6× Service | — | Title/H1 preservados; description, canonical e grafo corrigidos |
-| `/cidade/*` prioritárias (Curitiba, S. J. dos Pinhais, Pinhais, Araucária, Colombo, Campo Largo, Fazenda Rio Grande) | 7 | Local — cidade | Sim | WebPage, Breadcrumb, 3× Service | Médio | Title/description/H1 únicos, links internos, priority 0.8 |
-| `/cidade/*` demais RMC | 22 | Local — cidade | Sim | idem | **Alto** | Metadados únicos, priority 0.5 — **ver item 9** |
-| `/bairro/*` | 124 | Local — bairro de Curitiba | Sim | idem | **Alto** | Metadados únicos, links internos, priority 0.4 — **ver item 9** |
-| **Total** | **154** | | 154 | | | |
-
-Não existem: blog, páginas de serviço com URL própria, páginas de obras com URL própria,
-páginas órfãs (todas as 153 páginas locais são linkadas a partir da home) nem redirects internos.
-
----
-
-## 2. SEO — o que foi corrigido
-
-### 2.1 HTML estático / SSG (correção mais importante)
-
-Implementada pré-renderização real (`scripts/prerender.mjs` + `entry-server.tsx`),
-usando `react-dom/server` + `StaticRouter` + `react-helmet-async`.
-
-- **154 arquivos HTML gerados** (`dist/index.html`, `dist/cidade/<slug>/index.html`, `dist/bairro/<slug>/index.html`).
-- Cada HTML já traz, **sem executar JavaScript**: `<title>`, meta description, canonical,
-  robots, Open Graph, Twitter Card, JSON-LD, H1, todo o conteúdo textual, links internos,
-  ALT das imagens e o NAP completo.
-- A home passou de **~1 KB de HTML vazio** para **~163 KB de HTML com conteúdo**.
-- O `npm run build` roda o pré-render, mas **nunca derruba o deploy**: se o pré-render falhar,
-  ele emite aviso e a SPA continua sendo servida normalmente.
-- `react-snap` (que estava configurado, quebrado e só incluía `/`) foi removido.
-
-### 2.2 Host canônico
-
-Todo o projeto usava `https://alumimec.com.br` (sem www) e um componente antigo
-(`components/SEO.tsx`) apontava canonical para `https://alumimec-estruturas-met-licas.vercel.app`.
-
-- Host canônico único definido em `site.config.ts`: **`https://www.alumimec.com.br`**.
-- `components/SEO.tsx` (não utilizado, com canonical quebrado) foi **excluído**.
-- `vercel.json` agora faz **301 de `alumimec.com.br` → `www.alumimec.com.br`**.
-- 0 de 154 arquivos gerados contêm host errado (verificado programaticamente).
-
-### 2.3 URLs
-
-As URLs antigas eram `/cidade/s%C3%A3o%20jos%C3%A9%20dos%20pinhais` (acento + `%20`).
-Agora são slugs ASCII: `/cidade/sao-jose-dos-pinhais`.
-
-- **Nenhuma URL antiga quebra**: `lib/slug.ts` resolve tanto o slug novo quanto o nome
-  codificado antigo, e o canonical sempre aponta para a versão em slug.
-- 0 colisões de slug entre as 153 localidades (verificado).
-
-### 2.4 Title, meta description e H1
-
-- **154 titles, 154 únicos. 154 descriptions, 154 únicas. 0 duplicados.**
-- Title e H1 da home **preservados** (estavam funcionando): `Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba`.
-- Páginas locais: description construída com dados próprios de cada página
-  (cidades/bairros vizinhos reais que aquela página lista e linka), em vez de trocar só o nome.
-- H1 das páginas locais corrigido: era `Estruturas Metálicas São José dos Pinhais`,
-  agora `Estruturas Metálicas em São José dos Pinhais` / `no bairro Água Verde`.
-
-### 2.5 Canonical
-
-Canonical absoluto, autorreferente e em slug em todas as 154 páginas, presente no HTML inicial.
-
-### 2.6 Sitemap
-
-`public/sitemap.xml` regenerado: 154 URLs, todas 200, canônicas, indexáveis, com host `www`,
-sem `%20`, sem duplicatas, sem parâmetros. `lastmod` em formato de data, `priority`
-diferenciada (home 1.0 / cidades prioritárias 0.8 / demais cidades 0.5 / bairros 0.4).
-
-### 2.7 robots.txt
-
-Reescrito. O anterior tinha dois blocos `User-agent: *` conflitantes, `Crawl-delay`
-desnecessário, `Disallow: /_next/` (framework que o projeto não usa) e apontava o sitemap
-para o host errado. Agora: nada bloqueado (CSS, JS, imagens e favicon liberados),
-crawlers de IA (GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended) liberados,
-`Sitemap: https://www.alumimec.com.br/sitemap.xml`.
-
-### 2.8 llms.txt
-
-Criado `public/llms.txt` (não existia) com informação factual: quem é a Alumimec, o que faz,
-onde atende, a obra documentada da Forvia, contato, NAP e páginas principais.
-Números de obras, tempo de mercado e avaliações **não** foram incluídos por não estarem
-verificados em fonte primária.
-
----
-
-## 3. Entity SEO — grafo único
-
-Antes existiam **4 blocos JSON-LD independentes por página**, com a Alumimec declarada
-**duas vezes** (Organization sem `@id` + LocalBusiness com `@id` diferente), e o `WebPage`
-referenciava um `#organization` que **não existia**. Grafo quebrado.
-
-Agora há **um único `@graph`** por página:
+**Endereço final (fonte de verdade — fornecido pelo proprietário):**
 
 ```
-Organization + LocalBusiness  @id .../#organization   (entidade central, única)
-WebSite                       @id .../#website        publisher → #organization
-WebPage                       @id <url>#webpage       isPartOf → #website, about → #organization
-BreadcrumbList                @id <url>#breadcrumb
-FAQPage                       @id <url>#faq           (somente na home, conteúdo visível)
-Service ×N                    @id <url>#service-...   provider → #organization
+R. Dep. Arnaldo Faivro Busato, 168
+Afonso Pena
+São José dos Pinhais - PR
+83045-000
+Brasil
 ```
 
-Relações semânticas declaradas: Alumimec → Estruturas Metálicas, Galpões Industriais,
-Coberturas Metálicas, Mezaninos, Escadas Industriais, Portões Industriais
-(`knowsAbout` + `hasOfferCatalog`), e Alumimec → Curitiba / São José dos Pinhais /
-Região Metropolitana de Curitiba / Paraná (`areaServed`, com `sameAs` do Wikidata).
+**Sede física:** São José dos Pinhais / bairro Afonso Pena
+**Área de atendimento:** Curitiba e Região Metropolitana de Curitiba
 
-**Nenhum tipo Schema inventado.** Apenas tipos válidos do Schema.org.
-
----
-
-## 4. NAP
-
-Confirmado com o proprietário e padronizado em `site.config.ts` + `constants.ts`:
-
-| Campo | Valor |
+| | |
 |---|---|
-| Nome | Alumimec Estruturas Metálicas |
-| Endereço | R. Dep. Arnaldo Faivro Busato — Afonso Pena |
-| CEP | 83045-000 |
-| Cidade | **São José dos Pinhais/PR** |
-| Telefone / WhatsApp | (41) 99631-5885 |
-| Telefone 2 | (41) 99722-1079 |
-| E-mail | contato@alumimec.com.br |
-| Horário | Segunda a sexta, 08:00–17:30 |
+| Inconsistências de endereço encontradas | **7** |
+| Inconsistências corrigidas | **7** |
+| Páginas declarando sede em Curitiba (depois) | **0 de 154** |
+| Páginas com o endereço completo, com nº 168, no HTML inicial | **154 de 154** |
 
-**Divergência encontrada e corrigida:** o Schema declarava `addressLocality: "Curitiba"`
-com o CEP 83045-000, que pertence a São José dos Pinhais; o componente antigo `SEO.tsx`
-declarava São José dos Pinhais. O texto visível no site também dizia "Curitiba/PR".
-Tudo unificado como São José dos Pinhais/PR.
+### As 7 inconsistências
 
-**Coordenadas removidas.** O Schema declarava `-25.4284, -49.2733` (centro de Curitiba)
-e um segundo par `-25.5333, -49.2000`. Nenhum dos dois corresponde ao endereço e não há
-coordenada verificada no repositório — portanto `geo`, `geo.position` e `ICBM` foram
-removidos em vez de inventados.
+| # | Onde | Antes | Depois |
+|---|---|---|---|
+| 1 | `components/SEO.tsx` (JSON-LD) | `addressLocality: "São José dos Pinhais"` + canonical `*.vercel.app` + `geo` inventado | **arquivo excluído** (estava órfão, não era importado) |
+| 2 | `components/EnhancedSEO.tsx` (Organization) | `addressLocality: "Curitiba"` | `São José dos Pinhais` |
+| 3 | `components/EnhancedSEO.tsx` (LocalBusiness duplicado) | `addressLocality: "Curitiba"` + `geo -25.4284,-49.2733` | entidade unificada, sem `geo` |
+| 4 | `constants.ts` → texto visível | `... CEP: 83045-000 - Curitiba/PR` | `R. Dep. Arnaldo Faivro Busato, 168 - Afonso Pena, CEP 83045-000 - São José dos Pinhais/PR` |
+| 5 | Rua sem número (todas as ocorrências) | `R. Dep. Arnaldo Faivro Busato` | `R. Dep. Arnaldo Faivro Busato, 168` |
+| 6 | Home — texto "Sobre Nós" | "se consolidou como referência em Curitiba e Região" (não distinguia sede de atendimento) | frase de entidade explícita + bloco factual Sede / Área de atendimento |
+| 7 | `public/llms.txt` | endereço sem número, sem separar sede de atendimento | `LOCATION` e `SERVICE AREA` como campos distintos |
+
+**Coordenadas:** continuam **não declaradas**. Não há coordenada oficial documentada no projeto — e coordenada não se inventa. As duas que existiam (`-25.4284,-49.2733` e `-25.5333,-49.2000`) apontavam para o centro de Curitiba, não para a sede.
+
+**Frase de entidade** publicada na home e no `site.config.ts` (`ENTITY_STATEMENT`):
+
+> A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e em toda a Região Metropolitana de Curitiba.
+
+Curitiba deixou de aparecer como localização e passou a aparecer **sempre** como área de atendimento. As intenções comerciais de Curitiba foram **preservadas** (Title, H1 e conteúdo da home continuam trabalhando "estruturas metálicas Curitiba").
 
 ---
 
-## 5. Dados fabricados removidos
+## === SEO ===
 
-| Item | Onde estava | Ação |
+| Métrica | Valor |
+|---|---|
+| URLs encontradas | 154 |
+| URLs indexáveis | 154 |
+| URLs não indexáveis | 1 (`/404`, `noindex, follow`) |
+| HTTP 200 | 154 |
+| HTTP 301 | **234 regras** (URLs legadas → slug + não-www → www) |
+| HTTP 404 real | todas as URLs inexistentes |
+| Canonicals corrigidos | 154 |
+| Titles únicos | **154 / 154** |
+| Descriptions únicas | **154 / 154** |
+| H1 corrigidos | 154 (1 H1 por página, verificado em 8 larguras) |
+
+### 404 real (item 31 do briefing)
+
+Este era o principal ponto em aberto. O `vercel.json` tinha um rewrite `/(.*) → /index.html`, que fazia **toda** URL inválida responder **HTTP 200** com o HTML da home — soft-404 clássico.
+
+- O rewrite catch-all foi **removido**.
+- Foi criada `pages/NotFound.tsx`, pré-renderizada em `dist/404.html`, servida pelo Vercel com **HTTP 404 real**, com `noindex, follow`, links para a home e para as 7 cidades prioritárias.
+- Rota `*` também adicionada no React Router, para o mesmo comportamento em navegação interna.
+
+### 301 reais, sem JavaScript (itens 30 e 32)
+
+As URLs antigas (`/cidade/s%C3%A3o%20jos%C3%A9%20dos%20pinhais`) foram mapeadas para **301 no servidor**, não por redirect em JavaScript:
+
+- **234 regras** em `vercel.json`, geradas a partir da lista real de cidades e bairros.
+- Só entram as URLs cujo formato antigo difere do slug (nomes simples como `/cidade/curitiba` já eram idênticos).
+- Cada URL antiga é mapeada nas duas formas (percent-encoded e decodificada), para garantir o match independente de como o Vercel normaliza o path.
+- Sem cadeias de redirect: **URL antiga → 301 → URL canônica final**, em um salto.
+- Mais o 301 de `alumimec.com.br` → `www.alumimec.com.br`.
+
+**Nota da rodada anterior:** o `cleanUrls: true` que eu havia adicionado fazia o Vercel devolver 404 antes de aplicar o rewrite. Isso foi detectado testando o site publicado e já está corrigido — `cleanUrls` removido.
+
+---
+
+## === PÁGINAS LOCAIS ===
+
+**Matriz de decisão:**
+
+| Classificação | Qtde | URLs |
 |---|---|---|
-| `aggregateRating: 5.0, reviewCount: 127` | JSON-LD de **todas as 154 páginas** | **REMOVIDO** — avaliação não comprovada em rich result é risco de ação manual do Google |
-| `geo` com coordenadas do centro de Curitiba | JSON-LD | **REMOVIDO** |
-| `datePublished: 2024-01-01` fixo | JSON-LD | **REMOVIDO** |
-| Canonical para `*.vercel.app` | `components/SEO.tsx` | **ARQUIVO EXCLUÍDO** |
-| ALT afirmando local da foto (ex.: "Cobertura metálica Alumimec em Adrianópolis") | 4 imagens × 153 páginas | **CORRIGIDO** para ALT factual sem afirmar local não comprovado |
+| **A — Manter** | 8 | `/` + `/cidade/curitiba`, `/cidade/sao-jose-dos-pinhais`, `/cidade/pinhais`, `/cidade/araucaria`, `/cidade/colombo`, `/cidade/campo-largo`, `/cidade/fazenda-rio-grande` |
+| **B — Enriquecer** | 146 | 22 demais cidades da RMC + 124 bairros de Curitiba |
+| **C — Consolidar** | 0 | — |
+| **D — 301** | 0 | — |
+| **E — Noindex** | 0 | — |
+| **F — Remover** | 0 | — |
+| **Novas páginas criadas** | **0** | — |
 
-### ⚠️ REQUER VALIDAÇÃO DO PROPRIETÁRIO
+### ⚠️ Divergência registrada
 
-Itens mantidos a seu pedido, mas **não comprovados no repositório**:
+A classificação técnica correta para as **146 páginas do grupo B** seria **E (noindex)**. Elas continuam com conteúdo praticamente idêntico: o template troca o nome da localidade e mantém todo o resto. Isso é o padrão de *doorway page* descrito nos itens 15–17 do próprio briefing.
 
-1. **6 depoimentos com nomes de pessoas** (Carlos Mendes, Ana Paula, Roberto Silva,
-   Construtora Ideal, Marcos Oliveira, Júlia Santos) — `constants.ts`.
-   Se não forem clientes reais e autorizados, recomendo remover.
-2. **"Avaliação 5.0"** exibido nas páginas locais — sem fonte. Foi retirado do Schema,
-   mas continua visível na tela.
-3. **"+850 Projetos"**, **"14+ Anos"**, **"100% Satisfação"**.
-4. **"5 anos de garantia estrutural"** e **"ART e Engenharia"** (FAQ e selos).
-5. **`google-site-verification`** e o arquivo `public/google87bee2f2b89df17b.html` —
-   confirme que ainda correspondem à sua propriedade no Search Console.
+Perguntei e **você optou por manter todas indexáveis**. Registro aqui que:
 
-Nenhum desses itens foi usado como rich result / dado estruturado.
+- o risco de *doorway page* **permanece**;
+- a infraestrutura para reverter já está pronta: o componente `EnhancedSEO` aceita a prop `noindex`, e basta passá-la em `LocationPage.tsx` para as não prioritárias;
+- é uma mudança de uma linha, reversível a qualquer momento.
 
----
+### O que foi feito para reduzir o risco (enriquecimento, grupo B)
 
-## 6. Obra real (autoridade semântica)
+- Title, description e H1 **únicos** em cada uma das 154 URLs (0 duplicados, verificado).
+- Bloco de conteúdo próprio por página: cada localidade lista e linka **6 localidades vizinhas reais**, calculadas a partir da posição na lista — conteúdo e links diferentes em cada URL.
+- Description construída com essas localidades vizinhas, não com troca de nome.
+- `priority` diferenciada no sitemap: home 1.0 · cidades prioritárias 0.8 · demais cidades 0.5 · bairros 0.4.
+- `FAQPage` declarado **apenas na home** — antes o mesmo bloco de FAQ era declarado em 154 URLs.
+- H1 corrigido para leitura natural: `Estruturas Metálicas em São José dos Pinhais` / `no bairro Água Verde` (antes faltava a preposição).
 
-A obra **Barracão Industrial para a Forvia, em São José dos Pinhais** já existia na home
-e foi **preservada integralmente**, com a imagem real (`barracao-sao-jose-dos-pinhais-barracao-forvia.jpg`).
-Nenhum detalhe novo foi inventado. Nenhum case novo foi criado.
-
----
-
-## 7. GEO / AIO — respostas factuais
-
-O HTML inicial (sem JS) agora responde de forma verificável: quem é a Alumimec, o que faz,
-onde atende, quais serviços presta, a obra documentada e como entrar em contato.
-Isso vale tanto para o Googlebot quanto para crawlers de IA, que em geral **não executam JavaScript**.
-Somado ao `llms.txt` e ao `robots.txt` liberando GPTBot/PerplexityBot/ClaudeBot/OAI-SearchBot.
+**As páginas `/agua-verde.html`, `/santa-felicidade.html`, `/alto-rua-xv.html` e `/batel-soho.html` citadas no briefing não existem neste repositório.** São de uma versão anterior do site. A versão atual usa `/cidade/<slug>` e `/bairro/<slug>`.
 
 ---
 
-## 8. Performance
+## === ENTITY SEO ===
+
+**Entidade principal:** Alumimec Estruturas Metálicas
+**@id:** `https://www.alumimec.com.br/#organization`
+**Sede:** São José dos Pinhais — **Bairro:** Afonso Pena
+**Área atendida:** Curitiba · São José dos Pinhais · Região Metropolitana de Curitiba · Paraná
+
+Grafo único por página (`@graph`), sem entidades duplicadas:
+
+```
+Organization + LocalBusiness   @id .../#organization
+WebSite                        @id .../#website        publisher → #organization
+WebPage                        @id <url>#webpage       isPartOf → #website · about → #organization
+BreadcrumbList                 @id <url>#breadcrumb
+FAQPage                        @id <url>#faq           (somente na home, conteúdo visível)
+Service ×N                     @id <url>#service-...   provider → #organization
+```
+
+- `PostalAddress` com `streetAddress: "R. Dep. Arnaldo Faivro Busato, 168"`, `addressLocality: "São José dos Pinhais"`.
+- `areaServed` separado do endereço — localização e atendimento são coisas distintas no grafo.
+- `sameAs` apenas os dois perfis oficiais (Facebook e Instagram da empresa). Nenhum diretório de terceiros.
+- **Sem** `geo`, **sem** `aggregateRating`, **sem** `review`, **sem** `foundingDate` no Schema.
+- Nenhuma entidade local por bairro. Nenhum tipo Schema inventado.
+
+---
+
+## === GEO / AIO ===
+
+Perguntas cobertas pelo HTML inicial (sem executar JavaScript), verificadas programaticamente:
+
+| Pergunta | Coberta |
+|---|---|
+| Onde fica a Alumimec? | SIM — endereço completo com nº 168, bairro e cidade |
+| A Alumimec atende Curitiba? | SIM — FAQ + frase de entidade + bloco Sede/Atendimento |
+| A Alumimec atende São José dos Pinhais? | SIM — FAQ dedicada |
+| O que a Alumimec faz? | SIM — lista de serviços em texto e no `hasOfferCatalog` |
+| Quais serviços a Alumimec executa? | SIM — FAQ dedicada |
+| Qual empresa faz estruturas metálicas em Curitiba? | SIM — home + `/cidade/curitiba` |
+| Quem faz galpão metálico em São José dos Pinhais? | SIM — `/cidade/sao-jose-dos-pinhais` com texto próprio de sede |
+| Telefone / e-mail | SIM |
+
+**Melhorias realizadas:**
+
+- Bloco factual visível na home (`Sede` · `Área de atendimento` · `Serviços` · `Contato`) — recuperável tanto por humano quanto por IA.
+- 4 novas FAQs factuais no topo da lista: *Onde fica a Alumimec?*, *A Alumimec atende Curitiba?*, *A Alumimec atende São José dos Pinhais?*, *Quais serviços a Alumimec executa?*
+- `llms.txt` reescrito com `LOCATION` e `SERVICE AREA` como campos separados e explícitos, mais um bloco de perguntas/respostas factuais.
+- `llms.txt` não contém — e não deve conter — instrução pedindo que qualquer sistema recomende ou priorize a Alumimec. É informação, não manipulação.
+- `llms-full.txt` **não existe** no projeto e não foi criado.
+
+**Novas páginas criadas: 0.**
+
+---
+
+## === AFIRMAÇÕES NÃO COMPROVADAS ===
+
+### Removidas nesta rodada (a seu pedido)
+
+| Afirmação | Onde estava | Substituída por |
+|---|---|---|
+| "ART e Engenharia" (selo) | Home (hero) e LocationPage | "Projeto Estrutural" |
+| "Engenharia e ART" | Home (Sobre) | "Projeto Estrutural" |
+| "ART e documentação" | Home (etapa Projeto) | "Documentação do projeto" |
+| FAQ "Vocês fornecem ART e projeto de engenharia?" | `constants.ts` | **removida** |
+| "Equipe Certificada" | Home (hero) | "Fabricação e Montagem" |
+| "Equipe Certificada (NR-35)" | Home (Sobre) | "Fabricação Própria" |
+| "Matéria-prima certificada" | Home (etapa Fabricação) | "Aço estrutural" |
+| "Materiais certificados" | `constants.ts` (benefício) | "Isolamento termoacústico" |
+| "Materiais certificados com garantia de fábrica" | LocationPage | "Estruturas parafusadas, moduláveis e ampliáveis" |
+| "normas NR-12" | `constants.ts` (Escadas) | descrição sem citar norma |
+| "ABNT NBR 8800, NBR 6123, NR-35" | LocationPage (parágrafo) | texto sobre características reais do aço |
+| "Garantia de 5 anos em todas as estruturas" | LocationPage | "Estruturas parafusadas: podem ser ampliadas ou remontadas" |
+| FAQ "Qual a garantia das estruturas?" | `constants.ts` | **removida** |
+| Etapa "Garantia" / "Garantia estrutural" | Home (processo) | "Pós-obra" / "Acompanhamento da entrega" |
+| `aggregateRating 5.0 / 127 avaliações` | JSON-LD de 154 páginas | **removido na rodada 1** |
+
+Todas as substituições usam afirmações que o próprio site já sustenta (o aço é parafusado, modular e ampliável — isso está na FAQ original) ou descrições neutras de processo. Nenhuma afirmação nova foi inventada.
+
+### Mantidas — **confirmadas por você como dados reais da empresa**
+
+- "+850 Projetos"
+- "14+ Anos" / "Excelência desde 2010"
+- "100% Satisfação"
+- "Avaliação 5.0" (texto visível nas páginas locais)
+- Os 6 depoimentos nominais (Carlos Mendes, Ana Paula, Roberto Silva, Construtora Ideal, Marcos Oliveira, Júlia Santos)
+
+Saem da lista de pendências conforme sua confirmação. **Uma ressalva técnica:** mesmo confirmados, esses itens continuam **fora do Schema**. O `aggregateRating` do Google exige avaliações efetivamente coletadas e exibidas por um sistema de avaliação — uma nota declarada no próprio site não atende ao requisito e é um dos gatilhos mais comuns de ação manual. O caminho certo para ter estrelas na busca é o **Perfil da Empresa no Google**, com avaliações reais dos clientes.
+
+### Ainda **REQUER VALIDAÇÃO DO PROPRIETÁRIO**
+
+1. `google-site-verification: xf-VU0Wu...` e o arquivo `public/google87bee2f2b89df17b.html` — confirme que ainda correspondem à sua propriedade no Search Console.
+2. "2.000 m²" e "Redução de até 60% no tempo de obra" — números presentes no conteúdo que não foram cobertos pela sua confirmação.
+
+---
+
+## === OBRAS REAIS ===
+
+A obra **Barracão Industrial para a Forvia, em São José dos Pinhais** foi **preservada integralmente**, com a foto real (`barracao-sao-jose-dos-pinhais-barracao-forvia.jpg`). Nenhum detalhe novo sobre a Forvia foi acrescentado. Nenhum case novo foi criado.
+
+Ela ganha relevância extra agora: é uma obra na **mesma cidade da sede**, o que reforça a relação `Alumimec → São José dos Pinhais → galpão industrial → evidência real`.
+
+---
+
+## === FAVICONS ===
+
+**Arquivo original da marca utilizado:** `public/logo-alumimec.jpg` (1200 × 1200, logo circular oficial)
+**Elemento extraído:** o símbolo "A" oficial, isolado por análise de componentes conexos da imagem (bbox x 489–721, y 389–576 do original). A logo completa — anel + wordmark + telefones + @instagram — vira um borrão em 16×16, e o próprio briefing autoriza usar somente o símbolo nesse caso.
+
+> **Nenhuma nova identidade visual ou logotipo foi gerado por IA.**
+> Nada foi redesenhado, nenhum monograma foi inventado, nenhuma proporção foi alterada. O `favicon.svg` é um traço vetorial (potrace) fiel do próprio símbolo, preto sobre branco.
+
+| Arquivo | Existe | HTTP | MIME | Dimensões | No `<head>` | Robots permite | Original da marca |
+|---|---|---|---|---|---|---|---|
+| `/favicon.ico` | SIM | 200 | `image/vnd.microsoft.icon` | 16×16, 32×32, 48×48 (ICO real) | SIM | SIM | SIM |
+| `/favicon.svg` | SIM | 200 | `image/svg+xml` | viewBox `0 0 2048 2048` | SIM | SIM | SIM |
+| `/favicon-96x96.png` | SIM | 200 | `image/png` | 96 × 96 | SIM | SIM | SIM |
+| `/apple-touch-icon.png` | SIM | 200 | `image/png` | 180 × 180 | SIM | SIM | SIM |
+| `/web-app-manifest-192x192.png` | SIM | 200 | `image/png` | 192 × 192 | via manifest | SIM | SIM |
+| `/web-app-manifest-512x512.png` | SIM | 200 | `image/png` | 512 × 512 | via manifest | SIM | SIM |
+| `/site.webmanifest` | SIM | 200 | `application/manifest+json` | — | SIM | SIM | — |
+
+- `favicon.ico` é ICO real com 3 imagens embutidas — **não** é PNG renomeado.
+- `robots.txt` não tem nenhuma linha `Disallow` — nada bloqueado.
+- `theme_color: #1a3a6c` e `background_color: #ffffff` extraídos da identidade real do projeto (cor `primary` do tema e fundo branco da logo). Nenhuma cor inventada.
+- Ícones do manifest com `purpose: "any maskable"` e cobertura de 62% do canvas, dentro da *safe zone* circular do Android — a marca não é cortada.
+- Apple touch icon sem cantos arredondados artificiais.
+- Todos renderizados em navegador (Chromium) a 16, 32, 96, 180 e 512 px: o símbolo permanece reconhecível em 16×16.
+
+**Validação externa pendente no RealFaviconGenerator.** O Favicon Checker precisa do site publicado com esta versão. Rode em https://realfavicongenerator.net/favicon-checker depois do deploy. Não invento resultado de ferramenta que não executei.
+
+**Google Search:** os requisitos estão atendidos (mesmo domínio, 200, não bloqueado, quadrado, URL estável, presente no HTML inicial sem depender de JS). O prazo de atualização é decisão do Google — não dá para prometer.
+
+---
+
+## === IMAGENS E SOCIAL ===
 
 | Item | Antes | Depois |
 |---|---|---|
-| Tailwind | `cdn.tailwindcss.com` (JS de terceiro, render-blocking, gera CSS em runtime) | Build local: **40 KB CSS / 7 KB gzip** |
 | Peso de `public/` | 7,31 MB | **2,3 MB** (−69%) |
-| Imagens `<img>` com `width`/`height` | 0 de 14 | **14 de 14** (elimina CLS) |
-| `loading="lazy"` + `decoding="async"` | 0 | 13 (logo do header ficou `eager` + `fetchPriority="high"`) |
-| Ícone do WhatsApp | hotlink para `upload.wikimedia.org` | SVG inline |
-| JS do app | 281 KB / 84 KB gzip | 283 KB / 85 KB gzip |
-| Arquivos duplicados/não usados | 5 arquivos, ~1,3 MB | removidos |
+| `<img>` com `width`/`height` | 0 de 14 | **14 de 14** |
+| `loading="lazy"` + `decoding="async"` | 0 | 13 (logo do header: `eager` + `fetchPriority="high"`) |
+| ALT afirmando local não comprovado | 4 imagens × 153 páginas | ALT factual, sem afirmar onde a foto foi feita |
+| Ícone do WhatsApp | hotlink `upload.wikimedia.org` | SVG inline |
+| `og:image` padrão | `/logo-alumimec.jpg` (a logo) | foto real de obra — favicon/logo não é imagem social |
 
-4 PNGs pesados de fotos foram convertidos para WebP (`alumimec-parana-brasil`,
-`cobertura-metalica-alumimec`, `mezaninos-metalicos-estruturais`, `galpoes-industriais-metalicos`)
-— 2,0 MB → 198 KB. As referências no código foram atualizadas.
-
-**Lighthouse não foi executado** — não há ferramenta de medição real disponível neste
-ambiente e não invento números. Rode o PageSpeed Insights após o deploy.
+`og:title`, `og:description`, `og:url`, `og:image`, `og:image:alt`, `og:type`, `og:site_name`, `og:locale` e `twitter:card/title/description/image` presentes e sem duplicação em todas as páginas.
 
 ---
 
-## 9. ⚠️ Risco estrutural que permanece (decisão sua)
+## === ACESSIBILIDADE ===
 
-As **153 páginas `/cidade/*` e `/bairro/*` continuam com conteúdo praticamente idêntico** —
-o template troca apenas o nome do local. Isso é exatamente o padrão de *doorway page*
-que a política de spam do Google descreve, e é o que o seu próprio briefing pedia para evitar
-(itens 7 e 8).
+| Correção | Detalhe |
+|---|---|
+| Botões só com ícone sem rótulo | `aria-label` adicionado nos 3 botões de fechar modal (vídeo home, imagem galeria, vídeo LocationPage) |
+| Links sociais só com ícone | `aria-label="Facebook da Alumimec"` / `"Instagram da Alumimec"` no rodapé |
+| Menu mobile | `aria-expanded` + `aria-controls` no botão, `id` no drawer |
+| Dois "X" sobrepostos ao abrir o menu | O botão do header e o botão do drawer apareciam juntos — o do header agora fica `invisible` com o menu aberto |
+| Alvos de toque < 24px | 7 → **1** por página (links de serviço do rodapé ganharam `py-1.5`) |
+| Hierarquia de headings | 1 `<h1>` por página, sem salto de nível — verificado nas 155 páginas |
+| `alt` | presente em todas as imagens |
 
-Você optou por **manter tudo indexável**, então eu apenas: dei title, description e H1 únicos
-a cada uma, adicionei um bloco de conteúdo e links internos próprios (localidades vizinhas
-reais) e diferenciei a `priority` no sitemap. **Isso reduz o risco, mas não o elimina.**
-
-Recomendação, quando quiser tratar: manter indexáveis as 7 cidades prioritárias
-(Curitiba, São José dos Pinhais, Pinhais, Araucária, Colombo, Campo Largo, Fazenda Rio Grande)
-e aplicar `noindex, follow` nas demais 22 cidades e nos 124 bairros, mantendo-as navegáveis.
-A infraestrutura para isso já está pronta: basta passar `noindex` no componente `EnhancedSEO`.
+O único alvo abaixo de 24px que resta é o link de crédito do desenvolvedor no rodapé.
 
 ---
 
-## 10. FAVICON
+## === MOBILE E DESKTOP ===
 
-### Arquivo ORIGINAL usado como fonte
+Medido em navegador real (Chromium), com o `dist/` servido:
 
-- **Caminho:** `public/logo-alumimec.jpg` (1200 × 1200 px, logo circular oficial da Alumimec)
-- O símbolo foi **extraído** do arquivo original por análise de componentes conexos da imagem
-  (bounding box x 489–721, y 389–576 do original).
-- Como a logo completa (anel + wordmark + telefones + @instagram) fica ilegível em 16×16,
-  foi usado **somente o símbolo oficial "A" já existente na marca**, conforme previsto no briefing.
+| Largura | Overflow-x | H1 | Erros JS |
+|---|---|---|---|
+| 320 px | 0 | 1 | 0 |
+| 360 px | 0 | 1 | 0 |
+| 375 px | 0 | 1 | 0 |
+| 390 px | 0 | 1 | 0 |
+| 414 px | 0 | 1 | 0 |
+| 1366 px | 0 | 1 | 0 |
+| 1440 px | 0 | 1 | 0 |
+| 1920 px | 0 | 1 | 0 |
 
-> **Confirmação: nenhum favicon foi recriado, redesenhado ou gerado por IA.**
-> Nenhum símbolo novo foi criado, nenhuma letra genérica foi usada, nenhuma proporção foi alterada.
-> O `favicon.svg` é um traço vetorial (potrace) fiel do próprio símbolo original em preto sobre branco.
+Testado na home e em `/cidade/sao-jose-dos-pinhais`.
 
-### Arquivos gerados
-
-| Arquivo | Dimensões | MIME | Tamanho | HTTP |
-|---|---|---|---|---|
-| `/favicon.ico` | 16×16, 32×32, 48×48 (ICO real multi-imagem) | `image/vnd.microsoft.icon` | 15.086 B | 200 |
-| `/favicon.svg` | viewBox 0 0 2048 2048 | `image/svg+xml` | 11.626 B | 200 |
-| `/favicon-96x96.png` | 96×96 | `image/png` | 4.368 B | 200 |
-| `/apple-touch-icon.png` | 180×180 | `image/png` | 10.993 B | 200 |
-| `/web-app-manifest-192x192.png` | 192×192 | `image/png` | 8.431 B | 200 |
-| `/web-app-manifest-512x512.png` | 512×512 | `image/png` | 40.907 B | 200 |
-| `/site.webmanifest` | — | `application/manifest+json` | 749 B | 200 |
-
-- O `.ico` é um ICO real com 3 imagens embutidas — **não** é um PNG renomeado.
-- Símbolo centralizado, com margem de segurança (80% do canvas nos favicons).
-- Ícones do manifest com 62% de cobertura para caber na *safe zone* circular do Android,
-  por isso `"purpose": "any maskable"` — a marca não é cortada pela máscara.
-- Apple touch icon sem cantos arredondados artificiais (o iOS aplica a máscara).
-
-### Tags finais no `<head>`
-
-```html
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Alumimec" />
-<link rel="manifest" href="/site.webmanifest" />
-```
-
-Não havia nenhuma tag de favicon antiga para remover (o `<head>` não tinha nenhuma).
-As tags estão no `index.html` estático, portanto **existem sem depender de JavaScript**.
-
-### site.webmanifest
-
-`theme_color: #1a3a6c` e `background_color: #ffffff` foram extraídos da identidade visual
-real já presente no projeto (cor `primary` do tema Tailwind e fundo branco da logo).
-Nenhuma cor foi inventada.
-
-### Google Search
-
-Os requisitos estão atendidos: mesmo domínio, HTTP 200, não bloqueado no `robots.txt`,
-quadrado, legível em tamanho pequeno, URL estável, sem depender de JavaScript.
-**Não é possível prometer prazo:** o Google rastreia e decide sozinho quando atualizar
-o favicon exibido na busca.
-
-### Validação no RealFaviconGenerator
-
-O **Favicon Checker externo não pôde ser executado** deste ambiente (o site ainda não está
-publicado com estes arquivos). A validação interna foi feita: todos os arquivos existem,
-com dimensões corretas, MIME types corretos, HTTP 200 servidos a partir da raiz, e todos
-foram renderizados em navegador (Chromium) a 16, 32, 96, 180 e 512 px — o símbolo permanece
-reconhecível em 16×16.
-
-**Depois do deploy, rode:** https://realfavicongenerator.net/favicon-checker
+**Bug real encontrado e corrigido:** havia **6 px de overflow horizontal em 320 px**. Causa: o menu mobile off-canvas ficava em `translate-x-full` (deslocado para a direita) quando fechado, ampliando a largura do documento. Passou a usar `-translate-x-full` (deslocamento negativo, que o navegador não transforma em área rolável), mais `overflow-x: hidden` em `html`/`body` como segunda barreira. O design não mudou — o menu agora entra pela esquerda.
 
 ---
 
-## 11. Build e validação
+## === SITEMAP ===
+
+| | |
+|---|---|
+| URLs finais | **154** |
+| Somente canônicas e indexáveis | **SIM** |
+| Host | `https://www.alumimec.com.br` em 154/154 |
+| URLs com `%20` ou acento | 0 |
+| Redirects, 404 ou noindex incluídos | 0 (a `/404` não entra) |
+| `lastmod` | data do build (formato `YYYY-MM-DD`) |
+
+`robots.txt`: nenhum `Disallow`, CSS/JS/imagens/favicon/manifest liberados, crawlers de IA (GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended) liberados, `Sitemap:` absoluto e correto.
+
+---
+
+## === SSG ===
+
+| | |
+|---|---|
+| HTMLs gerados | **155** (154 rotas + `404.html`) |
+| Title no HTML inicial | **SIM** — 154/154, todos únicos |
+| Description | **SIM** — 154/154, todas únicas |
+| Canonical | **SIM** — 154/154, absoluto e autorreferente |
+| H1 | **SIM** — 1 por página |
+| Conteúdo principal | **SIM** — home com ~163 KB de HTML |
+| Links internos | **SIM** — 153 na home, 6 por página local |
+| Schema | **SIM** — `@graph` válido (JSON parseado em todas) |
+| NAP completo com nº 168 | **SIM** — 154/154 |
+| Favicon | **SIM** — 5 tags no `<head>` estático |
+| ALT | **SIM** |
+
+Pipeline: `react-dom/server` + `StaticRouter` + `react-helmet-async`, em `scripts/prerender.mjs`. Se o pré-render falhar, ele emite aviso e **não derruba o deploy**.
+
+---
+
+## === BUILD ===
 
 ```
 npm run generate-sitemap  → sitemap.xml gerado com 154 URLs canonicas
-vite build                → ✓ built  (CSS 40,34 KB / JS 282,79 KB)
-node scripts/prerender.mjs→ [prerender] 154/154 HTMLs gerados
+vite build                → ✓ built  (CSS 40,68 KB / JS 287,29 KB)
+node scripts/prerender.mjs→ [prerender] 404.html gerado
+                            [prerender] 154/154 HTMLs gerados
 tsc --noEmit              → 0 erros
 ```
 
-Validação executada em navegador real (Chromium) sobre o `dist/` servido:
+| | |
+|---|---|
+| Build | **PASS** |
+| Typecheck | **PASS** |
+| Lint | não configurado no projeto (não há ESLint) — `tsc --noEmit` faz o papel |
 
-- HTTP 200 e MIME correto em todos os 7 arquivos de favicon + robots.txt + sitemap.xml + llms.txt.
-- 0 erros de JavaScript no console (home e página de cidade).
-- 0 overflow horizontal em **360 px, 375 px, 1366 px** — layout íntegro.
-- Design **não foi alterado**: a migração do Tailwind CDN para build local preservou a
-  aparência (verificado por captura de tela desktop e mobile).
-- 154/154 HTMLs com title, meta description, canonical, robots, H1, conteúdo e JSON-LD válido.
-- 0/154 arquivos com `aggregateRating`, `geo` inventado ou host errado.
-
----
-
-## 12. Erros encontrados e corrigidos durante o processo
+### Erros encontrados e corrigidos ao longo do processo
 
 | Erro | Correção |
 |---|---|
 | `react-helmet-async` é CommonJS e quebrava o bundle SSR sob ESM | `ssr.noExternal` no build de pré-render |
-| `prioritizeSeoTags` do Helmet move title/description/canonical para `helmet.priority`, que não estava sendo serializado | `helmet.priority.toString()` incluído no `<head>` gerado |
-| Recorte inicial do favicon capturava fragmentos do anel e da treliça | Isolamento por componente conexo da imagem |
-| `index.tsx` usava a API legada `hydrate`/`render` do React 17 | Migrado para `hydrateRoot`/`createRoot` (necessário para hidratar o HTML pré-renderizado) |
+| `prioritizeSeoTags` move title/description/canonical para `helmet.priority`, que não era serializado | `helmet.priority.toString()` incluído no `<head>` gerado |
+| `cleanUrls: true` fazia o Vercel devolver 404 antes do rewrite | `cleanUrls` removido (rodada 1) |
+| Rewrite catch-all devolvia **200** para URL inexistente (soft-404) | rewrite removido + `404.html` pré-renderizado com HTTP 404 real |
+| URLs antigas com `%20` passariam a dar 404 | 234 redirects **301 reais** no `vercel.json` |
+| `index.tsx` usava a API legada `hydrate`/`render` do React 17 | `hydrateRoot`/`createRoot` |
+| Recorte inicial do favicon capturava fragmentos do anel e da treliça | isolamento por componente conexo da imagem |
+| 6 px de overflow horizontal em 320 px | menu off-canvas passou a usar deslocamento negativo |
+| Dois ícones "X" sobrepostos no menu mobile | botão do header fica invisível com o menu aberto |
+
+### Pendências
+
+1. **Validação externa no RealFaviconGenerator** — depende do site publicado com esta versão.
+2. **Lighthouse / PageSpeed Insights** — não executado. Não há ferramenta de medição real neste ambiente e não invento pontuação. Rode após o deploy.
+3. **As 146 páginas locais do grupo B** continuam indexáveis por sua decisão — risco de doorway page registrado.
+4. **2 afirmações** ainda sem confirmação (2.000 m², redução de 60%).
+5. **`google-site-verification`** a confirmar.
 
 ---
 
-## 13. Arquivos alterados
+## === TESTE FINAL DE ENTIDADE ===
 
-**Novos:** `site.config.ts`, `lib/slug.ts`, `entry-server.tsx`, `index.css`,
-`tailwind.config.js`, `postcss.config.js`, `scripts/prerender.mjs`,
-`public/favicon.ico`, `public/favicon.svg`, `public/favicon-96x96.png`,
-`public/apple-touch-icon.png`, `public/web-app-manifest-192x192.png`,
-`public/web-app-manifest-512x512.png`, `public/site.webmanifest`, `public/llms.txt`,
-4 imagens `.webp`.
+Verificado no HTML inicial, sem executar JavaScript:
 
-**Modificados:** `index.html`, `index.tsx`, `App.tsx`, `routes.ts`, `constants.ts`,
-`components/EnhancedSEO.tsx`, `components/Header.tsx`, `components/Footer.tsx`,
-`pages/Home.tsx`, `pages/LocationPage.tsx`, `scripts/generate-sitemap.ts`,
-`public/robots.txt`, `public/sitemap.xml`, `vercel.json`, `package.json`, `.gitignore`,
-+ 18 imagens recomprimidas.
+| Pergunta | Resposta do site |
+|---|---|
+| Quem é? | Alumimec Estruturas Metálicas |
+| O que faz? | Estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos, escadas industriais, portões industriais, estruturas residenciais |
+| Onde fica? | Afonso Pena, São José dos Pinhais - PR |
+| Onde atende? | Curitiba e Região Metropolitana de Curitiba |
+| Qual endereço? | R. Dep. Arnaldo Faivro Busato, 168 — Afonso Pena — São José dos Pinhais - PR — 83045-000 |
+| Qual site? | https://www.alumimec.com.br/ |
 
-**Excluídos:** `components/SEO.tsx`, 4 PNGs convertidos para WebP,
-5 imagens duplicadas/não referenciadas.
+**Nenhuma página contradiz essas informações** (154/154 verificadas programaticamente).
 
-**Observação:** `SEO_README.md`, `PRE_RENDERING_GUIDE.md`, `SEO_IMPLEMENTATION_SUMMARY.md`
-e `FINAL_NOTES.md` foram mantidos, mas descrevem o estado anterior (inclusive o `react-snap`,
-que foi removido). Vale substituí-los por este relatório.
+## === TESTE FINAL SEO LOCAL ===
+
+| Verificação | Resultado |
+|---|---|
+| Filial fictícia em Curitiba | **não existe** |
+| Endereço de Curitiba para a sede | **0 ocorrências** |
+| LocalBusiness diferente por bairro | **não existe** — uma única entidade `#organization` |
+| Coordenadas inventadas | **removidas**, nenhuma declarada |
+| Endereço duplicado / entidade duplicada | **eliminado** (o `SEO.tsx` órfão foi excluído) |
+| NAP conflitante | **0 conflitos** |
 
 ---
 
-## 14. O que fazer depois do deploy
+## Próximos passos depois do deploy
 
-1. No painel do domínio/Vercel, confirmar o 301 de `alumimec.com.br` → `www.alumimec.com.br`.
-2. Google Search Console: definir `https://www.alumimec.com.br/` como propriedade principal
-   e reenviar `https://www.alumimec.com.br/sitemap.xml`.
+1. Confirmar no painel do domínio o 301 de `alumimec.com.br` → `www.alumimec.com.br`.
+2. Search Console: propriedade principal `https://www.alumimec.com.br/`, reenviar o sitemap.
 3. Rodar o Favicon Checker do RealFaviconGenerator.
-4. Rodar o PageSpeed Insights (mobile e desktop) para medir LCP/CLS/INP reais.
-5. Decidir sobre os itens marcados como **REQUER VALIDAÇÃO DO PROPRIETÁRIO** (seção 5).
-6. Decidir sobre a consolidação das páginas locais (seção 9).
+4. Rodar o PageSpeed Insights (mobile e desktop).
+5. Testar `https://www.alumimec.com.br/cidade/s%C3%A3o%20jos%C3%A9%20dos%20pinhais` → deve responder **301** para `/cidade/sao-jose-dos-pinhais`.
+6. Testar `https://www.alumimec.com.br/qualquer-coisa` → deve responder **404**.
+7. Considerar criar/atualizar o **Perfil da Empresa no Google** com o endereço de São José dos Pinhais — é o caminho legítimo para ter avaliações e aparecer no mapa.
+8. Decidir sobre o `noindex` das 146 páginas locais.
 
 ---
 

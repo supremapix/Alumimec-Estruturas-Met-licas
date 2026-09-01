@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { COMPANY_INFO } from '../constants';
-import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, NAP, SERVICE_ENTITIES } from '../site.config';
+import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, NAP, SERVICE_ENTITIES, ENTITY_STATEMENT } from '../site.config';
 
 interface EnhancedSEOProps {
   title: string;
@@ -52,8 +52,7 @@ const buildOrganization = () => ({
     caption: COMPANY_INFO.name,
   },
   image: { '@id': `${SITE_URL}/#logo` },
-  description:
-    'Alumimec é uma empresa de estruturas metálicas que projeta, fabrica e monta galpões industriais, coberturas metálicas, mezaninos, escadas e portões industriais em Curitiba, São José dos Pinhais e na Região Metropolitana de Curitiba.',
+  description: ENTITY_STATEMENT,
   address: {
     '@type': 'PostalAddress',
     streetAddress: NAP.streetAddress,
@@ -121,7 +120,7 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
   title,
   description,
   canonical,
-  ogImage = '/logo-alumimec.jpg',
+  ogImage = '/galpoes-metalicos-pre-fabricados-hero-imagem.jpg',
   ogType = 'website',
   breadcrumbs = [],
   faqItems = [],

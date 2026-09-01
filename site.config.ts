@@ -23,19 +23,27 @@ export const BRAND = {
 
 /**
  * NAP — Nome, Endereço, Telefone.
- * Endereço confirmado pelo proprietário: bairro Afonso Pena,
- * São José dos Pinhais/PR (o CEP 83045-000 pertence a São José dos Pinhais).
- * Coordenadas geográficas NÃO são declaradas: o repositório não possui
- * coordenadas verificadas e não devem ser inventadas.
+ *
+ * FONTE DE VERDADE do projeto: endereço fornecido diretamente pelo proprietário.
+ * A SEDE FÍSICA é em São José dos Pinhais (bairro Afonso Pena). Curitiba é
+ * ÁREA DE ATENDIMENTO, nunca localização — não confundir os dois conceitos.
+ *
+ * Coordenadas geográficas NÃO são declaradas: não há coordenada oficial
+ * documentada no projeto e coordenadas não devem ser inventadas.
  */
 export const NAP = {
   legalName: 'Alumimec Estruturas Metálicas',
-  streetAddress: 'R. Dep. Arnaldo Faivro Busato',
+  streetAddress: 'R. Dep. Arnaldo Faivro Busato, 168',
+  neighborhood: 'Afonso Pena',
   addressLocality: 'São José dos Pinhais',
   addressRegion: 'PR',
   postalCode: '83045-000',
   addressCountry: 'BR',
 };
+
+/** Frase de entidade: separa SEDE de ÁREA DE ATENDIMENTO. */
+export const ENTITY_STATEMENT =
+  'A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e em toda a Região Metropolitana de Curitiba.';
 
 /** Cidades com relevância comercial comprovada no conteúdo do site. */
 export const PRIORITY_CITIES = [

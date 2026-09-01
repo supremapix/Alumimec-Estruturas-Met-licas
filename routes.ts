@@ -15,7 +15,7 @@ export interface RouteConfig {
 
 export const HOME_TITLE = 'Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba';
 export const HOME_DESCRIPTION =
-  'Alumimec: estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos, escadas e portões industriais em Curitiba, São José dos Pinhais e Região Metropolitana.';
+  'Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba e Região Metropolitana: galpões industriais, coberturas metálicas e mezaninos.';
 
 export const cityPath = (city: string) => `/cidade/${slugify(city)}`;
 export const neighborhoodPath = (n: string) => `/bairro/${slugify(n)}`;
@@ -45,10 +45,13 @@ export const cityTitle = (city: string) =>
 
 export const cityDescription = (city: string) => {
   const nearby = nearbyOf(city, CITIES, 3).join(', ');
+  if (city === 'São José dos Pinhais') {
+    return 'A Alumimec fica no bairro Afonso Pena, em São José dos Pinhais/PR, e executa galpões industriais, coberturas metálicas e mezaninos na cidade e no entorno. Orçamento sem custo.';
+  }
   const focus = PRIORITY_CITIES.includes(city)
     ? 'Projeto, fabricação e montagem de galpões industriais, coberturas metálicas e mezaninos'
     : 'Galpões industriais, coberturas metálicas, mezaninos, escadas e portões industriais';
-  return `${focus} em ${city}/PR. A Alumimec atende ${city} e cidades vizinhas como ${nearby}. Orçamento sem custo.`;
+  return `${focus} em ${city}/PR. A Alumimec é sediada em São José dos Pinhais e atende ${city} e cidades vizinhas como ${nearby}.`;
 };
 
 export const neighborhoodTitle = (n: string) =>
@@ -56,7 +59,7 @@ export const neighborhoodTitle = (n: string) =>
 
 export const neighborhoodDescription = (n: string) => {
   const nearby = nearbyOf(n, NEIGHBORHOODS, 3).join(', ');
-  return `Estruturas metálicas, coberturas, mezaninos e serralheria industrial no bairro ${n}, em Curitiba. A Alumimec atende ${n} e bairros próximos como ${nearby}. Orçamento sem custo.`;
+  return `Estruturas metálicas, coberturas e mezaninos no bairro ${n}, em Curitiba. A Alumimec é sediada em São José dos Pinhais e atende ${n} e bairros próximos como ${nearby}.`;
 };
 
 export const getAllRoutes = (): RouteConfig[] => {

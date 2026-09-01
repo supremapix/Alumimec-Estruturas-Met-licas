@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import Home from './pages/Home';
 import LocationPage from './pages/LocationPage';
+import NotFound from './pages/NotFound';
 
 // ScrollToTop component for route changes
 const ScrollToTop = () => {
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cidade/:locationName" element={<LocationPage type="city" />} />
           <Route path="/bairro/:locationName" element={<LocationPage type="neighborhood" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

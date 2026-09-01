@@ -86,6 +86,27 @@ async function main() {
     }
   }
 
+  // 3) Pagina 404 estatica. O Vercel serve dist/404.html com HTTP 404 real
+  //    para qualquer URL inexistente (nada de SPA respondendo 200).
+  try {
+    const { html, head, htmlAttributes } = render('/404');
+    let page = template;
+    if (htmlAttributes) page = page.replace(/<html[^>]*>/, `<html ${htmlAttributes}>`);
+    page = page
+      .replace(/<title>[\s\S]*?<\/title>\s*/, '')
+      .replace(/<meta\s+name="description"[^>]*>\s*/, '')
+      .replace(/<link\s+rel="canonical"[^>]*>\s*/, '')
+      .replace(/<meta\s+name="robots"[^>]*>\s*/, '')
+      .replace(/<meta\s+property="og:(title|description|url|image|type|locale|site_name)"[^>]*>\s*/g, '')
+      .replace(/<meta\s+name="twitter:card"[^>]*>\s*/, '');
+    page = page.replace('</head>', `  ${head}\n  </head>`);
+    page = page.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
+    writeFileSync(join(distDir, '404.html'), page, 'utf-8');
+    console.log('[prerender] 404.html gerado.');
+  } catch (error) {
+    console.warn('[prerender] falha ao gerar 404.html:', error?.message || error);
+  }
+
   if (existsSync(ssrDir)) rmSync(ssrDir, { recursive: true, force: true });
 
   console.log(`[prerender] ${ok}/${routes.length} HTMLs gerados.`);

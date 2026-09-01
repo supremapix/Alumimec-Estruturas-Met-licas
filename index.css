@@ -5,10 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
     background-color: #ffffff;
     color: #1f2937;
+    /* O menu mobile off-canvas fica em translate-x-full quando fechado e
+       aumentava a largura do documento (overflow horizontal de 6px em 320px). */
+    overflow-x: hidden;
   }
   img {
     max-width: 100%;

@@ -86,10 +86,10 @@ const Home: React.FC = () => {
             {/* Features Pills */}
             <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 animate-fade-in-up opacity-0 delay-300 px-4">
               <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Check size={14} className="text-accent flex-shrink-0" /> ART e Engenharia
+                <Check size={14} className="text-accent flex-shrink-0" /> Projeto Estrutural
               </span>
               <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Check size={14} className="text-accent flex-shrink-0" /> Equipe Certificada
+                <Check size={14} className="text-accent flex-shrink-0" /> Fabricação e Montagem
               </span>
               <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
                 <Check size={14} className="text-accent flex-shrink-0" /> Entrega no Prazo
@@ -153,10 +153,30 @@ const Home: React.FC = () => {
                 Alumimec Estruturas Metálicas<br/>Excelência desde 2010
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Fundada com o compromisso de entregar soluções estruturais de alta qualidade, a Alumimec se consolidou como referência em Curitiba e Região Metropolitana. 
-                Nossa equipe é formada por profissionais altamente capacitados, garantindo segurança e precisão em cada projeto.
+                A Alumimec é uma empresa especializada em estruturas metálicas, localizada na R. Dep. Arnaldo Faivro Busato, 168, no bairro Afonso Pena, em São José dos Pinhais, no Paraná.
+                A partir dessa sede a empresa executa obras em Curitiba e em toda a Região Metropolitana de Curitiba, cuidando do projeto, da fabricação e da montagem de galpões
+                industriais, coberturas metálicas, mezaninos, escadas e portões industriais.
               </p>
               
+              <dl className="mb-8 border-l-4 border-accent bg-gray-50 rounded-r-lg px-5 py-4 text-sm">
+                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
+                  <dt className="font-bold text-primary sm:w-40 shrink-0">Sede</dt>
+                  <dd className="text-gray-700">{COMPANY_INFO.address}</dd>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
+                  <dt className="font-bold text-primary sm:w-40 shrink-0">Área de atendimento</dt>
+                  <dd className="text-gray-700">Curitiba e Região Metropolitana de Curitiba</dd>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
+                  <dt className="font-bold text-primary sm:w-40 shrink-0">Serviços</dt>
+                  <dd className="text-gray-700">Estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos, escadas industriais, portões industriais e estruturas residenciais</dd>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:gap-2">
+                  <dt className="font-bold text-primary sm:w-40 shrink-0">Contato</dt>
+                  <dd className="text-gray-700">{COMPANY_INFO.phone1Display} · {COMPANY_INFO.phone2Display} · {COMPANY_INFO.email}</dd>
+                </div>
+              </dl>
+
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg shadow-sm border-b-4 border-accent">
                   <span className="block text-3xl font-bold text-primary">+850</span>
@@ -173,8 +193,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-4 mb-8 text-sm font-medium text-gray-700">
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Equipe Certificada (NR-35)</div>
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Engenharia e ART</div>
+                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Fabricação Própria</div>
+                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Projeto Estrutural</div>
                 <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Atendimento Personalizado</div>
                 <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Entrega no Prazo</div>
               </div>
@@ -230,7 +250,7 @@ const Home: React.FC = () => {
                   step: 'Projeto',
                   icon: PencilRuler,
                   description: 'Desenvolvimento personalizado',
-                  details: ['Desenho técnico detalhado', 'Cálculos estruturais', 'ART e documentação']
+                  details: ['Desenho técnico detalhado', 'Dimensionamento estrutural', 'Documentação do projeto']
                 },
                 {
                   step: 'Aprovação',
@@ -242,7 +262,7 @@ const Home: React.FC = () => {
                   step: 'Fabricação',
                   icon: Factory,
                   description: 'Produção de alta qualidade',
-                  details: ['Matéria-prima certificada', 'Controle de qualidade', 'Tecnologia avançada']
+                  details: ['Aço estrutural', 'Controle de qualidade', 'Corte e solda em fábrica']
                 },
                 {
                   step: 'Montagem',
@@ -251,10 +271,10 @@ const Home: React.FC = () => {
                   details: ['Equipe especializada', 'Segurança rigorosa', 'Prazo cumprido']
                 },
                 {
-                  step: 'Garantia',
+                  step: 'Pós-obra',
                   icon: ShieldCheck,
                   description: 'Suporte e assistência',
-                  details: ['Garantia estrutural', 'Manutenção preventiva', 'Suporte contínuo']
+                  details: ['Acompanhamento da entrega', 'Manutenção preventiva', 'Canal direto de contato']
                 }
               ].map((process, idx) => {
                 const Icon = process.icon;
@@ -718,7 +738,7 @@ const Home: React.FC = () => {
       {videoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in" onClick={() => setVideoModal(null)}>
           <div className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-            <button className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors" onClick={() => setVideoModal(null)}>
+            <button aria-label="Fechar vídeo" className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors" onClick={() => setVideoModal(null)}>
               <X size={24} />
             </button>
             <iframe 
@@ -737,7 +757,7 @@ const Home: React.FC = () => {
       {galleryModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in" onClick={() => setGalleryModal(null)}>
           <div className="relative w-full max-w-3xl bg-white rounded-lg overflow-hidden shadow-2xl" onClick={e => e.stopPropagation()}>
-            <button className="absolute top-2 right-2 text-gray-800 bg-white/80 p-2 rounded-full z-10 hover:bg-red-600 hover:text-white transition-colors" onClick={() => setGalleryModal(null)}>
+            <button aria-label="Fechar imagem" className="absolute top-2 right-2 text-gray-800 bg-white/80 p-2 rounded-full z-10 hover:bg-red-600 hover:text-white transition-colors" onClick={() => setGalleryModal(null)}>
               <X size={24} />
             </button>
             <img src={galleryModal.image} alt={galleryModal.title} className="w-full h-auto max-h-[70vh] object-contain bg-gray-100"

@@ -110,7 +110,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
             {/* Features Pills */}
             <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 animate-fade-in-up opacity-0 delay-300 px-4">
               <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Shield size={14} className="text-accent flex-shrink-0" /> ART e Engenharia
+                <Shield size={14} className="text-accent flex-shrink-0" /> Projeto Estrutural
               </span>
               <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
                 <Building size={14} className="text-accent flex-shrink-0" /> +850 Projetos
@@ -188,7 +188,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                     Optar por estruturas metálicas ao construir <strong>{locationSuffix}</strong> é uma decisão inteligente. O aço oferece uma relação peso-resistência superior ao concreto armado, permitindo fundações mais leves e econômicas. Além disso, a precisão milimétrica de nossas peças, fabricadas em ambiente controlado e apenas montadas no local, reduz drasticamente o desperdício de materiais e o tempo de canteiro de obra. Isso significa menos entulho, menos barulho e uma entrega muito mais rápida para o seu empreendimento.
                   </p>
                   <p className="mt-4">
-                    Nossa equipe de engenheiros e técnicos está preparada para atender desde pequenas ampliações comerciais até grandes complexos industriais na região. Seguimos rigorosamente todas as normas técnicas vigentes (ABNT NBR 8800, NBR 6123) e normas de segurança (NR-35), garantindo que sua estrutura não seja apenas esteticamente moderna, mas também robusta e segura para suportar as cargas e intempéries locais.
+                    Nossa equipe atende desde pequenas ampliações comerciais até complexos industriais na região, cuidando do projeto, da fabricação e da montagem da estrutura. O aço permite obra mais rápida e limpa, vãos livres maiores e estruturas parafusadas que podem ser ampliadas ou remontadas depois.
                   </p>
                 </div>
               </article>
@@ -369,11 +369,11 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   </li>
                   <li className="flex gap-3">
                     <Check className="text-accent shrink-0" />
-                    <span>Acompanhamento de engenheiro em todas as etapas.</span>
+                    <span>Acompanhamento técnico do projeto à montagem.</span>
                   </li>
                   <li className="flex gap-3">
                     <Check className="text-accent shrink-0" />
-                    <span>Materiais certificados com garantia de fábrica.</span>
+                    <span>Estruturas parafusadas, moduláveis e ampliáveis.</span>
                   </li>
                 </ul>
               </div>
@@ -417,7 +417,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Check size={16} className="text-white" />
                   </div>
-                  <span className="text-gray-100">Garantia de 5 anos em todas as estruturas</span>
+                  <span className="text-gray-100">Estruturas parafusadas: podem ser ampliadas ou remontadas</span>
                 </li>
               </ul>
               <a
@@ -572,6 +572,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
         >
           <div className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             <button
+              aria-label="Fechar vídeo"
               className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors"
               onClick={() => setVideoModal(false)}
             >

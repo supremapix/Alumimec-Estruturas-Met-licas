@@ -88,15 +88,17 @@ const Header: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden text-white z-50 p-2 -mr-2"
-          onClick={() => setIsOpen(!isOpen)}
+          className={`lg:hidden text-white z-50 p-2 -mr-2 ${isOpen ? 'invisible' : ''}`}
+          onClick={() => setIsOpen(true)}
           aria-label="Abrir menu"
+          aria-expanded={isOpen}
+          aria-controls="menu-mobile"
         >
-          {isOpen ? <X size={30} /> : <Menu size={30} />}
+          <Menu size={30} />
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`fixed inset-0 bg-primary z-40 transition-transform duration-300 flex flex-col lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div id="menu-mobile" className={`fixed inset-0 bg-primary z-40 transition-transform duration-300 flex flex-col lg:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           {/* Top bar with close */}
           <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b border-white/10">
             <span className="text-white font-heading font-bold text-lg">Menu</span>

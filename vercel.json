@@ -11,12 +11,1171 @@
       ],
       "destination": "https://www.alumimec.com.br/:path*",
       "permanent": true
-    }
-  ],
-  "rewrites": [
+    },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/cidade/adrian%C3%B3polis",
+      "destination": "/cidade/adrianopolis",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/adrianópolis",
+      "destination": "/cidade/adrianopolis",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/agudos%20do%20sul",
+      "destination": "/cidade/agudos-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/agudos do sul",
+      "destination": "/cidade/agudos-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/almirante%20tamandar%C3%A9",
+      "destination": "/cidade/almirante-tamandare",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/almirante tamandaré",
+      "destination": "/cidade/almirante-tamandare",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/arauc%C3%A1ria",
+      "destination": "/cidade/araucaria",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/araucária",
+      "destination": "/cidade/araucaria",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/balsa%20nova",
+      "destination": "/cidade/balsa-nova",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/balsa nova",
+      "destination": "/cidade/balsa-nova",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/bocai%C3%BAva%20do%20sul",
+      "destination": "/cidade/bocaiuva-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/bocaiúva do sul",
+      "destination": "/cidade/bocaiuva-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campina%20grande%20do%20sul",
+      "destination": "/cidade/campina-grande-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campina grande do sul",
+      "destination": "/cidade/campina-grande-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo%20do%20tenente",
+      "destination": "/cidade/campo-do-tenente",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo do tenente",
+      "destination": "/cidade/campo-do-tenente",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo%20largo",
+      "destination": "/cidade/campo-largo",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo largo",
+      "destination": "/cidade/campo-largo",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo%20magro",
+      "destination": "/cidade/campo-magro",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/campo magro",
+      "destination": "/cidade/campo-magro",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/cerro%20azul",
+      "destination": "/cidade/cerro-azul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/cerro azul",
+      "destination": "/cidade/cerro-azul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/doutor%20ulysses",
+      "destination": "/cidade/doutor-ulysses",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/doutor ulysses",
+      "destination": "/cidade/doutor-ulysses",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/fazenda%20rio%20grande",
+      "destination": "/cidade/fazenda-rio-grande",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/fazenda rio grande",
+      "destination": "/cidade/fazenda-rio-grande",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/itaperu%C3%A7u",
+      "destination": "/cidade/itaperucu",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/itaperuçu",
+      "destination": "/cidade/itaperucu",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/pi%C3%AAn",
+      "destination": "/cidade/pien",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/piên",
+      "destination": "/cidade/pien",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/quatro%20barras",
+      "destination": "/cidade/quatro-barras",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/quatro barras",
+      "destination": "/cidade/quatro-barras",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/rio%20branco%20do%20sul",
+      "destination": "/cidade/rio-branco-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/rio branco do sul",
+      "destination": "/cidade/rio-branco-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/rio%20negro",
+      "destination": "/cidade/rio-negro",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/rio negro",
+      "destination": "/cidade/rio-negro",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/s%C3%A3o%20jos%C3%A9%20dos%20pinhais",
+      "destination": "/cidade/sao-jose-dos-pinhais",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/são josé dos pinhais",
+      "destination": "/cidade/sao-jose-dos-pinhais",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/tijucas%20do%20sul",
+      "destination": "/cidade/tijucas-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/tijucas do sul",
+      "destination": "/cidade/tijucas-do-sul",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/tunas%20do%20paran%C3%A1",
+      "destination": "/cidade/tunas-do-parana",
+      "permanent": true
+    },
+    {
+      "source": "/cidade/tunas do paraná",
+      "destination": "/cidade/tunas-do-parana",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20parolin",
+      "destination": "/bairro/vila-parolin",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila parolin",
+      "destination": "/bairro/vila-parolin",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20torres",
+      "destination": "/bairro/vila-torres",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila torres",
+      "destination": "/bairro/vila-torres",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim%20schaffer",
+      "destination": "/bairro/jardim-schaffer",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim schaffer",
+      "destination": "/bairro/jardim-schaffer",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20sabar%C3%A1",
+      "destination": "/bairro/vila-sabara",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila sabará",
+      "destination": "/bairro/vila-sabara",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueir%C3%A3o%20de%20baixo",
+      "destination": "/bairro/boqueirao-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueirão de baixo",
+      "destination": "/bairro/boqueirao-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueir%C3%A3o%20de%20cima",
+      "destination": "/bairro/boqueirao-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueirão de cima",
+      "destination": "/bairro/boqueirao-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/tangu%C3%A1",
+      "destination": "/bairro/tangua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/tanguá",
+      "destination": "/bairro/tangua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20zumbi",
+      "destination": "/bairro/vila-zumbi",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila zumbi",
+      "destination": "/bairro/vila-zumbi",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/abranches%20de%20baixo",
+      "destination": "/bairro/abranches-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/abranches de baixo",
+      "destination": "/bairro/abranches-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/abranches%20de%20cima",
+      "destination": "/bairro/abranches-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/abranches de cima",
+      "destination": "/bairro/abranches-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20nossa%20senhora%20da%20luz",
+      "destination": "/bairro/vila-nossa-senhora-da-luz",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila nossa senhora da luz",
+      "destination": "/bairro/vila-nossa-senhora-da-luz",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20tecnol%C3%B3gica",
+      "destination": "/bairro/vila-tecnologica",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila tecnológica",
+      "destination": "/bairro/vila-tecnologica",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20oficinas",
+      "destination": "/bairro/vila-oficinas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila oficinas",
+      "destination": "/bairro/vila-oficinas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20fanny",
+      "destination": "/bairro/vila-fanny",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila fanny",
+      "destination": "/bairro/vila-fanny",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20hauer",
+      "destination": "/bairro/vila-hauer",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila hauer",
+      "destination": "/bairro/vila-hauer",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/batel%20soho",
+      "destination": "/bairro/batel-soho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/batel soho",
+      "destination": "/bairro/batel-soho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto%20da%20rua%20xv",
+      "destination": "/bairro/alto-da-rua-xv",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto da rua xv",
+      "destination": "/bairro/alto-da-rua-xv",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic%20norte",
+      "destination": "/bairro/cic-norte",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic norte",
+      "destination": "/bairro/cic-norte",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic%20central",
+      "destination": "/bairro/cic-central",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic central",
+      "destination": "/bairro/cic-central",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic%20sul",
+      "destination": "/bairro/cic-sul",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic sul",
+      "destination": "/bairro/cic-sul",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20gua%C3%ADra",
+      "destination": "/bairro/vila-guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila guaíra",
+      "destination": "/bairro/vila-guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/centro%20hist%C3%B3rico",
+      "destination": "/bairro/centro-historico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/centro histórico",
+      "destination": "/bairro/centro-historico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/carmo%20abranches",
+      "destination": "/bairro/carmo-abranches",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/carmo abranches",
+      "destination": "/bairro/carmo-abranches",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/%C3%A1gua%20verde",
+      "destination": "/bairro/agua-verde",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/água verde",
+      "destination": "/bairro/agua-verde",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/ah%C3%BA%20(alto%20da%20gl%C3%B3ria)",
+      "destination": "/bairro/ahu-alto-da-gloria",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto%20boqueir%C3%A3o",
+      "destination": "/bairro/alto-boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto boqueirão",
+      "destination": "/bairro/alto-boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto%20da%20gl%C3%B3ria",
+      "destination": "/bairro/alto-da-gloria",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto da glória",
+      "destination": "/bairro/alto-da-gloria",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto%20da%20xv",
+      "destination": "/bairro/alto-da-xv",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/alto da xv",
+      "destination": "/bairro/alto-da-xv",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bairro%20alto",
+      "destination": "/bairro/bairro-alto",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bairro alto",
+      "destination": "/bairro/bairro-alto",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bigorrilho%20(champagnat)",
+      "destination": "/bairro/bigorrilho-champagnat",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boa%20vista",
+      "destination": "/bairro/boa-vista",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boa vista",
+      "destination": "/bairro/boa-vista",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bom%20retiro",
+      "destination": "/bairro/bom-retiro",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bom retiro",
+      "destination": "/bairro/bom-retiro",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueir%C3%A3o",
+      "destination": "/bairro/boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/boqueirão",
+      "destination": "/bairro/boqueirao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campina%20do%20siqueira",
+      "destination": "/bairro/campina-do-siqueira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campina do siqueira",
+      "destination": "/bairro/campina-do-siqueira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo%20comprido",
+      "destination": "/bairro/campo-comprido",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo comprido",
+      "destination": "/bairro/campo-comprido",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo%20de%20santana",
+      "destination": "/bairro/campo-de-santana",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo de santana",
+      "destination": "/bairro/campo-de-santana",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cap%C3%A3o%20da%20imbuia",
+      "destination": "/bairro/capao-da-imbuia",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/capão da imbuia",
+      "destination": "/bairro/capao-da-imbuia",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cap%C3%A3o%20raso",
+      "destination": "/bairro/capao-raso",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/capão raso",
+      "destination": "/bairro/capao-raso",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/centro%20c%C3%ADvico",
+      "destination": "/bairro/centro-civico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/centro cívico",
+      "destination": "/bairro/centro-civico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cidade%20industrial%20de%20curitiba",
+      "destination": "/bairro/cidade-industrial-de-curitiba",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cidade industrial de curitiba",
+      "destination": "/bairro/cidade-industrial-de-curitiba",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cristo%20rei",
+      "destination": "/bairro/cristo-rei",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cristo rei",
+      "destination": "/bairro/cristo-rei",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/gua%C3%ADra",
+      "destination": "/bairro/guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/guaíra",
+      "destination": "/bairro/guaira",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/hugo%20lange",
+      "destination": "/bairro/hugo-lange",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/hugo lange",
+      "destination": "/bairro/hugo-lange",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim%20bot%C3%A2nico",
+      "destination": "/bairro/jardim-botanico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim botânico",
+      "destination": "/bairro/jardim-botanico",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim%20das%20am%C3%A9ricas",
+      "destination": "/bairro/jardim-das-americas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim das américas",
+      "destination": "/bairro/jardim-das-americas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim%20social",
+      "destination": "/bairro/jardim-social",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/jardim social",
+      "destination": "/bairro/jardim-social",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/juvev%C3%AA",
+      "destination": "/bairro/juveve",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/juvevê",
+      "destination": "/bairro/juveve",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/lamenha%20pequena",
+      "destination": "/bairro/lamenha-pequena",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/lamenha pequena",
+      "destination": "/bairro/lamenha-pequena",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/lind%C3%B3ia",
+      "destination": "/bairro/lindoia",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/lindóia",
+      "destination": "/bairro/lindoia",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/merc%C3%AAs",
+      "destination": "/bairro/merces",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/mercês",
+      "destination": "/bairro/merces",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/mossungu%C3%AA",
+      "destination": "/bairro/mossungue",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/mossunguê",
+      "destination": "/bairro/mossungue",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/novo%20mundo",
+      "destination": "/bairro/novo-mundo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/novo mundo",
+      "destination": "/bairro/novo-mundo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/port%C3%A3o",
+      "destination": "/bairro/portao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/portão",
+      "destination": "/bairro/portao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/prado%20velho",
+      "destination": "/bairro/prado-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/prado velho",
+      "destination": "/bairro/prado-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/rebou%C3%A7as",
+      "destination": "/bairro/reboucas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/rebouças",
+      "destination": "/bairro/reboucas",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa%20c%C3%A2ndida",
+      "destination": "/bairro/santa-candida",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa cândida",
+      "destination": "/bairro/santa-candida",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa%20felicidade",
+      "destination": "/bairro/santa-felicidade",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa felicidade",
+      "destination": "/bairro/santa-felicidade",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa%20quit%C3%A9ria",
+      "destination": "/bairro/santa-quiteria",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa quitéria",
+      "destination": "/bairro/santa-quiteria",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santo%20in%C3%A1cio",
+      "destination": "/bairro/santo-inacio",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santo inácio",
+      "destination": "/bairro/santo-inacio",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20braz",
+      "destination": "/bairro/sao-braz",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são braz",
+      "destination": "/bairro/sao-braz",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20francisco",
+      "destination": "/bairro/sao-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são francisco",
+      "destination": "/bairro/sao-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20jo%C3%A3o",
+      "destination": "/bairro/sao-joao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são joão",
+      "destination": "/bairro/sao-joao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20louren%C3%A7o",
+      "destination": "/bairro/sao-lourenco",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são lourenço",
+      "destination": "/bairro/sao-lourenco",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20miguel",
+      "destination": "/bairro/sao-miguel",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são miguel",
+      "destination": "/bairro/sao-miguel",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20pantanal",
+      "destination": "/bairro/vila-pantanal",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila pantanal",
+      "destination": "/bairro/vila-pantanal",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/semin%C3%A1rio",
+      "destination": "/bairro/seminario",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/seminário",
+      "destination": "/bairro/seminario",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%ADtio%20cercado",
+      "destination": "/bairro/sitio-cercado",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/sítio cercado",
+      "destination": "/bairro/sitio-cercado",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/tabo%C3%A3o",
+      "destination": "/bairro/taboao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/taboão",
+      "destination": "/bairro/taboao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/tarum%C3%A3",
+      "destination": "/bairro/taruma",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/tarumã",
+      "destination": "/bairro/taruma",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/umbar%C3%A1",
+      "destination": "/bairro/umbara",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/umbará",
+      "destination": "/bairro/umbara",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20izabel",
+      "destination": "/bairro/vila-izabel",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila izabel",
+      "destination": "/bairro/vila-izabel",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vista%20alegre",
+      "destination": "/bairro/vista-alegre",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vista alegre",
+      "destination": "/bairro/vista-alegre",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa%20quit%C3%A9ria%20velha",
+      "destination": "/bairro/santa-quiteria-velha",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/santa quitéria velha",
+      "destination": "/bairro/santa-quiteria-velha",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/port%C3%A3o%20velho",
+      "destination": "/bairro/portao-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/portão velho",
+      "destination": "/bairro/portao-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/gua%C3%ADra%20velho",
+      "destination": "/bairro/guaira-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/guaíra velho",
+      "destination": "/bairro/guaira-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/uberaba%20de%20cima",
+      "destination": "/bairro/uberaba-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/uberaba de cima",
+      "destination": "/bairro/uberaba-de-cima",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/uberaba%20de%20baixo",
+      "destination": "/bairro/uberaba-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/uberaba de baixo",
+      "destination": "/bairro/uberaba-de-baixo",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/s%C3%A3o%20braz%20velho",
+      "destination": "/bairro/sao-braz-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/são braz velho",
+      "destination": "/bairro/sao-braz-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cidade%20industrial",
+      "destination": "/bairro/cidade-industrial",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cidade industrial",
+      "destination": "/bairro/cidade-industrial",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20verde",
+      "destination": "/bairro/vila-verde",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila verde",
+      "destination": "/bairro/vila-verde",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20barigui",
+      "destination": "/bairro/vila-barigui",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila barigui",
+      "destination": "/bairro/vila-barigui",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/caiu%C3%A1",
+      "destination": "/bairro/caiua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/caiuá",
+      "destination": "/bairro/caiua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/xaxim%20velho",
+      "destination": "/bairro/xaxim-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/xaxim velho",
+      "destination": "/bairro/xaxim-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/fazendinha-port%C3%A3o",
+      "destination": "/bairro/fazendinha-portao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/fazendinha-portão",
+      "destination": "/bairro/fazendinha-portao",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo%20comprido%20velho",
+      "destination": "/bairro/campo-comprido-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/campo comprido velho",
+      "destination": "/bairro/campo-comprido-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bacacheri%20velho",
+      "destination": "/bairro/bacacheri-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/bacacheri velho",
+      "destination": "/bairro/bacacheri-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cap%C3%A3o%20da%20imbuia%20velho",
+      "destination": "/bairro/capao-da-imbuia-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/capão da imbuia velho",
+      "destination": "/bairro/capao-da-imbuia-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/pinheirinho%20velho",
+      "destination": "/bairro/pinheirinho-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/pinheirinho velho",
+      "destination": "/bairro/pinheirinho-velho",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20s%C3%A3o%20pedro%20(uberaba)",
+      "destination": "/bairro/vila-sao-pedro-uberaba",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20osternack",
+      "destination": "/bairro/vila-osternack",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila osternack",
+      "destination": "/bairro/vila-osternack",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/neo%20ville%20no%20cic",
+      "destination": "/bairro/neo-ville-no-cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/neo ville no cic",
+      "destination": "/bairro/neo-ville-no-cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20formosa",
+      "destination": "/bairro/vila-formosa",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila formosa",
+      "destination": "/bairro/vila-formosa",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20sandra",
+      "destination": "/bairro/vila-sandra",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila sandra",
+      "destination": "/bairro/vila-sandra",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/conjunto%20caiu%C3%A1",
+      "destination": "/bairro/conjunto-caiua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/conjunto caiuá",
+      "destination": "/bairro/conjunto-caiua",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/conjunto%20parigot%20de%20souza",
+      "destination": "/bairro/conjunto-parigot-de-souza",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/conjunto parigot de souza",
+      "destination": "/bairro/conjunto-parigot-de-souza",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20reno",
+      "destination": "/bairro/vila-reno",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila reno",
+      "destination": "/bairro/vila-reno",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila%20audi",
+      "destination": "/bairro/vila-audi",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/vila audi",
+      "destination": "/bairro/vila-audi",
+      "permanent": true
     }
   ],
   "headers": [

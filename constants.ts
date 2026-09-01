@@ -6,7 +6,7 @@ export const COMPANY_INFO = {
   phone1Display: "(41) 99631-5885",
   phone2Display: "(41) 99722-1079",
   email: "contato@alumimec.com.br",
-  address: "R. Dep. Arnaldo Faivro Busato - Afonso Pena, CEP: 83045-000 - São José dos Pinhais/PR",
+  address: "R. Dep. Arnaldo Faivro Busato, 168 - Afonso Pena, CEP 83045-000 - São José dos Pinhais/PR",
   addressShort: "Afonso Pena, São José dos Pinhais/PR",
   hours: "Segunda a Sexta: 8:00 às 17:30",
   facebook: "https://www.facebook.com/61566509445362",
@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     id: 2,
     title: "Coberturas Metálicas",
     description: "Soluções em coberturas para comércios, quadras esportivas e residências com proteção térmica e acústica.",
-    benefits: ["Proteção contra intempéries", "Design moderno", "Materiais certificados"],
+    benefits: ["Proteção contra intempéries", "Design moderno", "Isolamento termoacústico"],
     image: "/cobertura-metalica.jpg"
   },
   {
@@ -82,7 +82,7 @@ export const SERVICES: Service[] = [
   {
     id: 5,
     title: "Escadas Industriais",
-    description: "Escadas retas, caracol ou marinheiro, seguindo rigorosamente as normas de segurança NR-12.",
+    description: "Escadas metálicas retas, caracol ou tipo marinheiro para ambientes industriais e comerciais.",
     benefits: ["Segurança total", "Acabamento premium", "Antiderrapante"],
     image: "/escadas-industriais copy.jpg"
   },
@@ -114,14 +114,16 @@ export const VIDEOS: VideoData[] = [
 ];
 
 export const FAQs: FAQ[] = [
+  { question: "Onde fica a Alumimec?", answer: "A Alumimec fica na R. Dep. Arnaldo Faivro Busato, 168, bairro Afonso Pena, em São José dos Pinhais/PR, CEP 83045-000." },
+  { question: "A Alumimec atende Curitiba?", answer: "Sim. A sede da Alumimec fica em São José dos Pinhais e a empresa executa obras de estruturas metálicas em Curitiba e em toda a Região Metropolitana de Curitiba." },
+  { question: "A Alumimec atende São José dos Pinhais?", answer: "Sim. A Alumimec é sediada em São José dos Pinhais, no bairro Afonso Pena, e atende a cidade e o entorno." },
+  { question: "Quais serviços a Alumimec executa?", answer: "Estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos metálicos, escadas industriais, portões industriais e estruturas residenciais." },
   { question: "Vocês atendem em toda Curitiba e Região?", answer: "Sim! Atendemos todos os bairros de Curitiba e todas as cidades da Região Metropolitana, incluindo litoral." },
   { question: "Qual o prazo médio de entrega de um galpão?", answer: "O prazo varia conforme o tamanho, mas geralmente entregamos projetos médios entre 30 a 60 dias." },
-  { question: "Vocês fornecem ART e projeto de engenharia?", answer: "Sim, todas as nossas obras acompanham ART (Anotação de Responsabilidade Técnica) e seguimos normas da ABNT." },
   { question: "Aceitam quais formas de pagamento?", answer: "Aceitamos cartões (BNDES), financiamento bancário e parcelamento direto mediante análise." },
   { question: "A visita para orçamento tem custo?", answer: "Não, realizamos a visita técnica inicial e o orçamento sem compromisso e sem custo para Curitiba e região próxima." },
   { question: "Trabalham com telha sanduíche?", answer: "Sim, somos especialistas em coberturas termoacústicas com telha sanduíche (EPS ou PIR)." },
   { question: "Fazem reforço estrutural em prédios?", answer: "Sim, executamos reforços estruturais em vigas W para lajes e pilares comprometidos ou para ampliações." },
-  { question: "Qual a garantia das estruturas?", answer: "Oferecemos 5 anos de garantia estrutural conforme legislação vigente." },
   { question: "Fazem apenas a mão de obra ou material também?", answer: "Trabalhamos preferencialmente com a empreitada global (material + mão de obra) para garantir a qualidade do aço." },
   { question: "Vocês fabricam portões basculantes industriais?", answer: "Sim, fabricamos e instalamos portões de grandes dimensões, preparados para automação." },
   { question: "Atendem obras residenciais pequenas?", answer: "Sim, fazemos garagens, pergolados e escadas para residências." },

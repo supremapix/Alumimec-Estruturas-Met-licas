@@ -1,0 +1,47 @@
+RODADA 2 - COMO SUBIR NO GITHUB
+================================
+
+Sao 15 arquivos alterados/novos. Nenhum arquivo binario novo.
+
+1) Abra https://github.com/supremapix/Alumimec-Estruturas-Met-licas
+2) "Add file" > "Upload files"
+3) Descompacte este ZIP, ABRA a pasta "alumimec-rodada2" e arraste TODO o
+   CONTEUDO de dentro dela (nao a pasta em si) para a area de upload.
+   As subpastas components/ pages/ public/ scripts/ vao junto.
+4) Commit.
+
+APAGAR MANUALMENTE (upload nao apaga):
+  components/SEO.tsx
+  (mais os arquivos da lista da rodada 1, se ainda nao apagou)
+
+TITULO DO COMMIT:
+  fix(seo): NAP oficial com numero 168, 404 real, 301 das URLs antigas
+
+DESCRICAO:
+  NAP: endereco oficial R. Dep. Arnaldo Faivro Busato, 168 - Afonso Pena,
+  Sao Jose dos Pinhais/PR. Sede e area de atendimento passam a ser conceitos
+  separados em todo o site, no Schema e no llms.txt. 7 inconsistencias
+  corrigidas, 0 paginas declarando sede em Curitiba.
+
+  404: removido o rewrite catch-all que devolvia HTTP 200 para URL invalida.
+  Nova pagina 404 pre-renderizada em dist/404.html, servida com HTTP 404 real.
+
+  301: 234 redirects reais no vercel.json mapeando as URLs antigas
+  (/cidade/s%C3%A3o%20jos%C3%A9...) para os slugs. Sem redirect por JavaScript.
+
+  Removidas afirmacoes nao comprovadas: ART, NR-12, NR-35, ABNT NBR,
+  "Equipe Certificada", "Materiais certificados", "Garantia de 5 anos".
+
+  Acessibilidade: aria-labels em botoes/links so com icone, aria-expanded no
+  menu, alvos de toque maiores no rodape, corrigido o X duplicado do menu.
+
+  Layout: corrigido overflow horizontal de 6px em 320px causado pelo menu
+  off-canvas.
+
+  Detalhes completos em RELATORIO-SEO-FAVICON.md
+
+  Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+
+DEPOIS DO DEPLOY, TESTAR:
+  /cidade/s%C3%A3o%20jos%C3%A9%20dos%20pinhais  -> deve dar 301
+  /qualquer-coisa-inexistente                   -> deve dar 404
