@@ -1,0 +1,46 @@
+COMO SUBIR ESTA ATUALIZACAO NO GITHUB (pelo navegador, sem terminal)
+====================================================================
+
+1) Abra: https://github.com/supremapix/Alumimec-Estruturas-Met-licas
+
+2) Clique em  "Add file"  >  "Upload files".
+
+3) Descompacte este ZIP no seu computador. Voce vera a pasta
+   "alumimec-atualizado". ABRA essa pasta e arraste TODO o CONTEUDO
+   de dentro dela (nao a pasta em si) para a area de upload do GitHub.
+   O GitHub aceita subpastas (components, pages, public, scripts, lib).
+
+4) Em "Commit changes", escreva por exemplo:
+      SEO/GEO/AIO + favicons + pre-render estatico
+   e clique em "Commit changes".
+
+5) O deploy (Vercel/Bolt) reconstroi sozinho.
+   O comando de build continua sendo:  npm run build
+
+
+APAGAR MANUALMENTE (o upload nao apaga arquivos)
+------------------------------------------------
+No GitHub, abra cada arquivo abaixo, clique no icone de lixeira e faca commit.
+Eles nao sao mais usados. O site funciona mesmo se voce nao apagar - e so
+peso morto no repositorio.
+
+  components/SEO.tsx
+  public/alumimec-parana-brasil.png
+  public/cobertura-metalica-alumimec.png
+  public/galpoes-industriais-metalicos.png
+  public/mezaninos-metalicos-estruturais.png
+  public/alumimec-curitiba-orcamentos copy.jpg
+  public/escadas-industriais.jpg
+  public/escada-industrial.jpg
+  public/professional_construction_banner.webp
+  public/professional_construction_banner copy.webp
+
+
+DEPOIS DO DEPLOY
+----------------
+- Confirmar redirect 301 de alumimec.com.br para www.alumimec.com.br
+- Reenviar https://www.alumimec.com.br/sitemap.xml no Search Console
+- Rodar https://realfavicongenerator.net/favicon-checker
+- Rodar o PageSpeed Insights
+
+Detalhes completos: RELATORIO-SEO-FAVICON.md

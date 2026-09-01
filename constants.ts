@@ -6,13 +6,13 @@ export const COMPANY_INFO = {
   phone1Display: "(41) 99631-5885",
   phone2Display: "(41) 99722-1079",
   email: "contato@alumimec.com.br",
-  address: "R. Dep. Arnaldo Faivro Busato - Afonso Pena, CEP: 83045-000 - Curitiba/PR",
-  addressShort: "Afonso Pena, Curitiba/PR",
+  address: "R. Dep. Arnaldo Faivro Busato - Afonso Pena, CEP: 83045-000 - São José dos Pinhais/PR",
+  addressShort: "Afonso Pena, São José dos Pinhais/PR",
   hours: "Segunda a Sexta: 8:00 às 17:30",
   facebook: "https://www.facebook.com/61566509445362",
   instagram: "https://www.instagram.com/alumimec/",
   responsible: "Eduardo dos Santos",
-  logo: "assets/images/logo-alumimec-alt.jpg"
+  logo: "/logo-alumimec.jpg"
 };
 
 export const CITIES = [
@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
     title: "Mezaninos Metálicos",
     description: "Amplie sua área útil sem grandes reformas. Ideais para escritórios, estoques e lojas.",
     benefits: ["Otimização de espaço", "Estrutura leve", "Instalação ágil"],
-    image: "/mezaninos-metalicos-estruturais.png"
+    image: "/mezaninos-metalicos-estruturais.webp"
   },
   {
     id: 5,
@@ -98,12 +98,12 @@ export const SERVICES: Service[] = [
 export const GALLERY_IMAGES: Project[] = [
   { id: 1, title: "Cobertura Metálica Industrial", description: "Proteção e durabilidade para grandes áreas.", category: "Industrial", image: "/cobertura-metalica.jpg" },
   { id: 2, title: "Galpões Industriais Metálicos", description: "Estrutura completa entregue no prazo.", category: "Galpões", image: "/Galpões-Industriais-Metálicos.jpg" },
-  { id: 3, title: "Mezaninos Metálicos Estruturais", description: "Ampliação de espaço com eficiência.", category: "Mezaninos", image: "/mezaninos-metalicos-estruturais.png" },
+  { id: 3, title: "Mezaninos Metálicos Estruturais", description: "Ampliação de espaço com eficiência.", category: "Mezaninos", image: "/mezaninos-metalicos-estruturais.webp" },
   { id: 4, title: "Portões Industriais Modernos", description: "Segurança e automação garantida.", category: "Portões", image: "/portao-de-grande-porte-de-metal.jpg" },
   { id: 5, title: "Portões Metálicos Residenciais", description: "Design e funcionalidade.", category: "Portões", image: "/portoes-metalicos-carmo.jpg" },
   { id: 6, title: "Estruturas em Bairros de Curitiba", description: "Atendimento em toda RMC.", category: "Regional", image: "/bairro.jpg" },
   { id: 7, title: "Estruturas Residenciais", description: "Inovação e design moderno para sua casa.", category: "Residencial", image: "/estruturas-residenciais.webp" },
-  { id: 8, title: "Obras Realizadas no Paraná", description: "Projetos em todo o estado.", category: "Portfólio", image: "/alumimec-parana-brasil.png" },
+  { id: 8, title: "Obras Realizadas no Paraná", description: "Projetos em todo o estado.", category: "Portfólio", image: "/alumimec-parana-brasil.webp" },
   { id: 9, title: "Escadas Industriais", description: "Segurança e acabamento premium.", category: "Industrial", image: "/escadas-industriais copy.jpg" },
 ];
 

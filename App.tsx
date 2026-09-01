@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
@@ -9,30 +9,32 @@ import LocationPage from './pages/LocationPage';
 // ScrollToTop component for route changes
 const ScrollToTop = () => {
   const { pathname } = useLocation();
-  
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
-}
+};
 
+/**
+ * O Router NÃO fica aqui: index.tsx usa BrowserRouter (cliente) e
+ * entry-server.tsx usa StaticRouter (pré-renderização/SSG).
+ */
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <div className="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
-        <ScrollToTop />
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cidade/:locationName" element={<LocationPage type="city" />} />
-            <Route path="/bairro/:locationName" element={<LocationPage type="neighborhood" />} />
-          </Routes>
-        </main>
-        <Footer />
-        <FloatingButtons />
-      </div>
-    </BrowserRouter>
+    <div className="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+      <ScrollToTop />
+      <Header />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cidade/:locationName" element={<LocationPage type="city" />} />
+          <Route path="/bairro/:locationName" element={<LocationPage type="neighborhood" />} />
+        </Routes>
+      </main>
+      <Footer />
+      <FloatingButtons />
+    </div>
   );
 };
 

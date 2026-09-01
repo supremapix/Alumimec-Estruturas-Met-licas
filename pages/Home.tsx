@@ -5,6 +5,7 @@ import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORH
 import EnhancedSEO from '../components/EnhancedSEO';
 import InstagramFeed from '../components/InstagramFeed';
 import { Project } from '../types';
+import { HOME_TITLE, HOME_DESCRIPTION, cityPath, neighborhoodPath } from '../routes';
 
 const Home: React.FC = () => {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
@@ -33,16 +34,12 @@ const Home: React.FC = () => {
   return (
     <>
       <EnhancedSEO
-        title="Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba"
-        description="Especialistas em estruturas metálicas, galpões industriais e coberturas em Curitiba. Mais de 14 anos de experiência. Orçamento Grátis!"
+        title={HOME_TITLE}
+        description={HOME_DESCRIPTION}
         canonical="/"
-        keywords="estruturas metálicas curitiba, galpões industriais, cobertura metálica, mezanino metálico, serralheria industrial, construção metálica, estruturas pré-fabricadas"
         ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
-        schemaType="WebPage"
         isHomePage={true}
-        breadcrumbs={[
-          { name: 'Início', url: '/' }
-        ]}
+        breadcrumbs={[{ name: 'Início', url: '/' }]}
         faqItems={FAQs.map(faq => ({ question: faq.question, answer: faq.answer }))}
         services={SERVICES.map(service => ({
           name: service.title,
@@ -192,6 +189,10 @@ const Home: React.FC = () => {
                 src="/professional_construction_banner copy copy.webp"
                 alt="Obras Alumimec Estruturas Metálicas"
                 className="rounded-lg shadow-2xl relative z-10 w-full h-[500px] object-cover"
+                width={1600}
+                height={900}
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur p-6 rounded shadow-lg z-20 border-l-4 border-accent">
                 <p className="italic text-gray-600 mb-2">"A Alumimec transformou nosso projeto em realidade com uma agilidade impressionante."</p>
@@ -342,7 +343,10 @@ const Home: React.FC = () => {
             {SERVICES.map((service) => (
               <div key={service.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div className="h-56 overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
+              />
                 </div>
                 <div className="p-8">
                   <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
@@ -389,7 +393,11 @@ const Home: React.FC = () => {
                   src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
                   alt="Barracão Industrial Forvia - São José dos Pinhais"
                   className="relative rounded-lg shadow-2xl border-4 border-white/20 w-full"
-                />
+                width={800}
+                height={800}
+                loading="lazy"
+                decoding="async"
+              />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
                   <p className="text-white font-bold text-lg mb-1">Barracão Industrial para Forvia</p>
                   <p className="text-gray-300 text-sm">São José dos Pinhais/PR</p>
@@ -479,7 +487,10 @@ const Home: React.FC = () => {
                 className="group relative h-64 overflow-hidden rounded-lg cursor-pointer"
                 onClick={() => setGalleryModal(project)}
               >
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              />
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4 text-center">
                   <h4 className="font-bold text-lg mb-2">{project.title}</h4>
                   <p className="text-sm">{project.category}</p>
@@ -506,8 +517,10 @@ const Home: React.FC = () => {
                   <img 
                     src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`} 
                     alt={video.title} 
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" 
-                  />
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                loading="lazy"
+                decoding="async"
+              />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-16 h-16 bg-accent/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                       <Play fill="white" className="text-white ml-1" />
@@ -566,7 +579,7 @@ const Home: React.FC = () => {
                 {CITIES.map(city => (
                   <Link 
                     key={city} 
-                    to={`/cidade/${encodeURIComponent(city.toLowerCase())}`}
+                    to={cityPath(city)}
                     className="bg-white hover:bg-primary hover:text-white px-3 py-1 rounded text-sm text-gray-600 transition-colors border border-gray-200"
                   >
                     {city}
@@ -582,7 +595,7 @@ const Home: React.FC = () => {
                 {NEIGHBORHOODS.map(hood => (
                   <Link 
                     key={hood} 
-                    to={`/bairro/${encodeURIComponent(hood.toLowerCase())}`}
+                    to={neighborhoodPath(hood)}
                     className="bg-white hover:bg-primary hover:text-white px-3 py-1 rounded text-sm text-gray-600 transition-colors border border-gray-200"
                   >
                     {hood}
@@ -727,7 +740,10 @@ const Home: React.FC = () => {
             <button className="absolute top-2 right-2 text-gray-800 bg-white/80 p-2 rounded-full z-10 hover:bg-red-600 hover:text-white transition-colors" onClick={() => setGalleryModal(null)}>
               <X size={24} />
             </button>
-            <img src={galleryModal.image} alt={galleryModal.title} className="w-full h-auto max-h-[70vh] object-contain bg-gray-100" />
+            <img src={galleryModal.image} alt={galleryModal.title} className="w-full h-auto max-h-[70vh] object-contain bg-gray-100"
+                loading="lazy"
+                decoding="async"
+              />
             <div className="p-6 bg-white">
               <h3 className="text-2xl font-bold text-primary mb-2">{galleryModal.title}</h3>
               <p className="text-gray-600 mb-4">{galleryModal.description}</p>

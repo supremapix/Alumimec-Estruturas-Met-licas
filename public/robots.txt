@@ -1,19 +1,26 @@
+# robots.txt — https://www.alumimec.com.br/
+# Nenhum recurso de renderização (CSS, JS, imagens, favicon) é bloqueado.
+
 User-agent: *
 Allow: /
 
-Sitemap: https://alumimec.com.br/sitemap.xml
-
-# Disallow admin areas
-Disallow: /admin/
-Disallow: /_next/
-
-# Allow all bots to crawl
-User-agent: Googlebot
+# Crawlers de mecanismos de IA (GEO/AEO) — acesso liberado
+User-agent: GPTBot
 Allow: /
 
-User-agent: Bingbot
+User-agent: OAI-SearchBot
 Allow: /
 
-# Crawl-delay for slower bots
-User-agent: *
-Crawl-delay: 1
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.alumimec.com.br/sitemap.xml

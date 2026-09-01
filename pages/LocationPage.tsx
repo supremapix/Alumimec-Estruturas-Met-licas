@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import EnhancedSEO from '../components/EnhancedSEO';
-import { COMPANY_INFO, SERVICES, GALLERY_IMAGES, FAQs } from '../constants';
+import { COMPANY_INFO, SERVICES, GALLERY_IMAGES, FAQs, CITIES, NEIGHBORHOODS } from '../constants';
+import {
+  cityPath,
+  neighborhoodPath,
+  cityTitle,
+  cityDescription,
+  neighborhoodTitle,
+  neighborhoodDescription,
+  nearbyOf,
+} from '../routes';
+import { resolveLocation } from '../lib/slug';
+import { PRIORITY_CITIES } from '../site.config';
 import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building, Play, X, ChevronDown } from 'lucide-react';
 
 interface LocationPageProps {
@@ -10,19 +21,34 @@ interface LocationPageProps {
 
 const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
   const { locationName } = useParams<{ locationName: string }>();
-  const decodedName = decodeURIComponent(locationName || '');
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
   const [videoModal, setVideoModal] = useState<boolean>(false);
 
-  // Capitalize words
-  const titleName = decodedName.toLowerCase().replace(/(^|\s)\S/g, l => l.toUpperCase());
-
   const isCity = type === 'city';
-  const term = isCity ? "na cidade de" : "no bairro";
-  const locationSuffix = isCity ? `em ${titleName}` : `no bairro ${titleName}`;
+  const list = isCity ? CITIES : NEIGHBORHOODS;
 
-  const pageTitle = `Estruturas Metálicas em ${titleName} | Alumimec`;
-  const description = `Procurando Estruturas Metálicas ${locationSuffix}? A Alumimec é especialista em Galpões, Coberturas e Serralheria Industrial com atendimento ${locationSuffix}. Orçamento Grátis.`;
+  // Aceita tanto o slug novo ("sao-jose-dos-pinhais") quanto a URL antiga
+  // codificada ("s%C3%A3o%20jos%C3%A9%20dos%20pinhais"); o canonical sempre
+  // aponta para a versão em slug.
+  const officialName = resolveLocation(locationName || '', list);
+  const isKnownLocation = Boolean(officialName);
+
+  const titleName =
+    officialName ||
+    decodeURIComponent(locationName || '')
+      .toLowerCase()
+      .replace(/(^|\s)\S/g, (l) => l.toUpperCase());
+
+  const term = isCity ? 'na cidade de' : 'no bairro';
+  const locationSuffix = isCity ? `em ${titleName}` : `no bairro ${titleName}`;
+  const canonicalPath = isCity ? cityPath(titleName) : neighborhoodPath(titleName);
+
+  const pageTitle = isCity ? cityTitle(titleName) : neighborhoodTitle(titleName);
+  const description = isCity ? cityDescription(titleName) : neighborhoodDescription(titleName);
+
+  // Locais vizinhos: dão conteúdo próprio a cada página e criam malha de links internos.
+  const nearby = nearbyOf(titleName, list, 6);
+  const nearbyPath = isCity ? cityPath : neighborhoodPath;
 
   const toggleAccordion = (index: number) => {
     setActiveAccordion(activeAccordion === index ? null : index);
@@ -33,20 +59,17 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
       <EnhancedSEO
         title={pageTitle}
         description={description}
-        canonical={`/${isCity ? 'cidade' : 'bairro'}/${locationName}`}
-        keywords={`estruturas metálicas ${titleName}, galpão industrial ${titleName}, serralheria ${titleName}, cobertura metálica ${titleName}, mezanino ${titleName}, alumimec ${titleName}, construção metálica ${titleName}`}
+        canonical={canonicalPath}
         ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
-        schemaType="LocalBusiness"
         locationName={titleName}
+        noindex={!isKnownLocation}
         breadcrumbs={[
           { name: 'Início', url: '/' },
-          { name: isCity ? 'Cidades' : 'Bairros', url: isCity ? '/cidade' : '/bairro' },
-          { name: titleName, url: `/${isCity ? 'cidade' : 'bairro'}/${locationName}` }
+          { name: titleName, url: canonicalPath },
         ]}
-        faqItems={FAQs.slice(0, 5).map(faq => ({ question: faq.question, answer: faq.answer }))}
-        services={SERVICES.slice(0, 3).map(service => ({
+        services={SERVICES.slice(0, 3).map((service) => ({
           name: service.title,
-          description: service.description
+          description: service.description,
         }))}
       />
 
@@ -75,7 +98,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
 
             {/* Main Heading with Animation */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold mb-4 md:mb-6 text-shadow animate-fade-in-up opacity-0 delay-100 px-2">
-              Estruturas Metálicas <br className="hidden sm:block"/>
+              Estruturas Metálicas {isCity ? 'em' : 'no bairro'} <br className="hidden sm:block"/>
               <span className="text-accent">{titleName}</span>
             </h1>
 
@@ -149,9 +172,13 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                 
                 <img
                   src="/cobertura-metalica.jpg"
-                  alt={`Cobertura metálica Alumimec ${locationSuffix}`}
+                  alt="Cobertura metálica executada pela Alumimec"
                   className="w-full h-[400px] object-cover rounded-xl shadow-lg mb-4 hover:scale-[1.01] transition-transform duration-500"
-                />
+                width={890}
+                height={500}
+                loading="lazy"
+                decoding="async"
+              />
 
                 <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
                   <p>
@@ -185,9 +212,13 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   </div>
                   <img
                     src="/alumimec-curitiba-orcamentos.jpg"
-                    alt={`Galpão industrial metálico ${locationSuffix}`}
+                    alt="Galpão industrial metálico executado pela Alumimec"
                     className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
-                  />
+                width={1200}
+                height={1200}
+                loading="lazy"
+                decoding="async"
+              />
                 </div>
                 
                 <ul className="grid sm:grid-cols-2 gap-4 mt-4">
@@ -208,10 +239,14 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                 </div>
 
                 <img
-                  src="/cobertura-metalica-alumimec.png"
-                  alt={`Cobertura termoacústica ${locationSuffix}`}
+                  src="/cobertura-metalica-alumimec.webp"
+                  alt="Cobertura metálica termoacústica executada pela Alumimec"
                   className="w-full h-[350px] object-cover rounded-xl shadow-lg mb-4"
-                />
+                width={442}
+                height={562}
+                loading="lazy"
+                decoding="async"
+              />
 
                 <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
                   <p>
@@ -249,10 +284,14 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                      </div>
                      <div className="lg:w-1/3">
                         <img
-                          src="/mezaninos-metalicos-estruturais.png"
-                          alt={`Mezanino metálico ${locationSuffix}`}
+                          src="/mezaninos-metalicos-estruturais.webp"
+                          alt="Mezanino metálico estrutural executado pela Alumimec"
                           className="w-full h-full object-cover rounded-lg border-4 border-white/20 shadow-lg"
-                        />
+                width={449}
+                height={561}
+                loading="lazy"
+                decoding="async"
+              />
                      </div>
                   </div>
                   
@@ -290,7 +329,7 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
                   href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá, sou de ${titleName} e gostaria de agendar uma visita.`}
                   className="block w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl mb-4 flex items-center justify-center gap-2"
                 >
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 filter brightness-0 invert" />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.7 8.24-8.23 8.24Z"/></svg>
                   Chamar no WhatsApp
                 </a>
                 
@@ -393,9 +432,11 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
                 <img
                   src="https://img.youtube.com/vi/Zk7W4W0l2yA/maxresdefault.jpg"
-                  alt="Vídeo Alumimec Estruturas Metálicas"
+                  alt="Vídeo de obra em estrutura metálica executada pela Alumimec"
                   className="w-full h-full object-cover"
-                />
+                loading="lazy"
+                decoding="async"
+              />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
                   <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                     <Play fill="white" className="text-white ml-1" size={32} />
@@ -456,6 +497,43 @@ const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
             >
               Fale Diretamente com um Especialista
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Locais atendidos nas proximidades — links internos e conteúdo próprio da página */}
+      <section className="py-14 bg-light border-t border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-3">
+              Atendimento {locationSuffix} e região
+            </h2>
+            <p className="text-gray-600 mb-8">
+              A equipe da Alumimec parte de {COMPANY_INFO.addressShort} para executar obras {locationSuffix}.{' '}
+              {isCity
+                ? ' Também atendemos as cidades vizinhas listadas abaixo:'
+                : ' Também atendemos os bairros vizinhos listados abaixo:'}
+            </p>
+            <ul className="flex flex-wrap justify-center gap-2 md:gap-3">
+              {nearby.map((place) => (
+                <li key={place}>
+                  <Link
+                    to={nearbyPath(place)}
+                    className="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-accent hover:text-accent text-primary px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                  >
+                    <MapPin size={14} className="flex-shrink-0" />
+                    {isCity ? place : `Bairro ${place}`}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-8 text-sm text-gray-500">
+              Não encontrou {term} {titleName} o que procurava?{' '}
+              <Link to="/" className="text-primary underline hover:text-accent">
+                Veja todos os serviços da Alumimec
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>

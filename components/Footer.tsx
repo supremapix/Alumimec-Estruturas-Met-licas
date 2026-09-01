@@ -15,7 +15,11 @@ const Footer: React.FC = () => {
                  src="/logo-alumimec.jpg"
                  alt="Logo Alumimec Estruturas Metálicas"
                  className="w-full h-full object-cover rounded-full scale-105"
-               />
+                width={1200}
+                height={1200}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <h3 className="text-lg md:text-xl font-heading font-bold mb-3 md:mb-4">ALUMIMEC</h3>
             <p className="text-gray-400 mb-4 md:mb-6 text-sm leading-relaxed">

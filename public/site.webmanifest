@@ -1,0 +1,28 @@
+{
+  "name": "Alumimec Estruturas Metálicas",
+  "short_name": "Alumimec",
+  "description": "Estruturas metálicas, galpões industriais, coberturas metálicas e mezaninos em Curitiba, São José dos Pinhais e Região Metropolitana.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1a3a6c",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

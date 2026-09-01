@@ -3,215 +3,50 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alumimec Estruturas Metálicas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                DEFAULT: '#1a3a6c',
-                dark: '#0d2547',
-              },
-              secondary: {
-                DEFAULT: '#c8102e',
-                dark: '#a00d25',
-              },
-              accent: '#ff8c00',
-              gray: {
-                custom: '#6c757d',
-              },
-              light: '#f8f9fa',
-            },
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-              heading: ['Montserrat', 'sans-serif'],
-            },
-          }
-        }
-      }
-    </script>
-    <style>
-      html { scroll-behavior: smooth; }
-      .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-      .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #1a3a6c;
-        border-radius: 3px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #ff8c00;
-      }
-      @keyframes heartbeat {
-        0%, 100% {
-          transform: scale(1);
-        }
-        10%, 30% {
-          transform: scale(1.1);
-        }
-        20%, 40% {
-          transform: scale(1);
-        }
-      }
-      .animate-heartbeat {
-        animation: heartbeat 1.5s ease-in-out infinite;
-        display: inline-block;
-      }
 
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+    <title>Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba</title>
+    <meta
+      name="description"
+      content="Alumimec: estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos, escadas e portões industriais em Curitiba, São José dos Pinhais e Região Metropolitana."
+    />
+    <link rel="canonical" href="https://www.alumimec.com.br/" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+    <!-- Favicons (padrão RealFaviconGenerator) -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Alumimec" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+    <meta name="theme-color" content="#1a3a6c" />
+    <meta name="msapplication-TileColor" content="#1a3a6c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
 
-      @keyframes slideInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+    <meta name="google-site-verification" content="xf-VU0Wu_UloIpnbYPNzlTdfyFLunq_Vevq0Vwj3N6c" />
 
-      @keyframes slideInRight {
-        from {
-          opacity: 0;
-          transform: translateX(50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+    <meta property="og:site_name" content="Alumimec Estruturas Metálicas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba" />
+    <meta
+      property="og:description"
+      content="Estruturas metálicas, galpões industriais, coberturas metálicas e mezaninos em Curitiba, São José dos Pinhais e Região Metropolitana."
+    />
+    <meta property="og:url" content="https://www.alumimec.com.br/" />
+    <meta property="og:image" content="https://www.alumimec.com.br/galpoes-metalicos-pre-fabricados-hero-imagem.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-      @keyframes scaleIn {
-        from {
-          opacity: 0;
-          transform: scale(0.9);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes float {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-
-      @keyframes parallaxBg {
-        0% {
-          transform: scale(1.1) translateY(0);
-        }
-        100% {
-          transform: scale(1.1) translateY(-10px);
-        }
-      }
-
-      .animate-fade-in-up {
-        animation: fadeInUp 0.8s ease-out forwards;
-      }
-
-      .animate-fade-in-down {
-        animation: fadeInDown 0.8s ease-out forwards;
-      }
-
-      .animate-fade-in {
-        animation: fadeIn 1s ease-out forwards;
-      }
-
-      .animate-slide-in-left {
-        animation: slideInLeft 0.8s ease-out forwards;
-      }
-
-      .animate-slide-in-right {
-        animation: slideInRight 0.8s ease-out forwards;
-      }
-
-      .animate-scale-in {
-        animation: scaleIn 0.6s ease-out forwards;
-      }
-
-      .animate-float {
-        animation: float 3s ease-in-out infinite;
-      }
-
-      .hero-bg-animate {
-        animation: parallaxBg 20s ease-in-out infinite alternate;
-      }
-
-      .delay-100 {
-        animation-delay: 0.1s;
-      }
-
-      .delay-200 {
-        animation-delay: 0.2s;
-      }
-
-      .delay-300 {
-        animation-delay: 0.3s;
-      }
-
-      .delay-400 {
-        animation-delay: 0.4s;
-      }
-
-      .delay-500 {
-        animation-delay: 0.5s;
-      }
-
-      .gradient-overlay {
-        background: linear-gradient(135deg, rgba(26, 58, 108, 0.95) 0%, rgba(13, 37, 71, 0.85) 50%, rgba(255, 140, 0, 0.75) 100%);
-      }
-
-      .hero-pattern {
-        background-image:
-          radial-gradient(circle at 20% 50%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 40% 20%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>

@@ -51,6 +51,11 @@ const Header: React.FC = () => {
                 src="/logo-alumimec.jpg"
                 alt="Logo Alumimec"
                 className="w-full h-full object-cover rounded-full scale-105"
+                width={1200}
+                height={1200}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
            </div>
            <div className="flex flex-col leading-none">
