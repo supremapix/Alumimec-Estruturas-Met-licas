@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Artefatos do pre-render (gerados no build)
+.prerender-routes.json
+.ssr-build
