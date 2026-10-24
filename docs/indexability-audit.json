@@ -1,0 +1,2165 @@
+{
+  "baseline": "5c1b8e2a79ed8d41f46ee92d3c979a512a97bd10",
+  "published": "80918a5b41c4773262f610af49ffed48de830195",
+  "liveCheckedAt": "2026-10-24T16:19:14.943Z",
+  "servicePagesBefore": 0,
+  "servicePagesAfter": 0,
+  "records": [
+    {
+      "path": "/",
+      "kind": "home",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": true,
+        "inSitemap": true,
+        "canonical": "https://www.alumimec.com.br/",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/abranches-de-baixo",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/abranches-de-baixo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/abranches-de-cima",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/abranches-de-cima",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/agua-verde",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/agua-verde",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/ahu-alto-da-gloria",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/ahu-alto-da-gloria",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/alto-boqueirao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/alto-boqueirao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/alto-da-gloria",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/alto-da-gloria",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/alto-da-rua-xv",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/alto-da-rua-xv",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/alto-da-xv",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/alto-da-xv",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/atuba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/atuba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/augusta",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/augusta",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/bacacheri",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/bacacheri",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/bacacheri-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/bacacheri-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/bairro-alto",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/bairro-alto",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/barreirinha",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/barreirinha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/batel",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/batel",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/batel-soho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/batel-soho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/bigorrilho-champagnat",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/bigorrilho-champagnat",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/boa-vista",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/boa-vista",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/bom-retiro",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/bom-retiro",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/boqueirao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/boqueirao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/boqueirao-de-baixo",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/boqueirao-de-baixo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/boqueirao-de-cima",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/boqueirao-de-cima",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/butiatuvinha",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/butiatuvinha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cabral",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cabral",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cachoeira",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cachoeira",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/caiua",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/caiua",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cajuru",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cajuru",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/campina-do-siqueira",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/campina-do-siqueira",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/campo-comprido",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/campo-comprido",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/campo-comprido-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/campo-comprido-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/campo-de-santana",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/campo-de-santana",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/capao-da-imbuia",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/capao-da-imbuia",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/capao-da-imbuia-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/capao-da-imbuia-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/capao-raso",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/capao-raso",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/carmo-abranches",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/carmo-abranches",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cascatinha",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cascatinha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/caximba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/caximba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/centro",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/centro",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/centro-civico",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/centro-civico",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/centro-historico",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/centro-historico",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cic-central",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cic-central",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cic-norte",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cic-norte",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cic-sul",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cic-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cidade-industrial",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cidade-industrial",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cidade-industrial-de-curitiba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cidade-industrial-de-curitiba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/conjunto-caiua",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/conjunto-caiua",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/conjunto-parigot-de-souza",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/conjunto-parigot-de-souza",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/cristo-rei",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/cristo-rei",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/ecoville",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/ecoville",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/fanny",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/fanny",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/fazendinha",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/fazendinha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/fazendinha-portao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/fazendinha-portao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/ganchinho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/ganchinho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/guabirotuba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/guabirotuba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/guaira",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/guaira",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/guaira-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/guaira-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/hauer",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/hauer",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/hugo-lange",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/hugo-lange",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/jardim-botanico",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/jardim-botanico",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/jardim-das-americas",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/jardim-das-americas",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/jardim-schaffer",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/jardim-schaffer",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/jardim-social",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/jardim-social",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/juveve",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/juveve",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/lamenha-pequena",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/lamenha-pequena",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/lindoia",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/lindoia",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/merces",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/merces",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/mossungue",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/mossungue",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/neo-ville-no-cic",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/neo-ville-no-cic",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/novo-mundo",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/novo-mundo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/orleans",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/orleans",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/parolin",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/parolin",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/pilarzinho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/pilarzinho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/pinheirinho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/pinheirinho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/pinheirinho-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/pinheirinho-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/portao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/portao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/portao-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/portao-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/prado-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/prado-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/reboucas",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/reboucas",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/riviera",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/riviera",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/santa-candida",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/santa-candida",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/santa-felicidade",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/santa-felicidade",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/santa-quiteria",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/santa-quiteria",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/santa-quiteria-velha",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/santa-quiteria-velha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/santo-inacio",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/santo-inacio",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-braz",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-braz",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-braz-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-braz-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-francisco",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-francisco",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-joao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-joao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-lourenco",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-lourenco",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sao-miguel",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sao-miguel",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/seminario",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/seminario",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/sitio-cercado",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/sitio-cercado",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/taboao",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/taboao",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/tangua",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/tangua",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/taruma",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/taruma",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/tatuquara",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/tatuquara",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/tingui",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/tingui",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/uberaba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/uberaba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/uberaba-de-baixo",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/uberaba-de-baixo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/uberaba-de-cima",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/uberaba-de-cima",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/umbara",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/umbara",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-audi",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-audi",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-barigui",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-barigui",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-fanny",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-fanny",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-formosa",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-formosa",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-guaira",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-guaira",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-hauer",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-hauer",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-izabel",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-izabel",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-nossa-senhora-da-luz",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-nossa-senhora-da-luz",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-oficinas",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-oficinas",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-osternack",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-osternack",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-pantanal",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-pantanal",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-parolin",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-parolin",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-reno",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-reno",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-sabara",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-sabara",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-sandra",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-sandra",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-sao-pedro-uberaba",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-sao-pedro-uberaba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-tecnologica",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-tecnologica",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-torres",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-torres",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-verde",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-verde",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vila-zumbi",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vila-zumbi",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/vista-alegre",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/vista-alegre",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/xaxim",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/xaxim",
+        "status": 200
+      }
+    },
+    {
+      "path": "/bairro/xaxim-velho",
+      "kind": "legacy-local-name",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/bairro/xaxim-velho",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/adrianopolis",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/adrianopolis",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/agudos-do-sul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/agudos-do-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/almirante-tamandare",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/almirante-tamandare",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/araucaria",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/araucaria",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/balsa-nova",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/balsa-nova",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/bocaiuva-do-sul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/bocaiuva-do-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/campina-grande-do-sul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/campina-grande-do-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/campo-do-tenente",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/campo-do-tenente",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/campo-largo",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/campo-largo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/campo-magro",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/campo-magro",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/cerro-azul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/cerro-azul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/colombo",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/colombo",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/contenda",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/contenda",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/curitiba",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": true,
+        "inSitemap": true,
+        "canonical": "https://www.alumimec.com.br/cidade/curitiba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/doutor-ulysses",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/doutor-ulysses",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/fazenda-rio-grande",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/fazenda-rio-grande",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/itaperucu",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/itaperucu",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/lapa",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/lapa",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/mandirituba",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/mandirituba",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/pien",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/pien",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/pinhais",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/pinhais",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/piraquara",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/piraquara",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/quatro-barras",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/quatro-barras",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/quitandinha",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/quitandinha",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/rio-branco-do-sul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/rio-branco-do-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/rio-negro",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/rio-negro",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/sao-jose-dos-pinhais",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": true,
+        "inSitemap": true,
+        "canonical": "https://www.alumimec.com.br/cidade/sao-jose-dos-pinhais",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/tijucas-do-sul",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/tijucas-do-sul",
+        "status": 200
+      }
+    },
+    {
+      "path": "/cidade/tunas-do-parana",
+      "kind": "city",
+      "before": {
+        "indexable": true,
+        "inSitemap": true
+      },
+      "after": {
+        "indexable": false,
+        "inSitemap": false,
+        "canonical": "https://www.alumimec.com.br/cidade/tunas-do-parana",
+        "status": 200
+      }
+    }
+  ]
+}
