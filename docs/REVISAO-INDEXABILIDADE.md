@@ -1,3 +1,5 @@
+> Histórico: a política de três URLs indexáveis descrita neste documento foi revertida. Consulte [a entrega complementar](ENTREGA-COMPLEMENTAR.md) para o estado atual.
+
 # Revisão de indexabilidade — antes e depois
 
 Revisão solicitada após a entrega do protocolo Suprema, em 24/10/2026.

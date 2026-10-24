@@ -9,7 +9,7 @@ import {
   CITIES,
   FAQs,
 } from "../constants";
-import { HOME_TITLE, HOME_DESCRIPTION, cityPath } from "../routes";
+import { HOME_TITLE, HOME_DESCRIPTION, cityPath, servicePath } from "../routes";
 const guidance = [
   "Informe a atividade prevista, o vão necessário, o pé-direito e o acesso de caminhões. Esses dados orientam o estudo da estrutura e da montagem.",
   "Além das medidas, avalie escoamento de água, ventilação e incidência solar. Tipo de telha, isolamento e acabamento devem constar na proposta.",
@@ -111,6 +111,9 @@ export default function Home() {
                 <h3>{s.title}</h3>
                 <p>{s.description}</p>
                 <p>{guidance[i]}</p>
+                <a className="text-link" href={servicePath(s.title)}>
+                  Conhecer {s.title.toLowerCase()} →
+                </a>
                 <a
                   className="text-link"
                   href={whatsapp("Tenho interesse em " + s.title + ".")}

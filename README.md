@@ -1,6 +1,6 @@
 # Alumimec — site institucional
 
-React + TypeScript + Vite, com HTML estático pré-renderizado para as 154 rotas existentes.
+React + TypeScript + Vite, com HTML estático pré-renderizado para as 160 rotas existentes.
 
 ## Executar
 
@@ -29,4 +29,4 @@ No Windows, se o navegador estiver no cache do usuário fora do sandbox, configu
 Build gera dist/, sitemap e HTML por rota; qualquer erro de pré-render interrompe a compilação. A configuração Vercel mantém os redirects legados e a resposta 404.
 Veja [relatório de entrega](docs/PROTOCOLO-SUPREMA.md), [inventário final](docs/inventory-after.json) e [resultados de QA](docs/qa/results.json).
 
-Atualize dados confirmados em constants.ts e site.config.ts. Não converta listas territoriais em cobertura presumida. Páginas locais herdadas sem conteúdo próprio permanecem noindex.
+Atualize dados confirmados em constants.ts e site.config.ts. Não converta listas territoriais em cobertura presumida. A indexabilidade das 154 URLs herdadas foi restaurada; seis páginas próprias de serviços foram adicionadas. Veja docs/ENTREGA-COMPLEMENTAR.md para o estado atual.

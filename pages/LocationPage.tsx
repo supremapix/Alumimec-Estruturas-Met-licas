@@ -4,7 +4,8 @@ import EnhancedSEO from "../components/EnhancedSEO";
 import ContactActions from "../components/ContactActions";
 import { CITIES, NEIGHBORHOODS, COMPANY_INFO, SERVICES } from "../constants";
 import { resolveLocation } from "../lib/slug";
-import { cityPath, neighborhoodPath } from "../routes";
+import { cityPath, neighborhoodPath, servicePath } from "../routes";
+import MunicipalGuide from "../components/MunicipalGuide";
 import NotFound from "./NotFound";
 const official = new Set(
   "Abranches|Água Verde|Ahú|Alto Boqueirão|Alto da Glória|Alto da XV|Atuba|Augusta|Bacacheri|Bairro Alto|Barreirinha|Batel|Bigorrilho|Boa Vista|Bom Retiro|Boqueirão|Butiatuvinha|Cabral|Cachoeira|Cajuru|Campina do Siqueira|Campo Comprido|Campo de Santana|Capão da Imbuia|Capão Raso|Cascatinha|Caximba|Centro|Centro Cívico|Cidade Industrial de Curitiba|Cristo Rei|Fanny|Fazendinha|Ganchinho|Guabirotuba|Guaíra|Hauer|Hugo Lange|Jardim Botânico|Jardim das Américas|Jardim Social|Juvevê|Lamenha Pequena|Lindóia|Mercês|Mossunguê|Novo Mundo|Orleans|Parolin|Pilarzinho|Pinheirinho|Portão|Prado Velho|Rebouças|Riviera|Santa Cândida|Santa Felicidade|Santa Quitéria|Santo Inácio|São Braz|São Francisco|São João|São Lourenço|São Miguel|Seminário|Sítio Cercado|Taboão|Tarumã|Tatuquara|Tingui|Uberaba|Umbará|Vila Izabel|Vista Alegre|Xaxim".split(
@@ -164,7 +165,7 @@ export default function LocationPage({
             </ol>
             <h3>Escolha o assunto da conversa</h3>
             {SERVICES.map((s) => (
-              <a className="text-link" key={s.id} href={`/#servico-${s.id}`}>
+              <a className="text-link" key={s.id} href={servicePath(s.title)}>
                 {s.title} →
               </a>
             ))}
@@ -177,6 +178,7 @@ export default function LocationPage({
           </div>
         </div>
       </section>
+      {city && <MunicipalGuide name={name} />}
     </>
   );
 }

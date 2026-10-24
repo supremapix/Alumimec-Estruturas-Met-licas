@@ -1,0 +1,75 @@
+{
+  "serviceRoutes": 6,
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    1440
+  ],
+  "text200": true,
+  "municipalSamples": 3,
+  "results": [
+    {
+      "route": "/servicos/galpoes-industriais",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/galpoes-industriais",
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "route": "/servicos/coberturas-metalicas",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/coberturas-metalicas",
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "route": "/servicos/estruturas-residenciais",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/estruturas-residenciais",
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "route": "/servicos/mezaninos-metalicos",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/mezaninos-metalicos",
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "route": "/servicos/escadas-industriais",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/escadas-industriais",
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "route": "/servicos/portoes-industriais",
+      "width": 390,
+      "axe": []
+    },
+    {
+      "route": "/servicos/portoes-industriais",
+      "width": 1440,
+      "axe": []
+    }
+  ],
+  "errors": []
+}

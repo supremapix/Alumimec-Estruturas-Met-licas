@@ -11,7 +11,7 @@
     "generate-sitemap": "npx tsx scripts/generate-sitemap.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "node scripts/validate.mjs && node scripts/interactions.mjs"
+    "test": "node scripts/validate.mjs && node scripts/interactions.mjs && node scripts/service-qa.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

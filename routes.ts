@@ -1,4 +1,4 @@
-import { CITIES, NEIGHBORHOODS } from "./constants";
+import { CITIES, NEIGHBORHOODS, SERVICES } from "./constants";
 import { slugify } from "./lib/slug";
 import { PRIORITY_CITIES } from "./site.config";
 
@@ -6,7 +6,7 @@ export interface RouteConfig {
   path: string;
   title: string;
   description: string;
-  type: "home" | "city" | "neighborhood";
+  type: "home" | "city" | "neighborhood" | "service";
   /** Nome oficial do local (para cidade/bairro). */
   name?: string;
   priority: number;
@@ -18,6 +18,7 @@ export const HOME_TITLE =
 export const HOME_DESCRIPTION =
   "Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba e Região Metropolitana: galpões industriais, coberturas metálicas e mezaninos.";
 
+export const servicePath = (name: string) => `/servicos/${slugify(name)}`;
 export const cityPath = (city: string) => `/cidade/${slugify(city)}`;
 export const neighborhoodPath = (n: string) => `/bairro/${slugify(n)}`;
 
@@ -67,8 +68,19 @@ export const getAllRoutes = (): RouteConfig[] => {
     });
   });
 
+  SERVICES.forEach((service) =>
+    routes.push({
+      path: servicePath(service.title),
+      title: service.title + " | Alumimec",
+      description: service.description,
+      type: "service",
+      name: service.title,
+      priority: 0.8,
+      changefreq: "monthly",
+    }),
+  );
   return routes;
 };
 
 export const getTotalRoutes = (): number =>
-  1 + CITIES.length + NEIGHBORHOODS.length;
+  1 + CITIES.length + NEIGHBORHOODS.length + SERVICES.length;

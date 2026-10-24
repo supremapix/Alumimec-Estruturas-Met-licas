@@ -1,3 +1,5 @@
+> Histórico: a política de três URLs indexáveis descrita neste documento foi revertida. Consulte [a entrega complementar](ENTREGA-COMPLEMENTAR.md) para o estado atual.
+
 # Protocolo Suprema — Alumimec
 
 Implementação de 24/10/2026. Base: 5c1b8e2a79ed8d41f46ee92d3c979a512a97bd10.

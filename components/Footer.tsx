@@ -1,4 +1,5 @@
 import React from "react";
+import { servicePath } from "../routes";
 import { COMPANY_INFO, SERVICES } from "../constants";
 import { navigation } from "./Header";
 import ContactActions from "./ContactActions";
@@ -37,7 +38,7 @@ export default function Footer() {
           <div>
             <h3>Nossos serviços</h3>
             {SERVICES.map((s) => (
-              <a key={s.id} href={`/#servico-${s.id}`}>
+              <a key={s.id} href={servicePath(s.title)}>
                 {s.title}
               </a>
             ))}
