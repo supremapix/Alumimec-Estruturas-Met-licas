@@ -18,7 +18,16 @@ export default function Footer() {
         </div>
         <div className="footer-grid">
           <div>
-            <h3>Alumimec</h3>
+            <a className="footer-brand" href="/" aria-label="Alumimec — início">
+              <img
+                src={COMPANY_INFO.logo}
+                width="1200"
+                height="1200"
+                alt="Alumimec Estruturas Metálicas"
+                loading="lazy"
+              />
+            </a>
+            <h3>Fale com a Alumimec</h3>
             <p>{COMPANY_INFO.address}</p>
             <a href={`tel:+55${COMPANY_INFO.phone1}`}>
               {COMPANY_INFO.phone1Display}

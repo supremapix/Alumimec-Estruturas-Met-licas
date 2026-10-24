@@ -43,3 +43,10 @@ docs/qa/*.png
 !docs/qa/directory-search-1440.png
 !docs/qa/local-art-stage2-320.png
 !docs/qa/local-art-stage2-1440.png
+!docs/qa/mobile-fix-before-cards-320.png
+!docs/qa/mobile-fix-after-cards-320.png
+!docs/qa/mobile-fix-before-menu-320.png
+!docs/qa/mobile-fix-after-menu-320.png
+!docs/qa/mobile-fix-after-footer-390.png
+!docs/qa/mobile-fix-after-galpoes-industriais-390.png
+!docs/qa/mobile-fix-after-guarituba-central-390.png

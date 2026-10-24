@@ -45,13 +45,15 @@ export default function Header() {
           aria-controls="main-navigation"
           onClick={() => setOpen(!open)}
         >
-          {open ? "Fechar ×" : "Menu ☰"}
+          <span>{open ? "Fechar menu" : "Abrir menu"}</span>
+          <span aria-hidden="true">{open ? "×" : "☰"}</span>
         </button>
         <nav
           id="main-navigation"
           aria-label="Principal"
           className={open ? "navigation open" : "navigation"}
         >
+          <p className="navigation-title">Navegue pelo site</p>
           {navigation.map(([name, url]) => (
             <a key={name} href={url} onClick={() => setOpen(false)}>
               {name}

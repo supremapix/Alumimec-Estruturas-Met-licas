@@ -108,7 +108,7 @@ for (const width of [320, 360, 390, 430, 1440]) {
     })),
   });
   if (width < 800) {
-    await page.getByRole("button", { name: "Menu ☰", exact: true }).click();
+    await page.getByRole("button", { name: "Abrir menu", exact: true }).click();
     await page.screenshot({ path: "docs/qa/menu-" + width + ".png" });
     assert.equal(await page.locator("#main-navigation a").count(), 8);
     await page.keyboard.press("Escape");
@@ -126,7 +126,7 @@ for (const width of [320, 360, 390, 430, 1440]) {
   await page.screenshot({ path: "docs/qa/footer-" + width + ".png" });
   await page.evaluate(() => (document.documentElement.style.fontSize = "36px"));
   if (width < 800)
-    await page.getByRole("button", { name: "Menu ☰", exact: true }).click();
+    await page.getByRole("button", { name: "Abrir menu", exact: true }).click();
   await page.screenshot({
     path: "docs/qa/text200-" + width + ".png",
     fullPage: true,
