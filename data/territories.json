@@ -1,0 +1,1089 @@
+{
+  "checkedAt": "2026-10-24",
+  "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+  "sha256": "3a3b60a29ab1aec158bb5757b6eada3eb18c2931430c964acbd900292a5f620f",
+  "note": "Ausência de registros não prova inexistência de bairros. A base de 2022 não representa alterações posteriores. Piraquara usa a lei municipal 2672/2026.",
+  "municipalities": [
+    {
+      "city": "Curitiba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Abranches",
+          "code": "4106902050"
+        },
+        {
+          "name": "Água Verde",
+          "code": "4106902009"
+        },
+        {
+          "name": "Ahú",
+          "code": "4106902014"
+        },
+        {
+          "name": "Alto Boqueirão",
+          "code": "4106902064"
+        },
+        {
+          "name": "Alto da Glória",
+          "code": "4106902004"
+        },
+        {
+          "name": "Alto da Rua XV",
+          "code": "4106902005"
+        },
+        {
+          "name": "Atuba",
+          "code": "4106902055"
+        },
+        {
+          "name": "Augusta",
+          "code": "4106902068"
+        },
+        {
+          "name": "Bacacheri",
+          "code": "4106902035"
+        },
+        {
+          "name": "Bairro Alto",
+          "code": "4106902036"
+        },
+        {
+          "name": "Barreirinha",
+          "code": "4106902052"
+        },
+        {
+          "name": "Batel",
+          "code": "4106902010"
+        },
+        {
+          "name": "Bigorrilho",
+          "code": "4106902011"
+        },
+        {
+          "name": "Boa Vista",
+          "code": "4106902034"
+        },
+        {
+          "name": "Bom Retiro",
+          "code": "4106902013"
+        },
+        {
+          "name": "Boqueirão",
+          "code": "4106902056"
+        },
+        {
+          "name": "Botiatuvinha",
+          "code": "4106902061"
+        },
+        {
+          "name": "Cabral",
+          "code": "4106902016"
+        },
+        {
+          "name": "Cachoeira",
+          "code": "4106902051"
+        },
+        {
+          "name": "Cajuru",
+          "code": "4106902021"
+        },
+        {
+          "name": "Campina do Siqueira",
+          "code": "4106902030"
+        },
+        {
+          "name": "Campo Comprido",
+          "code": "4106902044"
+        },
+        {
+          "name": "Campo de Santana",
+          "code": "4106902071"
+        },
+        {
+          "name": "Capão da Imbuia",
+          "code": "4106902020"
+        },
+        {
+          "name": "Capão Raso",
+          "code": "4106902058"
+        },
+        {
+          "name": "Cascatinha",
+          "code": "4106902047"
+        },
+        {
+          "name": "Caximba",
+          "code": "4106902070"
+        },
+        {
+          "name": "Centro",
+          "code": "4106902001"
+        },
+        {
+          "name": "Centro Cívico",
+          "code": "4106902003"
+        },
+        {
+          "name": "Cidade Industrial de Curitiba",
+          "code": "4106902075"
+        },
+        {
+          "name": "Cristo Rei",
+          "code": "4106902006"
+        },
+        {
+          "name": "Fanny",
+          "code": "4106902039"
+        },
+        {
+          "name": "Fazendinha",
+          "code": "4106902042"
+        },
+        {
+          "name": "Ganchinho",
+          "code": "4106902072"
+        },
+        {
+          "name": "Guabirotuba",
+          "code": "4106902023"
+        },
+        {
+          "name": "Guaíra",
+          "code": "4106902026"
+        },
+        {
+          "name": "Hauer",
+          "code": "4106902038"
+        },
+        {
+          "name": "Hugo Lange",
+          "code": "4106902017"
+        },
+        {
+          "name": "Jardim Botânico",
+          "code": "4106902007"
+        },
+        {
+          "name": "Jardim das Américas",
+          "code": "4106902022"
+        },
+        {
+          "name": "Jardim Social",
+          "code": "4106902018"
+        },
+        {
+          "name": "Juvevê",
+          "code": "4106902015"
+        },
+        {
+          "name": "Lamenha Pequena",
+          "code": "4106902062"
+        },
+        {
+          "name": "Lindóia",
+          "code": "4106902040"
+        },
+        {
+          "name": "Mercês",
+          "code": "4106902012"
+        },
+        {
+          "name": "Mossunguê",
+          "code": "4106902045"
+        },
+        {
+          "name": "Novo Mundo",
+          "code": "4106902041"
+        },
+        {
+          "name": "Orleans",
+          "code": "4106902059"
+        },
+        {
+          "name": "Parolin",
+          "code": "4106902025"
+        },
+        {
+          "name": "Pilarzinho",
+          "code": "4106902032"
+        },
+        {
+          "name": "Pinheirinho",
+          "code": "4106902066"
+        },
+        {
+          "name": "Portão",
+          "code": "4106902027"
+        },
+        {
+          "name": "Prado Velho",
+          "code": "4106902024"
+        },
+        {
+          "name": "Rebouças",
+          "code": "4106902008"
+        },
+        {
+          "name": "Riviera",
+          "code": "4106902069"
+        },
+        {
+          "name": "Santa Cândida",
+          "code": "4106902053"
+        },
+        {
+          "name": "Santa Felicidade",
+          "code": "4106902063"
+        },
+        {
+          "name": "Santa Quitéria",
+          "code": "4106902043"
+        },
+        {
+          "name": "Santo Inácio",
+          "code": "4106902046"
+        },
+        {
+          "name": "São Braz",
+          "code": "4106902060"
+        },
+        {
+          "name": "São Francisco",
+          "code": "4106902002"
+        },
+        {
+          "name": "São João",
+          "code": "4106902048"
+        },
+        {
+          "name": "São Lourenço",
+          "code": "4106902033"
+        },
+        {
+          "name": "São Miguel",
+          "code": "4106902067"
+        },
+        {
+          "name": "Seminário",
+          "code": "4106902029"
+        },
+        {
+          "name": "Sítio Cercado",
+          "code": "4106902065"
+        },
+        {
+          "name": "Taboão",
+          "code": "4106902049"
+        },
+        {
+          "name": "Tarumã",
+          "code": "4106902019"
+        },
+        {
+          "name": "Tatuquara",
+          "code": "4106902074"
+        },
+        {
+          "name": "Tinguí",
+          "code": "4106902054"
+        },
+        {
+          "name": "Uberaba",
+          "code": "4106902037"
+        },
+        {
+          "name": "Umbará",
+          "code": "4106902073"
+        },
+        {
+          "name": "Vila Izabel",
+          "code": "4106902028"
+        },
+        {
+          "name": "Vista Alegre",
+          "code": "4106902031"
+        },
+        {
+          "name": "Xaxim",
+          "code": "4106902057"
+        }
+      ]
+    },
+    {
+      "city": "Adrianópolis",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Agudos do Sul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Almirante Tamandaré",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Araucária",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Bariguí",
+          "code": "4101804002"
+        },
+        {
+          "name": "Boqueirão",
+          "code": "4101804007"
+        },
+        {
+          "name": "Cachoeira",
+          "code": "4101804015"
+        },
+        {
+          "name": "Campina da Barra",
+          "code": "4101804018"
+        },
+        {
+          "name": "Capela Velha",
+          "code": "4101804004"
+        },
+        {
+          "name": "Centro",
+          "code": "4101804014"
+        },
+        {
+          "name": "Chapada",
+          "code": "4101804005"
+        },
+        {
+          "name": "Costeira",
+          "code": "4101804017"
+        },
+        {
+          "name": "Estação",
+          "code": "4101804009"
+        },
+        {
+          "name": "Fazenda Velha",
+          "code": "4101804008"
+        },
+        {
+          "name": "Iguaçu",
+          "code": "4101804016"
+        },
+        {
+          "name": "Passaúna",
+          "code": "4101804006"
+        },
+        {
+          "name": "Porto das Laranjeiras",
+          "code": "4101804012"
+        },
+        {
+          "name": "Sabiá",
+          "code": "4101804010"
+        },
+        {
+          "name": "São Miguel",
+          "code": "4101804001"
+        },
+        {
+          "name": "Thomaz Coelho",
+          "code": "4101804003"
+        },
+        {
+          "name": "Tindiquera",
+          "code": "4101804011"
+        },
+        {
+          "name": "Vila Nova",
+          "code": "4101804013"
+        }
+      ]
+    },
+    {
+      "city": "Balsa Nova",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Bocaiúva do Sul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Campo do Tenente",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Campo Largo",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Campo Magro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Cerro Azul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Colombo",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Águas Fervidas",
+          "code": "4105805032"
+        },
+        {
+          "name": "Arruda",
+          "code": "4105805001"
+        },
+        {
+          "name": "Atuba",
+          "code": "4105805002"
+        },
+        {
+          "name": "Bacaetava",
+          "code": "4105805033"
+        },
+        {
+          "name": "Boicininga",
+          "code": "4105805003"
+        },
+        {
+          "name": "Butiatumirim",
+          "code": "4105805004"
+        },
+        {
+          "name": "Campestre",
+          "code": "4105805028"
+        },
+        {
+          "name": "Campo Pequeno",
+          "code": "4105805005"
+        },
+        {
+          "name": "Canguiri",
+          "code": "4105805006"
+        },
+        {
+          "name": "Capivari",
+          "code": "4105805029"
+        },
+        {
+          "name": "Centro",
+          "code": "4105805007"
+        },
+        {
+          "name": "Colonia Antonio Prado",
+          "code": "4105805030"
+        },
+        {
+          "name": "Colônia Faria",
+          "code": "4105805008"
+        },
+        {
+          "name": "das Graças",
+          "code": "4105805009"
+        },
+        {
+          "name": "Embu",
+          "code": "4105805010"
+        },
+        {
+          "name": "Fatima",
+          "code": "4105805011"
+        },
+        {
+          "name": "Gabirobal",
+          "code": "4105805012"
+        },
+        {
+          "name": "Guaraituba",
+          "code": "4105805013"
+        },
+        {
+          "name": "Guarani",
+          "code": "4105805014"
+        },
+        {
+          "name": "Imbuial",
+          "code": "4105805031"
+        },
+        {
+          "name": "Itajacuru",
+          "code": "4105805034"
+        },
+        {
+          "name": "Maracanã",
+          "code": "4105805015"
+        },
+        {
+          "name": "Mauá",
+          "code": "4105805016"
+        },
+        {
+          "name": "Monza",
+          "code": "4105805017"
+        },
+        {
+          "name": "Morro Grande",
+          "code": "4105805035"
+        },
+        {
+          "name": "Osasco",
+          "code": "4105805018"
+        },
+        {
+          "name": "Palmital",
+          "code": "4105805019"
+        },
+        {
+          "name": "Paloma",
+          "code": "4105805020"
+        },
+        {
+          "name": "Poço Negro",
+          "code": "4105805036"
+        },
+        {
+          "name": "Ribeirão das Onças",
+          "code": "4105805037"
+        },
+        {
+          "name": "Rincão",
+          "code": "4105805021"
+        },
+        {
+          "name": "Rio Verde",
+          "code": "4105805022"
+        },
+        {
+          "name": "Roça Grande",
+          "code": "4105805023"
+        },
+        {
+          "name": "Roseira",
+          "code": "4105805038"
+        },
+        {
+          "name": "Santa Gema",
+          "code": "4105805039"
+        },
+        {
+          "name": "Santa Terezinha",
+          "code": "4105805024"
+        },
+        {
+          "name": "São Dimas",
+          "code": "4105805025"
+        },
+        {
+          "name": "São Gabriel",
+          "code": "4105805027"
+        },
+        {
+          "name": "São João",
+          "code": "4105805026"
+        },
+        {
+          "name": "Sapopema",
+          "code": "4105805040"
+        },
+        {
+          "name": "Serrinha",
+          "code": "4105805041"
+        },
+        {
+          "name": "Uvaranal",
+          "code": "4105805042"
+        }
+      ]
+    },
+    {
+      "city": "Contenda",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Doutor Ulysses",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Campo do Rio",
+          "code": "4107652009"
+        },
+        {
+          "name": "Centro",
+          "code": "4107652007"
+        },
+        {
+          "name": "Estados",
+          "code": "4107652005"
+        },
+        {
+          "name": "Eucaliptos",
+          "code": "4107652002"
+        },
+        {
+          "name": "Gralha Azul",
+          "code": "4107652004"
+        },
+        {
+          "name": "Iguaçu",
+          "code": "4107652001"
+        },
+        {
+          "name": "Industrial I",
+          "code": "4107652011"
+        },
+        {
+          "name": "Industrial II",
+          "code": "4107652012"
+        },
+        {
+          "name": "Nações",
+          "code": "4107652003"
+        },
+        {
+          "name": "Parque Tecnológico",
+          "code": "4107652013"
+        },
+        {
+          "name": "Pioneiros",
+          "code": "4107652008"
+        },
+        {
+          "name": "Santa Terezinha",
+          "code": "4107652006"
+        },
+        {
+          "name": "Veneza",
+          "code": "4107652010"
+        }
+      ]
+    },
+    {
+      "city": "Itaperuçu",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Lapa",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Mandirituba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Piên",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Pinhais",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Alphaville Graciosa",
+          "code": "4119152012"
+        },
+        {
+          "name": "Alto Tarumã",
+          "code": "4119152005"
+        },
+        {
+          "name": "Atuba",
+          "code": "4119152003"
+        },
+        {
+          "name": "Centro",
+          "code": "4119152007"
+        },
+        {
+          "name": "Emiliano Perneta",
+          "code": "4119152002"
+        },
+        {
+          "name": "Estância Pinhais",
+          "code": "4119152001"
+        },
+        {
+          "name": "Jardim Amélia",
+          "code": "4119152011"
+        },
+        {
+          "name": "Jardim Cláudia",
+          "code": "4119152004"
+        },
+        {
+          "name": "Jardim das Nascentes",
+          "code": "4119152013"
+        },
+        {
+          "name": "Jardim Karla",
+          "code": "4119152014"
+        },
+        {
+          "name": "Maria Antonieta",
+          "code": "4119152010"
+        },
+        {
+          "name": "Parque das Águas",
+          "code": "4119152015"
+        },
+        {
+          "name": "Pineville",
+          "code": "4119152006"
+        },
+        {
+          "name": "Vargem Grande",
+          "code": "4119152008"
+        },
+        {
+          "name": "Weissópolis",
+          "code": "4119152009"
+        }
+      ]
+    },
+    {
+      "city": "Piraquara",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "year": 2026,
+      "names": [
+        {
+          "name": "Jardim Tropical",
+          "code": null
+        },
+        {
+          "name": "Holandês",
+          "code": null
+        },
+        {
+          "name": "Guarituba Redondo",
+          "code": null
+        },
+        {
+          "name": "Guaritubinha",
+          "code": null
+        },
+        {
+          "name": "Guarituba Central",
+          "code": null
+        },
+        {
+          "name": "Jardim Santa Mônica",
+          "code": null
+        },
+        {
+          "name": "Mossoró",
+          "code": null
+        },
+        {
+          "name": "Jardim dos Estados",
+          "code": null
+        },
+        {
+          "name": "Vicente",
+          "code": null
+        },
+        {
+          "name": "Bela Vista",
+          "code": null
+        },
+        {
+          "name": "Laranjeiras",
+          "code": null
+        },
+        {
+          "name": "São Tiago",
+          "code": null
+        },
+        {
+          "name": "Santa Maria",
+          "code": null
+        },
+        {
+          "name": "Vila Juliana",
+          "code": null
+        },
+        {
+          "name": "Centro",
+          "code": null
+        },
+        {
+          "name": "Araçatuba",
+          "code": null
+        },
+        {
+          "name": "Vila Rosa",
+          "code": null
+        },
+        {
+          "name": "Deodoro",
+          "code": null
+        },
+        {
+          "name": "São Cristóvão",
+          "code": null
+        },
+        {
+          "name": "Borda do Campo",
+          "code": null
+        },
+        {
+          "name": "Parque das Águas",
+          "code": null
+        }
+      ]
+    },
+    {
+      "city": "Quatro Barras",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Quitandinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Rio Branco do Sul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Rio Negro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "São José dos Pinhais",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": [
+        {
+          "name": "Academia",
+          "code": "4125506040"
+        },
+        {
+          "name": "Afonso Pena",
+          "code": "4125506026"
+        },
+        {
+          "name": "Águas Belas",
+          "code": "4125506022"
+        },
+        {
+          "name": "Àrea Institucional Aeroportuária",
+          "code": "4125506021"
+        },
+        {
+          "name": "Aristocrata",
+          "code": "4125506013"
+        },
+        {
+          "name": "Arujá",
+          "code": "4125506005"
+        },
+        {
+          "name": "Aviação",
+          "code": "4125506027"
+        },
+        {
+          "name": "Barro Preto",
+          "code": "4125506007"
+        },
+        {
+          "name": "Bom Jesus",
+          "code": "4125506014"
+        },
+        {
+          "name": "Boneca do Iguaçu",
+          "code": "4125506024"
+        },
+        {
+          "name": "Borda do Campo",
+          "code": "4125506039"
+        },
+        {
+          "name": "Cachoeira",
+          "code": "4125506037"
+        },
+        {
+          "name": "Campina do Taquaral",
+          "code": "4125506004"
+        },
+        {
+          "name": "Campo Largo da Roseira",
+          "code": "4125506002"
+        },
+        {
+          "name": "Centro",
+          "code": "4125506017"
+        },
+        {
+          "name": "Cidade Jardim",
+          "code": "4125506025"
+        },
+        {
+          "name": "Colônia Rio Grande",
+          "code": "4125506012"
+        },
+        {
+          "name": "Contenda",
+          "code": "4125506001"
+        },
+        {
+          "name": "Costeira",
+          "code": "4125506019"
+        },
+        {
+          "name": "Cristal",
+          "code": "4125506032"
+        },
+        {
+          "name": "Cruzeiro",
+          "code": "4125506018"
+        },
+        {
+          "name": "Del Rey",
+          "code": "4125506006"
+        },
+        {
+          "name": "Dom Rodrigo",
+          "code": "4125506038"
+        },
+        {
+          "name": "Guatupê",
+          "code": "4125506031"
+        },
+        {
+          "name": "Iná",
+          "code": "4125506028"
+        },
+        {
+          "name": "Ipê",
+          "code": "4125506030"
+        },
+        {
+          "name": "Itália",
+          "code": "4125506009"
+        },
+        {
+          "name": "Jurema",
+          "code": "4125506035"
+        },
+        {
+          "name": "Miringuava",
+          "code": "4125506041"
+        },
+        {
+          "name": "Ouro Fino",
+          "code": "4125506008"
+        },
+        {
+          "name": "Parque da Fonte",
+          "code": "4125506029"
+        },
+        {
+          "name": "Pedro Moro",
+          "code": "4125506011"
+        },
+        {
+          "name": "Quissisana",
+          "code": "4125506020"
+        },
+        {
+          "name": "Rio Pequeno",
+          "code": "4125506034"
+        },
+        {
+          "name": "Roseira de São Sebastião",
+          "code": "4125506033"
+        },
+        {
+          "name": "Santo Antônio",
+          "code": "4125506010"
+        },
+        {
+          "name": "São Cristóvão",
+          "code": "4125506023"
+        },
+        {
+          "name": "São Domingos",
+          "code": "4125506016"
+        },
+        {
+          "name": "São Marcos",
+          "code": "4125506003"
+        },
+        {
+          "name": "São Pedro",
+          "code": "4125506015"
+        },
+        {
+          "name": "Zacarias",
+          "code": "4125506036"
+        }
+      ]
+    },
+    {
+      "city": "Tijucas do Sul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    },
+    {
+      "city": "Tunas do Paraná",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "year": 2022,
+      "names": []
+    }
+  ]
+}

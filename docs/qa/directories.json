@@ -1,0 +1,183 @@
+{
+  "preserved": 166,
+  "total": 172,
+  "names": 225,
+  "results": [
+    {
+      "city": "Curitiba",
+      "width": 320,
+      "names": 75
+    },
+    {
+      "city": "Curitiba",
+      "width": 360,
+      "names": 75
+    },
+    {
+      "city": "Curitiba",
+      "width": 390,
+      "names": 75
+    },
+    {
+      "city": "Curitiba",
+      "width": 430,
+      "names": 75
+    },
+    {
+      "city": "Curitiba",
+      "width": 1440,
+      "names": 75
+    },
+    {
+      "city": "Araucária",
+      "width": 320,
+      "names": 18
+    },
+    {
+      "city": "Araucária",
+      "width": 360,
+      "names": 18
+    },
+    {
+      "city": "Araucária",
+      "width": 390,
+      "names": 18
+    },
+    {
+      "city": "Araucária",
+      "width": 430,
+      "names": 18
+    },
+    {
+      "city": "Araucária",
+      "width": 1440,
+      "names": 18
+    },
+    {
+      "city": "Colombo",
+      "width": 320,
+      "names": 42
+    },
+    {
+      "city": "Colombo",
+      "width": 360,
+      "names": 42
+    },
+    {
+      "city": "Colombo",
+      "width": 390,
+      "names": 42
+    },
+    {
+      "city": "Colombo",
+      "width": 430,
+      "names": 42
+    },
+    {
+      "city": "Colombo",
+      "width": 1440,
+      "names": 42
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "width": 320,
+      "names": 13
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "width": 360,
+      "names": 13
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "width": 390,
+      "names": 13
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "width": 430,
+      "names": 13
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "width": 1440,
+      "names": 13
+    },
+    {
+      "city": "Pinhais",
+      "width": 320,
+      "names": 15
+    },
+    {
+      "city": "Pinhais",
+      "width": 360,
+      "names": 15
+    },
+    {
+      "city": "Pinhais",
+      "width": 390,
+      "names": 15
+    },
+    {
+      "city": "Pinhais",
+      "width": 430,
+      "names": 15
+    },
+    {
+      "city": "Pinhais",
+      "width": 1440,
+      "names": 15
+    },
+    {
+      "city": "Piraquara",
+      "width": 320,
+      "names": 21
+    },
+    {
+      "city": "Piraquara",
+      "width": 360,
+      "names": 21
+    },
+    {
+      "city": "Piraquara",
+      "width": 390,
+      "names": 21
+    },
+    {
+      "city": "Piraquara",
+      "width": 430,
+      "names": 21
+    },
+    {
+      "city": "Piraquara",
+      "width": 1440,
+      "names": 21
+    },
+    {
+      "city": "São José dos Pinhais",
+      "width": 320,
+      "names": 41
+    },
+    {
+      "city": "São José dos Pinhais",
+      "width": 360,
+      "names": 41
+    },
+    {
+      "city": "São José dos Pinhais",
+      "width": 390,
+      "names": 41
+    },
+    {
+      "city": "São José dos Pinhais",
+      "width": 430,
+      "names": 41
+    },
+    {
+      "city": "São José dos Pinhais",
+      "width": 1440,
+      "names": 41
+    }
+  ],
+  "errors": []
+}

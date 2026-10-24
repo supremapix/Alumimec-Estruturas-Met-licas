@@ -1096,3 +1096,36 @@ body {
   width: 100%;
   flex: none;
 }
+.territory-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+}
+.territory-list li {
+  border-top: 2px solid #8b9c88;
+  padding-top: 20px;
+  min-width: 0;
+}
+.territory-list p {
+  font-size: 0.9rem;
+}
+.territory-list .text-link {
+  min-height: 48px;
+}
+#bairro-search {
+  max-width: 600px;
+  margin-block: 16px;
+}
+@media (max-width: 900px) {
+  .territory-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .territory-list {
+    grid-template-columns: 1fr;
+  }
+}

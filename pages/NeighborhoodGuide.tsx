@@ -141,11 +141,14 @@ export default function NeighborhoodGuide({ guide }: { guide?: LocalGuide }) {
           <ContactActions
             subject={`Gostaria de preparar uma proposta para ${g.name}, ${g.city}.`}
           />
-          <h3>Outros guias no mesmo município</h3>
+          <h3>Continue o planejamento no município</h3>
           <p>
-            Organizados por município; esta lista não afirma proximidade entre
-            bairros.
+            Consulte também a página municipal. Os guias não afirmam proximidade
+            entre bairros.
           </p>
+          <a className="text-link" href={cityPath(g.city)}>
+            Serviços e referências de {g.city}
+          </a>
           {LOCAL_GUIDES.filter(
             (x) => x.city === g.city && x.path !== g.path,
           ).map((x) => (

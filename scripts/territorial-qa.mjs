@@ -71,4 +71,4 @@ fs.writeFileSync(
   ),
 );
 await b.close();
-console.log("12 guides, 60 viewports, 12 axe scans, 200% text passed");
+console.log(`${paths.length} guides, ${results.length} viewports, ${paths.length} axe scans, 200% text passed`);

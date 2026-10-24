@@ -39,3 +39,7 @@ docs/qa/*.png
 !docs/qa/local-agua-verde.png
 !docs/qa/dock-18px.png
 !docs/qa/dock-36px.png
+!docs/qa/directory-search-320.png
+!docs/qa/directory-search-1440.png
+!docs/qa/local-art-stage2-320.png
+!docs/qa/local-art-stage2-1440.png

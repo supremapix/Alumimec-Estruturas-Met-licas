@@ -1,3 +1,4 @@
+import { STAGE_TWO_GUIDES } from "./local-guides-stage2";
 export interface LocalGuide {
   name: string;
   city: string;
@@ -446,4 +447,5 @@ export const LOCAL_GUIDES: LocalGuide[] = [
       ],
     ],
   },
+  ...STAGE_TWO_GUIDES,
 ];

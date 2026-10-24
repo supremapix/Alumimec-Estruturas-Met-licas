@@ -1,8 +1,8 @@
 {
-  "guides": 12,
-  "viewports": 60,
-  "axeScans": 12,
-  "text200": 12,
+  "guides": 20,
+  "viewports": 100,
+  "axeScans": 20,
+  "text200": 20,
   "errors": [],
   "results": [
     {
@@ -156,6 +156,181 @@
       "overflow": false
     },
     {
+      "route": "/bairro/cajuru",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/cajuru",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/cajuru",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/cajuru",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/cajuru",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/bacacheri",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/bacacheri",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/bacacheri",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/bacacheri",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/bacacheri",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/tindiquera",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/tindiquera",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/tindiquera",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/tindiquera",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/tindiquera",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/guaraituba",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/guaraituba",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/guaraituba",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/guaraituba",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/guaraituba",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/atuba",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/atuba",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/atuba",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/atuba",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/atuba",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/guarituba-central",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/guarituba-central",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/guarituba-central",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/guarituba-central",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/guarituba-central",
+      "width": 1440,
+      "overflow": false
+    },
+    {
       "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
       "width": 320,
       "overflow": false
@@ -302,6 +477,31 @@
     },
     {
       "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/ina",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/ina",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/ina",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/ina",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/ina",
       "width": 1440,
       "overflow": false
     }

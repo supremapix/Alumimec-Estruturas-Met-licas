@@ -1,3 +1,4 @@
+import MunicipalDirectory from "../components/MunicipalDirectory";
 import { LOCAL_GUIDES } from "../local-guides";
 import NeighborhoodGuide from "./NeighborhoodGuide";
 import Photo from "../components/Photo";
@@ -184,6 +185,7 @@ export default function LocationPage({
         </div>
       </section>
       {city && <MunicipalGuide name={name} />}
+      {city && <MunicipalDirectory city={name} />}
       {city && LOCAL_GUIDES.some((g) => g.city === name) && (
         <section className="section wrap">
           <h2>Guias de bairros verificados</h2>
