@@ -24,8 +24,9 @@ export default function MunicipalDirectory({ city }: { city: string }) {
           ? "lei municipal de 2026"
           : "malha de bairros do IBGE de 2022"}
         . Nomes de loteamentos e regiões populares podem ser diferentes do
-        bairro cadastrado. Esta relação ajuda a localizar a consulta; não
-        confirma cobertura da Alumimec em todos os endereços.
+        bairro cadastrado. A Alumimec atende estas localidades por deslocamento
+        ao local da obra. Informe o endereço para avaliar o projeto, o acesso e
+        combinar o atendimento.
       </p>
       <p>
         <a href={data.source}>Consultar fonte oficial</a>. Informe rua, número e

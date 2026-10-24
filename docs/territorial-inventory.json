@@ -1,11 +1,11 @@
 {
   "checkedAt": "2026-10-24",
   "complete": false,
-  "stage": 2,
-  "routeCount": 172,
-  "existingRoutesPreserved": 166,
-  "newRoutes": 6,
-  "guideCount": 20,
+  "stage": 3,
+  "routeCount": 184,
+  "existingRoutesPreserved": 172,
+  "newRoutes": 12,
+  "guideCount": 34,
   "verifiedNames": 225,
   "municipalities": [
     {
@@ -98,10 +98,12 @@
         "/bairro/santa-felicidade",
         "/bairro/pinheirinho",
         "/bairro/cajuru",
-        "/bairro/bacacheri"
+        "/bairro/bacacheri",
+        "/bairro/hauer",
+        "/bairro/portao"
       ],
-      "coverage": "Evidência municipal no catálogo; confirmar cada endereço.",
-      "status": "Inventário de 75 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 75 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Adrianópolis",
@@ -110,7 +112,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -120,7 +122,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -130,7 +132,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -159,10 +161,12 @@
         "Vila Nova"
       ],
       "completedGuides": [
-        "/bairro/araucaria/tindiquera"
+        "/bairro/araucaria/tindiquera",
+        "/bairro/araucaria/capela-velha",
+        "/bairro/araucaria/campina-da-barra"
       ],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
-      "status": "Inventário de 18 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 18 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Balsa Nova",
@@ -171,7 +175,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -181,7 +185,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -191,7 +195,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -201,7 +205,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -211,7 +215,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -221,7 +225,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -231,7 +235,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -284,10 +288,12 @@
         "Uvaranal"
       ],
       "completedGuides": [
-        "/bairro/colombo/guaraituba"
+        "/bairro/colombo/guaraituba",
+        "/bairro/colombo/maracana",
+        "/bairro/colombo/roca-grande"
       ],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
-      "status": "Inventário de 42 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 42 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Contenda",
@@ -296,7 +302,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -306,7 +312,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -330,10 +336,12 @@
         "Veneza"
       ],
       "completedGuides": [
-        "/bairro/fazenda-rio-grande/eucaliptos"
+        "/bairro/fazenda-rio-grande/eucaliptos",
+        "/bairro/fazenda-rio-grande/nacoes",
+        "/bairro/fazenda-rio-grande/gralha-azul"
       ],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
-      "status": "Inventário de 13 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 13 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Itaperuçu",
@@ -342,7 +350,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -352,7 +360,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -362,7 +370,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -372,7 +380,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -398,10 +406,12 @@
         "Weissópolis"
       ],
       "completedGuides": [
-        "/bairro/pinhais/atuba"
+        "/bairro/pinhais/atuba",
+        "/bairro/pinhais/weissopolis",
+        "/bairro/pinhais/vargem-grande"
       ],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
-      "status": "Inventário de 15 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 15 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Piraquara",
@@ -432,10 +442,12 @@
         "Parque das Águas"
       ],
       "completedGuides": [
-        "/bairro/piraquara/guarituba-central"
+        "/bairro/piraquara/guarituba-central",
+        "/bairro/piraquara/jardim-dos-estados",
+        "/bairro/piraquara/vila-rosa"
       ],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
-      "status": "Inventário de 21 referências da fonte 2026; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 21 referências da fonte 2026; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Quatro Barras",
@@ -444,7 +456,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -454,7 +466,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -464,7 +476,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -474,7 +486,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -532,10 +544,12 @@
         "/bairro/sao-jose-dos-pinhais/borda-do-campo",
         "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
         "/bairro/sao-jose-dos-pinhais/barro-preto",
-        "/bairro/sao-jose-dos-pinhais/ina"
+        "/bairro/sao-jose-dos-pinhais/ina",
+        "/bairro/sao-jose-dos-pinhais/aguas-belas",
+        "/bairro/sao-jose-dos-pinhais/sao-marcos"
       ],
-      "coverage": "Evidência municipal no catálogo; confirmar cada endereço.",
-      "status": "Inventário de 41 referências da fonte 2022; não comprova cobertura comercial nem alterações posteriores."
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
+      "status": "Inventário de 41 referências da fonte 2022; não comprova alterações territoriais posteriores."
     },
     {
       "city": "Tijucas do Sul",
@@ -544,7 +558,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     },
     {
@@ -554,7 +568,7 @@
       "sourceYear": 2022,
       "verifiedNames": [],
       "completedGuides": [],
-      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
       "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
     }
   ],
@@ -917,7 +931,7 @@
       "name": "Hauer",
       "path": "/bairro/hauer",
       "classification": "Nome na malha IBGE de Curitiba de 2022",
-      "enriched": false
+      "enriched": true
     },
     {
       "name": "Hugo Lange",
@@ -1007,7 +1021,7 @@
       "name": "Portão",
       "path": "/bairro/portao",
       "classification": "Nome na malha IBGE de Curitiba de 2022",
-      "enriched": false
+      "enriched": true
     },
     {
       "name": "Prado Velho",
@@ -1305,7 +1319,7 @@
     }
   ],
   "limitations": [
-    "A relação de nomes não comprova disponibilidade comercial por endereço.",
+    "Cobertura confirmada pelo responsável; avaliação técnica e agendamento continuam necessários.",
     "IBGE 2022 é uma base datada; Piraquara usa lei municipal de 2026.",
     "Não foram criadas páginas automáticas para todos os nomes; diretórios municipais preservam acesso ao catálogo e consulta contextual.",
     "22 municípios ainda exigem consolidação nominal de fontes que distinguem bairros, localidades e loteamentos.",

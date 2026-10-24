@@ -266,20 +266,21 @@ export default function Home() {
             <h2>
               Perto da sua ideia.
               <br />
-              Atendimento sob consulta.
+              Atendimento no local da obra.
             </h2>
             <p>
-              A sede é em São José dos Pinhais. Não há filiais declaradas em
-              outros municípios ou bairros. Informe cidade, bairro e CEP para
-              confirmar deslocamento, visita e execução.
+              A Alumimec atende Curitiba e todos os municípios da Região
+              Metropolitana por deslocamento ao local da obra. A sede fica em
+              São José dos Pinhais; informe cidade, bairro e CEP para avaliar o
+              projeto e combinar o atendimento.
             </p>
             <p>
               A região metropolitana reúne 29 municípios, conforme a{" "}
               <a href="https://www.amep.pr.gov.br/FAQ/Municipios-da-Regiao-Metropolitana-de-Curitiba">
                 AMEP
               </a>
-              . Fazer parte dessa região não confirma disponibilidade da equipe
-              para cada endereço.
+              . Projeto, condições de acesso, logística e agendamento são
+              avaliados com a equipe para cada obra.
             </p>
             <a className="text-link" href={cityPath("São José dos Pinhais")}>
               Conheça a sede e prepare sua consulta ↗

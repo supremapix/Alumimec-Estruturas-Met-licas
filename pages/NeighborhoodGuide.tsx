@@ -17,7 +17,7 @@ export default function NeighborhoodGuide({ guide }: { guide?: LocalGuide }) {
     ...g.faq.map(([question, answer]) => ({ question, answer })),
     {
       question: "Como confirmar atendimento e preparar o orçamento?",
-      answer: `Envie o endereço em ${g.name}, ${g.city}, com CEP, fotos, medidas aproximadas e finalidade da obra. A Alumimec confirma viabilidade e condições. A sede é em Afonso Pena, São José dos Pinhais; não há outra filial declarada.`,
+      answer: `Envie o endereço em ${g.name}, ${g.city}, com CEP, fotos, medidas aproximadas e finalidade da obra. A Alumimec atende a localidade por deslocamento à obra e avalia projeto, acesso, condições e agendamento. A sede é em Afonso Pena, São José dos Pinhais; não há outra filial declarada.`,
     },
   ];
   return (
@@ -33,6 +33,8 @@ export default function NeighborhoodGuide({ guide }: { guide?: LocalGuide }) {
           { name: g.name, url: g.path },
         ]}
         faqItems={faqs}
+        locationName={`${g.name}, ${g.city}`}
+        services={[{ name: service.title, description: service.description }]}
       />
       <nav className="wrap breadcrumb" aria-label="Caminho da página">
         <a href="/">Início</a> / <a href={cityPath(g.city)}>{g.city}</a> /{" "}

@@ -90,9 +90,9 @@ export default function ServicePage() {
             <p>
               A sede fica em São José dos Pinhais.{" "}
               <a href="/cidade/sao-jose-dos-pinhais">Conheça a sede</a> ou veja{" "}
-              <a href="/cidade/curitiba">orientações para Curitiba</a>.
-              Disponibilidade para outros municípios e endereços deve ser
-              confirmada.
+              <a href="/cidade/curitiba">orientações para Curitiba</a>. A
+              Alumimec atende todos os municípios da RMC por deslocamento ao
+              local da obra, com avaliação do projeto e agendamento.
             </p>
           </aside>
         </div>

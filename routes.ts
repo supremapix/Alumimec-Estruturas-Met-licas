@@ -27,11 +27,11 @@ export const neighborhoodPath = (n: string) => `/bairro/${slugify(n)}`;
 export const cityTitle = (city: string) =>
   `Consulta de estruturas metálicas em ${city} | Alumimec`;
 export const cityDescription = (city: string) =>
-  `Consulte seu projeto de estrutura metálica para ${city}. Sede em São José dos Pinhais; atendimento e condições dependem da avaliação do endereço e da obra.`;
+  `Consulte seu projeto de estrutura metálica para ${city}. Sede em São José dos Pinhais; atendimento por deslocamento à obra, com projeto, acesso e agendamento avaliados.`;
 export const neighborhoodTitle = (name: string) =>
   `Consulta para ${name} | Alumimec Estruturas Metálicas`;
 export const neighborhoodDescription = (name: string) =>
-  `Informe o endereço e as características de sua obra em ${name}. Consulte disponibilidade com a Alumimec, sem pressupor filial ou cobertura confirmada.`;
+  `Informe o endereço e as características de sua obra em ${name}. Consulte disponibilidade com a Alumimec, com atendimento por deslocamento à obra, sem filial local.`;
 
 export const getAllRoutes = (): RouteConfig[] => {
   const routes: RouteConfig[] = [

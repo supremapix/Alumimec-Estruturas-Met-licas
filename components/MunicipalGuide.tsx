@@ -1,21 +1,17 @@
 import React from "react";
 import { COMPANY_INFO } from "../constants";
 export default function MunicipalGuide({ name }: { name: string }) {
-  const sede = name === "São José dos Pinhais",
-    capital = name === "Curitiba";
+  const sede = name === "São José dos Pinhais";
   return (
     <section className="section region">
       <div className="wrap">
         <p className="eyebrow">PLANEJAMENTO DA CONTRATAÇÃO</p>
         <h2>Organize sua obra em {name}.</h2>
         <p>
-          {sede
-            ? "A sede informada pela Alumimec é em Afonso Pena. A proximidade com a sede não dispensa a avaliação do endereço e das condições da obra."
-            : capital
-              ? "O site da Alumimec declara atendimento em Curitiba a partir da sede em São José dos Pinhais. A disponibilidade e a logística para cada endereço precisam ser combinadas."
-              : "Esta é uma página de consulta para um município da RMC. Não há, no material disponível, comprovação individual de obras ou disponibilidade atual da Alumimec em " +
-                name +
-                ". Confirme a cobertura antes de agendar ou contratar."}
+          A Alumimec atende {name} e se desloca ao local da obra a partir da
+          sede em São José dos Pinhais. Endereço, projeto, condições de acesso e
+          agendamento são avaliados com a equipe. O atendimento por deslocamento
+          não representa uma filial neste município.
         </p>
         <div className="process-grid">
           <article>

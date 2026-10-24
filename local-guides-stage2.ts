@@ -11,7 +11,7 @@ export const STAGE_TWO_GUIDES: LocalGuide[] = [
       "Planeje o aproveitamento vertical de um imóvel no Cajuru: atividade, acessos, instalações existentes e informações para consultar um mezanino metálico.",
     source,
     territorial:
-      "Cajuru consta na malha de bairros do IBGE de 2022 para Curitiba. Informe rua e CEP para identificar o imóvel; a referência territorial não confirma disponibilidade para cada endereço.",
+      "Cajuru consta na malha de bairros do IBGE de 2022 para Curitiba. Informe rua e CEP para identificar o imóvel; a Alumimec atende por deslocamento à obra, com avaliação do projeto e agendamento.",
     service: 3,
     sections: [
       [
@@ -119,7 +119,7 @@ export const STAGE_TWO_GUIDES: LocalGuide[] = [
       "Identifique corretamente Atuba em Pinhais e prepare a avaliação de uma cobertura: conservação, uso da área, componentes e acesso para montagem.",
     source,
     territorial:
-      "Esta página se refere ao Atuba de Pinhais, identificado no IBGE de 2022. O nome também aparece em outros municípios; envie município, rua e CEP. A cobertura comercial para o endereço permanece sob consulta.",
+      "Esta página se refere ao Atuba de Pinhais, identificado no IBGE de 2022. O nome também aparece em outros municípios; envie município, rua e CEP. A Alumimec atende por deslocamento à obra; o projeto e o agendamento são avaliados com a equipe.",
     service: 1,
     sections: [
       [
@@ -155,7 +155,7 @@ export const STAGE_TWO_GUIDES: LocalGuide[] = [
       "Prepare uma consulta de ampliação de galpão no Guaraituba, Colombo: fluxo de materiais, acessos, espaço existente e escopo técnico.",
     source,
     territorial:
-      "Guaraituba consta na base IBGE de 2022 para Colombo. Não deve ser confundido com Guarituba, em Piraquara. Não há filial ou obra local afirmada nesta página; o atendimento ao endereço deve ser consultado.",
+      "Guaraituba consta na base IBGE de 2022 para Colombo. Não deve ser confundido com Guarituba, em Piraquara. Não há filial ou obra local afirmada nesta página; o atendimento ocorre por deslocamento à obra, com avaliação do projeto e agendamento.",
     service: 0,
     sections: [
       [
@@ -191,7 +191,7 @@ export const STAGE_TWO_GUIDES: LocalGuide[] = [
       "Organize a consulta de estrutura metálica no Guarituba Central com referência territorial, finalidade da área e documentação disponível do imóvel.",
     source: "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
     territorial:
-      "Guarituba Central aparece no artigo 15 da Lei municipal 2672/2026 de Piraquara. A denominação não equivale a toda a região conhecida como Guarituba e é distinta de Guarituba Redondo. A relação territorial não comprova autorização de obra nem cobertura comercial.",
+      "Guarituba Central aparece no artigo 15 da Lei municipal 2672/2026 de Piraquara. A denominação não equivale a toda a região conhecida como Guarituba e é distinta de Guarituba Redondo. A relação territorial não comprova autorização de obra. A Alumimec atende por deslocamento, mediante avaliação do projeto e agendamento.",
     service: 2,
     sections: [
       [
@@ -227,7 +227,7 @@ export const STAGE_TWO_GUIDES: LocalGuide[] = [
       "Organize uma consulta de galpão ou grande área coberta na Tindiquera, Araucária, com usos, interfaces e necessidades de expansão bem definidos.",
     source,
     territorial:
-      "Tindiquera consta na malha de bairros de Araucária do IBGE de 2022. O exemplo de planejamento abaixo não descreve uma obra da Alumimec no bairro. Consulte cobertura e disponibilidade para o endereço.",
+      "Tindiquera consta na malha de bairros de Araucária do IBGE de 2022. O exemplo de planejamento abaixo não descreve uma obra da Alumimec no bairro. A Alumimec atende por deslocamento à obra; combine a avaliação e o agendamento.",
     service: 0,
     sections: [
       [

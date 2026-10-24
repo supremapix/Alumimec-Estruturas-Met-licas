@@ -1,8 +1,8 @@
 {
-  "guides": 20,
-  "viewports": 100,
-  "axeScans": 20,
-  "text200": 20,
+  "guides": 34,
+  "viewports": 170,
+  "axeScans": 34,
+  "text200": 34,
   "errors": [],
   "results": [
     {
@@ -206,6 +206,56 @@
       "overflow": false
     },
     {
+      "route": "/bairro/hauer",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/hauer",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/hauer",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/hauer",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/hauer",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/portao",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/portao",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/portao",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/portao",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/portao",
+      "width": 1440,
+      "overflow": false
+    },
+    {
       "route": "/bairro/araucaria/tindiquera",
       "width": 320,
       "overflow": false
@@ -227,6 +277,56 @@
     },
     {
       "route": "/bairro/araucaria/tindiquera",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/capela-velha",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/capela-velha",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/capela-velha",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/capela-velha",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/capela-velha",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/campina-da-barra",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/campina-da-barra",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/campina-da-barra",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/campina-da-barra",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/araucaria/campina-da-barra",
       "width": 1440,
       "overflow": false
     },
@@ -256,6 +356,56 @@
       "overflow": false
     },
     {
+      "route": "/bairro/colombo/maracana",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/maracana",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/maracana",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/maracana",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/maracana",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/roca-grande",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/roca-grande",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/roca-grande",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/roca-grande",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/colombo/roca-grande",
+      "width": 1440,
+      "overflow": false
+    },
+    {
       "route": "/bairro/fazenda-rio-grande/eucaliptos",
       "width": 320,
       "overflow": false
@@ -277,6 +427,56 @@
     },
     {
       "route": "/bairro/fazenda-rio-grande/eucaliptos",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/nacoes",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/nacoes",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/nacoes",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/nacoes",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/nacoes",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/gralha-azul",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/gralha-azul",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/gralha-azul",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/gralha-azul",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/fazenda-rio-grande/gralha-azul",
       "width": 1440,
       "overflow": false
     },
@@ -306,6 +506,56 @@
       "overflow": false
     },
     {
+      "route": "/bairro/pinhais/weissopolis",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/weissopolis",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/weissopolis",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/weissopolis",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/weissopolis",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/vargem-grande",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/vargem-grande",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/vargem-grande",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/vargem-grande",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinhais/vargem-grande",
+      "width": 1440,
+      "overflow": false
+    },
+    {
       "route": "/bairro/piraquara/guarituba-central",
       "width": 320,
       "overflow": false
@@ -327,6 +577,56 @@
     },
     {
       "route": "/bairro/piraquara/guarituba-central",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/jardim-dos-estados",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/jardim-dos-estados",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/jardim-dos-estados",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/jardim-dos-estados",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/jardim-dos-estados",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/vila-rosa",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/vila-rosa",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/vila-rosa",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/vila-rosa",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/piraquara/vila-rosa",
       "width": 1440,
       "overflow": false
     },
@@ -502,6 +802,56 @@
     },
     {
       "route": "/bairro/sao-jose-dos-pinhais/ina",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/sao-marcos",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/sao-marcos",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/sao-marcos",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/sao-marcos",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/sao-marcos",
       "width": 1440,
       "overflow": false
     }

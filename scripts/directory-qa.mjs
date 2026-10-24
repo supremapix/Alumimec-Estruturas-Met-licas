@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const inv=JSON.parse(fs.readFileSync('docs/territorial-inventory.json','utf8'));
-const previous=[...(await import('node:child_process')).execFileSync('git',['show','367c3e3:public/sitemap.xml'],{encoding:'utf8'}).matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>({path:new URL(m[1]).pathname}));
+const previous=[...(await import('node:child_process')).execFileSync('git',['show','f8dcb02:public/sitemap.xml'],{encoding:'utf8'}).matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>({path:new URL(m[1]).pathname}));
 const current=JSON.parse(fs.readFileSync('.prerender-routes.json','utf8'));
 for(const r of previous)assert.ok(current.some(c=>c.path===r.path),r.path);
 const b=await chromium.launch();const context=await b.newContext();const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));const results=[];
@@ -24,4 +24,4 @@ for(const city of inv.municipalities.filter(c=>c.verifiedNames.length)){
  await p.locator('#bairro-search').fill('');const href=await p.locator('.territory-list li a[target="_blank"]').first().getAttribute('href');assert.ok(href.startsWith('https://wa.me/'));assert.ok(decodeURIComponent(href).includes(city.city));
  await p.evaluate(()=>document.documentElement.style.fontSize='');
 }
-assert.deepEqual(errors,[]);await b.close();fs.writeFileSync('docs/qa/directories.json',JSON.stringify({preserved:previous.length,total:current.length,names:225,results,errors},null,2));console.log('7 directories / 225 names / 35 viewports / search + keyboard + text 200% / 166 routes preserved');
+assert.deepEqual(errors,[]);await b.close();fs.writeFileSync('docs/qa/directories.json',JSON.stringify({preserved:previous.length,total:current.length,names:225,results,errors},null,2));console.log('7 directories / 225 names / 35 viewports / search + keyboard + text 200% / 172 routes preserved');

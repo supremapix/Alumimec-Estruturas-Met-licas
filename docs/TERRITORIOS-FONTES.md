@@ -54,3 +54,17 @@ A identidade territorial pode ser pesquisada publicamente; ela não comprova dem
 Para novas páginas com fatos particulares, o cliente pode fornecer bairros efetivamente atendidos, tipos de demanda por local, registros de obras autorizados para divulgação e restrições reais de deslocamento/montagem. Endereços de clientes e imagens identificáveis devem ser publicados somente quando autorizados. Não é necessário publicar informação privada para enriquecer um guia. Para os 22 municípios sem lista nominal consolidada, é necessária também fonte territorial classificada e datada (ou leitura adicional dos anexos/GIS indicados). Não foram feitas solicitações a prefeituras ou terceiros.
 
 As 29 páginas municipais existentes continuam disponíveis, com os seis serviços e consulta de disponibilidade. Sete receberam diretório pesquisável de nomes oficiais versionados. Não houve remoção de indexação, troca de canonical para home ou eliminação de URLs herdadas. A expansão integral da RMC permanece incompleta; não se afirma ausência de impacto orgânico.
+
+## Atualização de 24/10/2026, após 17:32 UTC
+
+O responsável confirmou expressamente: “Alumimec atende sim todas as localidades onde chamarem” e “Isso alumimec se desloca a todos locais onde tem obras”. A pendência de cobertura comercial está resolvida. O atendimento pode ser declarado nos municípios/localidades por deslocamento à obra, sem criar filiais e sem prometer execução, frete, visita gratuita ou prazo. As observações anteriores deste relatório descrevem a evidência disponível na etapa 2 e foram superadas quanto à cobertura.
+
+Pesquisa complementar desta rodada:
+
+- Tijucas do Sul: o [SAPL, PLE 25/2024](https://sapl.tijucasdosul.pr.leg.br/materia/3608) confirma que existe a Lei 911, de 21/11/2023, sobre perímetro e divisão de bairros. A matéria propõe alterá-la, mas a página não fornece texto consolidado nem demonstra o resultado da alteração. Não foi publicada a relação do projeto de 2023 como se fosse a divisão vigente.
+- Quatro Barras: o [edital municipal de 2025, página 4](https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf) relaciona 22 referências, incluindo quatro explicitamente rurais. É uma lista para política cultural, não uma lei de delimitação nem censo completo. Não foi usada sua classificação socioeconômica no marketing da Alumimec. O diagnóstico territorial Parte III excede o limite de leitura da ferramenta (24,7 MB); continua sem transcrição nominal consolidada.
+- Campo Largo: o índice de cartografia continuou sem texto extraível. Notícias municipais chamam Ferraria tanto de bairro quanto de distrito. Essa divergência reforça a necessidade de fonte de delimitação; nenhuma página nova foi criada sob classificação inferida.
+
+A etapa 3 acrescenta 14 guias de aplicações distintas nos nomes já verificados, totalizando 34. Restam 191 referências inventariadas sem guia individual. A confirmação comercial não cria fatos locais sobre obras, predominância de imóveis, acessos, terreno ou regras urbanísticas. O restante deve avançar com fontes específicas ou necessidades reais que sustentem conteúdo próprio, sem trocar apenas nomes nos textos publicados.
+
+A consulta direta ao endpoint público SAPL de normas por número 911/ano 2023 retornou HTTP 200 e lista vazia em 24/10/2026. Isso não invalida a existência da lei citada na matéria; apenas impede obter seu texto por esse índice. Nenhuma negação de permissão ocorreu.

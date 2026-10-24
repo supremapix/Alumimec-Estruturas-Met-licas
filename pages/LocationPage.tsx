@@ -34,7 +34,7 @@ export default function LocationPage({
   const title = `${headquarters ? "Sede Alumimec" : "Consulta de estruturas metálicas"} em ${name} | Alumimec`;
   const description = headquarters
     ? "Conheça a sede da Alumimec em Afonso Pena, São José dos Pinhais. Endereço, contato e orientações para consultar seu projeto de estrutura metálica."
-    : `Planeje sua consulta de estruturas metálicas para ${name}. Envie endereço, medidas e uso do espaço à Alumimec; atendimento e condições sujeitos a confirmação.`;
+    : `Planeje sua consulta de estruturas metálicas para ${name}. Envie endereço, medidas e uso do espaço à Alumimec; atendimento por deslocamento ao local da obra, com projeto e agendamento avaliados pela equipe.`;
   return (
     <>
       <EnhancedSEO
@@ -42,6 +42,15 @@ export default function LocationPage({
         description={description}
         canonical={path}
         noindex={false}
+        locationName={city ? name : undefined}
+        services={
+          city
+            ? SERVICES.map((s) => ({
+                name: s.title,
+                description: s.description,
+              }))
+            : []
+        }
         breadcrumbs={[
           { name: "Início", url: "/" },
           { name, url: path },
@@ -143,9 +152,10 @@ export default function LocationPage({
                       : `O nome “${name}” foi preservado do diretório anterior. Não está tratado aqui como bairro oficial de Curitiba; pode ser denominação popular, referência regional ou cadastro que precisa de correção. Confirme município, bairro e CEP.`}
                 </p>
                 <p>
-                  A presença desta página não confirma uma filial, uma obra
-                  realizada no local ou disponibilidade de atendimento. A equipe
-                  precisa avaliar a solicitação.
+                  A Alumimec atende por deslocamento ao local da obra. Esta
+                  página não representa uma filial nem comprova uma obra já
+                  executada aqui. Informe o endereço para avaliar o projeto e
+                  combinar o atendimento.
                 </p>
               </>
             )}
@@ -190,8 +200,9 @@ export default function LocationPage({
         <section className="section wrap">
           <h2>Guias de bairros verificados</h2>
           <p>
-            Seleção editorial em expansão. A lista não representa cobertura
-            confirmada de todos os endereços.
+            Seleção editorial em expansão. A Alumimec atende as localidades por
+            deslocamento à obra; projeto, acesso e agendamento são avaliados
+            individualmente.
           </p>
           {LOCAL_GUIDES.filter((g) => g.city === name).map((g) => (
             <a className="text-link" href={g.path} key={g.path}>

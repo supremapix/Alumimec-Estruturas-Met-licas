@@ -17,11 +17,10 @@ const municipalities = CITIES.map((city) => {
     completedGuides: LOCAL_GUIDES.filter((g) => g.city === city).map(
       (g) => g.path,
     ),
-    coverage: ["Curitiba", "São José dos Pinhais"].includes(city)
-      ? "Evidência municipal no catálogo; confirmar cada endereço."
-      : "Sem comprovação individual de cobertura; consulta obrigatória.",
+    coverage:
+      "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
     status: d.names.length
-      ? `Inventário de ${d.names.length} referências da fonte ${d.year}; não comprova cobertura comercial nem alterações posteriores.`
+      ? `Inventário de ${d.names.length} referências da fonte ${d.year}; não comprova alterações territoriais posteriores.`
       : "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md.",
   };
 });
@@ -36,16 +35,16 @@ const legacy = NEIGHBORHOODS.map((name) => ({
 const report = {
   checkedAt: "2026-10-24",
   complete: false,
-  stage: 2,
+  stage: 3,
   routeCount: getAllRoutes().length,
-  existingRoutesPreserved: 166,
-  newRoutes: getAllRoutes().length - 166,
+  existingRoutesPreserved: 172,
+  newRoutes: getAllRoutes().length - 172,
   guideCount: LOCAL_GUIDES.length,
   verifiedNames: municipalities.reduce((n, m) => n + m.verifiedNames.length, 0),
   municipalities,
   legacyNames: legacy,
   limitations: [
-    "A relação de nomes não comprova disponibilidade comercial por endereço.",
+    "Cobertura confirmada pelo responsável; avaliação técnica e agendamento continuam necessários.",
     "IBGE 2022 é uma base datada; Piraquara usa lei municipal de 2026.",
     "Não foram criadas páginas automáticas para todos os nomes; diretórios municipais preservam acesso ao catálogo e consulta contextual.",
     "22 municípios ainda exigem consolidação nominal de fontes que distinguem bairros, localidades e loteamentos.",
