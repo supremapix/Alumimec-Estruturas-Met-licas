@@ -8,11 +8,19 @@ export default function FloatingButtons() {
     update();
     const dock = document.querySelector(".floating-contact");
     const resize = new ResizeObserver(() => {
-      if (dock)
+      if (dock) {
+        dock.setAttribute(
+          "data-large-text",
+          String(
+            parseFloat(getComputedStyle(document.documentElement).fontSize) >=
+              27,
+          ),
+        );
         document.documentElement.style.setProperty(
           "--dock-space",
           `${Math.ceil(dock.getBoundingClientRect().height) + 24}px`,
         );
+      }
     });
     if (dock) resize.observe(dock);
     scroller?.addEventListener("scroll", update, { passive: true });

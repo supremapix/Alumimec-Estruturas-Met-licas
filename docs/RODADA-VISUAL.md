@@ -18,3 +18,6 @@ Capturas antes/depois: `docs/qa/cards-before.png`, `cards-after-320.png`, `cards
 A expansão territorial solicitada posteriormente ainda não está incluída nesta publicação visual. Exige inventário oficial por município e conteúdo editorial próprio; não será considerada concluída por contagem de rotas.
 ## Checkpoint de publicação visual
 A rodada visual foi publicada no commit `a5b40f5` e verificada em produção: 160 URLs, sitemap, oito endpoints de ícones/manifest e teste mobile de share/lightbox/passos. Na etapa territorial seguinte, a faixa dos controles passou a ajustar sua altura ao texto ampliado (ResizeObserver), e as capturas completas dos cards foram refeitas sem recortes causados pela área rolável.
+
+## Refinamento de leitura
+Após a etapa 1, o hero de 320px foi ajustado para evitar a fragmentação da palavra “possibilidades” no tamanho normal. O menu mantém a palavra inteira. O link de pular conteúdo fica totalmente fora da tela até receber foco, inclusive a 200%. Os controles flutuantes se empilham quando a fonte raiz aumenta, e sua faixa reservada acompanha a altura real. Teste reproduzível: `node scripts/dock-qa.mjs`; capturas `docs/qa/dock-18px.png` e `dock-36px.png`. Build, lint, tipos e verificação de rotas passaram; nenhuma URL ou política de indexação mudou.
