@@ -10,7 +10,7 @@ const results = [];
 for (const width of [320, 360, 390, 430, 1440]) {
   await p.setViewportSize({ width, height: 1000 });
   await p.goto(base, { waitUntil: "domcontentloaded" });
-  assert.equal(await p.locator("[data-instagram-section]").count(), 3);
+  assert.equal(await p.locator("[data-instagram-section]").count(), 1);
   for (const size of ["18px", "36px"]) {
     await p.evaluate(
       (s) => (document.documentElement.style.fontSize = s),
@@ -44,10 +44,11 @@ for (const width of [320, 360, 390, 430, 1440]) {
         }),
         false,
       );
-      const box = await iframe.boundingBox();
-      assert.ok(
-        Math.abs(box.width / box.height - (width < 640 ? 9 / 11 : 4 / 5)) <
-          0.02,
+      assert.equal(
+        await p
+          .locator('iframe[src="https://www.instagram.com/alumimec/embed"]')
+          .count(),
+        1,
       );
       results.push({
         width,
@@ -76,19 +77,76 @@ for (const width of [320, 360, 390, 430, 1440]) {
       [],
     );
   }
-  if (width === 320 || width === 1440) {
+  {
     await p.locator("#instagram-home").scrollIntoViewIfNeeded();
-    await p.screenshot({ path: `docs/qa/instagram-${width}.png` });
+    const iframe = p.locator("#instagram-home iframe");
+    const frame = iframe.contentFrame();
+    await frame
+      .locator("img")
+      .last()
+      .waitFor({ state: "visible", timeout: 30000 });
+    await p.waitForTimeout(1500);
+    const bounds = await iframe.boundingBox();
+    const content = await frame
+      .locator("body")
+      .evaluate((e) => ({
+        height: e.scrollHeight,
+        lastImageBottom: Math.max(
+          ...[...e.querySelectorAll("img")].map(
+            (i) => i.getBoundingClientRect().bottom,
+          ),
+        ),
+      }));
+    assert.ok(
+      Math.abs(bounds.height - content.height) <= 2,
+      JSON.stringify({ width, bounds, content }),
+    );
+    assert.ok(
+      bounds.height >= content.lastImageBottom,
+      "Image must remain fully visible",
+    );
+    const previousHeight = await iframe.evaluate((e) => e.style.height);
+    await p.evaluate(() =>
+      window.dispatchEvent(
+        new window.MessageEvent("message", {
+          origin: "https://www.instagram.com",
+          source: window,
+          data: JSON.stringify({ type: "MEASURE", details: { height: 9999 } }),
+        }),
+      ),
+    );
+    assert.equal(
+      await iframe.evaluate((e) => e.style.height),
+      previousHeight,
+      "Reject messages from a different window",
+    );
+    results.push({
+      width,
+      loadedEmbed: true,
+      iframeHeight: bounds.height,
+      contentHeight: content.height,
+      lastImageBottom: content.lastImageBottom,
+    });
+  }
+  if (width === 320 || width === 390 || width === 430 || width === 1440) {
+    await p.locator("#instagram-home").scrollIntoViewIfNeeded();
+    await p.locator("#instagram-home").evaluate((e) => {
+      const root = document.querySelector(".app-scroll");
+      root.scrollTop +=
+        e.getBoundingClientRect().top - root.getBoundingClientRect().top;
+    });
+    await p.waitForTimeout(800);
+    await p.screenshot({ path: `docs/qa/instagram-fixed-${width}.png` });
   }
 }
 await p.emulateMedia({ reducedMotion: "reduce" });
 for (const path of ["/", "/#sobre", "/#contato"]) {
   await p.goto(base + path, { waitUntil: "domcontentloaded" });
-  assert.equal(await p.locator("[data-instagram-section]").count(), 3);
-  await p.locator("#instagram-contato").scrollIntoViewIfNeeded();
+  assert.equal(await p.locator("[data-instagram-section]").count(), 1);
+  await p.locator("#instagram-home").scrollIntoViewIfNeeded();
   assert.equal(
     await p
-      .locator("#instagram-contato > div")
+      .locator("#instagram-home > div")
       .last()
       .evaluate((e) => window.getComputedStyle(e).opacity),
     "1",

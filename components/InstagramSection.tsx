@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimate, useInView, useReducedMotion } from "motion/react";
 import { ArrowUpRight, Instagram, ShieldCheck } from "lucide-react";
 
@@ -20,6 +20,48 @@ export default function InstagramSection({
   id,
   placement,
 }: InstagramSectionProps) {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [embedHeight, setEmbedHeight] = useState<number>();
+  useEffect(() => {
+    // Instagram's own MEASURE messages; never read or modify its cross-origin DOM.
+    const onMessage = (event: MessageEvent<unknown>) => {
+      if (
+        event.origin !== "https://www.instagram.com" ||
+        event.source !== iframeRef.current?.contentWindow
+      )
+        return;
+      let payload: unknown = event.data;
+      if (typeof payload === "string") {
+        try {
+          payload = JSON.parse(payload);
+        } catch {
+          return;
+        }
+      }
+      if (
+        !payload ||
+        typeof payload !== "object" ||
+        !("type" in payload) ||
+        payload.type !== "MEASURE" ||
+        !("details" in payload)
+      )
+        return;
+      const details = payload.details;
+      if (!details || typeof details !== "object" || !("height" in details))
+        return;
+      const height = details.height;
+      if (
+        typeof height !== "number" ||
+        !Number.isFinite(height) ||
+        height <= 0 ||
+        height > 10000
+      )
+        return;
+      setEmbedHeight(Math.ceil(height) + 1);
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
   const [scope, animate] = useAnimate<HTMLDivElement>();
   const inView = useInView(scope, { once: true, amount: 0.1 });
   const reducedMotion = useReducedMotion();
@@ -74,6 +116,12 @@ export default function InstagramSection({
           className="mx-auto w-full max-w-md overflow-hidden rounded-3xl border border-gray-200 bg-white p-2 shadow-lg sm:p-3"
         >
           <iframe
+            ref={iframeRef}
+            style={
+              embedHeight
+                ? { height: embedHeight, aspectRatio: "auto" }
+                : undefined
+            }
             src={EMBED_URL}
             title={`Perfil @alumimec no Instagram — ${labels[placement]}`}
             loading="lazy"

@@ -1,0 +1,468 @@
+[
+  {
+    "width": 320,
+    "iframe": {
+      "x": 28,
+      "y": 297.328125,
+      "width": 264,
+      "height": 322.65625
+    },
+    "info": {
+      "height": 353,
+      "clientHeight": 353,
+      "children": [
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "DIV",
+          "height": 352.6875
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        }
+      ],
+      "images": [
+        {
+          "top": 35.5,
+          "bottom": 91.5
+        },
+        {
+          "top": 128,
+          "bottom": 215.328125
+        },
+        {
+          "top": 128,
+          "bottom": 215.34375
+        },
+        {
+          "top": 128,
+          "bottom": 215.328125
+        },
+        {
+          "top": 216.34375,
+          "bottom": 303.671875
+        },
+        {
+          "top": 216.34375,
+          "bottom": 303.6875
+        },
+        {
+          "top": 216.34375,
+          "bottom": 303.671875
+        }
+      ],
+      "links": [
+        {
+          "text": "alumimec",
+          "top": 28.5,
+          "bottom": 39.5
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 215.328125
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 215.34375
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 215.328125
+        },
+        {
+          "text": "",
+          "top": 216.34375,
+          "bottom": 303.671875
+        },
+        {
+          "text": "",
+          "top": 216.34375,
+          "bottom": 303.6875
+        },
+        {
+          "text": "",
+          "top": 216.34375,
+          "bottom": 303.671875
+        },
+        {
+          "text": "Instagram",
+          "top": 8,
+          "bottom": 32
+        }
+      ]
+    },
+    "messages": [
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":577},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":353},\"type\":\"MEASURE\"}"
+    ]
+  },
+  {
+    "width": 390,
+    "iframe": {
+      "x": 28,
+      "y": 276.34375,
+      "width": 334,
+      "height": 408.21875
+    },
+    "info": {
+      "height": 399,
+      "clientHeight": 399,
+      "children": [
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "DIV",
+          "height": 399.34375
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        }
+      ],
+      "images": [
+        {
+          "top": 35.5,
+          "bottom": 91.5
+        },
+        {
+          "top": 128,
+          "bottom": 238.65625
+        },
+        {
+          "top": 128,
+          "bottom": 238.671875
+        },
+        {
+          "top": 128,
+          "bottom": 238.671875
+        },
+        {
+          "top": 239.671875,
+          "bottom": 350.328125
+        },
+        {
+          "top": 239.671875,
+          "bottom": 350.34375
+        },
+        {
+          "top": 239.671875,
+          "bottom": 350.34375
+        }
+      ],
+      "links": [
+        {
+          "text": "alumimec",
+          "top": 28.5,
+          "bottom": 39.5
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 238.65625
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 238.671875
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 238.671875
+        },
+        {
+          "text": "",
+          "top": 239.671875,
+          "bottom": 350.328125
+        },
+        {
+          "text": "",
+          "top": 239.671875,
+          "bottom": 350.34375
+        },
+        {
+          "text": "",
+          "top": 239.671875,
+          "bottom": 350.34375
+        },
+        {
+          "text": "Instagram",
+          "top": 8,
+          "bottom": 32
+        }
+      ]
+    },
+    "messages": [
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":577},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":399},\"type\":\"MEASURE\"}"
+    ]
+  },
+  {
+    "width": 430,
+    "iframe": {
+      "x": 28,
+      "y": 235.234375,
+      "width": 374,
+      "height": 457.109375
+    },
+    "info": {
+      "height": 426,
+      "clientHeight": 426,
+      "children": [
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "DIV",
+          "height": 426
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        }
+      ],
+      "images": [
+        {
+          "top": 35.5,
+          "bottom": 91.5
+        },
+        {
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "top": 253,
+          "bottom": 377
+        },
+        {
+          "top": 253,
+          "bottom": 377
+        },
+        {
+          "top": 253,
+          "bottom": 377
+        }
+      ],
+      "links": [
+        {
+          "text": "alumimec",
+          "top": 28.5,
+          "bottom": 39.5
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 252
+        },
+        {
+          "text": "",
+          "top": 253,
+          "bottom": 377
+        },
+        {
+          "text": "",
+          "top": 253,
+          "bottom": 377
+        },
+        {
+          "text": "",
+          "top": 253,
+          "bottom": 377
+        },
+        {
+          "text": "Instagram",
+          "top": 8,
+          "bottom": 32
+        }
+      ]
+    },
+    "messages": [
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":577},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":426},\"type\":\"MEASURE\"}"
+    ]
+  },
+  {
+    "width": 1440,
+    "iframe": {
+      "x": 482.5,
+      "y": 176.65625,
+      "width": 475,
+      "height": 593.75
+    },
+    "info": {
+      "height": 493,
+      "clientHeight": 493,
+      "children": [
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "DIV",
+          "height": 493.34375
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        },
+        {
+          "tag": "SCRIPT",
+          "height": 0
+        }
+      ],
+      "images": [
+        {
+          "top": 35.5,
+          "bottom": 91.5
+        },
+        {
+          "top": 128,
+          "bottom": 285.65625
+        },
+        {
+          "top": 128,
+          "bottom": 285.671875
+        },
+        {
+          "top": 128,
+          "bottom": 285.671875
+        },
+        {
+          "top": 286.671875,
+          "bottom": 444.328125
+        },
+        {
+          "top": 286.671875,
+          "bottom": 444.34375
+        },
+        {
+          "top": 286.671875,
+          "bottom": 444.34375
+        }
+      ],
+      "links": [
+        {
+          "text": "alumimec",
+          "top": 28.5,
+          "bottom": 39.5
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 285.65625
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 285.671875
+        },
+        {
+          "text": "",
+          "top": 128,
+          "bottom": 285.671875
+        },
+        {
+          "text": "",
+          "top": 286.671875,
+          "bottom": 444.328125
+        },
+        {
+          "text": "",
+          "top": 286.671875,
+          "bottom": 444.34375
+        },
+        {
+          "text": "",
+          "top": 286.671875,
+          "bottom": 444.34375
+        },
+        {
+          "text": "Instagram",
+          "top": 8,
+          "bottom": 32
+        }
+      ]
+    },
+    "messages": [
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{},\"type\":\"LOADING\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"styles\":[[\"boxShadow\",\"none\"],[\"border\",\"1px solid #dbdbdb\"],[\"margin\",\"0px 0px 12px\"]]},\"type\":\"MOUNTED\"}",
+      "{\"details\":{\"height\":0},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":577},\"type\":\"MEASURE\"}",
+      "{\"details\":{\"height\":493},\"type\":\"MEASURE\"}"
+    ]
+  }
+]

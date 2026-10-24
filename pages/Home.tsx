@@ -177,7 +177,6 @@ export default function Home() {
           </figure>
         </div>
       </section>
-      <InstagramSection id="instagram-empresa" placement="empresa" />
       <section className="section wrap" id="processo">
         <p className="eyebrow">COMO ORGANIZAR SUA OBRA</p>
         <h2>Uma etapa prepara a próxima.</h2>
@@ -420,7 +419,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-      <InstagramSection id="instagram-contato" placement="contato" />
     </>
   );
 }

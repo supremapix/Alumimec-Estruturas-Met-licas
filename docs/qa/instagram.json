@@ -1,29 +1,11 @@
 {
   "base": "http://127.0.0.1:4174",
-  "checkedAt": "2026-10-24T21:12:27.520Z",
+  "checkedAt": "2026-10-24T21:20:31.128Z",
   "results": [
     {
       "width": 320,
       "size": "18px",
-      "placement": "empresa",
-      "overflow": false
-    },
-    {
-      "width": 320,
-      "size": "18px",
       "placement": "home",
-      "overflow": false
-    },
-    {
-      "width": 320,
-      "size": "18px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 320,
-      "size": "36px",
-      "placement": "empresa",
       "overflow": false
     },
     {
@@ -34,32 +16,15 @@
     },
     {
       "width": 320,
-      "size": "36px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 360,
-      "size": "18px",
-      "placement": "empresa",
-      "overflow": false
+      "loadedEmbed": true,
+      "iframeHeight": 354,
+      "contentHeight": 353,
+      "lastImageBottom": 303.6875
     },
     {
       "width": 360,
       "size": "18px",
       "placement": "home",
-      "overflow": false
-    },
-    {
-      "width": 360,
-      "size": "18px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 360,
-      "size": "36px",
-      "placement": "empresa",
       "overflow": false
     },
     {
@@ -70,32 +35,15 @@
     },
     {
       "width": 360,
-      "size": "36px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 390,
-      "size": "18px",
-      "placement": "empresa",
-      "overflow": false
+      "loadedEmbed": true,
+      "iframeHeight": 380,
+      "contentHeight": 379,
+      "lastImageBottom": 330.34375
     },
     {
       "width": 390,
       "size": "18px",
       "placement": "home",
-      "overflow": false
-    },
-    {
-      "width": 390,
-      "size": "18px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 390,
-      "size": "36px",
-      "placement": "empresa",
       "overflow": false
     },
     {
@@ -106,32 +54,15 @@
     },
     {
       "width": 390,
-      "size": "36px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 430,
-      "size": "18px",
-      "placement": "empresa",
-      "overflow": false
+      "loadedEmbed": true,
+      "iframeHeight": 400,
+      "contentHeight": 399,
+      "lastImageBottom": 350.34375
     },
     {
       "width": 430,
       "size": "18px",
       "placement": "home",
-      "overflow": false
-    },
-    {
-      "width": 430,
-      "size": "18px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 430,
-      "size": "36px",
-      "placement": "empresa",
       "overflow": false
     },
     {
@@ -142,32 +73,15 @@
     },
     {
       "width": 430,
-      "size": "36px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 1440,
-      "size": "18px",
-      "placement": "empresa",
-      "overflow": false
+      "loadedEmbed": true,
+      "iframeHeight": 427,
+      "contentHeight": 426,
+      "lastImageBottom": 377
     },
     {
       "width": 1440,
       "size": "18px",
       "placement": "home",
-      "overflow": false
-    },
-    {
-      "width": 1440,
-      "size": "18px",
-      "placement": "contato",
-      "overflow": false
-    },
-    {
-      "width": 1440,
-      "size": "36px",
-      "placement": "empresa",
       "overflow": false
     },
     {
@@ -178,9 +92,10 @@
     },
     {
       "width": 1440,
-      "size": "36px",
-      "placement": "contato",
-      "overflow": false
+      "loadedEmbed": true,
+      "iframeHeight": 494,
+      "contentHeight": 493,
+      "lastImageBottom": 444.34375
     }
   ],
   "anchors": [
@@ -190,14 +105,6 @@
   ],
   "reducedMotion": true,
   "frames": [
-    {
-      "url": "https://www.instagram.com/alumimec/embed",
-      "notice": "alumimec\n724 followers\n • \n41 posts\nView full profile on Instagram\nInstagram"
-    },
-    {
-      "url": "https://www.instagram.com/alumimec/embed",
-      "notice": "alumimec\n724 followers\n • \n41 posts\nView full profile on Instagram\nInstagram"
-    },
     {
       "url": "https://www.instagram.com/alumimec/embed",
       "notice": "alumimec\n724 followers\n • \n41 posts\nView full profile on Instagram\nInstagram"
