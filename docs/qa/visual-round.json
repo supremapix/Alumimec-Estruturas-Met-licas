@@ -1,0 +1,32 @@
+[
+  {
+    "width": 320,
+    "photoEscapeFocus": true,
+    "shareEscapeFocus": true,
+    "overflow": false
+  },
+  {
+    "width": 360,
+    "photoEscapeFocus": true,
+    "shareEscapeFocus": true,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "photoEscapeFocus": true,
+    "shareEscapeFocus": true,
+    "overflow": false
+  },
+  {
+    "width": 430,
+    "photoEscapeFocus": true,
+    "shareEscapeFocus": true,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "photoEscapeFocus": true,
+    "shareEscapeFocus": true,
+    "overflow": false
+  }
+]

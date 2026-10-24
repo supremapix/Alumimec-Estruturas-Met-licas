@@ -825,3 +825,221 @@ textarea {
 .region .faq-list {
   margin-top: 52px;
 }
+/* Original photos fill their frames; brand artwork keeps its intrinsic composition. */
+.photo-frame {
+  display: block;
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #e3e7e2;
+}
+.photo-frame img,
+.service-card figure .photo-frame img,
+.gallery-grid .photo-frame img,
+.split figure .photo-frame img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+.hero-photo .photo-frame {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: auto;
+}
+.photo-frame img[src*="mezaninos"] {
+  object-position: 50% 30%;
+}
+.photo-frame img[src*="forvia"] {
+  object-position: 50% 38%;
+}
+.photo-frame img[src*="cobertura-metalica"] {
+  object-position: 50% 40%;
+}
+.photo-frame img[src*="alumimec-parana"] {
+  object-position: 50% 25%;
+}
+.photo-frame.photo-collage img {
+  position: absolute;
+  width: 150%;
+  max-width: none;
+  height: 200%;
+  left: -25%;
+  bottom: -3%;
+  object-fit: cover;
+}
+.photo-dialog,
+.share-dialog {
+  border: 1px solid #647568;
+  padding: 24px;
+  width: min(92vw, 800px);
+  max-height: 90dvh;
+  overflow: auto;
+  color: #172322;
+  background: white;
+}
+dialog::backdrop {
+  background: rgba(10, 20, 16, 0.82);
+}
+.photo-dialog img,
+.split figure .photo-dialog img,
+.hero-photo .photo-dialog img,
+.gallery-grid .photo-dialog img,
+.service-card figure .photo-dialog img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 65dvh;
+  object-fit: contain;
+  aspect-ratio: auto;
+  margin-block: 20px;
+  background: transparent;
+}
+.photo-dialog p {
+  font-size: 0.9rem;
+}
+.share-dialog h2 {
+  font-size: 1.7rem;
+  margin-block: 24px;
+}
+.share-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 24px;
+}
+.share-options > * {
+  flex: 1 1 180px;
+}
+.share-dialog button:disabled {
+  display: none;
+}
+body {
+  padding-bottom: 100px;
+}
+html {
+  scroll-padding-bottom: 120px;
+}
+a,
+button,
+input,
+summary {
+  scroll-margin-bottom: 120px;
+}
+.floating-contact {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  z-index: 35;
+  background: white;
+  border: 1px solid #647568;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 20px #17232226;
+  max-width: calc(100vw - 76px);
+}
+.floating-contact .contact-actions {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.floating-contact .contact-actions > .button {
+  width: auto;
+  min-height: 48px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+.floating-contact .contact-actions > a {
+  background: #176638;
+}
+.top-rail {
+  bottom: 24px;
+}
+@media (max-width: 360px) {
+  .floating-contact .contact-actions > .button {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+  .floating-contact {
+    left: 8px;
+    padding: 6px;
+  }
+}
+.process-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+}
+.process-steps li {
+  border-top: 2px solid #8b9c88;
+  padding: 24px 0;
+}
+.step-marker {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.process-steps .step-marker span {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #dce9a6;
+  color: #172322;
+  font-weight: 700;
+}
+.step-arrived .step-marker {
+  animation: step-arrival 0.65s ease-out;
+}
+@keyframes step-arrival {
+  from {
+    transform: translateY(12px);
+    background: #dce9a6;
+  }
+  to {
+    transform: translateY(0);
+    background: transparent;
+  }
+}
+@media (max-width: 800px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  .process-steps li {
+    border-top: 0;
+    border-left: 2px solid #8b9c88;
+    padding: 0 0 28px 22px;
+  }
+}
+/* A reserved viewport strip keeps the floating controls outside all page content. */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  padding-bottom: 0;
+}
+.app-scroll {
+  height: calc(100dvh - 88px);
+  min-height: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-padding-block: 24px;
+}
+.floating-contact {
+  max-height: 76px;
+}
+.top-rail {
+  bottom: 24px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-scroll {
+    scroll-behavior: auto;
+  }
+}

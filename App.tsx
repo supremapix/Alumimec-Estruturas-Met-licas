@@ -13,7 +13,7 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    document.querySelector(".app-scroll")?.scrollTo(0, 0);
   }, [pathname]);
   return null;
 };
@@ -24,7 +24,7 @@ const ScrollToTop = () => {
  */
 const App: React.FC = () => {
   return (
-    <div className="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+    <div className="app-scroll font-sans text-gray-800 antialiased flex flex-col min-h-screen">
       <ScrollToTop />
       <Header />
       <main id="conteudo" tabIndex={-1} className="flex-grow">

@@ -43,6 +43,8 @@ await page
   .getByRole("button", { name: "Compartilhar", exact: true })
   .first()
   .click();
+await page.getByRole("button", { name: "Mais opções do aparelho" }).click();
+await page.keyboard.press("Escape");
 assert.ok(
   (await page.evaluate(() => window.__shared.url)).startsWith(
     "http://127.0.0.1:4174",

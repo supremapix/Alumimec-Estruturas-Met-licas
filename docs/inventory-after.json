@@ -109,7 +109,28 @@
   "servicePages": 6,
   "indexableRoutes": 160,
   "originalImageFiles": 37,
-  "changedOriginalImages": [],
+  "changedOriginalImages": [
+    {
+      "name": "apple-touch-icon.png",
+      "sha256": "5a51fab72b7d82d6f287500f542873c032e07ddae5885345b359bbfbec82bf05"
+    },
+    {
+      "name": "favicon-96x96.png",
+      "sha256": "f6982eec3cef80a93021b76410ad38ad4b64b770c128afcdf3b3e2ea3e0a27fd"
+    },
+    {
+      "name": "favicon.ico",
+      "sha256": "28331d53ffcc51cb8f4f00e92a04027ace0d6a92f5b466cd8f7567827a6790d6"
+    },
+    {
+      "name": "web-app-manifest-192x192.png",
+      "sha256": "7b59f80378eefab3463ca142e41a874342bff375084918868f7231780ec551dd"
+    },
+    {
+      "name": "web-app-manifest-512x512.png",
+      "sha256": "9593d972cf940bc21cd7673dfcb2081aeb08053e93abf2ea66fca4ede3b78f14"
+    }
+  ],
   "duplicateGalleryHashes": 0,
   "addedAssets": [
     "suprema-oficial.svg",

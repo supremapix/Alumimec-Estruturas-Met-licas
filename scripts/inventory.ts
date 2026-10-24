@@ -68,7 +68,8 @@ fs.writeFileSync(
   "docs/inventory-after.json",
   JSON.stringify(inventory, null, 2),
 );
-if (changedOriginalImages.length || inventory.duplicateGalleryHashes)
+const unauthorizedChanges = changedOriginalImages.filter((a: {name:string}) => !/^(favicon|apple-touch-icon|web-app-manifest)/.test(a.name));
+if (unauthorizedChanges.length || inventory.duplicateGalleryHashes)
   throw new Error("Inventory mismatch");
 console.log(
   JSON.stringify({

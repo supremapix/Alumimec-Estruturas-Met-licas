@@ -1,3 +1,4 @@
+import Photo from "../components/Photo";
 import React from "react";
 import { useParams } from "react-router-dom";
 import { SERVICES } from "../constants";
@@ -48,7 +49,7 @@ export default function ServicePage() {
             />
           </div>
           <figure>
-            <img
+            <Photo
               src={service.image}
               width="800"
               height="600"

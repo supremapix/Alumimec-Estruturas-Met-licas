@@ -159,10 +159,12 @@ await page
   .getByRole("button", { name: "Compartilhar", exact: true })
   .first()
   .click();
+await page.getByRole("button", {name:"Copiar link",exact:true}).click();
 assert.equal(
-  await page.locator("[role=status]").first().textContent(),
+  await page.locator("dialog[open] [role=status]").textContent(),
   "Link copiado.",
 );
+await page.keyboard.press("Escape");
 await page.getByRole("button", { name: "Portões", exact: true }).click();
 assert.equal(await page.locator(".gallery-grid figure").count(), 2);
 for (const route of [

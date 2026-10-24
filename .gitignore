@@ -30,3 +30,8 @@ docs/qa/*.png
 !docs/qa/desktop-hero.png
 !docs/qa/mobile-hero.png
 !docs/qa/agency-mobile.png
+!docs/qa/cards-before.png
+!docs/qa/cards-after-320.png
+!docs/qa/cards-after-1440.png
+!docs/qa/gallery-after-390.png
+!docs/qa/share-320.png

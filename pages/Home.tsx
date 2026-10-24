@@ -1,3 +1,5 @@
+import ProcessSteps from "../components/ProcessSteps";
+import Photo from "../components/Photo";
 import React, { useState } from "react";
 import EnhancedSEO from "../components/EnhancedSEO";
 import ContactActions, { whatsapp } from "../components/ContactActions";
@@ -58,7 +60,7 @@ export default function Home() {
             </a>
           </div>
           <figure className="hero-photo">
-            <img
+            <Photo
               src="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
               alt="Estrutura metálica de galpão do acervo Alumimec, com pilares e treliças de cobertura"
               width="1200"
@@ -96,7 +98,7 @@ export default function Home() {
           {SERVICES.map((s, i) => (
             <article className="service-card" id={`servico-${s.id}`} key={s.id}>
               <figure>
-                <img
+                <Photo
                   src={s.image}
                   alt={s.title + " — fotografia do acervo Alumimec"}
                   loading="lazy"
@@ -152,7 +154,7 @@ export default function Home() {
             </a>
           </div>
           <figure>
-            <img
+            <Photo
               src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
               alt="Barracão industrial identificado no acervo da Alumimec como obra Forvia em São José dos Pinhais"
               width="800"
@@ -169,40 +171,7 @@ export default function Home() {
       <section className="section wrap" id="processo">
         <p className="eyebrow">COMO ORGANIZAR SUA OBRA</p>
         <h2>Uma etapa prepara a próxima.</h2>
-        <div className="process-grid">
-          {[
-            [
-              "Conversa inicial",
-              "Compartilhe o uso do espaço, o endereço, fotos e medidas aproximadas.",
-            ],
-            [
-              "Projeto",
-              "Avalie vãos, cargas, apoios e requisitos técnicos com os responsáveis pelo projeto.",
-            ],
-            [
-              "Proposta",
-              "Confira escopo, materiais, documentação, custos e cronograma antes de aprovar.",
-            ],
-            [
-              "Fabricação",
-              "A produção segue os detalhes e acabamentos definidos para a estrutura.",
-            ],
-            [
-              "Montagem",
-              "Planeje acessos, preparação do local e sequência de instalação com a equipe.",
-            ],
-            [
-              "Entrega e cuidados",
-              "Alinhe a conferência do serviço e as orientações de conservação aplicáveis.",
-            ],
-          ].map(([title, text], i) => (
-            <article key={title}>
-              <span>0{i + 1}</span>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </article>
-          ))}
-        </div>
+        <ProcessSteps />
       </section>
       <section id="galeria" className="section gallery-section">
         <div className="wrap">
@@ -233,20 +202,13 @@ export default function Home() {
               (p) => category === "Todos" || p.category === category,
             ).map((p) => (
               <figure key={p.id}>
-                <a
-                  href={p.image}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`Ampliar: ${p.title} (nova aba)`}
-                >
-                  <img
-                    src={p.image}
-                    alt={p.title + " — acervo original"}
-                    width="600"
-                    height="450"
-                    loading="lazy"
-                  />
-                </a>
+                <Photo
+                  src={p.image}
+                  alt={p.title + " — acervo original"}
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                />
                 <figcaption>
                   <strong>{p.title}</strong>
                   <span>{p.description}</span>

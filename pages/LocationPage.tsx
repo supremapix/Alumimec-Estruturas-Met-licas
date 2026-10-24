@@ -1,3 +1,4 @@
+import Photo from "../components/Photo";
 import React from "react";
 import { useParams } from "react-router-dom";
 import EnhancedSEO from "../components/EnhancedSEO";
@@ -61,8 +62,7 @@ export default function LocationPage({
             />
           </div>
           {justified && (
-            <img
-              className="local-art"
+            <img className="local-art"
               src={headquarters ? "/local-sjp.svg" : "/local-curitiba.svg"}
               alt={`Alumimec — ${name}. Contato: (41) 99631-5885. Atendimento sob consulta.`}
               width="250"
@@ -94,7 +94,7 @@ export default function LocationPage({
                   portfólio, não uma especificação para outras obras.
                 </p>
                 <figure>
-                  <img
+                  <Photo
                     src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
                     width="800"
                     height="600"
@@ -182,3 +182,4 @@ export default function LocationPage({
     </>
   );
 }
+
