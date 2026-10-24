@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Alumimec — site institucional
 
-# Run and deploy your AI Studio app
+React + TypeScript + Vite, com HTML estático pré-renderizado para as 154 rotas existentes.
 
-This contains everything you need to run your app locally.
+## Executar
 
-View your app in AI Studio: https://ai.studio/apps/drive/1viXTy8JBS5DAZvd8H-daZBBFO--GRB7P
+Node.js 22 ou superior. Nenhuma chave de API é necessária.
 
-## Run Locally
+```sh
+npm ci
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+## Validar
 
+```sh
+npm run lint
+npm run typecheck
+npm run build
+npm run preview -- --host 127.0.0.1 --port 4174
+# Em outro terminal:
+npx playwright install chromium
+npm test
+npx tsx scripts/inventory.ts
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+No Windows, se o navegador estiver no cache do usuário fora do sandbox, configure PLAYWRIGHT_BROWSERS_PATH para o diretório de instalação existente.
+
+Build gera dist/, sitemap e HTML por rota; qualquer erro de pré-render interrompe a compilação. A configuração Vercel mantém os redirects legados e a resposta 404.
+Veja [relatório de entrega](docs/PROTOCOLO-SUPREMA.md), [inventário final](docs/inventory-after.json) e [resultados de QA](docs/qa/results.json).
+
+Atualize dados confirmados em constants.ts e site.config.ts. Não converta listas territoriais em cobertura presumida. Páginas locais herdadas sem conteúdo próprio permanecem noindex.

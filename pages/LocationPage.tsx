@@ -1,597 +1,182 @@
-import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import EnhancedSEO from '../components/EnhancedSEO';
-import { COMPANY_INFO, SERVICES, GALLERY_IMAGES, FAQs, CITIES, NEIGHBORHOODS } from '../constants';
-import {
-  cityPath,
-  neighborhoodPath,
-  cityTitle,
-  cityDescription,
-  neighborhoodTitle,
-  neighborhoodDescription,
-  nearbyOf,
-} from '../routes';
-import { resolveLocation } from '../lib/slug';
-import { PRIORITY_CITIES } from '../site.config';
-import { Check, ArrowRight, MapPin, Star, Shield, PenTool, Building, Play, X, ChevronDown } from 'lucide-react';
-
-interface LocationPageProps {
-  type: 'city' | 'neighborhood';
-}
-
-const LocationPage: React.FC<LocationPageProps> = ({ type }) => {
-  const { locationName } = useParams<{ locationName: string }>();
-  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
-  const [videoModal, setVideoModal] = useState<boolean>(false);
-
-  const isCity = type === 'city';
-  const list = isCity ? CITIES : NEIGHBORHOODS;
-
-  // Aceita tanto o slug novo ("sao-jose-dos-pinhais") quanto a URL antiga
-  // codificada ("s%C3%A3o%20jos%C3%A9%20dos%20pinhais"); o canonical sempre
-  // aponta para a versão em slug.
-  const officialName = resolveLocation(locationName || '', list);
-  const isKnownLocation = Boolean(officialName);
-
-  const titleName =
-    officialName ||
-    decodeURIComponent(locationName || '')
-      .toLowerCase()
-      .replace(/(^|\s)\S/g, (l) => l.toUpperCase());
-
-  const term = isCity ? 'na cidade de' : 'no bairro';
-  const locationSuffix = isCity ? `em ${titleName}` : `no bairro ${titleName}`;
-  const canonicalPath = isCity ? cityPath(titleName) : neighborhoodPath(titleName);
-
-  const pageTitle = isCity ? cityTitle(titleName) : neighborhoodTitle(titleName);
-  const description = isCity ? cityDescription(titleName) : neighborhoodDescription(titleName);
-
-  // Locais vizinhos: dão conteúdo próprio a cada página e criam malha de links internos.
-  const nearby = nearbyOf(titleName, list, 6);
-  const nearbyPath = isCity ? cityPath : neighborhoodPath;
-
-  const toggleAccordion = (index: number) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
-  };
-
+import React from "react";
+import { useParams } from "react-router-dom";
+import EnhancedSEO from "../components/EnhancedSEO";
+import ContactActions from "../components/ContactActions";
+import { CITIES, NEIGHBORHOODS, COMPANY_INFO, SERVICES } from "../constants";
+import { resolveLocation } from "../lib/slug";
+import { cityPath, neighborhoodPath } from "../routes";
+import NotFound from "./NotFound";
+const official = new Set(
+  "Abranches|Água Verde|Ahú|Alto Boqueirão|Alto da Glória|Alto da XV|Atuba|Augusta|Bacacheri|Bairro Alto|Barreirinha|Batel|Bigorrilho|Boa Vista|Bom Retiro|Boqueirão|Butiatuvinha|Cabral|Cachoeira|Cajuru|Campina do Siqueira|Campo Comprido|Campo de Santana|Capão da Imbuia|Capão Raso|Cascatinha|Caximba|Centro|Centro Cívico|Cidade Industrial de Curitiba|Cristo Rei|Fanny|Fazendinha|Ganchinho|Guabirotuba|Guaíra|Hauer|Hugo Lange|Jardim Botânico|Jardim das Américas|Jardim Social|Juvevê|Lamenha Pequena|Lindóia|Mercês|Mossunguê|Novo Mundo|Orleans|Parolin|Pilarzinho|Pinheirinho|Portão|Prado Velho|Rebouças|Riviera|Santa Cândida|Santa Felicidade|Santa Quitéria|Santo Inácio|São Braz|São Francisco|São João|São Lourenço|São Miguel|Seminário|Sítio Cercado|Taboão|Tarumã|Tatuquara|Tingui|Uberaba|Umbará|Vila Izabel|Vista Alegre|Xaxim".split(
+    "|",
+  ),
+);
+export default function LocationPage({
+  type,
+}: {
+  type: "city" | "neighborhood";
+}) {
+  const { locationName = "" } = useParams();
+  const city = type === "city";
+  const name = resolveLocation(locationName, city ? CITIES : NEIGHBORHOODS);
+  if (!name) return <NotFound />;
+  const headquarters = city && name === "São José dos Pinhais";
+  const curitiba = city && name === "Curitiba";
+  const justified = headquarters || curitiba;
+  const path = city ? cityPath(name) : neighborhoodPath(name);
+  const title = `${headquarters ? "Sede Alumimec" : "Consulta de estruturas metálicas"} em ${name} | Alumimec`;
+  const description = headquarters
+    ? "Conheça a sede da Alumimec em Afonso Pena, São José dos Pinhais. Endereço, contato e orientações para consultar seu projeto de estrutura metálica."
+    : `Planeje sua consulta de estruturas metálicas para ${name}. Envie endereço, medidas e uso do espaço à Alumimec; atendimento e condições sujeitos a confirmação.`;
   return (
     <>
       <EnhancedSEO
-        title={pageTitle}
+        title={title}
         description={description}
-        canonical={canonicalPath}
-        ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
-        locationName={titleName}
-        noindex={!isKnownLocation}
+        canonical={path}
+        noindex={!justified}
         breadcrumbs={[
-          { name: 'Início', url: '/' },
-          { name: titleName, url: canonicalPath },
+          { name: "Início", url: "/" },
+          { name, url: path },
         ]}
-        services={SERVICES.slice(0, 3).map((service) => ({
-          name: service.title,
-          description: service.description,
-        }))}
       />
-
-      {/* Header Location */}
-      <section className="bg-primary text-white py-12 md:py-32 relative overflow-hidden min-h-[60vh] md:min-h-[70vh] flex items-center pt-24 md:pt-28 lg:pt-32 pb-12">
-        {/* Background Image with Animation */}
-        <div className="absolute inset-0 bg-[url('/galpoes-metalicos-pre-fabricados-hero-imagem.jpg')] opacity-30 bg-cover bg-center hero-bg-animate"></div>
-
-        {/* Gradient Overlay with Pattern */}
-        <div className="absolute inset-0 gradient-overlay"></div>
-        <div className="absolute inset-0 hero-pattern"></div>
-
-        {/* Animated Floating Elements */}
-        <div className="absolute top-10 right-4 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-10 left-4 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
-
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <div className="max-w-4xl mx-auto">
-            {/* Badge with Animation */}
-            <div className="animate-fade-in-down mb-4 md:mb-6">
-              <span className="bg-accent/20 backdrop-blur-sm border border-accent/50 text-accent px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase inline-block shadow-lg tracking-wider animate-pulse">
-                <MapPin size={12} className="inline mr-1.5 md:mr-2 md:w-4 md:h-4" />
-                Atendimento {locationSuffix}
-              </span>
-            </div>
-
-            {/* Main Heading with Animation */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold mb-4 md:mb-6 text-shadow animate-fade-in-up opacity-0 delay-100 px-2">
-              Estruturas Metálicas {isCity ? 'em' : 'no bairro'} <br className="hidden sm:block"/>
-              <span className="text-accent">{titleName}</span>
+      <div className="wrap breadcrumb">
+        <a href="/">Início</a> / {name}
+      </div>
+      <section className="local-hero">
+        <div className="wrap local-grid">
+          <div>
+            <p className="eyebrow">
+              {headquarters ? "NOSSA SEDE" : "PLANEJE SUA CONSULTA"}
+            </p>
+            <h1>
+              {headquarters
+                ? "Alumimec em São José dos Pinhais"
+                : `Estruturas metálicas: consulta para ${name}`}
             </h1>
-
-            {/* Subtitle with Animation */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto text-gray-100 font-light mb-6 md:mb-8 animate-fade-in-up opacity-0 delay-200 leading-relaxed px-4">
-              Líder em galpões industriais, coberturas e soluções em aço. Trazendo qualidade e tecnologia construtiva para sua obra {locationSuffix}.
-            </p>
-
-            {/* Features Pills */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 animate-fade-in-up opacity-0 delay-300 px-4">
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Shield size={14} className="text-accent flex-shrink-0" /> Projeto Estrutural
-              </span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Building size={14} className="text-accent flex-shrink-0" /> +850 Projetos
-              </span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <PenTool size={14} className="text-accent flex-shrink-0" /> 14+ Anos
-              </span>
-            </div>
-
-            {/* CTA Buttons with Animation */}
-            <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 animate-scale-in opacity-0 delay-400 px-4">
-              <a
-                href="#contato"
-                className="group bg-accent hover:bg-white text-white hover:text-accent px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
-              >
-                <span>Solicitar Orçamento</span>
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#servicos"
-                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
-              >
-                <span>Ver Serviços</span>
-                <ChevronDown size={18} className="group-hover:translate-y-1 transition-transform" />
-              </a>
-            </div>
-
-            {/* Local Stats */}
-            <div className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 md:gap-8 animate-fade-in opacity-0 delay-500 px-4">
-              <div className="flex items-center gap-2">
-                <Star className="text-accent" size={18} fill="currentColor" />
-                <span className="text-xs md:text-sm">Avaliação 5.0</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="text-accent" size={18} />
-                <span className="text-xs md:text-sm">Atendimento Local</span>
-              </div>
-            </div>
+            <p>{description}</p>
+            <ContactActions
+              subject={`Gostaria de consultar estruturas metálicas para ${name}. Vou enviar o endereço e os detalhes da obra.`}
+            />
           </div>
+          {justified && (
+            <img
+              className="local-art"
+              src={headquarters ? "/local-sjp.svg" : "/local-curitiba.svg"}
+              alt={`Alumimec — ${name}. Contato: (41) 99631-5885. Atendimento sob consulta.`}
+              width="250"
+              height="250"
+            />
+          )}
         </div>
       </section>
-
-      {/* Main Content Area - 4 SEO Texts with Images */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-16">
-            
-            {/* Main Column */}
-            <div className="lg:col-span-2 space-y-20">
-              
-              {/* TEXTO 1: Introdução e Expertise */}
-              <article className="flex flex-col gap-6">
-                <div className="relative">
-                  <h2 className="text-3xl font-heading font-bold text-primary mb-2">
-                    Expertise em Construção Metálica {locationSuffix}
-                  </h2>
-                  <div className="w-20 h-1 bg-accent mb-6"></div>
-                </div>
-                
-                <img
-                  src="/cobertura-metalica.jpg"
-                  alt="Cobertura metálica executada pela Alumimec"
-                  className="w-full h-[400px] object-cover rounded-xl shadow-lg mb-4 hover:scale-[1.01] transition-transform duration-500"
-                width={890}
-                height={500}
-                loading="lazy"
-                decoding="async"
-              />
-
-                <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
-                  <p>
-                    A <strong>Alumimec Estruturas Metálicas</strong> orgulha-se de ser uma referência no setor de construção civil, agora reforçando sua presença e atendimento personalizado <strong>{locationSuffix}</strong>. Com mais de uma década de experiência, entendemos que cada região possui suas especificidades, seja em relação ao solo, clima ou logística urbana. Por isso, trazemos soluções sob medida para quem busca durabilidade, segurança e custo-benefício em obras de aço.
-                  </p>
-                  <p className="mt-4">
-                    Optar por estruturas metálicas ao construir <strong>{locationSuffix}</strong> é uma decisão inteligente. O aço oferece uma relação peso-resistência superior ao concreto armado, permitindo fundações mais leves e econômicas. Além disso, a precisão milimétrica de nossas peças, fabricadas em ambiente controlado e apenas montadas no local, reduz drasticamente o desperdício de materiais e o tempo de canteiro de obra. Isso significa menos entulho, menos barulho e uma entrega muito mais rápida para o seu empreendimento.
-                  </p>
-                  <p className="mt-4">
-                    Nossa equipe atende desde pequenas ampliações comerciais até complexos industriais na região, cuidando do projeto, da fabricação e da montagem da estrutura. O aço permite obra mais rápida e limpa, vãos livres maiores e estruturas parafusadas que podem ser ampliadas ou remontadas depois.
-                  </p>
-                </div>
-              </article>
-
-              {/* TEXTO 2: Galpões e Indústria */}
-              <article className="flex flex-col gap-6 bg-gray-50 p-8 rounded-2xl border-l-4 border-primary">
-                <div className="relative">
-                  <h2 className="text-3xl font-heading font-bold text-primary mb-2 flex items-center gap-3">
-                    <Building className="text-accent" size={32} /> Galpões Industriais e Comerciais
-                  </h2>
-                </div>
-
-                <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="prose prose-lg text-gray-600 leading-relaxed text-justify flex-1">
-                    <p>
-                      O desenvolvimento econômico <strong>{locationSuffix}</strong> demanda espaços amplos e versáteis. A Alumimec é especialista na fabricação e montagem de <strong>galpões metálicos</strong>, a solução ideal para centros logísticos, fábricas, armazéns e centros comerciais na região. Ao contrário das construções convencionais, nossos pórticos metálicos permitem vencer grandes vãos livres sem a necessidade de pilares centrais, otimizando o aproveitamento de 100% da área interna.
-                    </p>
-                    <p className="mt-4">
-                      Para empresários e investidores <strong>{locationSuffix}</strong>, o tempo é dinheiro. Nossos galpões são pré-fabricados, o que permite que a montagem ocorra de forma paralela à preparação do terreno e fundação. Entregamos sua obra pronta para operação em um prazo significativamente menor do que a alvenaria tradicional. Além disso, a flexibilidade do aço permite futuras expansões facilitadas, acompanhando o crescimento do seu negócio sem a necessidade de demolições complexas.
-                    </p>
-                  </div>
-                  <img
-                    src="/alumimec-curitiba-orcamentos.jpg"
-                    alt="Galpão industrial metálico executado pela Alumimec"
-                    className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
-                width={1200}
-                height={1200}
-                loading="lazy"
-                decoding="async"
-              />
-                </div>
-                
-                <ul className="grid sm:grid-cols-2 gap-4 mt-4">
-                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Estruturas para Ponte Rolante</li>
-                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Pé Direito Duplo ou Triplo</li>
-                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Fechamentos Metálicos ou Misto</li>
-                   <li className="bg-white p-3 rounded shadow-sm flex items-center gap-3 text-sm font-bold text-primary"><Check className="text-accent"/> Ventilação Natural (Lanternim)</li>
-                </ul>
-              </article>
-
-              {/* TEXTO 3: Coberturas e Conforto */}
-              <article className="flex flex-col gap-6">
-                <div className="relative">
-                  <h2 className="text-3xl font-heading font-bold text-primary mb-2 flex items-center gap-3">
-                    <Shield className="text-accent" size={32} /> Coberturas Termoacústicas Premium
-                  </h2>
-                  <div className="w-20 h-1 bg-accent mb-6"></div>
-                </div>
-
-                <img
-                  src="/cobertura-metalica-alumimec.webp"
-                  alt="Cobertura metálica termoacústica executada pela Alumimec"
-                  className="w-full h-[350px] object-cover rounded-xl shadow-lg mb-4"
-                width={442}
-                height={562}
-                loading="lazy"
-                decoding="async"
-              />
-
-                <div className="prose prose-lg text-gray-600 leading-relaxed text-justify">
-                  <p>
-                    O clima da nossa região exige proteções eficientes. Seja para proteger seu estoque, sua frota ou criar uma área de lazer confortável, as <strong>coberturas metálicas da Alumimec</strong> são projetadas para oferecer a máxima performance <strong>{locationSuffix}</strong>. Trabalhamos com telhas de aço galvanizado e galvalume, materiais de altíssima resistência à corrosão atmosférica, garantindo uma vida útil prolongada mesmo sob sol e chuva constantes.
-                  </p>
-                  <p className="mt-4">
-                    Um dos nossos grandes diferenciais para os clientes <strong>{locationSuffix}</strong> é a utilização de telhas sanduíche (termoacústicas). Compostas por duas chapas de aço e um núcleo isolante (EPS ou PIR), elas funcionam como uma barreira térmica excepcional, reduzindo a temperatura interna nos dias quentes e mantendo o ambiente agradável no inverno. Além disso, reduzem significativamente o ruído de impacto da chuva, proporcionando um ambiente de trabalho ou lazer muito mais silencioso e produtivo.
-                  </p>
-                  <p className="mt-4">
-                    Executamos desde coberturas planas e em arco até sheds industriais e pergolados residenciais sofisticados. Cada projeto é calculado para suportar ventos fortes e tempestades características da região, garantindo a tranquilidade total do proprietário.
-                  </p>
-                </div>
-              </article>
-
-              {/* TEXTO 4: Mezaninos e Otimização */}
-              <article className="flex flex-col gap-6 bg-primary text-white p-10 rounded-2xl shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-accent opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-                
-                <div className="relative z-10">
-                  <h2 className="text-3xl font-heading font-bold mb-6 flex items-center gap-3">
-                    <PenTool className="text-accent" size={32} /> Ampliação Inteligente com Mezaninos
-                  </h2>
-
-                  <div className="flex flex-col lg:flex-row gap-8">
-                     <div className="flex-1 text-gray-100 leading-relaxed text-justify space-y-4">
-                       <p>
-                         A falta de espaço é um problema comum em áreas urbanas valorizadas como <strong>{titleName}</strong>. A solução mais inteligente e econômica para duplicar sua área útil sem a necessidade de mudar de endereço é a instalação de <strong>mezaninos metálicos</strong>. A Alumimec projeta estruturas leves e independentes que se adaptam perfeitamente ao seu imóvel existente.
-                       </p>
-                       <p>
-                         Ideais para escritórios, estoques, lojas de shopping ou áreas de produção, nossos mezaninos são instalados com fixação por parafusos, o que permite uma obra limpa, seca e extremamente rápida. Isso significa que sua empresa <strong>{locationSuffix}</strong> pode continuar operando com o mínimo de interferência durante a montagem.
-                       </p>
-                       <p>
-                         Utilizamos vigas W e painéis wall ou piso metálico xadrez, conforme a necessidade de carga (kg/m²). Transforme o pé-direito ocioso do seu imóvel em metros quadrados rentáveis com a segurança e a engenharia de ponta da Alumimec.
-                       </p>
-                     </div>
-                     <div className="lg:w-1/3">
-                        <img
-                          src="/mezaninos-metalicos-estruturais.webp"
-                          alt="Mezanino metálico estrutural executado pela Alumimec"
-                          className="w-full h-full object-cover rounded-lg border-4 border-white/20 shadow-lg"
-                width={449}
-                height={561}
-                loading="lazy"
-                decoding="async"
-              />
-                     </div>
-                  </div>
-                  
-                  <div className="mt-8 text-center">
-                    <a 
-                      href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Tenho interesse em um Mezanino ${locationSuffix}`}
-                      className="inline-block bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg"
-                    >
-                      Orçar Mezanino Agora
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-
-            {/* Sidebar Right */}
-            <div className="space-y-8">
-              
-              {/* Sticky Contact Card */}
-              <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 sticky top-24 z-10">
-                <div className="text-center mb-6">
-                   <div className="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                     <MapPin size={32} />
-                   </div>
-                   <h3 className="text-xl font-bold text-primary">Atendimento Prioritário</h3>
-                   <p className="text-gray-500 font-medium">{titleName}</p>
-                </div>
-                
-                <p className="text-sm text-gray-500 text-center mb-6">
-                  Equipe técnica pronta para visitar sua obra em {titleName} e realizar um orçamento sem compromisso.
+      <section className="section wrap">
+        <div className="split">
+          <div>
+            <h2>
+              {headquarters
+                ? "Uma sede, contato direto."
+                : curitiba
+                  ? "Sua obra em Curitiba começa pelo endereço."
+                  : "Confirme a localização da obra."}
+            </h2>
+            {headquarters ? (
+              <>
+                <p>
+                  A sede informada pela empresa fica em {COMPANY_INFO.address}.
+                  Antes de se deslocar, converse com a equipe para combinar o
+                  atendimento.
                 </p>
-                
-                <a 
-                  href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá, sou de ${titleName} e gostaria de agendar uma visita.`}
-                  className="block w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl mb-4 flex items-center justify-center gap-2"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 8.23 8.24c0 4.54-3.7 8.24-8.23 8.24Z"/></svg>
-                  Chamar no WhatsApp
-                </a>
-                
-                <div className="text-center border-t border-gray-100 pt-4">
-                   <p className="font-bold text-primary text-lg">{COMPANY_INFO.phone1Display}</p>
-                   <p className="text-sm text-gray-500">{COMPANY_INFO.email}</p>
-                </div>
-              </div>
-
-              {/* Service List */}
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                 <h4 className="font-bold mb-4 text-primary text-lg flex items-center gap-2">
-                   <Star size={18} className="text-accent" fill="currentColor"/> Serviços em Destaque
-                 </h4>
-                 <ul className="space-y-3">
-                   {SERVICES.map(s => (
-                     <li key={s.id} className="border-b border-gray-200 pb-2 last:border-0 hover:pl-2 transition-all">
-                       <Link to="/#servicos" className="hover:text-accent transition-colors block text-gray-700 font-medium">
-                         • {s.title}
-                       </Link>
-                     </li>
-                   ))}
-                 </ul>
-              </div>
-
-              {/* Why Choose Us */}
-              <div className="bg-primary text-white p-6 rounded-xl">
-                <h4 className="font-bold mb-4 text-lg">Por que Alumimec?</h4>
-                <ul className="space-y-4 text-sm">
-                  <li className="flex gap-3">
-                    <Check className="text-accent shrink-0" />
-                    <span>Orçamento transparente sem surpresas no final.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="text-accent shrink-0" />
-                    <span>Cumprimento rigoroso dos prazos acordados.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="text-accent shrink-0" />
-                    <span>Acompanhamento técnico do projeto à montagem.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="text-accent shrink-0" />
-                    <span>Estruturas parafusadas, moduláveis e ampliáveis.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary-dark text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase mb-4 inline-block">Veja na Prática</span>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Estruturas Metálicas que Transformam {titleName}
-              </h2>
-              <p className="text-gray-200 text-lg mb-6 leading-relaxed">
-                Veja como entregamos projetos de alta qualidade com prazos reduzidos. Cada estrutura é fabricada com precisão e montada por profissionais certificados.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check size={16} className="text-white" />
-                  </div>
-                  <span className="text-gray-100">Engenharia de precisão para cada projeto</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check size={16} className="text-white" />
-                  </div>
-                  <span className="text-gray-100">Redução de até 60% no tempo de obra</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check size={16} className="text-white" />
-                  </div>
-                  <span className="text-gray-100">Estruturas parafusadas: podem ser ampliadas ou remontadas</span>
-                </li>
-              </ul>
-              <a
-                href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Olá! Vi o vídeo e gostaria de um orçamento para ${titleName}`}
-                className="inline-block bg-accent hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg transform hover:-translate-y-1"
-              >
-                Solicitar Orçamento Agora
-              </a>
-            </div>
-
-            <div className="relative group cursor-pointer" onClick={() => setVideoModal(true)}>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
-                <img
-                  src="https://img.youtube.com/vi/Zk7W4W0l2yA/maxresdefault.jpg"
-                  alt="Vídeo de obra em estrutura metálica executada pela Alumimec"
-                  className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                  <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
-                    <Play fill="white" className="text-white ml-1" size={32} />
-                  </div>
-                </div>
-              </div>
-              <div className="mt-4 text-center">
-                <p className="text-gray-300 text-sm">Clique para assistir nosso processo de trabalho</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Accordion */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Perguntas Frequentes sobre Estruturas Metálicas em {titleName}
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Tire suas dúvidas sobre nossos serviços e processos
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {FAQs.slice(0, 8).map((faq, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button
-                  onClick={() => toggleAccordion(idx)}
-                  className="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left"
-                >
-                  <span className="font-bold text-gray-800 pr-4">{faq.question}</span>
-                  <ChevronDown
-                    size={24}
-                    className={`text-primary flex-shrink-0 transform transition-transform duration-300 ${
-                      activeAccordion === idx ? 'rotate-180' : ''
-                    }`}
+                <p>
+                  O acervo do site registra o barracão industrial para Forvia em
+                  São José dos Pinhais. A fotografia é uma referência de
+                  portfólio, não uma especificação para outras obras.
+                </p>
+                <figure>
+                  <img
+                    src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
+                    width="800"
+                    height="600"
+                    alt="Barracão industrial Forvia, identificado no portfólio original em São José dos Pinhais"
+                    loading="lazy"
                   />
-                </button>
-                <div
-                  className={`bg-white px-5 text-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${
-                    activeAccordion === idx ? 'max-h-96 py-5 opacity-100' : 'max-h-0 py-0 opacity-0'
-                  }`}
-                >
-                  <p className="leading-relaxed">{faq.answer}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center bg-gray-50 p-8 rounded-xl">
-            <p className="text-gray-600 mb-4">Não encontrou a resposta que procurava?</p>
-            <a
-              href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Tenho uma dúvida sobre estruturas metálicas em ${titleName}`}
-              className="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-bold transition-colors"
-            >
-              Fale Diretamente com um Especialista
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Locais atendidos nas proximidades — links internos e conteúdo próprio da página */}
-      <section className="py-14 bg-light border-t border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-3">
-              Atendimento {locationSuffix} e região
-            </h2>
-            <p className="text-gray-600 mb-8">
-              A equipe da Alumimec parte de {COMPANY_INFO.addressShort} para executar obras {locationSuffix}.{' '}
-              {isCity
-                ? ' Também atendemos as cidades vizinhas listadas abaixo:'
-                : ' Também atendemos os bairros vizinhos listados abaixo:'}
-            </p>
-            <ul className="flex flex-wrap justify-center gap-2 md:gap-3">
-              {nearby.map((place) => (
-                <li key={place}>
-                  <Link
-                    to={nearbyPath(place)}
-                    className="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-accent hover:text-accent text-primary px-4 py-2 rounded-full text-sm font-medium transition-colors"
-                  >
-                    <MapPin size={14} className="flex-shrink-0" />
-                    {isCity ? place : `Bairro ${place}`}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 text-sm text-gray-500">
-              Não encontrou {term} {titleName} o que procurava?{' '}
-              <Link to="/" className="text-primary underline hover:text-accent">
-                Veja todos os serviços da Alumimec
-              </Link>
+                  <figcaption className="muted">
+                    Obra identificada no acervo original.
+                  </figcaption>
+                </figure>
+              </>
+            ) : curitiba ? (
+              <>
+                <p>
+                  A Alumimec informa atendimento em Curitiba a partir de sua
+                  sede em São José dos Pinhais. Para avaliar um galpão,
+                  cobertura ou mezanino, indique bairro, CEP, uso do imóvel e
+                  condições de acesso ao terreno.
+                </p>
+                <p>
+                  Curitiba possui bairros oficiais e denominações populares
+                  usadas para orientar endereços. Nomes como Ecoville não devem
+                  ser tratados automaticamente como bairros oficiais. Consulte o
+                  cadastro do endereço ao preencher a solicitação.
+                </p>
+                <p>
+                  Acesso para transporte, espaço de montagem, apoios existentes
+                  e escoamento de água precisam ser avaliados no local. Licenças
+                  e responsabilidades técnicas devem ser alinhadas conforme o
+                  projeto.
+                </p>
+              </>
+            ) : (
+              <>
+                <p>
+                  {city
+                    ? `${name} consta na relação de municípios da Região Metropolitana de Curitiba publicada pela AMEP.`
+                    : official.has(name)
+                      ? `${name} consta na relação de bairros de Curitiba. Informe também rua e CEP para localizar a obra.`
+                      : `O nome “${name}” foi preservado do diretório anterior. Não está tratado aqui como bairro oficial de Curitiba; pode ser denominação popular, referência regional ou cadastro que precisa de correção. Confirme município, bairro e CEP.`}
+                </p>
+                <p>
+                  A presença desta página não confirma uma filial, uma obra
+                  realizada no local ou disponibilidade de atendimento. A equipe
+                  precisa avaliar a solicitação.
+                </p>
+              </>
+            )}
+            <p>
+              Fontes territoriais:{" "}
+              <a href="https://www.amep.pr.gov.br/FAQ/Municipios-da-Regiao-Metropolitana-de-Curitiba">
+                municípios da RMC — AMEP
+              </a>{" "}
+              e{" "}
+              <a href="https://www.curitiba.pr.gov.br/noticias/veja-como-entrar-em-contato-com-as-regionais-e-qual-delas-cuida-do-seu-bairro/40912">
+                bairros por regional — Prefeitura de Curitiba
+              </a>
               .
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Bottom */}
-      <section className="py-16 bg-gradient-to-r from-gray-900 to-primary text-white text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold mb-6">
-            Seu projeto em {titleName} começa aqui
-          </h2>
-          <p className="mb-8 text-gray-300 max-w-2xl mx-auto">
-            Não perca tempo com obras demoradas e com desperdício. Escolha a eficiência das estruturas metálicas Alumimec.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-              className="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Falar com Especialista
+          <div>
+            <h3>Prepare uma consulta completa</h3>
+            <ol className="local-checklist">
+              <li>Endereço, cidade, bairro e CEP.</li>
+              <li>Uso pretendido e medidas aproximadas.</li>
+              <li>Fotos dos acessos, terreno e estruturas existentes.</li>
+              <li>Projeto disponível e prazo desejado para análise.</li>
+            </ol>
+            <h3>Escolha o assunto da conversa</h3>
+            {SERVICES.map((s) => (
+              <a className="text-link" key={s.id} href={`/#servico-${s.id}`}>
+                {s.title} →
+              </a>
+            ))}
+            <a className="text-link" href="/#contato">
+              Contatos e formulário →
             </a>
-            <Link 
-              to="/#galeria"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all"
-            >
-              Ver Nossas Obras
-            </Link>
+            <a className="text-link" href="/#regiao">
+              Consultar outro município →
+            </a>
           </div>
         </div>
       </section>
-
-      {/* Video Modal */}
-      {videoModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in"
-          onClick={() => setVideoModal(false)}
-        >
-          <div className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-            <button
-              aria-label="Fechar vídeo"
-              className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors"
-              onClick={() => setVideoModal(false)}
-            >
-              <X size={24} />
-            </button>
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/Zk7W4W0l2yA?autoplay=1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
     </>
   );
-};
-
-export default LocationPage;
+}

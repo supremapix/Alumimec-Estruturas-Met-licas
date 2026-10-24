@@ -25,3 +25,8 @@ dist-ssr
 # Artefatos do pre-render (gerados no build)
 .prerender-routes.json
 .ssr-build
+
+docs/qa/*.png
+!docs/qa/desktop-hero.png
+!docs/qa/mobile-hero.png
+!docs/qa/agency-mobile.png

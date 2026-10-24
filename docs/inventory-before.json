@@ -1,0 +1,174 @@
+{
+  "commit": "5c1b8e2a79ed8d41f46ee92d3c979a512a97bd10",
+  "originalConstants": "import { Service, Testimonial, FAQ, Project, VideoData, ModelComparison } from './types';\n\nexport const COMPANY_INFO = {\n  name: \"Alumimec Estruturas Metálicas\",\n  phone1: \"41996315885\",\n  phone1Display: \"(41) 99631-5885\",\n  phone2Display: \"(41) 99722-1079\",\n  email: \"contato@alumimec.com.br\",\n  address: \"R. Dep. Arnaldo Faivro Busato, 168 - Afonso Pena, CEP 83045-000 - São José dos Pinhais/PR\",\n  addressShort: \"Afonso Pena, São José dos Pinhais/PR\",\n  hours: \"Segunda a Sexta: 8:00 às 17:30\",\n  facebook: \"https://www.facebook.com/61566509445362\",\n  instagram: \"https://www.instagram.com/alumimec/\",\n  responsible: \"Eduardo dos Santos\",\n  logo: \"/logo-alumimec.jpg\"\n};\n\nexport const CITIES = [\n  \"Curitiba\", \"Adrianópolis\", \"Agudos do Sul\", \"Almirante Tamandaré\", \"Araucária\", \n  \"Balsa Nova\", \"Bocaiúva do Sul\", \"Campina Grande do Sul\", \"Campo do Tenente\", \n  \"Campo Largo\", \"Campo Magro\", \"Cerro Azul\", \"Colombo\", \"Contenda\", \"Doutor Ulysses\", \n  \"Fazenda Rio Grande\", \"Itaperuçu\", \"Lapa\", \"Mandirituba\", \"Piên\", \"Pinhais\", \n  \"Piraquara\", \"Quatro Barras\", \"Quitandinha\", \"Rio Branco do Sul\", \"Rio Negro\", \n  \"São José dos Pinhais\", \"Tijucas do Sul\", \"Tunas do Paraná\"\n];\n\nexport const NEIGHBORHOODS = [\n  \"Vila Parolin\", \"Vila Torres\", \"Jardim Schaffer\", \"Vila Sabará\", \"Boqueirão de Baixo\",\n  \"Boqueirão de Cima\", \"Tanguá\", \"Vila Zumbi\", \"Abranches de Baixo\", \"Abranches de Cima\",\n  \"Vila Nossa Senhora da Luz\", \"Vila Tecnológica\", \"Vila Oficinas\", \"Vila Fanny\", \"Vila Hauer\",\n  \"Batel Soho\", \"Alto da Rua XV\", \"CIC Norte\", \"CIC Central\", \"CIC Sul\", \"Vila Guaíra\",\n  \"Centro Histórico\", \"Ecoville\", \"Carmo Abranches\", \"Água Verde\", \"Ahú (Alto da Glória)\",\n  \"Alto Boqueirão\", \"Alto da Glória\", \"Alto da XV\", \"Atuba\", \"Augusta\", \"Bacacheri\",\n  \"Bairro Alto\", \"Barreirinha\", \"Batel\", \"Bigorrilho (Champagnat)\", \"Boa Vista\", \"Bom Retiro\",\n  \"Boqueirão\", \"Butiatuvinha\", \"Cabral\", \"Cachoeira\", \"Cajuru\", \"Campina do Siqueira\",\n  \"Campo Comprido\", \"Campo de Santana\", \"Capão da Imbuia\", \"Capão Raso\", \"Cascatinha\",\n  \"Caximba\", \"Centro\", \"Centro Cívico\", \"Cidade Industrial de Curitiba\", \"Cristo Rei\",\n  \"Fanny\", \"Fazendinha\", \"Ganchinho\", \"Guabirotuba\", \"Guaíra\", \"Hauer\", \"Hugo Lange\",\n  \"Jardim Botânico\", \"Jardim das Américas\", \"Jardim Social\", \"Juvevê\", \"Lamenha Pequena\",\n  \"Lindóia\", \"Mercês\", \"Mossunguê\", \"Novo Mundo\", \"Orleans\", \"Parolin\", \"Pilarzinho\",\n  \"Pinheirinho\", \"Portão\", \"Prado Velho\", \"Rebouças\", \"Riviera\", \"Santa Cândida\",\n  \"Santa Felicidade\", \"Santa Quitéria\", \"Santo Inácio\", \"São Braz\", \"São Francisco\",\n  \"São João\", \"São Lourenço\", \"São Miguel\", \"Vila Pantanal\", \"Seminário\", \"Sítio Cercado\",\n  \"Taboão\", \"Tarumã\", \"Tatuquara\", \"Tingui\", \"Uberaba\", \"Umbará\", \"Vila Izabel\",\n  \"Vista Alegre\", \"Xaxim\", \"Santa Quitéria Velha\", \"Portão Velho\", \"Guaíra Velho\",\n  \"Uberaba de Cima\", \"Uberaba de Baixo\", \"São Braz Velho\", \"Cidade Industrial\", \"Vila Verde\",\n  \"Vila Barigui\", \"Caiuá\", \"Xaxim Velho\", \"Fazendinha-Portão\", \"Campo Comprido Velho\",\n  \"Bacacheri Velho\", \"Capão da Imbuia Velho\", \"Pinheirinho Velho\", \"Vila São Pedro (Uberaba)\",\n  \"Vila Osternack\", \"Neo Ville no CIC\", \"Vila Formosa\", \"Vila Sandra\", \"Conjunto Caiuá\",\n  \"Conjunto Parigot de Souza\", \"Vila Reno\", \"Vila Audi\"\n];\n\nexport const SERVICES: Service[] = [\n  {\n    id: 1,\n    title: \"Galpões Industriais\",\n    description: \"Estruturas robustas para indústrias e logística, projetadas para durabilidade e grandes vãos livres.\",\n    benefits: [\"Vãos livres amplos\", \"Montagem rápida\", \"Alta durabilidade\"],\n    image: \"/Galpões-Industriais-Metálicos.jpg\"\n  },\n  {\n    id: 2,\n    title: \"Coberturas Metálicas\",\n    description: \"Soluções em coberturas para comércios, quadras esportivas e residências com proteção térmica e acústica.\",\n    benefits: [\"Proteção contra intempéries\", \"Design moderno\", \"Isolamento termoacústico\"],\n    image: \"/cobertura-metalica.jpg\"\n  },\n  {\n    id: 3,\n    title: \"Estruturas Residenciais\",\n    description: \"Inovação para sua casa com estruturas metálicas aparentes, pergolados e garagens modernas.\",\n    benefits: [\"Estética contemporânea\", \"Obra limpa\", \"Valorização do imóvel\"],\n    image: \"/estruturas-residenciais.webp\"\n  },\n  {\n    id: 4,\n    title: \"Mezaninos Metálicos\",\n    description: \"Amplie sua área útil sem grandes reformas. Ideais para escritórios, estoques e lojas.\",\n    benefits: [\"Otimização de espaço\", \"Estrutura leve\", \"Instalação ágil\"],\n    image: \"/mezaninos-metalicos-estruturais.webp\"\n  },\n  {\n    id: 5,\n    title: \"Escadas Industriais\",\n    description: \"Escadas metálicas retas, caracol ou tipo marinheiro para ambientes industriais e comerciais.\",\n    benefits: [\"Segurança total\", \"Acabamento premium\", \"Antiderrapante\"],\n    image: \"/escadas-industriais copy.jpg\"\n  },\n  {\n    id: 6,\n    title: \"Portões Industriais\",\n    description: \"Segurança e automação para entrada de grandes veículos e controle de acesso.\",\n    benefits: [\"Alta resistência\", \"Automação compatível\", \"Baixa manutenção\"],\n    image: \"/portao-de-grande-porte-de-metal.jpg\"\n  }\n];\n\nexport const GALLERY_IMAGES: Project[] = [\n  { id: 1, title: \"Cobertura Metálica Industrial\", description: \"Proteção e durabilidade para grandes áreas.\", category: \"Industrial\", image: \"/cobertura-metalica.jpg\" },\n  { id: 2, title: \"Galpões Industriais Metálicos\", description: \"Estrutura completa entregue no prazo.\", category: \"Galpões\", image: \"/Galpões-Industriais-Metálicos.jpg\" },\n  { id: 3, title: \"Mezaninos Metálicos Estruturais\", description: \"Ampliação de espaço com eficiência.\", category: \"Mezaninos\", image: \"/mezaninos-metalicos-estruturais.webp\" },\n  { id: 4, title: \"Portões Industriais Modernos\", description: \"Segurança e automação garantida.\", category: \"Portões\", image: \"/portao-de-grande-porte-de-metal.jpg\" },\n  { id: 5, title: \"Portões Metálicos Residenciais\", description: \"Design e funcionalidade.\", category: \"Portões\", image: \"/portoes-metalicos-carmo.jpg\" },\n  { id: 6, title: \"Estruturas em Bairros de Curitiba\", description: \"Atendimento em toda RMC.\", category: \"Regional\", image: \"/bairro.jpg\" },\n  { id: 7, title: \"Estruturas Residenciais\", description: \"Inovação e design moderno para sua casa.\", category: \"Residencial\", image: \"/estruturas-residenciais.webp\" },\n  { id: 8, title: \"Obras Realizadas no Paraná\", description: \"Projetos em todo o estado.\", category: \"Portfólio\", image: \"/alumimec-parana-brasil.webp\" },\n  { id: 9, title: \"Escadas Industriais\", description: \"Segurança e acabamento premium.\", category: \"Industrial\", image: \"/escadas-industriais copy.jpg\" },\n];\n\nexport const VIDEOS: VideoData[] = [\n  { id: \"v1\", title: \"Processo de Montagem\", videoId: \"Zk7W4W0l2yA\" },\n  { id: \"v2\", title: \"Entrega de Projeto\", videoId: \"BTYIE29w7Z4\" },\n  { id: \"v3\", title: \"Projeto Industrial\", videoId: \"o3nthQB9k7k\" }\n];\n\nexport const FAQs: FAQ[] = [\n  { question: \"Onde fica a Alumimec?\", answer: \"A Alumimec fica na R. Dep. Arnaldo Faivro Busato, 168, bairro Afonso Pena, em São José dos Pinhais/PR, CEP 83045-000.\" },\n  { question: \"A Alumimec atende Curitiba?\", answer: \"Sim. A sede da Alumimec fica em São José dos Pinhais e a empresa executa obras de estruturas metálicas em Curitiba e em toda a Região Metropolitana de Curitiba.\" },\n  { question: \"A Alumimec atende São José dos Pinhais?\", answer: \"Sim. A Alumimec é sediada em São José dos Pinhais, no bairro Afonso Pena, e atende a cidade e o entorno.\" },\n  { question: \"Quais serviços a Alumimec executa?\", answer: \"Estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos metálicos, escadas industriais, portões industriais e estruturas residenciais.\" },\n  { question: \"Vocês atendem em toda Curitiba e Região?\", answer: \"Sim! Atendemos todos os bairros de Curitiba e todas as cidades da Região Metropolitana, incluindo litoral.\" },\n  { question: \"Qual o prazo médio de entrega de um galpão?\", answer: \"O prazo varia conforme o tamanho, mas geralmente entregamos projetos médios entre 30 a 60 dias.\" },\n  { question: \"Aceitam quais formas de pagamento?\", answer: \"Aceitamos cartões (BNDES), financiamento bancário e parcelamento direto mediante análise.\" },\n  { question: \"A visita para orçamento tem custo?\", answer: \"Não, realizamos a visita técnica inicial e o orçamento sem compromisso e sem custo para Curitiba e região próxima.\" },\n  { question: \"Trabalham com telha sanduíche?\", answer: \"Sim, somos especialistas em coberturas termoacústicas com telha sanduíche (EPS ou PIR).\" },\n  { question: \"Fazem reforço estrutural em prédios?\", answer: \"Sim, executamos reforços estruturais em vigas W para lajes e pilares comprometidos ou para ampliações.\" },\n  { question: \"Fazem apenas a mão de obra ou material também?\", answer: \"Trabalhamos preferencialmente com a empreitada global (material + mão de obra) para garantir a qualidade do aço.\" },\n  { question: \"Vocês fabricam portões basculantes industriais?\", answer: \"Sim, fabricamos e instalamos portões de grandes dimensões, preparados para automação.\" },\n  { question: \"Atendem obras residenciais pequenas?\", answer: \"Sim, fazemos garagens, pergolados e escadas para residências.\" },\n  { question: \"Como funciona o licenciamento da obra?\", answer: \"Auxiliamos com toda a documentação necessária para aprovação na prefeitura e bombeiros.\" },\n  { question: \"Qual o tipo de pintura utilizada?\", answer: \"Utilizamos pintura eletrostática ou epóxi de alta resistência contra corrosão.\" },\n  { question: \"Fazem mezaninos para lojas em shoppings?\", answer: \"Sim, temos larga experiência em obras noturnas e rápidas para shoppings e comércio.\" },\n  { question: \"É possível desmontar e remontar o galpão?\", answer: \"Sim, nossas estruturas são parafusadas, permitindo a desmontagem e remontagem em outro local se necessário.\" }\n];\n\nexport const COMPARISON_DATA: ModelComparison[] = [\n  { feature: \"Durabilidade\", modelA: \"Média (10-15 anos)\", modelB: \"Alta (50+ anos)\" },\n  { feature: \"Vão Livre\", modelA: \"Limitado por pilares\", modelB: \"Amplo sem pilares centrais\" },\n  { feature: \"Tempo de Obra\", modelA: \"Lento (Concreto/Alvenaria)\", modelB: \"Rápido (Pré-fabricado)\" },\n  { feature: \"Resíduos\", modelA: \"Alto desperdício\", modelB: \"Obra limpa e sustentável\" },\n  { feature: \"Custo-Benefício\", modelA: \"Alto custo de manutenção\", modelB: \"Baixa manutenção\" },\n  { feature: \"Flexibilidade\", modelA: \"Rígida (difícil alterar)\", modelB: \"Modular (fácil ampliação)\" },\n  { feature: \"Retorno do Investimento\", modelA: \"Longo prazo\", modelB: \"Médio prazo (obra rápida)\" },\n];\n\nexport const TESTIMONIALS: Testimonial[] = [\n  { id: 1, name: \"Carlos Mendes\", location: \"São José dos Pinhais\", text: \"A Alumimec entregou nosso barracão antes do prazo. Qualidade impecável da estrutura e equipe muito educada.\", rating: 5 },\n  { id: 2, name: \"Ana Paula\", location: \"Curitiba - Batel\", text: \"Fizeram o mezanino da minha loja. Ficou perfeito, muito firme e acabamento de primeira.\", rating: 5 },\n  { id: 3, name: \"Roberto Silva\", location: \"Colombo\", text: \"Contratei para cobertura de quadra. Preço justo e serviço técnico de engenharia muito bom.\", rating: 5 },\n  { id: 4, name: \"Construtora Ideal\", location: \"Pinhais\", text: \"Parceiros de longa data. Sempre que precisamos de reforço estrutural chamamos o Eduardo.\", rating: 5 },\n  { id: 5, name: \"Marcos Oliveira\", location: \"Araucária\", text: \"Excelente atendimento desde o orçamento até a entrega das chaves do galpão.\", rating: 5 },\n  { id: 6, name: \"Júlia Santos\", location: \"Santa Felicidade\", text: \"Minha escada metálica ficou linda, design moderno como eu queria.\", rating: 5 },\n];",
+  "assets": [
+    {
+      "name": "Galpões-Industriais-Metálicos.jpg",
+      "sha256": "c9232b5d308a07cbd64569609bf7f33d00163e2c2d0c0e87ce457bfc70d00dd8"
+    },
+    {
+      "name": "alumimec-curitiba-orcamentos copy.jpg",
+      "sha256": "78e2b6d638629b1649b9edae1a5f4f5106401269d661afb00f08225f7602e436"
+    },
+    {
+      "name": "alumimec-curitiba-orcamentos.jpg",
+      "sha256": "722bbef07a7f2b80ad95689323b886d41f46b7be82fa92c066dd4a9da87167fb"
+    },
+    {
+      "name": "alumimec-parana-brasil.png",
+      "sha256": "d8bf9b5e14b7c7cba3509fadccf55af2bd60c8049be9f71145f7158108346e8f"
+    },
+    {
+      "name": "alumimec-parana-brasil.webp",
+      "sha256": "6771d63458ff2bfd8797100b6bcdef015e29b0a4d7beec0e19aa46e13edfbdc7"
+    },
+    {
+      "name": "apple-touch-icon.png",
+      "sha256": "5a51fab72b7d82d6f287500f542873c032e07ddae5885345b359bbfbec82bf05"
+    },
+    {
+      "name": "bairro.jpg",
+      "sha256": "81da2a9984f8ec9956f248995cd49729cf5a8b0472f1f3c63dac48556f8b780b"
+    },
+    {
+      "name": "barracao-sao-jose-dos-pinhais-barracao-forvia.jpg",
+      "sha256": "2a7fc06076fa3c0eb02f7f288b6f3dbbc4065c901a541e3c8ca45290533adf7f"
+    },
+    {
+      "name": "cobertura-metalica-alumimec.png",
+      "sha256": "01134881f4dac33f649ca8735be672a59141c6df6e6d89b12da19946412e94da"
+    },
+    {
+      "name": "cobertura-metalica-alumimec.webp",
+      "sha256": "f5c37294755395702b05c2bb75e3de8b926fd46332f8f620049275a9b7e3d4f1"
+    },
+    {
+      "name": "cobertura-metalica.jpg",
+      "sha256": "e2698adb75191e6351714cc77f770d97d638e267c2eb417d1123164752e040e7"
+    },
+    {
+      "name": "escada-industrial.jpg",
+      "sha256": "13168a93a0842be84a6a88d81871c8013bfb785275bc5cf97f40afbd674545fd"
+    },
+    {
+      "name": "escadas-industriais copy.jpg",
+      "sha256": "261871f65359104ac286e34a5fbf86ccbad0d7406eff9b3311dc1d308cf836b2"
+    },
+    {
+      "name": "escadas-industriais.jpg",
+      "sha256": "13168a93a0842be84a6a88d81871c8013bfb785275bc5cf97f40afbd674545fd"
+    },
+    {
+      "name": "estrutura-residencial.jpg",
+      "sha256": "ce73abae4d1ed3cba9361229ce8779c74cc421b43079f5553db0db5d1cfe52e9"
+    },
+    {
+      "name": "estrutura1.jpg",
+      "sha256": "8778eb98f29c16544df56f5c8273364c61cbf4e3e0399b06c7d7296a296c5f0c"
+    },
+    {
+      "name": "estruturas-residenciais.webp",
+      "sha256": "d1458acc9afc4567857836148a6bc194081ef108ff5fdce3855adf680fdb4f7e"
+    },
+    {
+      "name": "favicon-96x96.png",
+      "sha256": "f6982eec3cef80a93021b76410ad38ad4b64b770c128afcdf3b3e2ea3e0a27fd"
+    },
+    {
+      "name": "favicon.ico",
+      "sha256": "28331d53ffcc51cb8f4f00e92a04027ace0d6a92f5b466cd8f7567827a6790d6"
+    },
+    {
+      "name": "favicon.svg",
+      "sha256": "24d41f4bdc1c65139327d3a1549c888297387cabd513b63b440802ef6174dbfe"
+    },
+    {
+      "name": "galpao-industrial.jpg",
+      "sha256": "0fee44b2678183caf5173677aae52da6427d557d247b7ab824988e78c360fa3c"
+    },
+    {
+      "name": "galpoes-industriais-metalicos.png",
+      "sha256": "8ef80338f75cf8714656af59c1d9ebc31868dcf94093f02fa0477abe4056ef63"
+    },
+    {
+      "name": "galpoes-industriais-metalicos.webp",
+      "sha256": "4381da09ef5a801e2633671912fdff0f2997eeff0df137881ad19cf550fc042b"
+    },
+    {
+      "name": "galpoes-metalicos-pre-fabricados-hero-imagem.jpg",
+      "sha256": "7e1e950e39d2fb794ccc2e2d511fbff8f5b51ceea5096fd86aea22ab68a263d5"
+    },
+    {
+      "name": "google87bee2f2b89df17b.html",
+      "sha256": "77e0e7cc40d81a086d73a9df52121e2f154686f0ed0984c6a022cc0a930b8bc7"
+    },
+    {
+      "name": "llms.txt",
+      "sha256": "09d1c08bf80038b5bf2ab6880ad56a93370c629bc9a90560d164e838b77a9191"
+    },
+    {
+      "name": "logo-alumimec.jpg",
+      "sha256": "316428876846b54032d0ca112339db0fb5829bd04bc3bbd9decf8a3dcd3a3f82"
+    },
+    {
+      "name": "mezanino-metalico.jpg",
+      "sha256": "223fb7779edd5c60c739b0fe19d6e1ced61fdca532260d16a4dbb4099ca52f50"
+    },
+    {
+      "name": "mezaninos-metalicos-estruturais.png",
+      "sha256": "1bf9ac4b017569846ee2c17188994e6147cce34d838ed9719e3dc1605ef3141f"
+    },
+    {
+      "name": "mezaninos-metalicos-estruturais.webp",
+      "sha256": "4390d46136b0329e7ee79352c29345a8e30c409ebc124c5b9524d28d545a21e8"
+    },
+    {
+      "name": "portao-de-grande-porte-de-metal.jpg",
+      "sha256": "36e161ed41495d95d7dcc7e718f0f1c228c57935ff45f39bb4aa347b5f7308a4"
+    },
+    {
+      "name": "portao-industrial-novo.jpg",
+      "sha256": "20864d76a6b56124479630f24e25c3df051a46ae222b0affafdfdfed35b4f7e7"
+    },
+    {
+      "name": "portao-industrial.jpg",
+      "sha256": "375874349d8d7a7b3796cbf6487266e08ecf15c4ac41eecd51db8de015c79d03"
+    },
+    {
+      "name": "portoes-metalicos-carmo.jpg",
+      "sha256": "165062918ef317faff827d352bc1a226fbbb59221684df1671d2a3cb5c926016"
+    },
+    {
+      "name": "professional_construction_banner copy copy.webp",
+      "sha256": "62b0504f3fe18134556cb2c903796559785ce7e285222e5574ace7760fb40328"
+    },
+    {
+      "name": "professional_construction_banner copy.webp",
+      "sha256": "21f523f547d1b742b1a47a18125aae3a07978b06e1bb52c6ccebf7c9f24efae9"
+    },
+    {
+      "name": "professional_construction_banner.webp",
+      "sha256": "21f523f547d1b742b1a47a18125aae3a07978b06e1bb52c6ccebf7c9f24efae9"
+    },
+    {
+      "name": "robots.txt",
+      "sha256": "e5d51a75cdc3d9ad6a00a508907a52b580442ca591e64c07d016275611b38de0"
+    },
+    {
+      "name": "site.webmanifest",
+      "sha256": "1916dbe96955dda8e7a3d3dcce5ef83cc1ce9596b77b725268dec1d7ae628e8a"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "ed6565c14366131c90ce816158493a8edd66e66d92919c41343eb3566f7467c5"
+    },
+    {
+      "name": "web-app-manifest-192x192.png",
+      "sha256": "7b59f80378eefab3463ca142e41a874342bff375084918868f7231780ec551dd"
+    },
+    {
+      "name": "web-app-manifest-512x512.png",
+      "sha256": "9593d972cf940bc21cd7673dfcb2081aeb08053e93abf2ea66fca4ede3b78f14"
+    }
+  ]
+}

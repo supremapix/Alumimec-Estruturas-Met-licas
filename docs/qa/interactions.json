@@ -1,0 +1,21 @@
+{
+  "skipLink": true,
+  "nativeShare": true,
+  "formDraft": true,
+  "messagesSent": 0,
+  "floatingOverlaps": [],
+  "localAxe": [
+    {
+      "route": "/cidade/curitiba",
+      "violations": []
+    },
+    {
+      "route": "/cidade/sao-jose-dos-pinhais",
+      "violations": []
+    },
+    {
+      "route": "/bairro/ecoville",
+      "violations": []
+    }
+  ]
+}

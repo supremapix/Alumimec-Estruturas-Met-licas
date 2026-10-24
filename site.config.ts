@@ -10,15 +10,15 @@
  * Host canônico único. O site oficial responde em www.
  * O servidor/CDN deve redirecionar 301: http -> https e não-www -> www.
  */
-export const SITE_URL = 'https://www.alumimec.com.br';
+export const SITE_URL = "https://www.alumimec.com.br";
 
 /** @id estáveis do grafo de entidade — nunca duplicar a empresa no JSON-LD. */
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
 export const BRAND = {
-  themeColor: '#1a3a6c',
-  backgroundColor: '#ffffff',
+  themeColor: "#172322",
+  backgroundColor: "#ffffff",
 };
 
 /**
@@ -32,60 +32,60 @@ export const BRAND = {
  * documentada no projeto e coordenadas não devem ser inventadas.
  */
 export const NAP = {
-  legalName: 'Alumimec Estruturas Metálicas',
-  streetAddress: 'R. Dep. Arnaldo Faivro Busato, 168',
-  neighborhood: 'Afonso Pena',
-  addressLocality: 'São José dos Pinhais',
-  addressRegion: 'PR',
-  postalCode: '83045-000',
-  addressCountry: 'BR',
+  legalName: "Alumimec Estruturas Metálicas",
+  streetAddress: "R. Dep. Arnaldo Faivro Busato, 168",
+  neighborhood: "Afonso Pena",
+  addressLocality: "São José dos Pinhais",
+  addressRegion: "PR",
+  postalCode: "83045-000",
+  addressCountry: "BR",
 };
 
 /** Frase de entidade: separa SEDE de ÁREA DE ATENDIMENTO. */
 export const ENTITY_STATEMENT =
-  'A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e em toda a Região Metropolitana de Curitiba.';
+  "A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e região metropolitana mediante consulta de disponibilidade para o endereço da obra.";
 
 /** Cidades com relevância comercial comprovada no conteúdo do site. */
 export const PRIORITY_CITIES = [
-  'Curitiba',
-  'São José dos Pinhais',
-  'Pinhais',
-  'Araucária',
-  'Colombo',
-  'Campo Largo',
-  'Fazenda Rio Grande',
+  "Curitiba",
+  "São José dos Pinhais",
+  "Pinhais",
+  "Araucária",
+  "Colombo",
+  "Campo Largo",
+  "Fazenda Rio Grande",
 ];
 
 /** Serviços que a Alumimec declara executar no próprio site. */
 export const SERVICE_ENTITIES = [
   {
-    name: 'Estruturas Metálicas',
+    name: "Estruturas Metálicas",
     description:
-      'Projeto, fabricação e montagem de estruturas metálicas para obras industriais, comerciais e residenciais.',
+      "Projeto, fabricação e montagem de estruturas metálicas para obras industriais, comerciais e residenciais.",
   },
   {
-    name: 'Galpões Industriais',
+    name: "Galpões Industriais",
     description:
-      'Galpões metálicos pré-fabricados com vãos livres amplos para indústria e logística.',
+      "Galpões metálicos pré-fabricados com vãos livres amplos para indústria e logística.",
   },
   {
-    name: 'Coberturas Metálicas',
+    name: "Coberturas Metálicas",
     description:
-      'Coberturas metálicas e termoacústicas para indústrias, comércios, quadras e residências.',
+      "Coberturas metálicas e termoacústicas para indústrias, comércios, quadras e residências.",
   },
   {
-    name: 'Mezaninos Metálicos',
+    name: "Mezaninos Metálicos",
     description:
-      'Mezaninos estruturais metálicos para ampliar área útil de estoques, lojas e escritórios.',
+      "Mezaninos estruturais metálicos para ampliar área útil de estoques, lojas e escritórios.",
   },
   {
-    name: 'Escadas Industriais',
+    name: "Escadas Industriais",
     description:
-      'Escadas metálicas retas, caracol e tipo marinheiro para ambientes industriais.',
+      "Escadas metálicas retas, caracol e tipo marinheiro para ambientes industriais.",
   },
   {
-    name: 'Portões Industriais',
+    name: "Portões Industriais",
     description:
-      'Portões metálicos de grande porte, preparados para automação e controle de acesso.',
+      "Portões metálicos de grande porte, preparados para automação e controle de acesso.",
   },
 ];

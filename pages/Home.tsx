@@ -1,786 +1,447 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Check, Star, Play, ChevronDown, ChevronRight, X, Phone, User, Building, MapPin, MessageCircle, MessageSquare, PencilRuler, ClipboardCheck, Factory, Wrench, ShieldCheck } from 'lucide-react';
-import { SERVICES, GALLERY_IMAGES, VIDEOS, FAQs, TESTIMONIALS, CITIES, NEIGHBORHOODS, COMPANY_INFO, COMPARISON_DATA } from '../constants';
-import EnhancedSEO from '../components/EnhancedSEO';
-import InstagramFeed from '../components/InstagramFeed';
-import { Project } from '../types';
-import { HOME_TITLE, HOME_DESCRIPTION, cityPath, neighborhoodPath } from '../routes';
-
-const Home: React.FC = () => {
-  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
-  const [videoModal, setVideoModal] = useState<string | null>(null);
-  const [galleryModal, setGalleryModal] = useState<Project | null>(null);
-  
-  // Form State
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    city: '',
-    service: 'Galpão Industrial',
-    message: ''
-  });
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const text = `*Novo Orçamento via Site*\n\n*Nome:* ${formData.name}\n*Telefone:* ${formData.phone}\n*Cidade:* ${formData.city}\n*Interesse:* ${formData.service}\n*Mensagem:* ${formData.message}`;
-    window.open(`https://wa.me/55${COMPANY_INFO.phone1}?text=${encodeURIComponent(text)}`, '_blank');
-  };
-
-  const toggleAccordion = (index: number) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
-  };
-
+import React, { useState } from "react";
+import EnhancedSEO from "../components/EnhancedSEO";
+import ContactActions, { whatsapp } from "../components/ContactActions";
+import {
+  COMPANY_INFO,
+  SERVICES,
+  GALLERY_IMAGES,
+  VIDEOS,
+  CITIES,
+  FAQs,
+} from "../constants";
+import { HOME_TITLE, HOME_DESCRIPTION, cityPath } from "../routes";
+const guidance = [
+  "Informe a atividade prevista, o vão necessário, o pé-direito e o acesso de caminhões. Esses dados orientam o estudo da estrutura e da montagem.",
+  "Além das medidas, avalie escoamento de água, ventilação e incidência solar. Tipo de telha, isolamento e acabamento devem constar na proposta.",
+  "Garagens, pergolados e estruturas aparentes precisam conversar com a arquitetura da casa. Informe dimensões, pontos de apoio e acabamento desejado.",
+  "O uso do piso determina as cargas que precisam ser consideradas. Estoque, circulação de pessoas e equipamentos exigem avaliações distintas.",
+  "Informe desnível, espaço disponível e frequência de uso. Degraus, patamares, guarda-corpos e acesso devem ser definidos no projeto.",
+  "Meça o acesso e explique o fluxo de veículos. A abertura, os apoios e a eventual automação precisam ser compatibilizados antes da fabricação.",
+];
+export default function Home() {
+  const [category, setCategory] = useState("Todos");
+  const [video, setVideo] = useState("");
+  const categories = [
+    "Todos",
+    ...new Set(GALLERY_IMAGES.map((p) => p.category)),
+  ];
   return (
     <>
       <EnhancedSEO
         title={HOME_TITLE}
         description={HOME_DESCRIPTION}
         canonical="/"
-        ogImage="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
-        isHomePage={true}
-        breadcrumbs={[{ name: 'Início', url: '/' }]}
-        faqItems={FAQs.map(faq => ({ question: faq.question, answer: faq.answer }))}
-        services={SERVICES.map(service => ({
-          name: service.title,
-          description: service.description
+        isHomePage
+        services={SERVICES.map((s) => ({
+          name: s.title,
+          description: s.description,
         }))}
       />
-
-      {/* 1. HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white overflow-hidden pt-24 md:pt-28 lg:pt-32 pb-12">
-        {/* Background Image with Animation */}
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0 hero-bg-animate"
-          style={{ backgroundImage: `url('/galpoes-metalicos-pre-fabricados-hero-imagem.jpg')` }}
-        ></div>
-
-        {/* Gradient Overlay with Pattern */}
-        <div className="absolute inset-0 gradient-overlay z-10"></div>
-        <div className="absolute inset-0 hero-pattern z-10"></div>
-
-        {/* Animated Floating Elements */}
-        <div className="absolute top-32 left-4 md:left-10 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-4 md:right-10 w-32 h-32 md:w-40 md:h-40 bg-accent/10 rounded-full blur-3xl animate-float delay-300"></div>
-
-        {/* Main Content */}
-        <div className="container mx-auto px-4 z-20 text-center relative">
-          <div className="max-w-5xl mx-auto">
-            {/* Badge */}
-            <div className="animate-fade-in-down mb-4 md:mb-6">
-              <span className="inline-block bg-accent/20 backdrop-blur-sm border border-accent/50 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider text-accent animate-pulse">
-                +14 Anos de Excelência
-              </span>
-            </div>
-
-            {/* Main Heading */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold mb-4 md:mb-6 leading-tight animate-fade-in-up opacity-0 delay-100 px-2">
-              Estruturas Metálicas de <span className="text-accent bg-clip-text">Alta Performance</span> em Curitiba
+      <section className="hero" id="inicio">
+        <div className="wrap hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">ALUMIMEC / ESTRUTURAS METÁLICAS</p>
+            <h1>
+              Mais espaço.
+              <br />
+              Novas possibilidades.
+              <br />
+              <em>Estrutura para realizar.</em>
             </h1>
-
-            {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 md:mb-8 max-w-4xl mx-auto text-gray-100 font-light animate-fade-in-up opacity-0 delay-200 leading-relaxed px-4">
-              Especialistas em Galpões Industriais, Coberturas e Soluções Estruturais. Qualidade, segurança e prazo garantido.
+            <p>
+              Galpões, coberturas e soluções em aço para projetos industriais,
+              comerciais e residenciais em Curitiba e região.
             </p>
-
-            {/* Features Pills */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-10 animate-fade-in-up opacity-0 delay-300 px-4">
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Check size={14} className="text-accent flex-shrink-0" /> Projeto Estrutural
-              </span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Check size={14} className="text-accent flex-shrink-0" /> Fabricação e Montagem
-              </span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm border border-white/20 flex items-center gap-1.5 md:gap-2">
-                <Check size={14} className="text-accent flex-shrink-0" /> Entrega no Prazo
-              </span>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-scale-in opacity-0 delay-400 px-4">
-              <a
-                href={`https://wa.me/55${COMPANY_INFO.phone1}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-accent hover:bg-white text-white hover:text-accent px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-2"
-              >
-                <span>Fale Conosco Agora</span>
-                <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#servicos"
-                className="group bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
-              >
-                <span>Nossos Serviços</span>
-                <ChevronDown size={18} className="group-hover:translate-y-1 transition-transform" />
-              </a>
-            </div>
-
-            {/* Stats Bar */}
-            <div className="mt-10 md:mt-16 grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto animate-fade-in opacity-0 delay-500 px-4">
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">+850</div>
-                <div className="text-xs sm:text-sm text-gray-300">Projetos</div>
-              </div>
-              <div className="text-center border-x border-white/20">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">14+</div>
-                <div className="text-xs sm:text-sm text-gray-300">Anos</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-1">100%</div>
-                <div className="text-xs sm:text-sm text-gray-300">Satisfação</div>
-              </div>
-            </div>
+            <ContactActions />
+            <a className="text-link" href="#servicos">
+              Encontre a solução para sua obra ↓
+            </a>
           </div>
+          <figure className="hero-photo">
+            <img
+              src="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
+              alt="Estrutura metálica de galpão do acervo Alumimec, com pilares e treliças de cobertura"
+              width="1200"
+              height="800"
+              fetchPriority="high"
+            />
+            <figcaption>
+              DO PROJETO À MONTAGEM <span>Acervo Alumimec</span>
+            </figcaption>
+          </figure>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 z-20 hidden sm:block">
-          <div className="animate-bounce">
-            <ChevronDown size={28} className="text-white/70 md:w-8 md:h-8" />
-          </div>
-          <p className="text-xs text-white/60 mt-2 animate-pulse">Role para baixo</p>
+        <div className="hero-strip wrap">
+          <span>01 / Projeto</span>
+          <span>02 / Fabricação</span>
+          <span>03 / Montagem</span>
         </div>
       </section>
-
-      {/* 2. ABOUT & METRICS */}
-      <section id="sobre" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-accent font-bold uppercase tracking-wider text-sm">Sobre Nós</span>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-6">
-                Alumimec Estruturas Metálicas<br/>Excelência desde 2010
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                A Alumimec é uma empresa especializada em estruturas metálicas, localizada na R. Dep. Arnaldo Faivro Busato, 168, no bairro Afonso Pena, em São José dos Pinhais, no Paraná.
-                A partir dessa sede a empresa executa obras em Curitiba e em toda a Região Metropolitana de Curitiba, cuidando do projeto, da fabricação e da montagem de galpões
-                industriais, coberturas metálicas, mezaninos, escadas e portões industriais.
-              </p>
-              
-              <dl className="mb-8 border-l-4 border-accent bg-gray-50 rounded-r-lg px-5 py-4 text-sm">
-                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
-                  <dt className="font-bold text-primary sm:w-40 shrink-0">Sede</dt>
-                  <dd className="text-gray-700">{COMPANY_INFO.address}</dd>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
-                  <dt className="font-bold text-primary sm:w-40 shrink-0">Área de atendimento</dt>
-                  <dd className="text-gray-700">Curitiba e Região Metropolitana de Curitiba</dd>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:gap-2 mb-2">
-                  <dt className="font-bold text-primary sm:w-40 shrink-0">Serviços</dt>
-                  <dd className="text-gray-700">Estruturas metálicas, galpões industriais, coberturas metálicas, mezaninos, escadas industriais, portões industriais e estruturas residenciais</dd>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:gap-2">
-                  <dt className="font-bold text-primary sm:w-40 shrink-0">Contato</dt>
-                  <dd className="text-gray-700">{COMPANY_INFO.phone1Display} · {COMPANY_INFO.phone2Display} · {COMPANY_INFO.email}</dd>
-                </div>
-              </dl>
-
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="text-center p-4 bg-gray-50 rounded-lg shadow-sm border-b-4 border-accent">
-                  <span className="block text-3xl font-bold text-primary">+850</span>
-                  <span className="text-sm text-gray-500">Projetos</span>
-                </div>
-                <div className="text-center p-4 bg-gray-50 rounded-lg shadow-sm border-b-4 border-accent">
-                  <span className="block text-3xl font-bold text-primary">14+</span>
-                  <span className="text-sm text-gray-500">Anos</span>
-                </div>
-                <div className="text-center p-4 bg-gray-50 rounded-lg shadow-sm border-b-4 border-accent">
-                  <span className="block text-3xl font-bold text-primary">100%</span>
-                  <span className="text-sm text-gray-500">Satisfação</span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4 mb-8 text-sm font-medium text-gray-700">
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Fabricação Própria</div>
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Projeto Estrutural</div>
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Atendimento Personalizado</div>
-                <div className="flex items-center gap-2"><Check className="text-accent" size={18} /> Entrega no Prazo</div>
-              </div>
-
-              <a href="#contato" className="bg-primary text-white px-6 py-3 rounded hover:bg-primary-dark transition-colors inline-block">Conheça Nossa Equipe</a>
-            </div>
-            
-            <div className="relative">
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full z-0"></div>
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
-              <img
-                src="/professional_construction_banner copy copy.webp"
-                alt="Obras Alumimec Estruturas Metálicas"
-                className="rounded-lg shadow-2xl relative z-10 w-full h-[500px] object-cover"
-                width={1600}
-                height={900}
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur p-6 rounded shadow-lg z-20 border-l-4 border-accent">
-                <p className="italic text-gray-600 mb-2">"A Alumimec transformou nosso projeto em realidade com uma agilidade impressionante."</p>
-                <div className="flex items-center gap-2">
-                  <div className="flex text-yellow-400"><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /></div>
-                  <span className="text-sm font-bold text-primary">- Carlos Mendes</span>
-                </div>
-              </div>
-            </div>
+      <section id="servicos" className="section wrap">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">SOLUÇÕES EM AÇO</p>
+            <h2>
+              O uso do espaço
+              <br />
+              orienta o projeto.
+            </h2>
           </div>
-          
-          {/* Process Section - MODERNIZED */}
-          <div className="mt-20 pt-16 border-t border-gray-200">
-            {/* Section Header */}
-            <div className="text-center mb-12">
-              <span className="text-accent font-bold uppercase tracking-wider text-sm">Como Trabalhamos</span>
-              <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-3">
-                Nosso Processo de Trabalho
-              </h3>
-              <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-                Da consultoria inicial à entrega final, cada etapa é cuidadosamente planejada para garantir excelência e satisfação total.
-              </p>
-            </div>
-
-            {/* Process Cards Grid */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
-              {[
-                {
-                  step: 'Consultoria',
-                  icon: MessageSquare,
-                  description: 'Entendemos suas necessidades',
-                  details: ['Visita técnica gratuita', 'Análise do projeto', 'Viabilidade técnica']
-                },
-                {
-                  step: 'Projeto',
-                  icon: PencilRuler,
-                  description: 'Desenvolvimento personalizado',
-                  details: ['Desenho técnico detalhado', 'Dimensionamento estrutural', 'Documentação do projeto']
-                },
-                {
-                  step: 'Aprovação',
-                  icon: ClipboardCheck,
-                  description: 'Validação com o cliente',
-                  details: ['Revisão do projeto', 'Aprovação de materiais', 'Cronograma definido']
-                },
-                {
-                  step: 'Fabricação',
-                  icon: Factory,
-                  description: 'Produção de alta qualidade',
-                  details: ['Aço estrutural', 'Controle de qualidade', 'Corte e solda em fábrica']
-                },
-                {
-                  step: 'Montagem',
-                  icon: Wrench,
-                  description: 'Instalação profissional',
-                  details: ['Equipe especializada', 'Segurança rigorosa', 'Prazo cumprido']
-                },
-                {
-                  step: 'Pós-obra',
-                  icon: ShieldCheck,
-                  description: 'Suporte e assistência',
-                  details: ['Acompanhamento da entrega', 'Manutenção preventiva', 'Canal direto de contato']
-                }
-              ].map((process, idx) => {
-                const Icon = process.icon;
-                return (
-                <div
-                  key={idx}
-                  className="group relative bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-accent/40 overflow-hidden min-h-[280px] flex flex-col animate-fade-in-up opacity-0"
-                  style={{ animationDelay: `${idx * 100}ms`, animationFillMode: 'forwards' }}
-                >
-                  {/* Accent bar on Hover */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  {/* Number + Icon header */}
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="w-14 h-14 rounded-xl bg-primary/5 group-hover:bg-accent/10 flex items-center justify-center transition-colors duration-300">
-                      <Icon size={28} strokeWidth={1.75} className="text-primary group-hover:text-accent transition-colors duration-300" />
-                    </div>
-                    <span className="text-5xl font-heading font-bold text-gray-100 group-hover:text-accent/20 transition-colors duration-300 leading-none select-none">
-                      {String(idx + 1).padStart(2, '0')}
-                    </span>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 flex flex-col">
-                    <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
-                      {process.step}
-                    </h4>
-                    <p className="text-gray-600 text-sm mb-4 font-medium">
-                      {process.description}
-                    </p>
-
-                    {/* Details List */}
-                    <ul className="space-y-2 mt-auto">
-                      {process.details.map((detail, detailIdx) => (
-                        <li key={detailIdx} className="flex items-start text-xs text-gray-600">
-                          <Check size={14} className="text-accent mt-0.5 mr-2 flex-shrink-0" strokeWidth={2.5} />
-                          <span>{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                );
-              })}
-            </div>
-
-            {/* CTA Section */}
-            <div className="bg-gradient-to-br from-primary via-blue-800 to-primary-dark rounded-2xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'}}></div>
-              </div>
-
-              <div className="relative z-10">
-                <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
-                  Pronto para Iniciar Seu Projeto?
-                </h3>
-                <p className="text-gray-200 mb-6 max-w-2xl mx-auto text-sm md:text-base">
-                  Nossa equipe está preparada para transformar sua ideia em realidade. Solicite um orçamento sem compromisso e receba atendimento personalizado.
-                </p>
-                <a
-                  href={`https://wa.me/55${COMPANY_INFO.phone1}?text=${encodeURIComponent('Olá! Vi o processo de trabalho no site e gostaria de solicitar um orçamento.')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-accent hover:bg-white text-white hover:text-accent px-8 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-                >
-                  <MessageCircle size={20} />
-                  <span>Solicite um Orçamento Agora</span>
-                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
-            </div>
-          </div>
+          <p>
+            Conheça as seis frentes de trabalho da Alumimec. Dimensões,
+            materiais, prazos e condições são definidos após avaliar a sua
+            necessidade.
+          </p>
         </div>
-      </section>
-
-      {/* 3. SERVICES */}
-      <section id="servicos" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-accent font-bold uppercase tracking-wider text-sm">O Que Fazemos</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mt-2">Soluções Completas em Aço</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service) => (
-              <div key={service.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                <div className="h-56 overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-                decoding="async"
-              />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
-                  <p className="text-gray-600 mb-6 text-sm h-16">{service.description}</p>
-                  <ul className="mb-6 space-y-2">
-                    {service.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-gray-500">
-                        <Check size={16} className="text-accent mr-2" /> {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                  <a 
-                    href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Tenho interesse em ${encodeURIComponent(service.title)}`}
-                    className="block w-full text-center bg-primary text-white py-3 rounded font-bold hover:bg-accent transition-colors"
-                  >
-                    Solicitar Orçamento
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. FEATURED PROJECT (FORVIA) */}
-      <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-gray-900 text-white overflow-hidden relative">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'}}></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-8">
-            <div className="bg-accent text-xs font-bold px-4 py-2 rounded-full inline-block mb-4 animate-pulse">ÚLTIMA OBRA REALIZADA</div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Barracão Industrial para Forvia</h2>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
-              A Alumimec tem orgulho de apresentar mais uma obra concluída com excelência: o barracão industrial desenvolvido especialmente para a unidade da Forvia em São José dos Pinhais.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-orange-600 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div className="service-grid">
+          {SERVICES.map((s, i) => (
+            <article className="service-card" id={`servico-${s.id}`} key={s.id}>
+              <figure>
                 <img
-                  src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
-                  alt="Barracão Industrial Forvia - São José dos Pinhais"
-                  className="relative rounded-lg shadow-2xl border-4 border-white/20 w-full"
-                width={800}
-                height={800}
-                loading="lazy"
-                decoding="async"
-              />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                  <p className="text-white font-bold text-lg mb-1">Barracão Industrial para Forvia</p>
-                  <p className="text-gray-300 text-sm">São José dos Pinhais/PR</p>
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="space-y-6">
-                <p className="text-gray-200 leading-relaxed">
-                  Projetado com foco em <strong className="text-white">eficiência, segurança e durabilidade</strong>, o espaço atende às necessidades operacionais da empresa, contribuindo diretamente para a otimização de seus processos produtivos.
-                </p>
-                <p className="text-gray-200 leading-relaxed">
-                  A estrutura metálica, fornecida e instalada pela Alumimec, segue os mais altos padrões de qualidade e resistência, garantindo confiabilidade e agilidade na execução da obra. Todo o projeto foi realizado em conformidade com normas técnicas, dentro do prazo estipulado e com o compromisso de entregar soluções sob medida.
-                </p>
-                <p className="text-gray-200 leading-relaxed">
-                  Esse projeto reforça a parceria de confiança entre a Alumimec e empresas líderes do setor automotivo, como a <strong className="text-accent">Forvia</strong>, demonstrando a capacidade da nossa equipe em entregar construções industriais com alto desempenho e excelência técnica.
-                </p>
-
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                  <h3 className="text-xl font-bold mb-4 text-accent">Destaques Técnicos</h3>
-                  <ul className="grid grid-cols-2 gap-3">
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Área superior a 2.000m²</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Vãos livres amplos</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Pé-direito duplo</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Prep. ponte rolante</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Aço estrutural ASTM</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Cobertura termoacústica</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Prazo recorde</li>
-                    <li className="flex items-center gap-2"><Check className="text-accent flex-shrink-0" size={18} /> Normas técnicas</li>
-                  </ul>
-                </div>
-
-                <a href="#contato" className="bg-accent text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-primary transition-all shadow-lg inline-flex items-center gap-2 group">
-                  Quero um Projeto Similar
-                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  src={s.image}
+                  alt={s.title + " — fotografia do acervo Alumimec"}
+                  loading="lazy"
+                  width="600"
+                  height="450"
+                />
+                <figcaption>
+                  0{s.id} / {s.title}
+                </figcaption>
+              </figure>
+              <div>
+                <h3>{s.title}</h3>
+                <p>{s.description}</p>
+                <p>{guidance[i]}</p>
+                <a
+                  className="text-link"
+                  href={whatsapp("Tenho interesse em " + s.title + ".")}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Conversar sobre {s.title.toLowerCase()} ↗
                 </a>
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section id="sobre" className="section about">
+        <div className="wrap split">
+          <div>
+            <p className="eyebrow">QUEM ESTÁ POR TRÁS DA ESTRUTURA</p>
+            <h2>
+              Alumimec.
+              <br />
+              Da ideia ao aço.
+            </h2>
+            <p>
+              A Alumimec trabalha com projeto, fabricação e montagem de
+              estruturas metálicas para diferentes usos. Nossa sede fica no
+              bairro Afonso Pena, em São José dos Pinhais, no Paraná.
+            </p>
+            <p>
+              Para conversar sobre uma obra em Curitiba ou na região
+              metropolitana, envie o endereço e as características do projeto. A
+              equipe confirma a viabilidade de atendimento e as condições da
+              proposta.
+            </p>
+            <a className="text-link" href="#contato">
+              Conheça nossos canais de contato ↗
+            </a>
+          </div>
+          <figure>
+            <img
+              src="/barracao-sao-jose-dos-pinhais-barracao-forvia.jpg"
+              alt="Barracão industrial identificado no acervo da Alumimec como obra Forvia em São José dos Pinhais"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+            <figcaption>
+              Barracão industrial para Forvia · São José dos Pinhais/PR.
+              Registro do portfólio original.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section className="section wrap" id="processo">
+        <p className="eyebrow">COMO ORGANIZAR SUA OBRA</p>
+        <h2>Uma etapa prepara a próxima.</h2>
+        <div className="process-grid">
+          {[
+            [
+              "Conversa inicial",
+              "Compartilhe o uso do espaço, o endereço, fotos e medidas aproximadas.",
+            ],
+            [
+              "Projeto",
+              "Avalie vãos, cargas, apoios e requisitos técnicos com os responsáveis pelo projeto.",
+            ],
+            [
+              "Proposta",
+              "Confira escopo, materiais, documentação, custos e cronograma antes de aprovar.",
+            ],
+            [
+              "Fabricação",
+              "A produção segue os detalhes e acabamentos definidos para a estrutura.",
+            ],
+            [
+              "Montagem",
+              "Planeje acessos, preparação do local e sequência de instalação com a equipe.",
+            ],
+            [
+              "Entrega e cuidados",
+              "Alinhe a conferência do serviço e as orientações de conservação aplicáveis.",
+            ],
+          ].map(([title, text], i) => (
+            <article key={title}>
+              <span>0{i + 1}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section id="galeria" className="section gallery-section">
+        <div className="wrap">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">MATERIAIS, ESCALAS E POSSIBILIDADES</p>
+              <h2>O aço em diferentes formas.</h2>
             </div>
+            <p>
+              Fotografias preservadas do acervo original. Abra uma imagem para
+              ver os detalhes; especificações e disponibilidade devem ser
+              consultadas.
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* 5. COMPARISON TABLE */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-             <h2 className="text-3xl font-heading font-bold text-primary">Por que escolher Estrutura Metálica?</h2>
-             <p className="text-gray-600 mt-2">Comparativo entre construção tradicional e nossos modelos</p>
-          </div>
-          <div className="overflow-x-auto">
-             <table className="w-full max-w-4xl mx-auto border-collapse bg-white shadow-xl rounded-lg overflow-hidden">
-               <thead className="bg-primary text-white">
-                 <tr>
-                   <th className="p-4 text-left">Característica</th>
-                   <th className="p-4 text-left bg-primary-dark/50">Construção Tradicional</th>
-                   <th className="p-4 text-left bg-accent text-white">Padrão Alumimec</th>
-                 </tr>
-               </thead>
-               <tbody className="divide-y divide-gray-200">
-                 {COMPARISON_DATA.map((row, idx) => (
-                   <tr key={idx} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                     <td className="p-4 font-bold text-gray-700">{row.feature}</td>
-                     <td className="p-4 text-gray-500">{row.modelA}</td>
-                     <td className="p-4 text-primary font-semibold flex items-center gap-2">
-                       <Check size={16} className="text-accent" /> {row.modelB}
-                     </td>
-                   </tr>
-                 ))}
-               </tbody>
-             </table>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. GALLERY */}
-      <section id="galeria" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <span className="text-accent font-bold uppercase tracking-wider text-sm">Portfolio</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mt-2">Nossas Obras Recentes</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {GALLERY_IMAGES.map((project) => (
-              <div 
-                key={project.id} 
-                className="group relative h-64 overflow-hidden rounded-lg cursor-pointer"
-                onClick={() => setGalleryModal(project)}
+          <div className="filters" aria-label="Filtrar galeria">
+            {categories.map((c) => (
+              <button
+                key={c}
+                aria-pressed={category === c}
+                onClick={() => setCategory(c)}
               >
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
-                decoding="async"
-              />
-                <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4 text-center">
-                  <h4 className="font-bold text-lg mb-2">{project.title}</h4>
-                  <p className="text-sm">{project.category}</p>
-                  <span className="mt-4 bg-accent px-4 py-2 rounded-full text-xs font-bold uppercase">Ver Detalhes</span>
-                </div>
-              </div>
+                {c}
+              </button>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* 7. VIDEOS */}
-      <section id="videos" className="py-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">Em Ação</h2>
-            <p className="text-gray-400 mt-2">Veja nossos projetos ganhando vida</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {VIDEOS.map((video) => (
-              <div key={video.id} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg group">
-                <div className="relative h-48 cursor-pointer" onClick={() => setVideoModal(video.videoId)}>
-                  <img 
-                    src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`} 
-                    alt={video.title} 
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                loading="lazy"
-                decoding="async"
-              />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-accent/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
-                      <Play fill="white" className="text-white ml-1" />
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">{video.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 8. TESTIMONIALS */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">O Que Dizem Nossos Clientes</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.id} className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
-                <div className="flex text-yellow-400 mb-4">
-                  {[...Array(t.rating)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
-                </div>
-                <p className="text-gray-600 mb-6 italic">"{t.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
-                    {t.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-primary text-sm">{t.name}</h4>
-                    <span className="text-xs text-gray-500">{t.location}</span>
-                  </div>
-                </div>
-                <div className="absolute top-8 right-8 text-gray-200">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.0547 15.1953 15.0039 17.5508 14.5039V12.5C14.017 12.5 14.017 10.999 14.017 9.5C14.017 8.00098 15.1953 6.94922 17.5508 6.44922V4.5C13.5508 4.5 11.5508 6.94922 11.5508 9.5V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.0547 6.19531 15.0039 8.55078 14.5039V12.5C5.0166 12.5 5.0166 10.999 5.0166 9.5C5.0166 8.00098 6.19531 6.94922 8.55078 6.44922V4.5C4.55078 4.5 2.55078 6.94922 2.55078 9.5V21H5.0166Z" /></svg>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 9. LOCATIONS (CITIES & NEIGHBORHOODS) */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
-                <MapPin className="text-accent" /> Cidades Atendidas (RMC)
-              </h3>
-              <div className="flex flex-wrap gap-2 h-64 overflow-y-auto content-start pr-2 custom-scrollbar">
-                {CITIES.map(city => (
-                  <Link 
-                    key={city} 
-                    to={cityPath(city)}
-                    className="bg-white hover:bg-primary hover:text-white px-3 py-1 rounded text-sm text-gray-600 transition-colors border border-gray-200"
-                  >
-                    {city}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
-                <MapPin className="text-accent" /> Bairros de Curitiba
-              </h3>
-              <div className="flex flex-wrap gap-2 h-64 overflow-y-auto content-start pr-2 custom-scrollbar">
-                {NEIGHBORHOODS.map(hood => (
-                  <Link 
-                    key={hood} 
-                    to={neighborhoodPath(hood)}
-                    className="bg-white hover:bg-primary hover:text-white px-3 py-1 rounded text-sm text-gray-600 transition-colors border border-gray-200"
-                  >
-                    {hood}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. FAQ */}
-      <section id="faq" className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">Perguntas Frequentes</h2>
-          <div className="space-y-4">
-            {FAQs.map((faq, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden">
-                <button 
-                  onClick={() => toggleAccordion(idx)}
-                  className="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition-colors text-left font-bold text-gray-700"
+          <div className="gallery-grid">
+            {GALLERY_IMAGES.filter(
+              (p) => category === "Todos" || p.category === category,
+            ).map((p) => (
+              <figure key={p.id}>
+                <a
+                  href={p.image}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Ampliar: ${p.title} (nova aba)`}
                 >
-                  {faq.question}
-                  <div className={`transform transition-transform duration-300 ${activeAccordion === idx ? 'rotate-45 text-accent' : 'text-primary'}`}>
-                    <X size={20} className={activeAccordion === idx ? "" : "rotate-45"} />
-                  </div>
-                </button>
-                <div className={`bg-white px-4 text-gray-600 transition-all duration-300 ease-in-out overflow-hidden ${activeAccordion === idx ? 'max-h-40 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'}`}>
-                  {faq.answer}
-                </div>
-              </div>
+                  <img
+                    src={p.image}
+                    alt={p.title + " — acervo original"}
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption>
+                  <strong>{p.title}</strong>
+                  <span>{p.description}</span>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
       </section>
-
-      {/* 11. INSTAGRAM FEED */}
-      <InstagramFeed />
-
-      {/* 12. CONTACT */}
-      <section id="contato" className="py-20 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <span className="text-accent font-bold uppercase tracking-wider text-sm">Fale Conosco</span>
-              <h2 className="text-4xl font-heading font-bold mb-8 mt-2">Vamos iniciar seu projeto?</h2>
-              <p className="mb-8 text-gray-300">Preencha o formulário para receber um contato imediato via WhatsApp ou utilize nossos canais diretos.</p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 p-3 rounded text-accent"><MapPin size={24} /></div>
-                  <div>
-                    <h4 className="font-bold text-lg">Localização</h4>
-                    <p className="text-gray-300 text-sm">{COMPANY_INFO.address}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 p-3 rounded text-accent"><Phone size={24} /></div>
-                  <div>
-                    <h4 className="font-bold text-lg">Telefones</h4>
-                    <p className="text-gray-300">{COMPANY_INFO.phone1Display}</p>
-                    <p className="text-gray-300">{COMPANY_INFO.phone2Display}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/10 p-3 rounded text-accent"><User size={24} /></div>
-                  <div>
-                    <h4 className="font-bold text-lg">Responsável Técnico</h4>
-                    <p className="text-gray-300">{COMPANY_INFO.responsible}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
-              <h3 className="text-2xl font-bold text-primary mb-6">Orçamento Rápido</h3>
-              <form onSubmit={handleFormSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-bold mb-1 text-gray-600">Seu Nome</label>
-                  <input required type="text" className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-accent" 
-                    value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-bold mb-1 text-gray-600">Telefone</label>
-                    <input required type="tel" className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-accent"
-                      value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold mb-1 text-gray-600">Cidade</label>
-                    <input required type="text" className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-accent"
-                      value={formData.city} onChange={e => setFormData({...formData, city: e.target.value})} />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-1 text-gray-600">Tipo de Serviço</label>
-                  <select className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-accent"
-                    value={formData.service} onChange={e => setFormData({...formData, service: e.target.value})}>
-                    {SERVICES.map(s => <option key={s.id} value={s.title}>{s.title}</option>)}
-                    <option value="Outro">Outro</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-1 text-gray-600">Detalhes do Projeto</label>
-                  <textarea rows={3} className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-accent"
-                    value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})}></textarea>
-                </div>
-                <button type="submit" className="w-full bg-accent text-white font-bold py-4 rounded hover:bg-accent/90 transition-colors shadow-lg">
-                  Enviar para WhatsApp
-                </button>
-              </form>
-            </div>
+      <section id="videos" className="section wrap">
+        <p className="eyebrow">ACOMPANHE O ACERVO</p>
+        <h2>Estruturas em movimento.</h2>
+        <p>
+          Vídeos vinculados no site original. A reprodução carrega conteúdo do
+          YouTube somente após sua escolha.
+        </p>
+        <div className="video-choices">
+          {VIDEOS.map((v) => (
+            <button
+              className="button secondary"
+              key={v.id}
+              aria-pressed={video === v.videoId}
+              onClick={() => setVideo(v.videoId)}
+            >
+              ▷ {v.title}
+            </button>
+          ))}
+        </div>
+        {video && (
+          <div className="video-player">
+            <iframe
+              key={video}
+              title={VIDEOS.find((v) => v.videoId === video)?.title}
+              src={`https://www.youtube-nocookie.com/embed/${video}`}
+              allowFullScreen
+            />
+            <button className="button secondary" onClick={() => setVideo("")}>
+              Fechar vídeo
+            </button>
+          </div>
+        )}
+        <a
+          className="text-link"
+          href={COMPANY_INFO.instagram}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Veja também o Instagram da Alumimec ↗
+        </a>
+      </section>
+      <section id="regiao" className="section region">
+        <div className="wrap split">
+          <div>
+            <p className="eyebrow">CURITIBA E REGIÃO METROPOLITANA</p>
+            <h2>
+              Perto da sua ideia.
+              <br />
+              Atendimento sob consulta.
+            </h2>
+            <p>
+              A sede é em São José dos Pinhais. Não há filiais declaradas em
+              outros municípios ou bairros. Informe cidade, bairro e CEP para
+              confirmar deslocamento, visita e execução.
+            </p>
+            <p>
+              A região metropolitana reúne 29 municípios, conforme a{" "}
+              <a href="https://www.amep.pr.gov.br/FAQ/Municipios-da-Regiao-Metropolitana-de-Curitiba">
+                AMEP
+              </a>
+              . Fazer parte dessa região não confirma disponibilidade da equipe
+              para cada endereço.
+            </p>
+            <a className="text-link" href={cityPath("São José dos Pinhais")}>
+              Conheça a sede e prepare sua consulta ↗
+            </a>
+            <a className="text-link" href={cityPath("Curitiba")}>
+              Planejando uma obra em Curitiba ↗
+            </a>
+          </div>
+          <div>
+            <h3>Onde será sua obra?</h3>
+            <label htmlFor="city">Município para consulta</label>
+            <select
+              id="city"
+              defaultValue=""
+              onChange={(e) => {
+                if (e.target.value)
+                  window.location.assign(cityPath(e.target.value));
+              }}
+            >
+              <option value="" disabled>
+                Selecione um município
+              </option>
+              {CITIES.map((c) => (
+                <option key={c}>{c}</option>
+              ))}
+            </select>
+            <p>
+              Bairros oficiais e nomes populares são referências diferentes.
+              Curitiba tem 75 bairros; consulte a{" "}
+              <a href="https://ippuc.org.br/perfil-fisico-territorial-e-socioeconomico-75-bairros-de-curitiba-2">
+                relação do IPPUC
+              </a>{" "}
+              ao informar seu endereço.
+            </p>
+            <ContactActions subject="Quero confirmar atendimento para meu endereço." />
           </div>
         </div>
       </section>
-
-      {/* MODALS */}
-      {videoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in" onClick={() => setVideoModal(null)}>
-          <div className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-            <button aria-label="Fechar vídeo" className="absolute top-2 right-2 text-white bg-black/50 p-2 rounded-full z-10 hover:bg-red-600 transition-colors" onClick={() => setVideoModal(null)}>
-              <X size={24} />
-            </button>
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src={`https://www.youtube.com/embed/${videoModal}?autoplay=1`} 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
+      <section className="section wrap" id="faq">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">ANTES DE COMEÇAR</p>
+            <h2>
+              Informação que ajuda
+              <br />a decidir.
+            </h2>
           </div>
+          <p>
+            Respostas para preparar uma conversa mais produtiva sobre sua
+            estrutura.
+          </p>
         </div>
-      )}
-
-      {galleryModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 animate-fade-in" onClick={() => setGalleryModal(null)}>
-          <div className="relative w-full max-w-3xl bg-white rounded-lg overflow-hidden shadow-2xl" onClick={e => e.stopPropagation()}>
-            <button aria-label="Fechar imagem" className="absolute top-2 right-2 text-gray-800 bg-white/80 p-2 rounded-full z-10 hover:bg-red-600 hover:text-white transition-colors" onClick={() => setGalleryModal(null)}>
-              <X size={24} />
-            </button>
-            <img src={galleryModal.image} alt={galleryModal.title} className="w-full h-auto max-h-[70vh] object-contain bg-gray-100"
-                loading="lazy"
-                decoding="async"
-              />
-            <div className="p-6 bg-white">
-              <h3 className="text-2xl font-bold text-primary mb-2">{galleryModal.title}</h3>
-              <p className="text-gray-600 mb-4">{galleryModal.description}</p>
-              <a 
-                href={`https://wa.me/55${COMPANY_INFO.phone1}?text=Gostei do projeto ${encodeURIComponent(galleryModal.title)}, gostaria de um orçamento similar.`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-block bg-accent text-white px-6 py-2 rounded font-bold hover:bg-opacity-90"
-              >
-                Solicitar Orçamento Deste Modelo
-              </a>
-            </div>
+        <div className="faq-list">
+          {FAQs.map((f) => (
+            <details key={f.question}>
+              <summary>{f.question}</summary>
+              <p>{f.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+      <section id="contato" className="section wrap">
+        <div className="split">
+          <div>
+            <p className="eyebrow">CONTE O QUE VOCÊ PRECISA</p>
+            <h2>
+              Vamos tirar seu
+              <br />
+              projeto do papel?
+            </h2>
+            <p>
+              Envie fotos, medidas aproximadas, finalidade da estrutura e
+              endereço da obra. A proposta depende da avaliação técnica e
+              comercial.
+            </p>
+            <p>
+              <strong>Sede:</strong> {COMPANY_INFO.address}
+            </p>
+            <p>
+              <strong>Horário:</strong> {COMPANY_INFO.hours}
+            </p>
+            <ContactActions />
           </div>
+          <form
+            className="quote-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const data = new FormData(e.currentTarget);
+              window.open(
+                whatsapp(
+                  `Meu nome é ${data.get("name")}. Local da obra: ${data.get("place")}. Serviço: ${data.get("service")}. Detalhes: ${data.get("message")}`,
+                ),
+                "_blank",
+                "noopener,noreferrer",
+              );
+            }}
+          >
+            <label>
+              Seu nome
+              <input name="name" autoComplete="name" required maxLength={100} />
+            </label>
+            <label>
+              Cidade e bairro
+              <input name="place" required maxLength={180} />
+            </label>
+            <label>
+              Serviço
+              <select name="service">
+                {SERVICES.map((s) => (
+                  <option key={s.id}>{s.title}</option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Conte sobre sua obra
+              <textarea name="message" rows={4} required maxLength={2000} />
+            </label>
+            <p>
+              O botão abre uma mensagem no WhatsApp. Você revisa e decide se
+              deseja enviá-la. Este formulário não armazena os dados.
+            </p>
+            <button className="button" type="submit">
+              Preparar mensagem no WhatsApp ↗
+            </button>
+          </form>
         </div>
-      )}
+      </section>
     </>
   );
-};
-
-export default Home;
+}

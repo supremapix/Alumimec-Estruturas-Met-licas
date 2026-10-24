@@ -1,7 +1,14 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { COMPANY_INFO } from '../constants';
-import { SITE_URL, ORGANIZATION_ID, WEBSITE_ID, NAP, SERVICE_ENTITIES, ENTITY_STATEMENT } from '../site.config';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { COMPANY_INFO } from "../constants";
+import {
+  SITE_URL,
+  ORGANIZATION_ID,
+  WEBSITE_ID,
+  NAP,
+  SERVICE_ENTITIES,
+  ENTITY_STATEMENT,
+} from "../site.config";
 
 interface EnhancedSEOProps {
   title: string;
@@ -22,7 +29,8 @@ interface EnhancedSEOProps {
   noindex?: boolean;
 }
 
-const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
+const abs = (path: string) =>
+  `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 
 /**
  * Grafo de entidade único e consistente.
@@ -37,24 +45,24 @@ const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${pa
  * ou qualquer métrica não comprovada no repositório.
  */
 const buildOrganization = () => ({
-  '@type': ['Organization', 'LocalBusiness'],
-  '@id': ORGANIZATION_ID,
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": ORGANIZATION_ID,
   name: COMPANY_INFO.name,
-  alternateName: 'Alumimec',
+  alternateName: "Alumimec",
   url: `${SITE_URL}/`,
   logo: {
-    '@type': 'ImageObject',
-    '@id': `${SITE_URL}/#logo`,
-    url: abs('/logo-alumimec.jpg'),
-    contentUrl: abs('/logo-alumimec.jpg'),
+    "@type": "ImageObject",
+    "@id": `${SITE_URL}/#logo`,
+    url: abs("/logo-alumimec.jpg"),
+    contentUrl: abs("/logo-alumimec.jpg"),
     width: 1200,
     height: 1200,
     caption: COMPANY_INFO.name,
   },
-  image: { '@id': `${SITE_URL}/#logo` },
+  image: { "@id": `${SITE_URL}/#logo` },
   description: ENTITY_STATEMENT,
   address: {
-    '@type': 'PostalAddress',
+    "@type": "PostalAddress",
     streetAddress: NAP.streetAddress,
     addressLocality: NAP.addressLocality,
     addressRegion: NAP.addressRegion,
@@ -65,40 +73,43 @@ const buildOrganization = () => ({
   email: COMPANY_INFO.email,
   contactPoint: [
     {
-      '@type': 'ContactPoint',
+      "@type": "ContactPoint",
       telephone: `+55${COMPANY_INFO.phone1}`,
-      contactType: 'sales',
-      areaServed: 'BR',
-      availableLanguage: ['Portuguese'],
+      contactType: "sales",
+      areaServed: "Curitiba e região metropolitana",
+      availableLanguage: ["Portuguese"],
     },
   ],
   sameAs: [COMPANY_INFO.facebook, COMPANY_INFO.instagram],
   openingHoursSpecification: [
     {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '17:30',
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:30",
     },
   ],
   areaServed: [
-    { '@type': 'City', name: 'Curitiba', sameAs: 'https://www.wikidata.org/wiki/Q3919' },
     {
-      '@type': 'City',
-      name: 'São José dos Pinhais',
-      sameAs: 'https://www.wikidata.org/wiki/Q986378',
+      "@type": "City",
+      name: "Curitiba",
+      sameAs: "https://www.wikidata.org/wiki/Q3919",
     },
-    { '@type': 'AdministrativeArea', name: 'Região Metropolitana de Curitiba' },
-    { '@type': 'State', name: 'Paraná', sameAs: 'https://www.wikidata.org/wiki/Q15499' },
+    {
+      "@type": "City",
+      name: "São José dos Pinhais",
+      sameAs: "https://www.wikidata.org/wiki/Q986378",
+    },
+    { "@type": "AdministrativeArea", name: "Região Metropolitana de Curitiba" },
   ],
   knowsAbout: SERVICE_ENTITIES.map((s) => s.name),
   hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Serviços de Estruturas Metálicas',
+    "@type": "OfferCatalog",
+    name: "Serviços de Estruturas Metálicas",
     itemListElement: SERVICE_ENTITIES.map((service) => ({
-      '@type': 'Offer',
+      "@type": "Offer",
       itemOffered: {
-        '@type': 'Service',
+        "@type": "Service",
         name: service.name,
         description: service.description,
       },
@@ -107,21 +118,21 @@ const buildOrganization = () => ({
 });
 
 const buildWebSite = () => ({
-  '@type': 'WebSite',
-  '@id': WEBSITE_ID,
+  "@type": "WebSite",
+  "@id": WEBSITE_ID,
   url: `${SITE_URL}/`,
   name: COMPANY_INFO.name,
-  description: 'Estruturas metálicas em Curitiba e Região Metropolitana',
-  publisher: { '@id': ORGANIZATION_ID },
-  inLanguage: 'pt-BR',
+  description: "Estruturas metálicas em Curitiba e Região Metropolitana",
+  publisher: { "@id": ORGANIZATION_ID },
+  inLanguage: "pt-BR",
 });
 
 const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
   title,
   description,
   canonical,
-  ogImage = '/galpoes-metalicos-pre-fabricados-hero-imagem.jpg',
-  ogType = 'website',
+  ogImage = "/galpoes-metalicos-pre-fabricados-hero-imagem.jpg",
+  ogType = "website",
   breadcrumbs = [],
   faqItems = [],
   services = [],
@@ -133,75 +144,82 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
   const fullImageUrl = abs(ogImage);
 
   const webPage: Record<string, unknown> = {
-    '@type': 'WebPage',
-    '@id': `${fullUrl}#webpage`,
+    "@type": "WebPage",
+    "@id": `${fullUrl}#webpage`,
     url: fullUrl,
     name: title,
     description,
-    isPartOf: { '@id': WEBSITE_ID },
-    about: { '@id': ORGANIZATION_ID },
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORGANIZATION_ID },
     primaryImageOfPage: {
-      '@type': 'ImageObject',
+      "@type": "ImageObject",
       url: fullImageUrl,
     },
-    inLanguage: 'pt-BR',
+    inLanguage: "pt-BR",
   };
 
-  const graph: Record<string, unknown>[] = [buildOrganization(), buildWebSite(), webPage];
+  const graph: Record<string, unknown>[] = [
+    buildOrganization(),
+    buildWebSite(),
+    webPage,
+  ];
 
   if (breadcrumbs.length > 0) {
     graph.push({
-      '@type': 'BreadcrumbList',
-      '@id': `${fullUrl}#breadcrumb`,
+      "@type": "BreadcrumbList",
+      "@id": `${fullUrl}#breadcrumb`,
       itemListElement: breadcrumbs.map((crumb, index) => ({
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: index + 1,
         name: crumb.name,
         item: abs(crumb.url),
       })),
     });
-    webPage.breadcrumb = { '@id': `${fullUrl}#breadcrumb` };
+    webPage.breadcrumb = { "@id": `${fullUrl}#breadcrumb` };
   }
 
   if (faqItems.length > 0) {
     graph.push({
-      '@type': 'FAQPage',
-      '@id': `${fullUrl}#faq`,
-      isPartOf: { '@id': `${fullUrl}#webpage` },
+      "@type": "FAQPage",
+      "@id": `${fullUrl}#faq`,
+      isPartOf: { "@id": `${fullUrl}#webpage` },
       mainEntity: faqItems.map((item) => ({
-        '@type': 'Question',
+        "@type": "Question",
         name: item.question,
-        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
       })),
     });
   }
 
   services.forEach((service) => {
     graph.push({
-      '@type': 'Service',
-      '@id': `${fullUrl}#service-${service.name
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
+      "@type": "Service",
+      "@id": `${fullUrl}#service-${service.name
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '')}`,
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "")}`,
       serviceType: service.name,
       name: locationName ? `${service.name} em ${locationName}` : service.name,
       description: service.description,
-      provider: { '@id': ORGANIZATION_ID },
+      provider: { "@id": ORGANIZATION_ID },
       areaServed: locationName
-        ? { '@type': 'Place', name: locationName }
+        ? { "@type": "Place", name: locationName }
         : [
-            { '@type': 'City', name: 'Curitiba' },
-            { '@type': 'AdministrativeArea', name: 'Região Metropolitana de Curitiba' },
+            { "@type": "City", name: "Curitiba" },
+            {
+              "@type": "AdministrativeArea",
+              name: "Região Metropolitana de Curitiba",
+            },
           ],
-      isRelatedTo: { '@id': ORGANIZATION_ID },
+      isRelatedTo: { "@id": ORGANIZATION_ID },
     });
   });
 
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': graph,
+    "@context": "https://schema.org",
+    "@graph": graph,
   };
 
   return (
@@ -215,8 +233,8 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
         name="robots"
         content={
           noindex
-            ? 'noindex, follow'
-            : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+            ? "noindex, follow"
+            : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         }
       />
 
@@ -235,12 +253,19 @@ const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
       <meta name="twitter:image" content={fullImageUrl} />
 
       <meta name="geo.region" content="BR-PR" />
-      <meta name="geo.placename" content={locationName || NAP.addressLocality} />
+      <meta
+        name="geo.placename"
+        content={locationName || NAP.addressLocality}
+      />
 
       <meta name="author" content={COMPANY_INFO.name} />
 
       {isHomePage && (
-        <link rel="preload" href="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg" as="image" />
+        <link
+          rel="preload"
+          href="/galpoes-metalicos-pre-fabricados-hero-imagem.jpg"
+          as="image"
+        />
       )}
 
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>

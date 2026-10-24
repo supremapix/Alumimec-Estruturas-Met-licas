@@ -1,76 +1,45 @@
-import { CITIES, NEIGHBORHOODS } from './constants';
-import { slugify } from './lib/slug';
-import { PRIORITY_CITIES } from './site.config';
+import { CITIES, NEIGHBORHOODS } from "./constants";
+import { slugify } from "./lib/slug";
+import { PRIORITY_CITIES } from "./site.config";
 
 export interface RouteConfig {
   path: string;
   title: string;
   description: string;
-  type: 'home' | 'city' | 'neighborhood';
+  type: "home" | "city" | "neighborhood";
   /** Nome oficial do local (para cidade/bairro). */
   name?: string;
   priority: number;
   changefreq: string;
 }
 
-export const HOME_TITLE = 'Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba';
+export const HOME_TITLE =
+  "Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba";
 export const HOME_DESCRIPTION =
-  'Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba e Região Metropolitana: galpões industriais, coberturas metálicas e mezaninos.';
+  "Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba e Região Metropolitana: galpões industriais, coberturas metálicas e mezaninos.";
 
 export const cityPath = (city: string) => `/cidade/${slugify(city)}`;
 export const neighborhoodPath = (n: string) => `/bairro/${slugify(n)}`;
 
-/**
- * Locais vizinhos, usados tanto no bloco de links internos da página quanto na
- * meta description — garantem que cada página tenha conteúdo e metadados
- * distintos em vez de apenas trocar o nome da localidade.
- */
-export const nearbyOf = (name: string, list: string[], count = 4): string[] => {
-  const index = list.indexOf(name);
-  if (index < 0) return list.slice(0, count);
-  const out: string[] = [];
-  for (let step = 1; out.length < count && step < list.length; step++) {
-    const before = list[(index - step + list.length) % list.length];
-    const after = list[(index + step) % list.length];
-    if (before !== name && !out.includes(before) && out.length < count) out.push(before);
-    if (after !== name && !out.includes(after) && out.length < count) out.push(after);
-  }
-  return out;
-};
-
+/** Legacy URLs remain available; names do not imply coverage or geographic proximity. */
 export const cityTitle = (city: string) =>
-  city === 'Curitiba'
-    ? 'Estruturas Metálicas em Curitiba | Galpões e Coberturas | Alumimec'
-    : `Estruturas Metálicas em ${city} | Galpões e Coberturas | Alumimec`;
-
-export const cityDescription = (city: string) => {
-  const nearby = nearbyOf(city, CITIES, 3).join(', ');
-  if (city === 'São José dos Pinhais') {
-    return 'A Alumimec fica no bairro Afonso Pena, em São José dos Pinhais/PR, e executa galpões industriais, coberturas metálicas e mezaninos na cidade e no entorno. Orçamento sem custo.';
-  }
-  const focus = PRIORITY_CITIES.includes(city)
-    ? 'Projeto, fabricação e montagem de galpões industriais, coberturas metálicas e mezaninos'
-    : 'Galpões industriais, coberturas metálicas, mezaninos, escadas e portões industriais';
-  return `${focus} em ${city}/PR. A Alumimec é sediada em São José dos Pinhais e atende ${city} e cidades vizinhas como ${nearby}.`;
-};
-
-export const neighborhoodTitle = (n: string) =>
-  `Estruturas Metálicas no ${n}, Curitiba | Alumimec`;
-
-export const neighborhoodDescription = (n: string) => {
-  const nearby = nearbyOf(n, NEIGHBORHOODS, 3).join(', ');
-  return `Estruturas metálicas, coberturas e mezaninos no bairro ${n}, em Curitiba. A Alumimec é sediada em São José dos Pinhais e atende ${n} e bairros próximos como ${nearby}.`;
-};
+  `Consulta de estruturas metálicas em ${city} | Alumimec`;
+export const cityDescription = (city: string) =>
+  `Consulte seu projeto de estrutura metálica para ${city}. Sede em São José dos Pinhais; atendimento e condições dependem da avaliação do endereço e da obra.`;
+export const neighborhoodTitle = (name: string) =>
+  `Consulta para ${name} | Alumimec Estruturas Metálicas`;
+export const neighborhoodDescription = (name: string) =>
+  `Informe o endereço e as características de sua obra em ${name}. Consulte disponibilidade com a Alumimec, sem pressupor filial ou cobertura confirmada.`;
 
 export const getAllRoutes = (): RouteConfig[] => {
   const routes: RouteConfig[] = [
     {
-      path: '/',
+      path: "/",
       title: HOME_TITLE,
       description: HOME_DESCRIPTION,
-      type: 'home',
+      type: "home",
       priority: 1.0,
-      changefreq: 'weekly',
+      changefreq: "weekly",
     },
   ];
 
@@ -79,10 +48,10 @@ export const getAllRoutes = (): RouteConfig[] => {
       path: cityPath(city),
       title: cityTitle(city),
       description: cityDescription(city),
-      type: 'city',
+      type: "city",
       name: city,
       priority: PRIORITY_CITIES.includes(city) ? 0.8 : 0.5,
-      changefreq: 'monthly',
+      changefreq: "monthly",
     });
   });
 
@@ -91,14 +60,15 @@ export const getAllRoutes = (): RouteConfig[] => {
       path: neighborhoodPath(neighborhood),
       title: neighborhoodTitle(neighborhood),
       description: neighborhoodDescription(neighborhood),
-      type: 'neighborhood',
+      type: "neighborhood",
       name: neighborhood,
       priority: 0.4,
-      changefreq: 'monthly',
+      changefreq: "monthly",
     });
   });
 
   return routes;
 };
 
-export const getTotalRoutes = (): number => 1 + CITIES.length + NEIGHBORHOODS.length;
+export const getTotalRoutes = (): number =>
+  1 + CITIES.length + NEIGHBORHOODS.length;
