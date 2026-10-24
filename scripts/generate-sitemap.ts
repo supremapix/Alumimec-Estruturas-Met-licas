@@ -14,12 +14,6 @@ const generateSitemap = () => {
   const routes = getAllRoutes();
 
   const body = routes
-    .filter(
-      (r) =>
-        r.path === "/" ||
-        r.path === "/cidade/curitiba" ||
-        r.path === "/cidade/sao-jose-dos-pinhais",
-    )
     .map(
       (route) => `  <url>
     <loc>${escapeXml(`${SITE_URL}${route.path}`)}</loc>
@@ -50,7 +44,7 @@ ${body}
   );
 
   console.log(
-    `sitemap.xml: 3 URLs indexaveis; ${routes.length} rotas preservadas para prerender`,
+    `sitemap.xml: ${routes.length} URLs indexaveis; ${routes.length} rotas preservadas para prerender`,
   );
   console.log(`local: ${publicPath}`);
 };

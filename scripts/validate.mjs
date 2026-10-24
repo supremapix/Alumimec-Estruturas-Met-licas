@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 const routes = JSON.parse(fs.readFileSync(".prerender-routes.json", "utf8"));
-const indexed = ["/", "/cidade/curitiba", "/cidade/sao-jose-dos-pinhais"];
+const indexed = routes.map(r => r.path);
 const decode = (s) => s.replace(/&amp;/g, "&").replace(/&#x27;/g, "'");
 let checkedLinks = 0,
   checkedImages = 0;
@@ -23,7 +23,7 @@ for (const route of routes) {
     html.includes("https://www.alumimec.com.br" + route.path),
     "canonical",
   );
-  if (!indexed.includes(route.path)) assert.match(html, /noindex, follow/);
+  assert.ok(!html.includes("noindex, follow"), route.path + " must remain indexable");
   for (const m of html.matchAll(
     /<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/g,
   ))
@@ -52,7 +52,7 @@ for (const route of routes) {
   }
 }
 const map = fs.readFileSync("public/sitemap.xml", "utf8");
-assert.equal((map.match(/<loc>/g) || []).length, 3);
+assert.equal((map.match(/<loc>/g) || []).length, routes.length);
 assert.match(fs.readFileSync("dist/404.html", "utf8"), /noindex/);
 fs.mkdirSync("docs/qa", { recursive: true });
 const browser = await chromium.launch({ headless: true });

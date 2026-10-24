@@ -34,7 +34,7 @@ export default function LocationPage({
         title={title}
         description={description}
         canonical={path}
-        noindex={!justified}
+        noindex={false}
         breadcrumbs={[
           { name: "Início", url: "/" },
           { name, url: path },
