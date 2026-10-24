@@ -1,3 +1,5 @@
+import ApplicationPage from "./pages/ApplicationPage";
+import CoverageHub from "./pages/CoverageHub";
 import NeighborhoodGuide from "./pages/NeighborhoodGuide";
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -44,6 +46,11 @@ const App: React.FC = () => {
             element={<NeighborhoodGuide />}
           />
           <Route path="/servicos/:serviceName" element={<ServicePage />} />
+          <Route
+            path="/aplicacoes/:applicationName"
+            element={<ApplicationPage />}
+          />
+          <Route path="/atendimento" element={<CoverageHub />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

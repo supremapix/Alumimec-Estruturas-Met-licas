@@ -1,0 +1,157 @@
+{
+  "municipalSSR": 29,
+  "serviceSelections": 90,
+  "viewportsAndText": [
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 320,
+      "font": "18px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 320,
+      "font": "36px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 360,
+      "font": "18px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 360,
+      "font": "36px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 390,
+      "font": "18px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 390,
+      "font": "36px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 430,
+      "font": "18px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 430,
+      "font": "36px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 1440,
+      "font": "18px"
+    },
+    {
+      "city": "sao-jose-dos-pinhais",
+      "width": 1440,
+      "font": "36px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 320,
+      "font": "18px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 320,
+      "font": "36px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 360,
+      "font": "18px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 360,
+      "font": "36px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 390,
+      "font": "18px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 390,
+      "font": "36px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 430,
+      "font": "18px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 430,
+      "font": "36px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 1440,
+      "font": "18px"
+    },
+    {
+      "city": "itaperucu",
+      "width": 1440,
+      "font": "36px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 320,
+      "font": "18px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 320,
+      "font": "36px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 360,
+      "font": "18px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 360,
+      "font": "36px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 390,
+      "font": "18px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 390,
+      "font": "36px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 430,
+      "font": "18px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 430,
+      "font": "36px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 1440,
+      "font": "18px"
+    },
+    {
+      "city": "campo-largo",
+      "width": 1440,
+      "font": "36px"
+    }
+  ],
+  "errors": []
+}

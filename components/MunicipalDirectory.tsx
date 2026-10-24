@@ -17,17 +17,21 @@ export default function MunicipalDirectory({ city }: { city: string }) {
   return (
     <section className="section wrap" id="bairros">
       <p className="eyebrow">IDENTIFIQUE O ENDEREÇO DA OBRA</p>
-      <h2>Bairros de {city}</h2>
+      <h2>
+        {["referencias-servico-publico", "mapa-anexo-municipal"].includes(
+          data.classification,
+        )
+          ? "Bairros e referências de "
+          : "Bairros de "}
+        {city}
+      </h2>
       <p>
-        Referências territoriais da{" "}
-        {data.year === 2026
-          ? "lei municipal de 2026"
-          : "malha de bairros do IBGE de 2022"}
-        . Nomes de loteamentos e regiões populares podem ser diferentes do
-        bairro cadastrado. A Alumimec atende estas localidades por deslocamento
-        ao local da obra. Informe o endereço para avaliar o projeto, o acesso e
-        combinar o atendimento.
+        Referências da {data.sourceLabel}. Nomes de loteamentos e regiões
+        populares podem ser diferentes do bairro cadastrado. A Alumimec atende
+        estas localidades por deslocamento ao local da obra. Informe o endereço
+        para avaliar o projeto, o acesso e combinar o atendimento.
       </p>
+      <p>{data.scopeNote}</p>
       <p>
         <a href={data.source}>Consultar fonte oficial</a>. Informe rua, número e
         CEP, especialmente quando o mesmo nome existir em municípios diferentes.

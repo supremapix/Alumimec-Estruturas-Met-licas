@@ -1,3 +1,4 @@
+import { APPLICATIONS, applicationPath } from "./application-content";
 import { LOCAL_GUIDES } from "./local-guides";
 import { CITIES, NEIGHBORHOODS, SERVICES } from "./constants";
 import { slugify } from "./lib/slug";
@@ -7,7 +8,8 @@ export interface RouteConfig {
   path: string;
   title: string;
   description: string;
-  type: "home" | "city" | "neighborhood" | "service";
+  type:
+    "home" | "city" | "neighborhood" | "service" | "application" | "coverage";
   /** Nome oficial do local (para cidade/bairro). */
   name?: string;
   priority: number;
@@ -96,6 +98,25 @@ export const getAllRoutes = (): RouteConfig[] => {
         changefreq: "monthly",
       });
   }
+  APPLICATIONS.forEach((a) =>
+    routes.push({
+      path: applicationPath(a.slug),
+      title: a.title + " | Alumimec",
+      description: a.description,
+      type: "application",
+      priority: 0.7,
+      changefreq: "monthly",
+    }),
+  );
+  routes.push({
+    path: "/atendimento",
+    title: "Atendimento em Curitiba e Região Metropolitana | Alumimec",
+    description:
+      "Localize o município, consulte referências de bairros e prepare seu projeto com a Alumimec.",
+    type: "coverage",
+    priority: 0.8,
+    changefreq: "monthly",
+  });
   return routes;
 };
 

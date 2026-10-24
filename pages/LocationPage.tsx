@@ -1,3 +1,5 @@
+import ApplicationLinks from "../components/ApplicationLinks";
+import ProjectPlanner from "../components/ProjectPlanner";
 import MunicipalDirectory from "../components/MunicipalDirectory";
 import { LOCAL_GUIDES } from "../local-guides";
 import NeighborhoodGuide from "./NeighborhoodGuide";
@@ -120,6 +122,7 @@ export default function LocationPage({
                     Obra identificada no acervo original.
                   </figcaption>
                 </figure>
+                <ApplicationLinks />
               </>
             ) : curitiba ? (
               <>
@@ -195,6 +198,7 @@ export default function LocationPage({
         </div>
       </section>
       {city && <MunicipalGuide name={name} />}
+      {city && <ProjectPlanner city={name} />}
       {city && <MunicipalDirectory city={name} />}
       {city && LOCAL_GUIDES.some((g) => g.city === name) && (
         <section className="section wrap">

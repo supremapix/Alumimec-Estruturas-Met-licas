@@ -1,3 +1,6 @@
+import ApplicationLinks from "../components/ApplicationLinks";
+import ContextPreview from "../components/ContextPreview";
+import { SERVICE_GUIDES } from "../service-content";
 import ProcessSteps from "../components/ProcessSteps";
 import Photo from "../components/Photo";
 import React, { useState } from "react";
@@ -98,15 +101,20 @@ export default function Home() {
           {SERVICES.map((s, i) => (
             <article className="service-card" id={`servico-${s.id}`} key={s.id}>
               <figure>
-                <Photo
-                  src={s.image}
-                  alt={s.title + " — fotografia do acervo Alumimec"}
-                  loading="lazy"
-                  width="600"
-                  height="450"
+                <ContextPreview
+                  title={s.title}
+                  image={s.image}
+                  href={servicePath(s.title)}
+                  paragraphs={
+                    SERVICE_GUIDES.find((g) => g.id === s.id)!.sections.slice(
+                      0,
+                      2,
+                    ) as [string, string][]
+                  }
+                  showImage
                 />
                 <figcaption>
-                  0{s.id} / {s.title}
+                  0{s.id} / {s.title} — clique na foto para entender
                 </figcaption>
               </figure>
               <div>
@@ -173,6 +181,7 @@ export default function Home() {
         <h2>Uma etapa prepara a próxima.</h2>
         <ProcessSteps />
       </section>
+      <ApplicationLinks />
       <section id="galeria" className="section gallery-section">
         <div className="wrap">
           <div className="section-heading">

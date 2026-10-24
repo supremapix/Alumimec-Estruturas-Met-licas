@@ -1,0 +1,364 @@
+[
+  {
+    "city": "Itaperuçu",
+    "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+    "year": 2026,
+    "sourceLabel": "relação de bairros atendidos pela coleta seletiva, publicada pela Prefeitura de Itaperuçu em 22/10/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Lista parcial de referências usadas pelo serviço municipal. Não é uma delimitação cadastral nem comprova a relação completa de bairros oficiais. Nomes e grafia seguem a publicação consultada.",
+    "names": [
+      {
+        "name": "Bela Vista",
+        "code": null
+      },
+      {
+        "name": "Butierinho",
+        "code": null
+      },
+      {
+        "name": "Campina do Cabral",
+        "code": null
+      },
+      {
+        "name": "Candidos",
+        "code": null
+      },
+      {
+        "name": "Capinzal",
+        "code": null
+      },
+      {
+        "name": "Catarinas",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Cimento Itaú",
+        "code": null
+      },
+      {
+        "name": "Jardim Alvorada",
+        "code": null
+      },
+      {
+        "name": "Jardim Fabiana",
+        "code": null
+      },
+      {
+        "name": "Jardim Itaú",
+        "code": null
+      },
+      {
+        "name": "Jardim Pinheiro",
+        "code": null
+      },
+      {
+        "name": "Jardim Roberta",
+        "code": null
+      },
+      {
+        "name": "Jardim Saara",
+        "code": null
+      },
+      {
+        "name": "Jardim Verona",
+        "code": null
+      },
+      {
+        "name": "Mossungue",
+        "code": null
+      },
+      {
+        "name": "Pombas",
+        "code": null
+      },
+      {
+        "name": "Queimadinha",
+        "code": null
+      },
+      {
+        "name": "Saibreira",
+        "code": null
+      },
+      {
+        "name": "Santa Cecília",
+        "code": null
+      },
+      {
+        "name": "Santa Clara",
+        "code": null
+      },
+      {
+        "name": "Santa Maria",
+        "code": null
+      },
+      {
+        "name": "Santiago",
+        "code": null
+      },
+      {
+        "name": "São Domingos",
+        "code": null
+      },
+      {
+        "name": "São João",
+        "code": null
+      },
+      {
+        "name": "São Miguel",
+        "code": null
+      },
+      {
+        "name": "Vila Camargo",
+        "code": null
+      },
+      {
+        "name": "Vila Gulin",
+        "code": null
+      },
+      {
+        "name": "Vila Isaac",
+        "code": null
+      },
+      {
+        "name": "Vila Tomé",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Campina Grande do Sul",
+    "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+    "year": 2026,
+    "sourceLabel": "mapa municipal de bairros disponibilizado como Anexo II junto da Lei 1.122/2026",
+    "classification": "mapa-anexo-municipal",
+    "scopeNote": "O mapa foi elaborado em dezembro de 2025 e publicado junto da lei de junho de 2026. Sua legenda ainda usa “Bairros Propostos”. As 31 referências são transcritas do anexo; confirme o enquadramento do endereço no cadastro municipal. Paiol de Baixo, Capivari, Jaguatirica e Ribeirão Grande aparecem em quadros próprios; não se presume que toda a área rural esteja coberta por esta relação.",
+    "names": [
+      {
+        "name": "Araçatuba",
+        "code": null
+      },
+      {
+        "name": "Bela Vista",
+        "code": null
+      },
+      {
+        "name": "Butiá",
+        "code": null
+      },
+      {
+        "name": "Cacaiguera",
+        "code": null
+      },
+      {
+        "name": "Campo Belo",
+        "code": null
+      },
+      {
+        "name": "Campo Fundo",
+        "code": null
+      },
+      {
+        "name": "Capivari",
+        "code": null
+      },
+      {
+        "name": "Caraguatá",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Chácaras Olhos D' Água",
+        "code": null
+      },
+      {
+        "name": "CICAMP",
+        "code": null
+      },
+      {
+        "name": "Cupim",
+        "code": null
+      },
+      {
+        "name": "Cupim Vermelho",
+        "code": null
+      },
+      {
+        "name": "Jaguatirica",
+        "code": null
+      },
+      {
+        "name": "Jardim Água Doce",
+        "code": null
+      },
+      {
+        "name": "Jardim Eugênia Maria",
+        "code": null
+      },
+      {
+        "name": "Jardim Graciosa",
+        "code": null
+      },
+      {
+        "name": "Jardim João Paulo II",
+        "code": null
+      },
+      {
+        "name": "Jardim Paulista",
+        "code": null
+      },
+      {
+        "name": "Jardim Santa Rosa",
+        "code": null
+      },
+      {
+        "name": "Paiol de Baixo",
+        "code": null
+      },
+      {
+        "name": "Palmeirinha",
+        "code": null
+      },
+      {
+        "name": "Pocinho",
+        "code": null
+      },
+      {
+        "name": "Rancharia",
+        "code": null
+      },
+      {
+        "name": "Rancho Alegre",
+        "code": null
+      },
+      {
+        "name": "Recanto Verde",
+        "code": null
+      },
+      {
+        "name": "Ribeirão Grande",
+        "code": null
+      },
+      {
+        "name": "Roseira",
+        "code": null
+      },
+      {
+        "name": "Santa Rita de Cássia",
+        "code": null
+      },
+      {
+        "name": "Timbú Velho",
+        "code": null
+      },
+      {
+        "name": "Trevo",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Quatro Barras",
+    "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+    "year": 2025,
+    "sourceLabel": "relação territorial do edital municipal de cultura 01/2025, página 4",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Lista parcial de uma publicação municipal, sem comprovação de delimitação cadastral ou de totalidade dos bairros. Campininha, Monte Alegre, Palmitalzinho e Ribeirão do Tigre são identificados como áreas rurais na fonte. A relação serve para identificar a consulta, sem atribuir características sociais aos moradores.",
+    "names": [
+      {
+        "name": "Campininha",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Colônia Maria José",
+        "code": null
+      },
+      {
+        "name": "Florestal",
+        "code": null
+      },
+      {
+        "name": "Granja das Acácias",
+        "code": null
+      },
+      {
+        "name": "Itapira",
+        "code": null
+      },
+      {
+        "name": "Jardim Graciosa",
+        "code": null
+      },
+      {
+        "name": "Jardim Menino Deus",
+        "code": null
+      },
+      {
+        "name": "Jardim Nossa Senhora das Graças",
+        "code": null
+      },
+      {
+        "name": "Jardim Nossa Senhora de Fátima",
+        "code": null
+      },
+      {
+        "name": "Jardim Orestes Thá",
+        "code": null
+      },
+      {
+        "name": "Jardim Patricia",
+        "code": null
+      },
+      {
+        "name": "Jardim Pinheiros",
+        "code": null
+      },
+      {
+        "name": "Jardim São Pedro",
+        "code": null
+      },
+      {
+        "name": "Monte Alegre",
+        "code": null
+      },
+      {
+        "name": "Palmitalzinho",
+        "code": null
+      },
+      {
+        "name": "Pinheirinho",
+        "code": null
+      },
+      {
+        "name": "Pocinho",
+        "code": null
+      },
+      {
+        "name": "Ribeirão do Tigre",
+        "code": null
+      },
+      {
+        "name": "Roda de Carro",
+        "code": null
+      },
+      {
+        "name": "Santa Luzia da Borda do Campo",
+        "code": null
+      },
+      {
+        "name": "Vila dos Pintos",
+        "code": null
+      }
+    ]
+  }
+]

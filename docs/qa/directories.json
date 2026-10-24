@@ -1,7 +1,7 @@
 {
-  "preserved": 172,
-  "total": 184,
-  "names": 225,
+  "preserved": 184,
+  "total": 196,
+  "names": 308,
   "results": [
     {
       "city": "Curitiba",
@@ -54,6 +54,31 @@
       "names": 18
     },
     {
+      "city": "Campina Grande do Sul",
+      "width": 320,
+      "names": 31
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "width": 360,
+      "names": 31
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "width": 390,
+      "names": 31
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "width": 430,
+      "names": 31
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "width": 1440,
+      "names": 31
+    },
+    {
       "city": "Colombo",
       "width": 320,
       "names": 42
@@ -104,6 +129,31 @@
       "names": 13
     },
     {
+      "city": "Itaperuçu",
+      "width": 320,
+      "names": 30
+    },
+    {
+      "city": "Itaperuçu",
+      "width": 360,
+      "names": 30
+    },
+    {
+      "city": "Itaperuçu",
+      "width": 390,
+      "names": 30
+    },
+    {
+      "city": "Itaperuçu",
+      "width": 430,
+      "names": 30
+    },
+    {
+      "city": "Itaperuçu",
+      "width": 1440,
+      "names": 30
+    },
+    {
       "city": "Pinhais",
       "width": 320,
       "names": 15
@@ -152,6 +202,31 @@
       "city": "Piraquara",
       "width": 1440,
       "names": 21
+    },
+    {
+      "city": "Quatro Barras",
+      "width": 320,
+      "names": 22
+    },
+    {
+      "city": "Quatro Barras",
+      "width": 360,
+      "names": 22
+    },
+    {
+      "city": "Quatro Barras",
+      "width": 390,
+      "names": 22
+    },
+    {
+      "city": "Quatro Barras",
+      "width": 430,
+      "names": 22
+    },
+    {
+      "city": "Quatro Barras",
+      "width": 1440,
+      "names": 22
     },
     {
       "city": "São José dos Pinhais",

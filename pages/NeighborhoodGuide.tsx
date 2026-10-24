@@ -1,3 +1,4 @@
+import ApplicationLinks from "../components/ApplicationLinks";
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { LOCAL_GUIDES, LocalGuide } from "../local-guides";
@@ -160,6 +161,7 @@ export default function NeighborhoodGuide({ guide }: { guide?: LocalGuide }) {
           ))}
         </div>
       </section>
+      <ApplicationLinks serviceId={service.id} />
     </>
   );
 }

@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:4174",
+  "views": 25,
+  "opens": 80,
+  "hubRoutes": [
+    "/aplicacoes/ampliacao-de-galpoes",
+    "/aplicacoes/cobertura-de-estacionamentos",
+    "/aplicacoes/areas-de-carga-e-descarga",
+    "/aplicacoes/aproveitamento-de-grandes-areas",
+    "/atendimento"
+  ],
+  "text200": true,
+  "keyboard": true,
+  "backForward": true,
+  "reducedMotion": true,
+  "errors": []
+}

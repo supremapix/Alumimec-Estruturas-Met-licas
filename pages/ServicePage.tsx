@@ -1,3 +1,5 @@
+import ApplicationLinks from "../components/ApplicationLinks";
+import { LOCAL_GUIDES } from "../local-guides";
 import Photo from "../components/Photo";
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -28,6 +30,7 @@ export default function ServicePage() {
           { name: "Início", url: "/" },
           { name: service.title, url: path },
         ]}
+        faqItems={guideFaqs(guide)}
         services={[{ name: service.title, description: service.description }]}
       />
       <nav className="wrap breadcrumb" aria-label="Você está aqui">
@@ -110,6 +113,24 @@ export default function ServicePage() {
             ))}
           </div>
         </div>
+      </section>
+      <ApplicationLinks serviceId={service.id} />
+      <section className="section wrap">
+        <h2>Guias locais com este foco</h2>
+        <p>
+          Orientações de planejamento vinculadas ao serviço. As fotos do
+          catálogo não comprovam obras nessas localidades.
+        </p>
+        <nav aria-label="Guias locais do serviço">
+          {LOCAL_GUIDES.filter((g) => g.service === service.id - 1).map((g) => (
+            <a key={g.path} className="text-link" href={g.path}>
+              {g.name}, {g.city}
+            </a>
+          ))}
+        </nav>
+        <a className="text-link" href="/atendimento">
+          Todos os municípios atendidos
+        </a>
       </section>
       <section className="section wrap">
         <h2>Outras soluções para sua obra.</h2>

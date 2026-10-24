@@ -56,3 +56,6 @@ console.log(
   "Total",
   municipalities.reduce((n, m) => n + m.names.length, 0),
 );
+
+// Apply the separately reviewed municipal additions after importing the DBF.
+await import("./apply-territory-supplements.mjs");

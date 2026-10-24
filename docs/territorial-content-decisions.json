@@ -1,0 +1,3088 @@
+{
+  "checkedAt": "2026-10-24",
+  "scope": "Decisão editorial com as fontes reunidas; não afirma inexistência de outras informações públicas.",
+  "guides": 41,
+  "directoryOnly": 267,
+  "rows": [
+    {
+      "city": "Curitiba",
+      "name": "Abranches",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Água Verde",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/agua-verde",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Ahú",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Alto Boqueirão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Alto da Glória",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Alto da Rua XV",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Atuba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Augusta",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Bacacheri",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/bacacheri",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Bairro Alto",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Barreirinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Batel",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Bigorrilho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Boa Vista",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Bom Retiro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Boqueirão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/boqueirao",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Botiatuvinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cabral",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cachoeira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cajuru",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/cajuru",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Campina do Siqueira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Campo Comprido",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Campo de Santana",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Capão da Imbuia",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Capão Raso",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cascatinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Caximba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Centro Cívico",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cidade Industrial de Curitiba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Cristo Rei",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Fanny",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Fazendinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Ganchinho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Guabirotuba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Guaíra",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Hauer",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/hauer",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Hugo Lange",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Jardim Botânico",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Jardim das Américas",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Jardim Social",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Juvevê",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Lamenha Pequena",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Lindóia",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Mercês",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Mossunguê",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Novo Mundo",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Orleans",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Parolin",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Pilarzinho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Pinheirinho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/pinheirinho",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Portão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/portao",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Prado Velho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Rebouças",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Riviera",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Santa Cândida",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Santa Felicidade",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/santa-felicidade",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Santa Quitéria",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Santo Inácio",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "São Braz",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "São Francisco",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "São João",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "São Lourenço",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "São Miguel",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Seminário",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Sítio Cercado",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Taboão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Tarumã",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Tatuquara",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Tinguí",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Uberaba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/uberaba",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Curitiba",
+      "name": "Umbará",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Vila Izabel",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Vista Alegre",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Curitiba",
+      "name": "Xaxim",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/xaxim",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Araucária",
+      "name": "Bariguí",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Boqueirão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Cachoeira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Campina da Barra",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/araucaria/campina-da-barra",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Araucária",
+      "name": "Capela Velha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/araucaria/capela-velha",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Araucária",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Chapada",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Costeira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Estação",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Fazenda Velha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Iguaçu",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Passaúna",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Porto das Laranjeiras",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Sabiá",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "São Miguel",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Thomaz Coelho",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Araucária",
+      "name": "Tindiquera",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/araucaria/tindiquera",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Araucária",
+      "name": "Vila Nova",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Araçatuba",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Bela Vista",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Butiá",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Cacaiguera",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Campo Belo",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Campo Fundo",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Capivari",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Caraguatá",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Centro",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Chácaras Olhos D' Água",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "CICAMP",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Cupim",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Cupim Vermelho",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jaguatirica",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim Água Doce",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim Eugênia Maria",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim Graciosa",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim João Paulo II",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim Paulista",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Jardim Santa Rosa",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Paiol de Baixo",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Palmeirinha",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Pocinho",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Rancharia",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Rancho Alegre",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Recanto Verde",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Ribeirão Grande",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Roseira",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Santa Rita de Cássia",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Timbú Velho",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "name": "Trevo",
+      "source": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "classification": "mapa-anexo-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Águas Fervidas",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Arruda",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Atuba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Bacaetava",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Boicininga",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Butiatumirim",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Campestre",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Campo Pequeno",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Canguiri",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Capivari",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Colonia Antonio Prado",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Colônia Faria",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "das Graças",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Embu",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Fatima",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Gabirobal",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Guaraituba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/colombo/guaraituba",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Colombo",
+      "name": "Guarani",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Imbuial",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Itajacuru",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Maracanã",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/colombo/maracana",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Colombo",
+      "name": "Mauá",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Monza",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Morro Grande",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Osasco",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Palmital",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Paloma",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Poço Negro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Ribeirão das Onças",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Rincão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Rio Verde",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Roça Grande",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/colombo/roca-grande",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Colombo",
+      "name": "Roseira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Santa Gema",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Santa Terezinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "São Dimas",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "São Gabriel",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "São João",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Sapopema",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Serrinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Colombo",
+      "name": "Uvaranal",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Campo do Rio",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Estados",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Eucaliptos",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/fazenda-rio-grande/eucaliptos",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Gralha Azul",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/fazenda-rio-grande/gralha-azul",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Iguaçu",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Industrial I",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Industrial II",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Nações",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/fazenda-rio-grande/nacoes",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Parque Tecnológico",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Pioneiros",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Santa Terezinha",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "name": "Veneza",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Bela Vista",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Butierinho",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Campina do Cabral",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Candidos",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Capinzal",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Catarinas",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Centro",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Cimento Itaú",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Alvorada",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Fabiana",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Itaú",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Pinheiro",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Roberta",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Saara",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Jardim Verona",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Mossungue",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Pombas",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Queimadinha",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Saibreira",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Santa Cecília",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Santa Clara",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Santa Maria",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Santiago",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "São Domingos",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "São João",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "São Miguel",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Vila Camargo",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Vila Gulin",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Vila Isaac",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Itaperuçu",
+      "name": "Vila Tomé",
+      "source": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Alphaville Graciosa",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Alto Tarumã",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Atuba",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/pinhais/atuba",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Pinhais",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Emiliano Perneta",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Estância Pinhais",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Jardim Amélia",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Jardim Cláudia",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Jardim das Nascentes",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Jardim Karla",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Maria Antonieta",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Parque das Águas",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Pineville",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Pinhais",
+      "name": "Vargem Grande",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/pinhais/vargem-grande",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Pinhais",
+      "name": "Weissópolis",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/pinhais/weissopolis",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Piraquara",
+      "name": "Jardim Tropical",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Holandês",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Guarituba Redondo",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Guaritubinha",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Guarituba Central",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "guia-publicado",
+      "guide": "/bairro/piraquara/guarituba-central",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Piraquara",
+      "name": "Jardim Santa Mônica",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Mossoró",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Jardim dos Estados",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "guia-publicado",
+      "guide": "/bairro/piraquara/jardim-dos-estados",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Piraquara",
+      "name": "Vicente",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Bela Vista",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Laranjeiras",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "São Tiago",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Santa Maria",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Vila Juliana",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Centro",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Araçatuba",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Vila Rosa",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "guia-publicado",
+      "guide": "/bairro/piraquara/vila-rosa",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "Piraquara",
+      "name": "Deodoro",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "São Cristóvão",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Borda do Campo",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Piraquara",
+      "name": "Parque das Águas",
+      "source": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "classification": "lei-municipal",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Campininha",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Centro",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Colônia Maria José",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Florestal",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Granja das Acácias",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Itapira",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Graciosa",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Menino Deus",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Nossa Senhora das Graças",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Nossa Senhora de Fátima",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Orestes Thá",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Patricia",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim Pinheiros",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Jardim São Pedro",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Monte Alegre",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Palmitalzinho",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Pinheirinho",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Pocinho",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Ribeirão do Tigre",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Roda de Carro",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Santa Luzia da Borda do Campo",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Quatro Barras",
+      "name": "Vila dos Pintos",
+      "source": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Academia",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/academia",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Afonso Pena",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Águas Belas",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/aguas-belas",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Àrea Institucional Aeroportuária",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Escopo específico e requisitos do contratante para eventual obra em instalação aeroportuária; não inferir credenciamento da cobertura geográfica."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Aristocrata",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Arujá",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Aviação",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/aviacao",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Barro Preto",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Bom Jesus",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Boneca do Iguaçu",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Borda do Campo",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Cachoeira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Campina do Taquaral",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Campo Largo da Roseira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/campo-largo-da-roseira",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Centro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Cidade Jardim",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Colônia Rio Grande",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/colonia-rio-grande",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Contenda",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/contenda",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Costeira",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Cristal",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/cristal",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Cruzeiro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Del Rey",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Dom Rodrigo",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Guatupê",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Iná",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/ina",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Ipê",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Itália",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Jurema",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Miringuava",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/miringuava",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Ouro Fino",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Parque da Fonte",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Pedro Moro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Quissisana",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Rio Pequeno",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Roseira de São Sebastião",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Santo Antônio",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "São Cristóvão",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "São Domingos",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "São Marcos",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "guia-publicado",
+      "guide": "/bairro/sao-jose-dos-pinhais/sao-marcos",
+      "availableEvidence": "Identidade territorial e pauta editorial específica documentadas.",
+      "nextEvidenceNeeded": null
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "São Pedro",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "name": "Zacarias",
+      "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
+      "classification": "malha-ibge",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
+      "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
+    }
+  ]
+}

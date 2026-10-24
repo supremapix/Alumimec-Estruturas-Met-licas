@@ -1,18 +1,25 @@
 {
   "checkedAt": "2026-10-24",
   "complete": false,
-  "stage": 3,
-  "routeCount": 184,
-  "existingRoutesPreserved": 172,
+  "stage": 4,
+  "routeCount": 196,
+  "existingRoutesPreserved": 184,
   "newRoutes": 12,
-  "guideCount": 34,
-  "verifiedNames": 225,
+  "newTerritorialRoutes": 7,
+  "newHubRoutes": 5,
+  "guideCount": 41,
+  "verifiedNames": 308,
+  "cadastralOrLegalNames": 225,
+  "municipalMapNames": 31,
+  "serviceReferenceNames": 52,
   "municipalities": [
     {
       "city": "Curitiba",
       "municipalPage": "/cidade/curitiba",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Abranches",
         "Água Verde",
@@ -103,43 +110,51 @@
         "/bairro/portao"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 75 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Adrianópolis",
       "municipalPage": "/cidade/adrianopolis",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Agudos do Sul",
       "municipalPage": "/cidade/agudos-do-sul",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Almirante Tamandaré",
       "municipalPage": "/cidade/almirante-tamandare",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Araucária",
       "municipalPage": "/cidade/araucaria",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Bariguí",
         "Boqueirão",
@@ -166,83 +181,131 @@
         "/bairro/araucaria/campina-da-barra"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 18 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Balsa Nova",
       "municipalPage": "/cidade/balsa-nova",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Bocaiúva do Sul",
       "municipalPage": "/cidade/bocaiuva-do-sul",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Campina Grande do Sul",
       "municipalPage": "/cidade/campina-grande-do-sul",
-      "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
-      "sourceYear": 2022,
-      "verifiedNames": [],
+      "neighborhoodSource": "https://campinagrandedosul.pr.gov.br/Downloads/Arquivos/2026_6426_pmuqnlcpm50.pdf",
+      "sourceYear": 2026,
+      "sourceClassification": "mapa-anexo-municipal",
+      "sourceScope": "O mapa foi elaborado em dezembro de 2025 e publicado junto da lei de junho de 2026. Sua legenda ainda usa “Bairros Propostos”. As 31 referências são transcritas do anexo; confirme o enquadramento do endereço no cadastro municipal. Paiol de Baixo, Capivari, Jaguatirica e Ribeirão Grande aparecem em quadros próprios; não se presume que toda a área rural esteja coberta por esta relação.",
+      "verifiedNames": [
+        "Araçatuba",
+        "Bela Vista",
+        "Butiá",
+        "Cacaiguera",
+        "Campo Belo",
+        "Campo Fundo",
+        "Capivari",
+        "Caraguatá",
+        "Centro",
+        "Chácaras Olhos D' Água",
+        "CICAMP",
+        "Cupim",
+        "Cupim Vermelho",
+        "Jaguatirica",
+        "Jardim Água Doce",
+        "Jardim Eugênia Maria",
+        "Jardim Graciosa",
+        "Jardim João Paulo II",
+        "Jardim Paulista",
+        "Jardim Santa Rosa",
+        "Paiol de Baixo",
+        "Palmeirinha",
+        "Pocinho",
+        "Rancharia",
+        "Rancho Alegre",
+        "Recanto Verde",
+        "Ribeirão Grande",
+        "Roseira",
+        "Santa Rita de Cássia",
+        "Timbú Velho",
+        "Trevo"
+      ],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "O mapa foi elaborado em dezembro de 2025 e publicado junto da lei de junho de 2026. Sua legenda ainda usa “Bairros Propostos”. As 31 referências são transcritas do anexo; confirme o enquadramento do endereço no cadastro municipal. Paiol de Baixo, Capivari, Jaguatirica e Ribeirão Grande aparecem em quadros próprios; não se presume que toda a área rural esteja coberta por esta relação."
     },
     {
       "city": "Campo do Tenente",
       "municipalPage": "/cidade/campo-do-tenente",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Campo Largo",
       "municipalPage": "/cidade/campo-largo",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Campo Magro",
       "municipalPage": "/cidade/campo-magro",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Cerro Azul",
       "municipalPage": "/cidade/cerro-azul",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Colombo",
       "municipalPage": "/cidade/colombo",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Águas Fervidas",
         "Arruda",
@@ -293,33 +356,39 @@
         "/bairro/colombo/roca-grande"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 42 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Contenda",
       "municipalPage": "/cidade/contenda",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Doutor Ulysses",
       "municipalPage": "/cidade/doutor-ulysses",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Fazenda Rio Grande",
       "municipalPage": "/cidade/fazenda-rio-grande",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Campo do Rio",
         "Centro",
@@ -341,53 +410,94 @@
         "/bairro/fazenda-rio-grande/gralha-azul"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 13 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Itaperuçu",
       "municipalPage": "/cidade/itaperucu",
-      "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
-      "sourceYear": 2022,
-      "verifiedNames": [],
+      "neighborhoodSource": "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/",
+      "sourceYear": 2026,
+      "sourceClassification": "referencias-servico-publico",
+      "sourceScope": "Lista parcial de referências usadas pelo serviço municipal. Não é uma delimitação cadastral nem comprova a relação completa de bairros oficiais. Nomes e grafia seguem a publicação consultada.",
+      "verifiedNames": [
+        "Bela Vista",
+        "Butierinho",
+        "Campina do Cabral",
+        "Candidos",
+        "Capinzal",
+        "Catarinas",
+        "Centro",
+        "Cimento Itaú",
+        "Jardim Alvorada",
+        "Jardim Fabiana",
+        "Jardim Itaú",
+        "Jardim Pinheiro",
+        "Jardim Roberta",
+        "Jardim Saara",
+        "Jardim Verona",
+        "Mossungue",
+        "Pombas",
+        "Queimadinha",
+        "Saibreira",
+        "Santa Cecília",
+        "Santa Clara",
+        "Santa Maria",
+        "Santiago",
+        "São Domingos",
+        "São João",
+        "São Miguel",
+        "Vila Camargo",
+        "Vila Gulin",
+        "Vila Isaac",
+        "Vila Tomé"
+      ],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Lista parcial de referências usadas pelo serviço municipal. Não é uma delimitação cadastral nem comprova a relação completa de bairros oficiais. Nomes e grafia seguem a publicação consultada."
     },
     {
       "city": "Lapa",
       "municipalPage": "/cidade/lapa",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Mandirituba",
       "municipalPage": "/cidade/mandirituba",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Piên",
       "municipalPage": "/cidade/pien",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Pinhais",
       "municipalPage": "/cidade/pinhais",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Alphaville Graciosa",
         "Alto Tarumã",
@@ -411,13 +521,15 @@
         "/bairro/pinhais/vargem-grande"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 15 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Piraquara",
       "municipalPage": "/cidade/piraquara",
       "neighborhoodSource": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
       "sourceYear": 2026,
+      "sourceClassification": "lei-municipal",
+      "sourceScope": "Referências do artigo 15; não equivalem à UTP Guarituba.",
       "verifiedNames": [
         "Jardim Tropical",
         "Holandês",
@@ -447,53 +559,86 @@
         "/bairro/piraquara/vila-rosa"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 21 referências da fonte 2026; não comprova alterações territoriais posteriores."
+      "status": "Referências do artigo 15; não equivalem à UTP Guarituba."
     },
     {
       "city": "Quatro Barras",
       "municipalPage": "/cidade/quatro-barras",
-      "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
-      "sourceYear": 2022,
-      "verifiedNames": [],
+      "neighborhoodSource": "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+      "sourceYear": 2025,
+      "sourceClassification": "referencias-servico-publico",
+      "sourceScope": "Lista parcial de uma publicação municipal, sem comprovação de delimitação cadastral ou de totalidade dos bairros. Campininha, Monte Alegre, Palmitalzinho e Ribeirão do Tigre são identificados como áreas rurais na fonte. A relação serve para identificar a consulta, sem atribuir características sociais aos moradores.",
+      "verifiedNames": [
+        "Campininha",
+        "Centro",
+        "Colônia Maria José",
+        "Florestal",
+        "Granja das Acácias",
+        "Itapira",
+        "Jardim Graciosa",
+        "Jardim Menino Deus",
+        "Jardim Nossa Senhora das Graças",
+        "Jardim Nossa Senhora de Fátima",
+        "Jardim Orestes Thá",
+        "Jardim Patricia",
+        "Jardim Pinheiros",
+        "Jardim São Pedro",
+        "Monte Alegre",
+        "Palmitalzinho",
+        "Pinheirinho",
+        "Pocinho",
+        "Ribeirão do Tigre",
+        "Roda de Carro",
+        "Santa Luzia da Borda do Campo",
+        "Vila dos Pintos"
+      ],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Lista parcial de uma publicação municipal, sem comprovação de delimitação cadastral ou de totalidade dos bairros. Campininha, Monte Alegre, Palmitalzinho e Ribeirão do Tigre são identificados como áreas rurais na fonte. A relação serve para identificar a consulta, sem atribuir características sociais aos moradores."
     },
     {
       "city": "Quitandinha",
       "municipalPage": "/cidade/quitandinha",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Rio Branco do Sul",
       "municipalPage": "/cidade/rio-branco-do-sul",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Rio Negro",
       "municipalPage": "/cidade/rio-negro",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "São José dos Pinhais",
       "municipalPage": "/cidade/sao-jose-dos-pinhais",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [
         "Academia",
         "Afonso Pena",
@@ -546,30 +691,41 @@
         "/bairro/sao-jose-dos-pinhais/barro-preto",
         "/bairro/sao-jose-dos-pinhais/ina",
         "/bairro/sao-jose-dos-pinhais/aguas-belas",
-        "/bairro/sao-jose-dos-pinhais/sao-marcos"
+        "/bairro/sao-jose-dos-pinhais/sao-marcos",
+        "/bairro/sao-jose-dos-pinhais/academia",
+        "/bairro/sao-jose-dos-pinhais/campo-largo-da-roseira",
+        "/bairro/sao-jose-dos-pinhais/colonia-rio-grande",
+        "/bairro/sao-jose-dos-pinhais/contenda",
+        "/bairro/sao-jose-dos-pinhais/aviacao",
+        "/bairro/sao-jose-dos-pinhais/cristal",
+        "/bairro/sao-jose-dos-pinhais/miringuava"
       ],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Inventário de 41 referências da fonte 2022; não comprova alterações territoriais posteriores."
+      "status": "Base datada de 2022. Não demonstra alterações territoriais posteriores."
     },
     {
       "city": "Tijucas do Sul",
       "municipalPage": "/cidade/tijucas-do-sul",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     },
     {
       "city": "Tunas do Paraná",
       "municipalPage": "/cidade/tunas-do-parana",
       "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
       "sourceYear": 2022,
+      "sourceClassification": "malha-ibge",
+      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
       "verifiedNames": [],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem registros na malha IBGE de bairros 2022; não significa ausência de bairros. Pesquisa complementar documentada em TERRITORIOS-FONTES.md."
+      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
     }
   ],
   "legacyNames": [
@@ -1322,7 +1478,7 @@
     "Cobertura confirmada pelo responsável; avaliação técnica e agendamento continuam necessários.",
     "IBGE 2022 é uma base datada; Piraquara usa lei municipal de 2026.",
     "Não foram criadas páginas automáticas para todos os nomes; diretórios municipais preservam acesso ao catálogo e consulta contextual.",
-    "22 municípios ainda exigem consolidação nominal de fontes que distinguem bairros, localidades e loteamentos.",
+    "21 municípios sem inventário nominal territorial consolidado; Itaperuçu e Quatro Barras têm listas parciais de publicações municipais. Campina Grande do Sul tem 31 referências do mapa anexo, com ressalva de legenda registrada.",
     "Guias adicionais precisam de contexto próprio verificável; não atribuir demandas ou obras a um bairro apenas pelo nome."
   ]
 }

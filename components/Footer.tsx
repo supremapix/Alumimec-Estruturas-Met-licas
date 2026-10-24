@@ -38,6 +38,8 @@ export default function Footer() {
           </div>
           <div>
             <h3>Explore o site</h3>
+            <a href="/#aplicacoes">Aplicações e planejamento</a>
+            <a href="/atendimento">Municípios e bairros</a>
             {navigation.map(([label, url]) => (
               <a key={label} href={url}>
                 {label}
