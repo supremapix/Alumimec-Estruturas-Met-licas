@@ -1,3 +1,5 @@
+import {getAllRoutes} from "../routes";
+import {LOCAL_GUIDES} from "../local-guides";
 import fs from "node:fs";
 import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
@@ -56,9 +58,10 @@ const inventory = {
   contacts: COMPANY_INFO,
   cities: CITIES.length,
   legacyLocalNames: NEIGHBORHOODS.length,
-  routes: 1 + CITIES.length + NEIGHBORHOODS.length + SERVICES.length,
+  routes: getAllRoutes().length,
   servicePages: SERVICES.length,
-  indexableRoutes: 1 + CITIES.length + NEIGHBORHOODS.length + SERVICES.length,
+  curatedNeighborhoodGuides: LOCAL_GUIDES.length,
+  indexableRoutes: getAllRoutes().length,
   originalImageFiles: images.length,
   changedOriginalImages,
   duplicateGalleryHashes: galleryHashes.length - new Set(galleryHashes).size,

@@ -1,3 +1,5 @@
+import { LOCAL_GUIDES } from "../local-guides";
+import NeighborhoodGuide from "./NeighborhoodGuide";
 import Photo from "../components/Photo";
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -26,6 +28,8 @@ export default function LocationPage({
   const curitiba = city && name === "Curitiba";
   const justified = headquarters || curitiba;
   const path = city ? cityPath(name) : neighborhoodPath(name);
+  const curated = LOCAL_GUIDES.find((g) => g.path === path);
+  if (curated) return <NeighborhoodGuide guide={curated} />;
   const title = `${headquarters ? "Sede Alumimec" : "Consulta de estruturas metálicas"} em ${name} | Alumimec`;
   const description = headquarters
     ? "Conheça a sede da Alumimec em Afonso Pena, São José dos Pinhais. Endereço, contato e orientações para consultar seu projeto de estrutura metálica."
@@ -62,7 +66,8 @@ export default function LocationPage({
             />
           </div>
           {justified && (
-            <img className="local-art"
+            <img
+              className="local-art"
               src={headquarters ? "/local-sjp.svg" : "/local-curitiba.svg"}
               alt={`Alumimec — ${name}. Contato: (41) 99631-5885. Atendimento sob consulta.`}
               width="250"
@@ -179,7 +184,20 @@ export default function LocationPage({
         </div>
       </section>
       {city && <MunicipalGuide name={name} />}
+      {city && LOCAL_GUIDES.some((g) => g.city === name) && (
+        <section className="section wrap">
+          <h2>Guias de bairros verificados</h2>
+          <p>
+            Seleção editorial em expansão. A lista não representa cobertura
+            confirmada de todos os endereços.
+          </p>
+          {LOCAL_GUIDES.filter((g) => g.city === name).map((g) => (
+            <a className="text-link" href={g.path} key={g.path}>
+              {g.name} — {SERVICES[g.service].title}
+            </a>
+          ))}
+        </section>
+      )}
     </>
   );
 }
-

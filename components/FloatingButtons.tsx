@@ -6,8 +6,20 @@ export default function FloatingButtons() {
     const scroller = document.querySelector(".app-scroll");
     const update = () => setVisible((scroller?.scrollTop ?? 0) > 500);
     update();
+    const dock = document.querySelector(".floating-contact");
+    const resize = new ResizeObserver(() => {
+      if (dock)
+        document.documentElement.style.setProperty(
+          "--dock-space",
+          `${Math.ceil(dock.getBoundingClientRect().height) + 24}px`,
+        );
+    });
+    if (dock) resize.observe(dock);
     scroller?.addEventListener("scroll", update, { passive: true });
-    return () => scroller?.removeEventListener("scroll", update);
+    return () => {
+      scroller?.removeEventListener("scroll", update);
+      resize.disconnect();
+    };
   }, []);
   return (
     <>

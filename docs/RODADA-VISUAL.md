@@ -16,3 +16,5 @@ Capturas antes/depois: `docs/qa/cards-before.png`, `cards-after-320.png`, `cards
 
 ## Próxima etapa independente
 A expansão territorial solicitada posteriormente ainda não está incluída nesta publicação visual. Exige inventário oficial por município e conteúdo editorial próprio; não será considerada concluída por contagem de rotas.
+## Checkpoint de publicação visual
+A rodada visual foi publicada no commit `a5b40f5` e verificada em produção: 160 URLs, sitemap, oito endpoints de ícones/manifest e teste mobile de share/lightbox/passos. Na etapa territorial seguinte, a faixa dos controles passou a ajustar sua altura ao texto ampliado (ResizeObserver), e as capturas completas dos cards foram refeitas sem recortes causados pela área rolável.

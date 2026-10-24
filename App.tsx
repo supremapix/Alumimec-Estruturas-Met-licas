@@ -1,3 +1,4 @@
+import NeighborhoodGuide from "./pages/NeighborhoodGuide";
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
@@ -37,6 +38,10 @@ const App: React.FC = () => {
           <Route
             path="/bairro/:locationName"
             element={<LocationPage type="neighborhood" />}
+          />
+          <Route
+            path="/bairro/:municipality/:neighborhood"
+            element={<NeighborhoodGuide />}
           />
           <Route path="/servicos/:serviceName" element={<ServicePage />} />
           <Route path="*" element={<NotFound />} />

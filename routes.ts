@@ -1,3 +1,4 @@
+import { LOCAL_GUIDES } from "./local-guides";
 import { CITIES, NEIGHBORHOODS, SERVICES } from "./constants";
 import { slugify } from "./lib/slug";
 import { PRIORITY_CITIES } from "./site.config";
@@ -79,8 +80,23 @@ export const getAllRoutes = (): RouteConfig[] => {
       changefreq: "monthly",
     }),
   );
+  for (const guide of LOCAL_GUIDES) {
+    const existing = routes.find((r) => r.path === guide.path);
+    if (existing) {
+      existing.title = guide.title;
+      existing.description = guide.description;
+    } else
+      routes.push({
+        path: guide.path,
+        title: guide.title,
+        description: guide.description,
+        type: "neighborhood",
+        name: guide.name,
+        priority: 0.6,
+        changefreq: "monthly",
+      });
+  }
   return routes;
 };
 
-export const getTotalRoutes = (): number =>
-  1 + CITIES.length + NEIGHBORHOODS.length + SERVICES.length;
+export const getTotalRoutes = (): number => getAllRoutes().length;

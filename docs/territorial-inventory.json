@@ -1,0 +1,1194 @@
+{
+  "checkedAt": "2026-10-24",
+  "complete": false,
+  "stage": 1,
+  "routeCount": 166,
+  "existingRoutesPreserved": 160,
+  "newRoutes": 6,
+  "enrichedExistingRoutes": 6,
+  "municipalities": [
+    {
+      "city": "Curitiba",
+      "municipalPage": "/cidade/curitiba",
+      "neighborhoodSource": "https://www.curitiba.pr.gov.br/noticias/veja-como-entrar-em-contato-com-as-regionais-e-qual-delas-cuida-do-seu-bairro/40912",
+      "verifiedNames": [
+        "Abranches",
+        "Água Verde",
+        "Ahú",
+        "Alto Boqueirão",
+        "Alto da Glória",
+        "Alto da XV",
+        "Atuba",
+        "Augusta",
+        "Bacacheri",
+        "Bairro Alto",
+        "Barreirinha",
+        "Batel",
+        "Bigorrilho",
+        "Boa Vista",
+        "Bom Retiro",
+        "Boqueirão",
+        "Butiatuvinha",
+        "Cabral",
+        "Cachoeira",
+        "Cajuru",
+        "Campina do Siqueira",
+        "Campo Comprido",
+        "Campo de Santana",
+        "Capão da Imbuia",
+        "Capão Raso",
+        "Cascatinha",
+        "Caximba",
+        "Centro",
+        "Centro Cívico",
+        "Cidade Industrial de Curitiba",
+        "Cristo Rei",
+        "Fanny",
+        "Fazendinha",
+        "Ganchinho",
+        "Guabirotuba",
+        "Guaíra",
+        "Hauer",
+        "Hugo Lange",
+        "Jardim Botânico",
+        "Jardim das Américas",
+        "Jardim Social",
+        "Juvevê",
+        "Lamenha Pequena",
+        "Lindóia",
+        "Mercês",
+        "Mossunguê",
+        "Novo Mundo",
+        "Orleans",
+        "Parolin",
+        "Pilarzinho",
+        "Pinheirinho",
+        "Portão",
+        "Prado Velho",
+        "Rebouças",
+        "Riviera",
+        "Santa Cândida",
+        "Santa Felicidade",
+        "Santa Quitéria",
+        "Santo Inácio",
+        "São Braz",
+        "São Francisco",
+        "São João",
+        "São Lourenço",
+        "São Miguel",
+        "Seminário",
+        "Sítio Cercado",
+        "Taboão",
+        "Tarumã",
+        "Tatuquara",
+        "Tingui",
+        "Uberaba",
+        "Umbará",
+        "Vila Izabel",
+        "Vista Alegre",
+        "Xaxim"
+      ],
+      "completedGuides": [
+        "/bairro/boqueirao",
+        "/bairro/uberaba",
+        "/bairro/agua-verde",
+        "/bairro/xaxim",
+        "/bairro/santa-felicidade",
+        "/bairro/pinheirinho"
+      ],
+      "coverage": "Atendimento municipal declarado no catálogo; confirmar cada endereço.",
+      "status": "Inventário de 75 bairros confrontado com fonte municipal; 6 guias próprios nesta etapa."
+    },
+    {
+      "city": "Adrianópolis",
+      "municipalPage": "/cidade/adrianopolis",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Agudos do Sul",
+      "municipalPage": "/cidade/agudos-do-sul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Almirante Tamandaré",
+      "municipalPage": "/cidade/almirante-tamandare",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Araucária",
+      "municipalPage": "/cidade/araucaria",
+      "neighborhoodSource": "https://araucaria.atende.net/cidadao/noticia/site-da-prefeitura-disponibiliza-mapas-das-areas-urbana-e-rural-do-sistema-viario-de-loteamentos-aprovados-entre-outros",
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Portal municipal anuncia mapas urbanos/rurais e loteamentos. Índice localizado; relação de bairros ainda não extraída e validada."
+    },
+    {
+      "city": "Balsa Nova",
+      "municipalPage": "/cidade/balsa-nova",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Bocaiúva do Sul",
+      "municipalPage": "/cidade/bocaiuva-do-sul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Campina Grande do Sul",
+      "municipalPage": "/cidade/campina-grande-do-sul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Campo do Tenente",
+      "municipalPage": "/cidade/campo-do-tenente",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Campo Largo",
+      "municipalPage": "/cidade/campo-largo",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Campo Magro",
+      "municipalPage": "/cidade/campo-magro",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Cerro Azul",
+      "municipalPage": "/cidade/cerro-azul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Colombo",
+      "municipalPage": "/cidade/colombo",
+      "neighborhoodSource": "https://prefeitura.colombo.pr.gov.br/downloads-secretaria-municipal-do-desenvolvimento-urbano-e-habitacao/",
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Fonte oficial disponibiliza mapa de bairros e loteamentos 2021. PDF sem extração textual nesta leitura; relação ainda não transcrita ou validada. Não confundir os mais de 200 loteamentos com bairros."
+    },
+    {
+      "city": "Contenda",
+      "municipalPage": "/cidade/contenda",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Doutor Ulysses",
+      "municipalPage": "/cidade/doutor-ulysses",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Fazenda Rio Grande",
+      "municipalPage": "/cidade/fazenda-rio-grande",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Itaperuçu",
+      "municipalPage": "/cidade/itaperucu",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Lapa",
+      "municipalPage": "/cidade/lapa",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Mandirituba",
+      "municipalPage": "/cidade/mandirituba",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Piên",
+      "municipalPage": "/cidade/pien",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Pinhais",
+      "municipalPage": "/cidade/pinhais",
+      "neighborhoodSource": "https://geo.pinhais.pr.gov.br/geo/download/Populacao_IBGE_2010.pdf",
+      "verifiedNames": [
+        "Parque das Nascentes",
+        "Centro",
+        "Jardim Amélia",
+        "Weissópolis",
+        "Jardim Karla",
+        "Atuba",
+        "Pineville",
+        "Alphaville Graciosa",
+        "Vargem Grande",
+        "Parque das Águas",
+        "Maria Antonieta",
+        "Emiliano Perneta",
+        "Alto Tarumã",
+        "Jardim Cláudia",
+        "Estância Pinhais"
+      ],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "15 nomes identificados no mapa oficial histórico 2011; validar limites atuais no GeoPinhais antes de produzir guias. Não reutilizar estatísticas de 2010 como atuais."
+    },
+    {
+      "city": "Piraquara",
+      "municipalPage": "/cidade/piraquara",
+      "neighborhoodSource": "https://www.piraquara.pr.gov.br/portal/leis_decretos/81875",
+      "verifiedNames": [
+        "Jardim Tropical",
+        "Holandês",
+        "Guarituba Redondo",
+        "Guaritubinha",
+        "Guarituba Central",
+        "Jardim Santa Mônica",
+        "Mossoró",
+        "Jardim dos Estados",
+        "Vicente",
+        "Bela Vista",
+        "Laranjeiras",
+        "São Tiago",
+        "Santa Maria",
+        "Vila Juliana",
+        "Centro",
+        "Araçatuba",
+        "Vila Rosa",
+        "Deodoro",
+        "São Cristóvão",
+        "Borda do Campo",
+        "Parque das Águas"
+      ],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "21 bairros enumerados no art. 15 da lei 2672/2026, fonte oficial consultada. Guarituba como UTP é distinto de Guarituba Central/Redondo. Guias ainda pendentes."
+    },
+    {
+      "city": "Quatro Barras",
+      "municipalPage": "/cidade/quatro-barras",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Quitandinha",
+      "municipalPage": "/cidade/quitandinha",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Rio Branco do Sul",
+      "municipalPage": "/cidade/rio-branco-do-sul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Rio Negro",
+      "municipalPage": "/cidade/rio-negro",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "São José dos Pinhais",
+      "municipalPage": "/cidade/sao-jose-dos-pinhais",
+      "neighborhoodSource": "https://www.sjp.pr.gov.br/mapas-do-municipio/",
+      "verifiedNames": [
+        "Academia",
+        "Cachoeira",
+        "Dom Rodrigo",
+        "Rio Pequeno",
+        "Área Institucional Aeroportuária",
+        "Campina do Taquaral",
+        "Guatupê",
+        "Roseira de São Sebastião",
+        "Afonso Pena",
+        "Campo Largo da Roseira",
+        "Iná",
+        "Santo Antônio",
+        "Águas Belas",
+        "Centro",
+        "Ipê",
+        "São Cristóvão",
+        "Aristocrata",
+        "Cidade Jardim",
+        "Itália",
+        "São Domingos",
+        "Arujá",
+        "Colônia Rio Grande",
+        "Jurema",
+        "São Marcos",
+        "Aviação",
+        "Contenda",
+        "Miringuava",
+        "São Pedro",
+        "Barro Preto",
+        "Costeira",
+        "Ouro Fino",
+        "Zacarias",
+        "Bom Jesus",
+        "Cristal",
+        "Parque da Fonte",
+        "Boneca do Iguaçu",
+        "Cruzeiro",
+        "Pedro Moro",
+        "Borda do Campo",
+        "Del Rey",
+        "Quissisana"
+      ],
+      "completedGuides": [
+        "/bairro/sao-jose-dos-pinhais/afonso-pena",
+        "/bairro/sao-jose-dos-pinhais/guatupe",
+        "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+        "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+        "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+        "/bairro/sao-jose-dos-pinhais/barro-preto"
+      ],
+      "coverage": "Sede e obra no portfólio municipal; confirmar cada endereço.",
+      "status": "41 entradas verificadas no índice municipal consultado; não tratar a fonte como censo atualizado exaustivo. 6 guias próprios."
+    },
+    {
+      "city": "Tijucas do Sul",
+      "municipalPage": "/cidade/tijucas-do-sul",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    },
+    {
+      "city": "Tunas do Paraná",
+      "municipalPage": "/cidade/tunas-do-parana",
+      "neighborhoodSource": null,
+      "verifiedNames": [],
+      "completedGuides": [],
+      "coverage": "Sem comprovação individual de cobertura; consulta obrigatória.",
+      "status": "Inventário de bairros e conteúdo próprio pendentes; página municipal existente preservada."
+    }
+  ],
+  "legacyNames": [
+    {
+      "name": "Vila Parolin",
+      "path": "/bairro/vila-parolin",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Torres",
+      "path": "/bairro/vila-torres",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Jardim Schaffer",
+      "path": "/bairro/jardim-schaffer",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Sabará",
+      "path": "/bairro/vila-sabara",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Boqueirão de Baixo",
+      "path": "/bairro/boqueirao-de-baixo",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Boqueirão de Cima",
+      "path": "/bairro/boqueirao-de-cima",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Tanguá",
+      "path": "/bairro/tangua",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Zumbi",
+      "path": "/bairro/vila-zumbi",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Abranches de Baixo",
+      "path": "/bairro/abranches-de-baixo",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Abranches de Cima",
+      "path": "/bairro/abranches-de-cima",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Nossa Senhora da Luz",
+      "path": "/bairro/vila-nossa-senhora-da-luz",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Tecnológica",
+      "path": "/bairro/vila-tecnologica",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Oficinas",
+      "path": "/bairro/vila-oficinas",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Fanny",
+      "path": "/bairro/vila-fanny",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Hauer",
+      "path": "/bairro/vila-hauer",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Batel Soho",
+      "path": "/bairro/batel-soho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Alto da Rua XV",
+      "path": "/bairro/alto-da-rua-xv",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "CIC Norte",
+      "path": "/bairro/cic-norte",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "CIC Central",
+      "path": "/bairro/cic-central",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "CIC Sul",
+      "path": "/bairro/cic-sul",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Guaíra",
+      "path": "/bairro/vila-guaira",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Centro Histórico",
+      "path": "/bairro/centro-historico",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Ecoville",
+      "path": "/bairro/ecoville",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Carmo Abranches",
+      "path": "/bairro/carmo-abranches",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Água Verde",
+      "path": "/bairro/agua-verde",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Ahú (Alto da Glória)",
+      "path": "/bairro/ahu-alto-da-gloria",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Alto Boqueirão",
+      "path": "/bairro/alto-boqueirao",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Alto da Glória",
+      "path": "/bairro/alto-da-gloria",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Alto da XV",
+      "path": "/bairro/alto-da-xv",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Atuba",
+      "path": "/bairro/atuba",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Augusta",
+      "path": "/bairro/augusta",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Bacacheri",
+      "path": "/bairro/bacacheri",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Bairro Alto",
+      "path": "/bairro/bairro-alto",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Barreirinha",
+      "path": "/bairro/barreirinha",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Batel",
+      "path": "/bairro/batel",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Bigorrilho (Champagnat)",
+      "path": "/bairro/bigorrilho-champagnat",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Boa Vista",
+      "path": "/bairro/boa-vista",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Bom Retiro",
+      "path": "/bairro/bom-retiro",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Boqueirão",
+      "path": "/bairro/boqueirao",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Butiatuvinha",
+      "path": "/bairro/butiatuvinha",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cabral",
+      "path": "/bairro/cabral",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cachoeira",
+      "path": "/bairro/cachoeira",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cajuru",
+      "path": "/bairro/cajuru",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Campina do Siqueira",
+      "path": "/bairro/campina-do-siqueira",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Campo Comprido",
+      "path": "/bairro/campo-comprido",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Campo de Santana",
+      "path": "/bairro/campo-de-santana",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Capão da Imbuia",
+      "path": "/bairro/capao-da-imbuia",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Capão Raso",
+      "path": "/bairro/capao-raso",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cascatinha",
+      "path": "/bairro/cascatinha",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Caximba",
+      "path": "/bairro/caximba",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Centro",
+      "path": "/bairro/centro",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Centro Cívico",
+      "path": "/bairro/centro-civico",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cidade Industrial de Curitiba",
+      "path": "/bairro/cidade-industrial-de-curitiba",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Cristo Rei",
+      "path": "/bairro/cristo-rei",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Fanny",
+      "path": "/bairro/fanny",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Fazendinha",
+      "path": "/bairro/fazendinha",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Ganchinho",
+      "path": "/bairro/ganchinho",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Guabirotuba",
+      "path": "/bairro/guabirotuba",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Guaíra",
+      "path": "/bairro/guaira",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Hauer",
+      "path": "/bairro/hauer",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Hugo Lange",
+      "path": "/bairro/hugo-lange",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Jardim Botânico",
+      "path": "/bairro/jardim-botanico",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Jardim das Américas",
+      "path": "/bairro/jardim-das-americas",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Jardim Social",
+      "path": "/bairro/jardim-social",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Juvevê",
+      "path": "/bairro/juveve",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Lamenha Pequena",
+      "path": "/bairro/lamenha-pequena",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Lindóia",
+      "path": "/bairro/lindoia",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Mercês",
+      "path": "/bairro/merces",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Mossunguê",
+      "path": "/bairro/mossungue",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Novo Mundo",
+      "path": "/bairro/novo-mundo",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Orleans",
+      "path": "/bairro/orleans",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Parolin",
+      "path": "/bairro/parolin",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Pilarzinho",
+      "path": "/bairro/pilarzinho",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Pinheirinho",
+      "path": "/bairro/pinheirinho",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Portão",
+      "path": "/bairro/portao",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Prado Velho",
+      "path": "/bairro/prado-velho",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Rebouças",
+      "path": "/bairro/reboucas",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Riviera",
+      "path": "/bairro/riviera",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Santa Cândida",
+      "path": "/bairro/santa-candida",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Santa Felicidade",
+      "path": "/bairro/santa-felicidade",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Santa Quitéria",
+      "path": "/bairro/santa-quiteria",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Santo Inácio",
+      "path": "/bairro/santo-inacio",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "São Braz",
+      "path": "/bairro/sao-braz",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "São Francisco",
+      "path": "/bairro/sao-francisco",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "São João",
+      "path": "/bairro/sao-joao",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "São Lourenço",
+      "path": "/bairro/sao-lourenco",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "São Miguel",
+      "path": "/bairro/sao-miguel",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Vila Pantanal",
+      "path": "/bairro/vila-pantanal",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Seminário",
+      "path": "/bairro/seminario",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Sítio Cercado",
+      "path": "/bairro/sitio-cercado",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Taboão",
+      "path": "/bairro/taboao",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Tarumã",
+      "path": "/bairro/taruma",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Tatuquara",
+      "path": "/bairro/tatuquara",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Tingui",
+      "path": "/bairro/tingui",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Uberaba",
+      "path": "/bairro/uberaba",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Umbará",
+      "path": "/bairro/umbara",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Vila Izabel",
+      "path": "/bairro/vila-izabel",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Vista Alegre",
+      "path": "/bairro/vista-alegre",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": false
+    },
+    {
+      "name": "Xaxim",
+      "path": "/bairro/xaxim",
+      "classification": "Nome de bairro oficial de Curitiba confirmado na relação municipal",
+      "enriched": true
+    },
+    {
+      "name": "Santa Quitéria Velha",
+      "path": "/bairro/santa-quiteria-velha",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Portão Velho",
+      "path": "/bairro/portao-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Guaíra Velho",
+      "path": "/bairro/guaira-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Uberaba de Cima",
+      "path": "/bairro/uberaba-de-cima",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Uberaba de Baixo",
+      "path": "/bairro/uberaba-de-baixo",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "São Braz Velho",
+      "path": "/bairro/sao-braz-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Cidade Industrial",
+      "path": "/bairro/cidade-industrial",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Verde",
+      "path": "/bairro/vila-verde",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Barigui",
+      "path": "/bairro/vila-barigui",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Caiuá",
+      "path": "/bairro/caiua",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Xaxim Velho",
+      "path": "/bairro/xaxim-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Fazendinha-Portão",
+      "path": "/bairro/fazendinha-portao",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Campo Comprido Velho",
+      "path": "/bairro/campo-comprido-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Bacacheri Velho",
+      "path": "/bairro/bacacheri-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Capão da Imbuia Velho",
+      "path": "/bairro/capao-da-imbuia-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Pinheirinho Velho",
+      "path": "/bairro/pinheirinho-velho",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila São Pedro (Uberaba)",
+      "path": "/bairro/vila-sao-pedro-uberaba",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Osternack",
+      "path": "/bairro/vila-osternack",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Neo Ville no CIC",
+      "path": "/bairro/neo-ville-no-cic",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Formosa",
+      "path": "/bairro/vila-formosa",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Sandra",
+      "path": "/bairro/vila-sandra",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Conjunto Caiuá",
+      "path": "/bairro/conjunto-caiua",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Conjunto Parigot de Souza",
+      "path": "/bairro/conjunto-parigot-de-souza",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Reno",
+      "path": "/bairro/vila-reno",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    },
+    {
+      "name": "Vila Audi",
+      "path": "/bairro/vila-audi",
+      "classification": "Nome herdado: município e classificação cadastral não confirmados neste inventário; pode ser nome popular, loteamento ou bairro de outro município.",
+      "enriched": false
+    }
+  ],
+  "limitations": [
+    "Não confirma cobertura comercial em todos os bairros.",
+    "As fontes territoriais incluem publicações históricas; não foram usados dados demográficos ou regras urbanísticas antigos como atuais.",
+    "Não foram criadas páginas automáticas para todos os nomes; os 12 guias possuem seleção editorial e conteúdo específico de planejamento.",
+    "25 municípios ainda sem relação de bairros conferida (Pinhais possui apenas conferência histórica); expansão da RMC incompleta."
+  ]
+}

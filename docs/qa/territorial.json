@@ -1,0 +1,309 @@
+{
+  "guides": 12,
+  "viewports": 60,
+  "axeScans": 12,
+  "text200": 12,
+  "errors": [],
+  "results": [
+    {
+      "route": "/bairro/boqueirao",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/boqueirao",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/boqueirao",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/boqueirao",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/boqueirao",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/uberaba",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/uberaba",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/uberaba",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/uberaba",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/uberaba",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/agua-verde",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/agua-verde",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/agua-verde",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/agua-verde",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/agua-verde",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/xaxim",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/xaxim",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/xaxim",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/xaxim",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/xaxim",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/santa-felicidade",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/santa-felicidade",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/santa-felicidade",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/santa-felicidade",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/santa-felicidade",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinheirinho",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinheirinho",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinheirinho",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinheirinho",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/pinheirinho",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/afonso-pena",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/guatupe",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/cidade-jardim",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/borda-do-campo",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/parque-da-fonte",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 360,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "route": "/bairro/sao-jose-dos-pinhais/barro-preto",
+      "width": 1440,
+      "overflow": false
+    }
+  ]
+}

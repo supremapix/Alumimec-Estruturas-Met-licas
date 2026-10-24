@@ -1043,3 +1043,20 @@ body {
     scroll-behavior: auto;
   }
 }
+/* Text enlargement also grows the reserved dock strip. */
+.app-scroll {
+  height: calc(100dvh - var(--dock-space, 88px));
+}
+.floating-contact {
+  max-height: none;
+}
+.floating-contact .contact-actions > .button {
+  font-size: 0.89rem;
+  min-width: 0;
+  flex: 1 1 0;
+}
+.floating-contact .contact-actions {
+  width: clamp(210px, 30vw, 340px);
+  max-width: calc(100vw - 98px);
+}
+.floating-contact .contact-actions{width:min(340px,calc(100vw - 98px))}.floating-contact .contact-actions>.button{padding-inline:8px}.floating-contact .contact-actions>button{flex-grow:1.35}

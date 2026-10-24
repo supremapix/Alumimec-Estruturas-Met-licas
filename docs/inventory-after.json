@@ -105,9 +105,10 @@
   },
   "cities": 29,
   "legacyLocalNames": 124,
-  "routes": 160,
+  "routes": 166,
   "servicePages": 6,
-  "indexableRoutes": 160,
+  "curatedNeighborhoodGuides": 12,
+  "indexableRoutes": 166,
   "originalImageFiles": 37,
   "changedOriginalImages": [
     {

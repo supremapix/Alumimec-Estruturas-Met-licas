@@ -2,7 +2,7 @@ import { chromium } from "playwright";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const b = await chromium.launch();
-const p = await b.newPage();
+const p = await b.newPage({reducedMotion:"reduce"});
 const results = [];
 for (const width of [320, 360, 390, 430, 1440]) {
   await p.setViewportSize({ width, height: 1000 });
@@ -15,12 +15,14 @@ for (const width of [320, 360, 390, 430, 1440]) {
       }),
     );
   });
+  await p.setViewportSize({width,height:16000});
   await p
     .locator("#servicos")
     .screenshot({ path: `docs/qa/cards-after-${width}.png` });
   await p
     .locator("#galeria")
     .screenshot({ path: `docs/qa/gallery-after-${width}.png` });
+  await p.setViewportSize({width,height:1000});
   await p.locator(".gallery-grid .photo-frame").nth(5).click();
   assert.equal(await p.locator(".photo-dialog[open]").count(), 1);
   await p.keyboard.press("Escape");
@@ -64,4 +66,5 @@ assert.equal(
 );
 fs.writeFileSync("docs/qa/visual-round.json", JSON.stringify(results, null, 2));
 await b.close();
+
 
