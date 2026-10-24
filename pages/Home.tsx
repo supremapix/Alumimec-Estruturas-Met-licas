@@ -1,3 +1,4 @@
+import InstagramSection from "../components/InstagramSection";
 import ApplicationLinks from "../components/ApplicationLinks";
 import ContextPreview from "../components/ContextPreview";
 import { SERVICE_GUIDES } from "../service-content";
@@ -176,6 +177,7 @@ export default function Home() {
           </figure>
         </div>
       </section>
+      <InstagramSection id="instagram-empresa" placement="empresa" />
       <section className="section wrap" id="processo">
         <p className="eyebrow">COMO ORGANIZAR SUA OBRA</p>
         <h2>Uma etapa prepara a próxima.</h2>
@@ -268,6 +270,7 @@ export default function Home() {
           Veja também o Instagram da Alumimec ↗
         </a>
       </section>
+      <InstagramSection id="instagram-home" placement="home" />
       <section id="regiao" className="section region">
         <div className="wrap split">
           <div>
@@ -417,6 +420,7 @@ export default function Home() {
           </form>
         </div>
       </section>
+      <InstagramSection id="instagram-contato" placement="contato" />
     </>
   );
 }
