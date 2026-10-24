@@ -1,0 +1,228 @@
+{
+  "checkedAt": "2026-10-24",
+  "method": "Cruzamento das fontes das etapas anteriores com pesquisa complementar oficial. Resultado limitado ao conjunto consultado, não afirma inexistência de outras fontes.",
+  "municipalities": [
+    {
+      "city": "Almirante Tamandaré",
+      "sources": [
+        "https://tamandare.pr.gov.br/secretarias/urbanismo",
+        "https://tamandare.geosimples.com.br/publico"
+      ],
+      "previousFinding": "Portal/GIS localizado; falta relação nominal classificada e datada.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Urbanismo lido por HTTP 200: serviços e Consulta Prévia, sem lista nominal de bairros. GIS continua sem extração nominal validada.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Campo Largo",
+      "sources": [
+        "https://campolargo.atende.net/cidadao/pagina/cartografia"
+      ],
+      "previousFinding": "Índice anuncia perímetros de bairros e localidades; leitor retornou página sem texto. Não se extraiu uma lista verificada.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Cartografia havia retornado HTTP 200 sem anexos nominais. Busca complementar encontrou mapa em documento acessório legislativo de 2018; não é confirmação de lei vigente. Ferraria continua sem classificação consolidada nesta pesquisa.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Campo Magro",
+      "sources": [
+        "https://www.campomagro.pr.gov.br/pagina-site/21",
+        "https://www.campomagro.pr.gov.br/uploads/PDM-Campo-Magro-Fase-2-2.pdf"
+      ],
+      "previousFinding": "Notícia municipal menciona bairros, mas não constitui inventário completo ou delimitação.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Índice de legislação retornou HTTP 403; não contornado. Diagnóstico localizado é revisão e não foi tratado como lei vigente.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Quatro Barras",
+      "sources": [
+        "https://quatrobarras.pr.gov.br/uploads/pagina/arquivos/EDITAL-12-11-2025.pdf",
+        "https://www.quatrobarras.pr.gov.br/uploads/pagina/arquivos/103P02ANALISE-TEMATICA-INTEGRADA-PARTE-03-ENTREGA-01.pdf"
+      ],
+      "previousFinding": "Diagnóstico localizado; classificação nominal precisa ser confrontada com anexos territoriais, sem confundir UTP e bairro.",
+      "checkedAt": "2026-10-24",
+      "outcome": "22 referências parciais mantidas, incluindo quatro áreas rurais. Diagnóstico de 89 páginas já extraído não fornece cadastro nominal completo. Sem usar classificação social ou regras antigas no marketing.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Rio Branco do Sul",
+      "sources": [
+        "https://ws-riobrancodosul.atende.net/cidadao/noticia/prefeitura-convida-populacao-para-audiencia-publica-sobre-atualizacao-da-lei-de-bairros",
+        "https://www.riobrancodosul.pr.leg.br/leis/plano-diretor/view"
+      ],
+      "previousFinding": "Índice legislativo localizado; inventário nominal não consolidado.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Notícia oficial de audiência sobre proposta de atualização localizada; corpo indisponível no leitor. Proposta não prova aprovação ou limites vigentes.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Itaperuçu",
+      "sources": [
+        "https://itaperucu.pr.gov.br/coleta-seletiva-em-itaperucu-confira-os-dias-de-coleta-em-cada-bairro/"
+      ],
+      "previousFinding": "Apresentação municipal menciona quantidade de bairros, sem lista nominal verificada nesta consulta.",
+      "checkedAt": "2026-10-24",
+      "outcome": "30 referências da lista de coleta mantidas. Fonte não cadastral; quantidade mencionada na apresentação municipal não permite deduzir nomes ausentes.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Lapa",
+      "sources": [
+        "https://sapl.lapa.pr.leg.br/norma/1159",
+        "https://sapl.lapa.pr.leg.br/norma/891",
+        "https://sapl.lapa.pr.leg.br/media/sapl/public/normajuridica/2003/891/891_texto_integral.pdf"
+      ],
+      "previousFinding": "Mapa de perímetro urbano não equivale a relação de bairros.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Lei 1.439/1998 de delimitação de bairros aparece revogada pela 1.759/2003. Texto desta última identifica sede e distrito Mariental como zonas urbanas; não é inventário atual de bairros. Nenhuma lista revogada foi incorporada.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Adrianópolis",
+      "sources": [
+        "https://www.app.cmadrianopolis.pr.gov.br/temp/07092026125119007__Projeto_de_Lei_N__006_2026_BUS%C3%83O_SOCIAL.pdf",
+        "https://www.adrianopolis.pr.gov.br/"
+      ],
+      "previousFinding": "Notícias misturam bairros e localidades; não foi encontrada relação classificada suficiente.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Busca localizou projeto de transporte com bairros/localidades; não tratado como lei final nem classificação de bairros. Sem inventário consolidado.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Agudos do Sul",
+      "sources": [
+        "https://www.cmagudosdosul.pr.gov.br/tramitacoes/1/3298/0"
+      ],
+      "previousFinding": "Portais localizados, sem inventário nominal recuperado. Não confundir Agudos/SP.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Busca localizou matéria de divisão de bairros de 2026. Leitura HTTP retornou Bot Verification; acesso não contornado. Conteúdo e aprovação não confirmados.",
+      "nextPublicEvidence": "Texto final e anexos da norma, com aprovação/publicação, acessíveis sem desafio antirrobô."
+    },
+    {
+      "city": "Balsa Nova",
+      "sources": [
+        "https://balsanova.pr.gov.br/uploads/pagina/arquivos/6-Diagnostico-PD-Balsa-Nova.pdf"
+      ],
+      "previousFinding": "Diagnóstico de revisão localizado; relação de bairros não consolidada separadamente de localidades.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Diagnóstico lido nas ocorrências relevantes: p. PDF 11 distingue sede, Bugre, São Luiz do Purunã e localidades; p. 87/90 registra ausência de consolidação territorial à época. Não convertido em situação legal atual.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Bocaiúva do Sul",
+      "sources": [
+        "https://www.bocaiuvadosul.pr.gov.br/pagina-site/72"
+      ],
+      "previousFinding": "Índice de revisão do plano localizado, sem relação nominal confirmada.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Índice oficial do plano diretor retornou HTTP 403. Nenhuma tentativa de contornar acesso.",
+      "nextPublicEvidence": "Anexos territoriais acessíveis ou cópia oficial datada."
+    },
+    {
+      "city": "Campo do Tenente",
+      "sources": [
+        "https://www.campodotenente.pr.gov.br/"
+      ],
+      "previousFinding": "Portal oficial localizado; busca não recuperou lista classificada de bairros.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Portal e índice de serviços localizados; não forneceram lista classificada de bairros. Endereço de órgão público não foi usado como inventário.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Cerro Azul",
+      "sources": [
+        "https://www.cerroazul.pr.gov.br/index.php?idNot=5217&mod=988"
+      ],
+      "previousFinding": "Urbanismo e notícias de localidades não forneceram lista completa classificada.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Notícia municipal de escola rural menciona Bentos e Teixeira, sem delimitação ou relação completa. Não se inferiu tipo de demanda comercial nem cobertura cadastral.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Contenda",
+      "sources": [
+        "https://contenda.pr.gov.br/pagina/mapas"
+      ],
+      "previousFinding": "Índice lido: anexos identificados como loteamentos, subdivisões e sistema viário. Não convertidos automaticamente em bairros. Não confundir com bairro Contenda/SJP.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Índice lido; 13 títulos inequívocos incorporados como loteamentos/jardim/chácaras, sem inventar condição de bairro nem duplicar sufixos de arquivos.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Doutor Ulysses",
+      "sources": [
+        "https://www.doutorulysses.pr.gov.br/index.php?idNot=339&mod=988",
+        "https://www.doutorulysses.pr.gov.br/documentos/imgnoticia/6a17411b5020f.jpeg"
+      ],
+      "previousFinding": "Divisão de equipes de saúde de 2026 agrupa bairros/comunidades; não comprova classificação territorial de cada nome.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Texto e mapa inspecionados: áreas ESF Cerrado, Caraguatá e Sete Quedas agrupam bairros/comunidades. Não são três bairros nem cadastro territorial completo.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Mandirituba",
+      "sources": [
+        "https://mandirituba.pr.gov.br/wp-content/uploads/2020/04/Atualiza%C3%A7%C3%A3o3_-PDM_FASE02_DIAGNOSTICO_FINAL_REVIS%C3%83O14ABRIL.pdf"
+      ],
+      "previousFinding": "Índice identifica perímetro de sede e núcleos urbanos; isso não comprova lista de bairros.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Diagnóstico de revisão com mapa de bairros localizado; leitura retornou HTTP 403. Não usado como divisão vigente nem contornado.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Piên",
+      "sources": [
+        "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+        "https://www.pien.pr.gov.br/storage/files/2021/11/lei-n-1436-2021-altera-o-quadro-urbano.pdf",
+        "https://www.pien.pr.gov.br/plano-diretor-2021-vigente"
+      ],
+      "previousFinding": "Índice de leis e mapas localizado; macrozoneamento e perímetro não equivalem a bairros.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Seis referências da notícia de 07/10/2026 incorporadas como lista parcial. Lei 1.436/2021 examinada: delimita quadro urbano por perímetros, não lista completa de bairros. Variação Crispins/Crespins explicitada.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Quitandinha",
+      "sources": [
+        "https://www.quitandinha.pr.gov.br/plano-diretor-2"
+      ],
+      "previousFinding": "Índice sem lista nominal suficiente na extração.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Índice lido: leis 1.186 a 1.191 e mapas de macrozoneamento, perímetro e sistema viário. Não equivale a divisão de bairros; anúncios comerciais do portal foram excluídos como fonte territorial.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Rio Negro",
+      "sources": [
+        "https://rionegro.ctmgeo.com.br/mapa/",
+        "https://rionegro.atende.net/"
+      ],
+      "previousFinding": "GIS/portal localizados, sem extração nominal classificada nesta leitura.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Portal, apresentação municipal e GIS localizados. Não foi recuperada lista nominal classificada, nem se misturou Rio Negro/PR com outros municípios homônimos.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Tijucas do Sul",
+      "sources": [
+        "https://sapl.tijucasdosul.pr.leg.br/materia/3608",
+        "https://www.tijucasdosul.pr.leg.br/proposicoes/Projetos-de-Lei-Executivo/2023/1/0/3485"
+      ],
+      "previousFinding": "Busca encontrou projeto de divisão de bairros urbanos; leitura retornou HTTP 503. Projeto não foi tratado como lei aprovada.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Referência à Lei 911/2023 e proposta de alteração em 2024 confirmadas; texto consolidado/anexos atuais continuam não recuperados. Projeto não publicado como lei.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    },
+    {
+      "city": "Tunas do Paraná",
+      "sources": [
+        "https://tunasdoparana.pr.gov.br/"
+      ],
+      "previousFinding": "Portal e mapa municipal IBGE localizados; mapa municipal não demonstra relação de bairros.",
+      "checkedAt": "2026-10-24",
+      "outcome": "Pesquisa complementar nos canais oficiais não recuperou relação municipal nominal classificada; resultados gerais não foram convertidos em bairros.",
+      "nextPublicEvidence": "Relação municipal datada ou mapa de bairros com classificação e situação vigente."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "checkedAt": "2026-10-24",
   "scope": "Decisão editorial com as fontes reunidas; não afirma inexistência de outras informações públicas.",
   "guides": 41,
-  "directoryOnly": 267,
+  "directoryOnly": 286,
   "rows": [
     {
       "city": "Curitiba",
@@ -1665,6 +1665,136 @@
       "nextEvidenceNeeded": "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida."
     },
     {
+      "city": "Contenda",
+      "name": "Ana Maria Franco Cordeiro",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Chácaras Shangrilá",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Carlito Rudek",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Cionek",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Dona Anita",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Elizabeth",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Ernesto Henrique Luiz Piel",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Esplanada",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Paraná",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Jardim Santa Ana",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Nossa Senhora das Graças",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "Planalto",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Contenda",
+      "name": "São João",
+      "source": "https://contenda.pr.gov.br/pagina/mapas",
+      "classification": "referencias-cartograficas",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
       "city": "Fazenda Rio Grande",
       "name": "Campo do Rio",
       "source": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
@@ -1801,7 +1931,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1811,7 +1941,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1821,7 +1951,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1831,7 +1961,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1841,7 +1971,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1851,7 +1981,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1861,7 +1991,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1871,7 +2001,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1881,7 +2011,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1891,7 +2021,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1901,7 +2031,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1911,7 +2041,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1921,7 +2051,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1931,7 +2061,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1941,7 +2071,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1951,7 +2081,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1961,7 +2091,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1971,7 +2101,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1981,7 +2111,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -1991,7 +2121,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2001,7 +2131,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2011,7 +2141,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2021,7 +2151,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2031,7 +2161,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2041,7 +2171,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2051,7 +2181,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2061,7 +2191,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2071,7 +2201,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2081,7 +2211,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2091,7 +2221,67 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Aterrado Alto",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Campina dos Crispins",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Campina dos Maia",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Campo Novo",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Centro",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
+      "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
+    },
+    {
+      "city": "Piên",
+      "name": "Trigolândia",
+      "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "classification": "referencias-servico-publico",
+      "decision": "diretorio-com-preparador",
+      "guide": null,
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2461,7 +2651,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2471,7 +2661,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2481,7 +2671,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2491,7 +2681,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2501,7 +2691,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2511,7 +2701,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2521,7 +2711,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2531,7 +2721,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2541,7 +2731,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2551,7 +2741,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2561,7 +2751,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2571,7 +2761,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2581,7 +2771,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2591,7 +2781,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2601,7 +2791,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2611,7 +2801,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2621,7 +2811,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2631,7 +2821,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2641,7 +2831,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2651,7 +2841,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2661,7 +2851,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {
@@ -2671,7 +2861,7 @@
       "classification": "referencias-servico-publico",
       "decision": "diretorio-com-preparador",
       "guide": null,
-      "availableEvidence": "Referência usada por serviço público municipal; delimitação cadastral não confirmada.",
+      "availableEvidence": "Referência usada por publicação pública municipal; delimitação cadastral não confirmada.",
       "nextEvidenceNeeded": "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
     },
     {

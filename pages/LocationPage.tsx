@@ -1,3 +1,4 @@
+import MunicipalContext from "../components/MunicipalContext";
 import ApplicationLinks from "../components/ApplicationLinks";
 import ProjectPlanner from "../components/ProjectPlanner";
 import MunicipalDirectory from "../components/MunicipalDirectory";
@@ -198,6 +199,7 @@ export default function LocationPage({
         </div>
       </section>
       {city && <MunicipalGuide name={name} />}
+      {city && <MunicipalContext city={name} />}
       {city && <ProjectPlanner city={name} />}
       {city && <MunicipalDirectory city={name} />}
       {city && LOCAL_GUIDES.some((g) => g.city === name) && (

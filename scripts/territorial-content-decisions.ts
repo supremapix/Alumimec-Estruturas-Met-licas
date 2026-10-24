@@ -21,14 +21,14 @@ const rows = territory.municipalities.flatMap((m) =>
       guide: guide?.path ?? null,
       availableEvidence: guide
         ? "Identidade territorial e pauta editorial específica documentadas."
-        : m.classification === "referencias-servico-publico"
-          ? "Referência usada por serviço público municipal; delimitação cadastral não confirmada."
+        : m.classification.startsWith("referencias-")
+          ? "Referência usada por publicação pública municipal; delimitação cadastral não confirmada."
           : "Nome/código em base territorial; sem pauta local própria consolidada nesta entrega.",
       nextEvidenceNeeded: guide
         ? null
         : airport
           ? "Escopo específico e requisitos do contratante para eventual obra em instalação aeroportuária; não inferir credenciamento da cobertura geográfica."
-          : m.classification === "referencias-servico-publico"
+          : m.classification.startsWith("referencias-")
             ? "Fonte cadastral que classifique o nome e contexto de aplicação distinto."
             : "Necessidade de uso ou informação territorial relevante que sustente uma orientação própria, sem repetir outro guia. Nenhuma obra ou filial será presumida.",
     };

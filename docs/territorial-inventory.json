@@ -1,17 +1,19 @@
 {
   "checkedAt": "2026-10-24",
   "complete": false,
-  "stage": 4,
+  "stage": 5,
+  "closureOfAvailableEvidence": true,
   "routeCount": 196,
-  "existingRoutesPreserved": 184,
-  "newRoutes": 12,
-  "newTerritorialRoutes": 7,
-  "newHubRoutes": 5,
+  "existingRoutesPreserved": 196,
+  "newRoutes": 0,
+  "newTerritorialRoutes": 0,
+  "newHubRoutes": 0,
   "guideCount": 41,
-  "verifiedNames": 308,
+  "verifiedNames": 327,
   "cadastralOrLegalNames": 225,
   "municipalMapNames": 31,
-  "serviceReferenceNames": 52,
+  "serviceReferenceNames": 58,
+  "cartographicReferenceNames": 13,
   "municipalities": [
     {
       "city": "Curitiba",
@@ -361,14 +363,28 @@
     {
       "city": "Contenda",
       "municipalPage": "/cidade/contenda",
-      "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
-      "sourceYear": 2022,
-      "sourceClassification": "malha-ibge",
-      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
-      "verifiedNames": [],
+      "neighborhoodSource": "https://contenda.pr.gov.br/pagina/mapas",
+      "sourceYear": 2026,
+      "sourceClassification": "referencias-cartograficas",
+      "sourceScope": "Seleção de 13 referências identificadas nos títulos dos arquivos oficiais. São loteamentos, jardim ou chácaras conforme o título, não uma lista de bairros oficiais. O índice não informa data de atualização dos mapas; 2026 indica a consulta. Anexos com sufixos de versão não foram contados como lugares diferentes.",
+      "verifiedNames": [
+        "Ana Maria Franco Cordeiro",
+        "Chácaras Shangrilá",
+        "Jardim Carlito Rudek",
+        "Jardim Cionek",
+        "Jardim Dona Anita",
+        "Jardim Elizabeth",
+        "Jardim Ernesto Henrique Luiz Piel",
+        "Jardim Esplanada",
+        "Jardim Paraná",
+        "Jardim Santa Ana",
+        "Nossa Senhora das Graças",
+        "Planalto",
+        "São João"
+      ],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
+      "status": "Seleção de 13 referências identificadas nos títulos dos arquivos oficiais. São loteamentos, jardim ou chácaras conforme o título, não uma lista de bairros oficiais. O índice não informa data de atualização dos mapas; 2026 indica a consulta. Anexos com sufixos de versão não foram contados como lugares diferentes."
     },
     {
       "city": "Doutor Ulysses",
@@ -482,14 +498,21 @@
     {
       "city": "Piên",
       "municipalPage": "/cidade/pien",
-      "neighborhoodSource": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/shp/UF/PR_bairros_CD2022.zip",
-      "sourceYear": 2022,
-      "sourceClassification": "malha-ibge",
-      "sourceScope": "Base datada de 2022. Não demonstra alterações territoriais posteriores.",
-      "verifiedNames": [],
+      "neighborhoodSource": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+      "sourceYear": 2026,
+      "sourceClassification": "referencias-servico-publico",
+      "sourceScope": "Lista parcial de referências utilizadas pela publicação de saúde, sem delimitação de bairros. A Lei 1.436/2021, também consultada, trata do quadro urbano e não fornece uma lista completa de bairros. Mantém-se a grafia Campina dos Crispins usada nesta notícia; outras publicações usam Crespins. Confirme o endereço, não apenas a grafia.",
+      "verifiedNames": [
+        "Aterrado Alto",
+        "Campina dos Crispins",
+        "Campina dos Maia",
+        "Campo Novo",
+        "Centro",
+        "Trigolândia"
+      ],
       "completedGuides": [],
       "coverage": "Atendimento por deslocamento a todas as localidades confirmado pelo responsável em 24/10/2026; projeto, acesso, condições e agendamento avaliados individualmente.",
-      "status": "Sem inventário nominal consolidado; ver TERRITORIOS-FONTES.md."
+      "status": "Lista parcial de referências utilizadas pela publicação de saúde, sem delimitação de bairros. A Lei 1.436/2021, também consultada, trata do quadro urbano e não fornece uma lista completa de bairros. Mantém-se a grafia Campina dos Crispins usada nesta notícia; outras publicações usam Crespins. Confirme o endereço, não apenas a grafia."
     },
     {
       "city": "Pinhais",
@@ -1478,7 +1501,7 @@
     "Cobertura confirmada pelo responsável; avaliação técnica e agendamento continuam necessários.",
     "IBGE 2022 é uma base datada; Piraquara usa lei municipal de 2026.",
     "Não foram criadas páginas automáticas para todos os nomes; diretórios municipais preservam acesso ao catálogo e consulta contextual.",
-    "21 municípios sem inventário nominal territorial consolidado; Itaperuçu e Quatro Barras têm listas parciais de publicações municipais. Campina Grande do Sul tem 31 referências do mapa anexo, com ressalva de legenda registrada.",
+    "21 municípios sem inventário nominal territorial consolidado; Itaperuçu, Quatro Barras, Piên e Contenda têm listas parciais de publicações municipais. Campina Grande do Sul tem 31 referências do mapa anexo, com ressalva de legenda registrada.",
     "Guias adicionais precisam de contexto próprio verificável; não atribuir demandas ou obras a um bairro apenas pelo nome."
   ]
 }

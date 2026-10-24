@@ -18,10 +18,12 @@ export default function MunicipalDirectory({ city }: { city: string }) {
     <section className="section wrap" id="bairros">
       <p className="eyebrow">IDENTIFIQUE O ENDEREÇO DA OBRA</p>
       <h2>
-        {["referencias-servico-publico", "mapa-anexo-municipal"].includes(
-          data.classification,
-        )
-          ? "Bairros e referências de "
+        {[
+          "referencias-servico-publico",
+          "referencias-cartograficas",
+          "mapa-anexo-municipal",
+        ].includes(data.classification)
+          ? "Localidades e referências de "
           : "Bairros de "}
         {city}
       </h2>
@@ -37,13 +39,13 @@ export default function MunicipalDirectory({ city }: { city: string }) {
         CEP, especialmente quando o mesmo nome existir em municípios diferentes.
       </p>
       <label htmlFor="bairro-search">
-        Buscar bairro
+        Buscar referência
         <input
           id="bairro-search"
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Digite o nome do bairro"
+          placeholder="Digite o bairro ou referência"
         />
       </label>
       <p role="status">{names.length} referências encontradas.</p>
@@ -55,6 +57,7 @@ export default function MunicipalDirectory({ city }: { city: string }) {
           return (
             <li key={n.name}>
               <h3>{n.name}</h3>
+              {"kind" in n && <p>{String(n.kind)}</p>}
               <p>
                 {city} · referência {data.year}
               </p>

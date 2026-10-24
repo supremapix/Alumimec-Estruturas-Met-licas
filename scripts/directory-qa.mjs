@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const inv=JSON.parse(fs.readFileSync('docs/territorial-inventory.json','utf8'));
-const previous=[...(await import('node:child_process')).execFileSync('git',['show','017a89a:public/sitemap.xml'],{encoding:'utf8'}).matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>({path:new URL(m[1]).pathname}));
+const previous=[...(await import('node:child_process')).execFileSync('git',['show','a117d2e:public/sitemap.xml'],{encoding:'utf8'}).matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>({path:new URL(m[1]).pathname}));
 const current=JSON.parse(fs.readFileSync('.prerender-routes.json','utf8'));
 for(const r of previous)assert.ok(current.some(c=>c.path===r.path),r.path);
 const b=await chromium.launch();const context=await b.newContext();const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));const results=[];

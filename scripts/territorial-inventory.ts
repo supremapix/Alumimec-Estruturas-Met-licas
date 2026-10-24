@@ -37,12 +37,13 @@ const legacy = NEIGHBORHOODS.map((name) => ({
 const report = {
   checkedAt: "2026-10-24",
   complete: false,
-  stage: 4,
+  stage: 5,
+  closureOfAvailableEvidence: true,
   routeCount: getAllRoutes().length,
-  existingRoutesPreserved: 184,
-  newRoutes: getAllRoutes().length - 184,
-  newTerritorialRoutes: 7,
-  newHubRoutes: 5,
+  existingRoutesPreserved: 196,
+  newRoutes: getAllRoutes().length - 196,
+  newTerritorialRoutes: 0,
+  newHubRoutes: 0,
   guideCount: LOCAL_GUIDES.length,
   verifiedNames: municipalities.reduce((n, m) => n + m.verifiedNames.length, 0),
   cadastralOrLegalNames: territory.municipalities
@@ -54,13 +55,16 @@ const report = {
   serviceReferenceNames: territory.municipalities
     .filter((m) => m.classification === "referencias-servico-publico")
     .reduce((n, m) => n + m.names.length, 0),
+  cartographicReferenceNames: territory.municipalities
+    .filter((m) => m.classification === "referencias-cartograficas")
+    .reduce((n, m) => n + m.names.length, 0),
   municipalities,
   legacyNames: legacy,
   limitations: [
     "Cobertura confirmada pelo responsável; avaliação técnica e agendamento continuam necessários.",
     "IBGE 2022 é uma base datada; Piraquara usa lei municipal de 2026.",
     "Não foram criadas páginas automáticas para todos os nomes; diretórios municipais preservam acesso ao catálogo e consulta contextual.",
-    "21 municípios sem inventário nominal territorial consolidado; Itaperuçu e Quatro Barras têm listas parciais de publicações municipais. Campina Grande do Sul tem 31 referências do mapa anexo, com ressalva de legenda registrada.",
+    "21 municípios sem inventário nominal territorial consolidado; Itaperuçu, Quatro Barras, Piên e Contenda têm listas parciais de publicações municipais. Campina Grande do Sul tem 31 referências do mapa anexo, com ressalva de legenda registrada.",
     "Guias adicionais precisam de contexto próprio verificável; não atribuir demandas ou obras a um bairro apenas pelo nome.",
   ],
 };

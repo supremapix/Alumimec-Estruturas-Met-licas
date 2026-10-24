@@ -360,5 +360,114 @@
         "code": null
       }
     ]
+  },
+  {
+    "city": "Contenda",
+    "source": "https://contenda.pr.gov.br/pagina/mapas",
+    "year": 2026,
+    "sourceLabel": "índice oficial de mapas de Contenda, consultado em 24/10/2026",
+    "classification": "referencias-cartograficas",
+    "scopeNote": "Seleção de 13 referências identificadas nos títulos dos arquivos oficiais. São loteamentos, jardim ou chácaras conforme o título, não uma lista de bairros oficiais. O índice não informa data de atualização dos mapas; 2026 indica a consulta. Anexos com sufixos de versão não foram contados como lugares diferentes.",
+    "names": [
+      {
+        "name": "Ana Maria Franco Cordeiro",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Chácaras Shangrilá",
+        "code": null,
+        "kind": "Chácaras identificadas no título do mapa"
+      },
+      {
+        "name": "Jardim Carlito Rudek",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Cionek",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Dona Anita",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Elizabeth",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Ernesto Henrique Luiz Piel",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Esplanada",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Paraná",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Jardim Santa Ana",
+        "code": null,
+        "kind": "Referência cartográfica; classificação não consolidada"
+      },
+      {
+        "name": "Nossa Senhora das Graças",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "Planalto",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      },
+      {
+        "name": "São João",
+        "code": null,
+        "kind": "Loteamento identificado no índice"
+      }
+    ]
+  },
+  {
+    "city": "Piên",
+    "source": "https://www.pien.pr.gov.br/noticias/acoes-de-saude-da-mulher-ocorrem-em-horario-estendido-em-seis-unidades-de-pien-nesta-quarta-feira",
+    "year": 2026,
+    "sourceLabel": "notícia municipal de 07/10/2026 sobre seis unidades de saúde",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Lista parcial de referências utilizadas pela publicação de saúde, sem delimitação de bairros. A Lei 1.436/2021, também consultada, trata do quadro urbano e não fornece uma lista completa de bairros. Mantém-se a grafia Campina dos Crispins usada nesta notícia; outras publicações usam Crespins. Confirme o endereço, não apenas a grafia.",
+    "names": [
+      {
+        "name": "Aterrado Alto",
+        "code": null
+      },
+      {
+        "name": "Campina dos Crispins",
+        "code": null
+      },
+      {
+        "name": "Campina dos Maia",
+        "code": null
+      },
+      {
+        "name": "Campo Novo",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Trigolândia",
+        "code": null
+      }
+    ]
   }
 ]

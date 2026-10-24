@@ -1,7 +1,7 @@
 {
-  "preserved": 184,
+  "preserved": 196,
   "total": 196,
-  "names": 308,
+  "names": 327,
   "results": [
     {
       "city": "Curitiba",
@@ -104,6 +104,31 @@
       "names": 42
     },
     {
+      "city": "Contenda",
+      "width": 320,
+      "names": 13
+    },
+    {
+      "city": "Contenda",
+      "width": 360,
+      "names": 13
+    },
+    {
+      "city": "Contenda",
+      "width": 390,
+      "names": 13
+    },
+    {
+      "city": "Contenda",
+      "width": 430,
+      "names": 13
+    },
+    {
+      "city": "Contenda",
+      "width": 1440,
+      "names": 13
+    },
+    {
       "city": "Fazenda Rio Grande",
       "width": 320,
       "names": 13
@@ -152,6 +177,31 @@
       "city": "Itaperuçu",
       "width": 1440,
       "names": 30
+    },
+    {
+      "city": "Piên",
+      "width": 320,
+      "names": 6
+    },
+    {
+      "city": "Piên",
+      "width": 360,
+      "names": 6
+    },
+    {
+      "city": "Piên",
+      "width": 390,
+      "names": 6
+    },
+    {
+      "city": "Piên",
+      "width": 430,
+      "names": 6
+    },
+    {
+      "city": "Piên",
+      "width": 1440,
+      "names": 6
     },
     {
       "city": "Pinhais",

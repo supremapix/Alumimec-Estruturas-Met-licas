@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "city": "almirante-tamandare",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "almirante-tamandare",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "almirante-tamandare",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "almirante-tamandare",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "almirante-tamandare",
+      "width": 1440,
+      "text200": true
+    },
+    {
+      "city": "balsa-nova",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "balsa-nova",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "balsa-nova",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "balsa-nova",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "balsa-nova",
+      "width": 1440,
+      "text200": true
+    },
+    {
+      "city": "contenda",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "contenda",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "contenda",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "contenda",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "contenda",
+      "width": 1440,
+      "text200": true
+    },
+    {
+      "city": "doutor-ulysses",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "doutor-ulysses",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "doutor-ulysses",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "doutor-ulysses",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "doutor-ulysses",
+      "width": 1440,
+      "text200": true
+    },
+    {
+      "city": "lapa",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "lapa",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "lapa",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "lapa",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "lapa",
+      "width": 1440,
+      "text200": true
+    },
+    {
+      "city": "pien",
+      "width": 320,
+      "text200": true
+    },
+    {
+      "city": "pien",
+      "width": 360,
+      "text200": true
+    },
+    {
+      "city": "pien",
+      "width": 390,
+      "text200": true
+    },
+    {
+      "city": "pien",
+      "width": 430,
+      "text200": true
+    },
+    {
+      "city": "pien",
+      "width": 1440,
+      "text200": true
+    }
+  ],
+  "errors": []
+}
