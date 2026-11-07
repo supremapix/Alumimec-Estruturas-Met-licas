@@ -1,3 +1,4 @@
+import SemanticContactSection from "./components/SemanticContactSection";
 import ApplicationPage from "./pages/ApplicationPage";
 import CoverageHub from "./pages/CoverageHub";
 import NeighborhoodGuide from "./pages/NeighborhoodGuide";
@@ -53,6 +54,7 @@ const App: React.FC = () => {
           <Route path="/atendimento" element={<CoverageHub />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <SemanticContactSection />
       </main>
       <Footer />
       <FloatingButtons />

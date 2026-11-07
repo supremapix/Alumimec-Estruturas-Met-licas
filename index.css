@@ -1369,3 +1369,34 @@ body {
 @media(max-width:800px){.application-grid{grid-template-columns:1fr;gap:16px}.application-grid article{padding:20px 14px}.context-dialog{padding:16px 12px}.context-dialog .button{width:100%;margin-right:0}}
 .service-card figure .context-dialog img{position:static;width:100%;height:auto;max-height:65dvh;aspect-ratio:auto;object-fit:contain}.context-dialog .dialog-close{position:sticky;top:0;z-index:1;background:var(--ink);color:white}
 .context-dialog{max-width:calc(100% - 24px)}
+
+/* Contextual consultation section: the same verified brand asset, useful page-specific copy. */
+.semantic-contact { padding: clamp(48px, 7vw, 100px) 0; background: #e9ede7; border-top: 1px solid #c5cec4; }
+.semantic-contact-lead { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: clamp(28px, 5vw, 76px); align-items: center; }
+.semantic-contact-art { width: 250px; max-width: 100%; margin: 0; }
+.semantic-contact-art img { width: 250px; height: auto; aspect-ratio: 1; border-radius: 8px; box-shadow: 0 12px 32px #1723221f; }
+.semantic-contact-art figcaption { margin-top: 14px; font-size: .78rem; line-height: 1.5; color: #435148; }
+.semantic-contact-intro h2 { font-size: clamp(1.8rem, 3.2vw, 3rem); max-width: 24ch; margin: 12px 0 22px; overflow-wrap: anywhere; }
+.semantic-contact-intro > p:last-of-type { max-width: 70ch; line-height: 1.7; }
+.semantic-contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.semantic-contact-actions .button { max-width: 100%; white-space: normal; text-align: center; }
+.semantic-contact-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 54px; }
+.semantic-contact-topics article { border-top: 1px solid #aebbaa; padding-top: 20px; min-width: 0; }
+.semantic-contact-number { display: block; color: #46533e; font-size: .8rem; margin-bottom: 16px; }
+.semantic-contact h3 { font-size: 1.18rem; font-weight: 700; line-height: 1.35; letter-spacing: -.02em; margin-bottom: 14px; }
+.semantic-contact p { line-height: 1.7; }
+.semantic-contact-topics p { font-size: .94rem; }
+.semantic-contact-next { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin-top: 44px; padding-top: 30px; border-top: 1px solid #aebbaa; }
+.semantic-contact-next ul { padding-left: 22px; margin: 0 0 18px; list-style: disc; }
+.semantic-contact-next li { margin: 8px 0; line-height: 1.5; }
+.semantic-contact-next p, .semantic-contact-next > div > a { font-size: .85rem; margin-bottom: 12px; overflow-wrap: anywhere; }
+.semantic-contact-links { display: flex; flex-wrap: wrap; gap: 14px 18px; margin-top: 20px; font-size: .83rem; }
+.semantic-contact-links a { text-decoration: underline; line-height: 1.7; }
+@media (max-width: 900px) { .semantic-contact-topics { grid-template-columns: 1fr; gap: 26px; } }
+@media (max-width: 680px) {
+  .semantic-contact-lead, .semantic-contact-next { grid-template-columns: 1fr; }
+  .semantic-contact-art { margin-inline: auto; }
+  .semantic-contact-art figcaption { text-align: center; }
+  .semantic-contact-intro h2 { max-width: none; }
+  .semantic-contact-actions { flex-direction: column; align-items: stretch; }
+}

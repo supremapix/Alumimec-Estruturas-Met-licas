@@ -8,10 +8,11 @@
     "build": "npm run generate-sitemap && vite build && node scripts/prerender.mjs",
     "build:spa": "npm run generate-sitemap && vite build",
     "preview": "vite preview",
-    "generate-sitemap": "npx tsx scripts/generate-sitemap.ts",
+    "generate-sitemap": "node --import tsx scripts/generate-sitemap.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "node scripts/validate.mjs && node scripts/interactions.mjs && node scripts/service-qa.mjs"
+    "test": "node scripts/validate.mjs && node scripts/interactions.mjs && node scripts/service-qa.mjs",
+    "test:semantic": "node scripts/semantic-qa.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

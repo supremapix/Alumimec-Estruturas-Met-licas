@@ -6,7 +6,7 @@ const routes = JSON.parse(
   fs.readFileSync(".prerender-routes.json", "utf8"),
 ).filter((r) => r.type === "service");
 assert.equal(routes.length, 6);
-const browser = await chromium.launch();
+const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
 const context = await browser.newContext({ reducedMotion: "reduce" });
 const page = await context.newPage();
 const errors = [];

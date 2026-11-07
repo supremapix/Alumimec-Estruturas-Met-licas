@@ -58,7 +58,13 @@ const map = fs.readFileSync("public/sitemap.xml", "utf8");
 assert.equal((map.match(/<loc>/g) || []).length, routes.length);
 assert.match(fs.readFileSync("dist/404.html", "utf8"), /noindex/);
 fs.mkdirSync("docs/qa", { recursive: true });
-const browser = await chromium.launch({ headless: true });
+if (process.env.STATIC_ONLY === "1") {
+  const result = { routes: routes.length, checkedLinks, checkedImages, staticChecks: "passed", browserChecks: "not run" };
+  fs.writeFileSync("docs/qa/static-results.json", JSON.stringify(result, null, 2) + "\n");
+  console.log(JSON.stringify(result));
+  process.exit(0);
+}
+const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
 const results = [];
 const errors = [];
 for (const width of [320, 360, 390, 430, 1440]) {
