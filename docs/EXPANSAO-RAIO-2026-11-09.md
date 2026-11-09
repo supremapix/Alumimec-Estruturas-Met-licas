@@ -19,3 +19,9 @@ Bairros/localidades: ver `EXPANSAO-BAIRROS-2026-11-09.md`. Todas as listas têm 
 ## Validação
 
 Lint, TypeScript, build/pre-render e validação estática das 196 rotas aprovados. O navegador Chromium de processos locais não inicia neste ambiente por restrição de sockets, inclusive na execução aprovada. A prévia localhost também não está acessível pelo navegador conectado. Os testes de navegador não são declarados aprovados por esse motivo; a interface será verificada na prévia publicada antes da promoção ao domínio oficial. Script de regressão completo adicionado em `scripts/coverage-expansion-qa.mjs` para ambiente com Chromium disponível.
+
+## Produção e verificações funcionais
+
+Publicação explicitamente autorizada pelo responsável. Árvore de código local conferida idêntica ao commit remoto 301459f. Vercel READY e status GitHub Vercel success; domínio oficial conferido no navegador. Pesquisa por Afonso Pena retornou São José dos Pinhais; filtro do entorno retornou oito cidades; busca sem resultado e restauração retornaram 0 e 37 municípios. Planejador preparou mensagem com cidade/bairro e limpou contexto ao trocar município. Foram confirmadas 525 referências no DOM e 75 opções para Curitiba. Tela de 1167 px sem overflow. Nenhuma mensagem foi enviada.
+
+A prévia protegida não foi aberta: a criação de link temporário de acesso foi negada e nenhuma proteção foi alterada. A validação funcional usou o domínio público após a publicação autorizada. Teste automatizado de todos os viewports e axe não executado, devido à restrição local já descrita. Não é declarado um passe completo de regressão visual/acessibilidade.

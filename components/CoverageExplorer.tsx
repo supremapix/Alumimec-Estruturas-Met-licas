@@ -36,6 +36,9 @@ export default function CoverageExplorer() {
       : NEARBY_CITIES.filter((item) =>
           normalize(item.city + " " + item.state).includes(needle),
         );
+  const resultCount = metropolitan.length + nearby.length;
+  const selectedNearby = NEARBY_CITIES.find((item) => item.city === city);
+  const plannerCity = selectedNearby ? `${city}/${selectedNearby.state}` : city;
   const referenceCount = territory.municipalities.reduce(
     (total, m) => total + m.names.length,
     0,
@@ -76,7 +79,11 @@ export default function CoverageExplorer() {
           </label>
         </div>
         <p role="status">
-          {metropolitan.length + nearby.length} municípios encontrados.
+          {resultCount}{" "}
+          {resultCount === 1
+            ? "município encontrado"
+            : "municípios encontrados"}
+          .
         </p>
         {metropolitan.length > 0 && (
           <>
@@ -102,13 +109,15 @@ export default function CoverageExplorer() {
                     </h4>
                     <p>
                       {data?.names.length
-                        ? `${data.names.length} referências territoriais com fonte.`
+                        ? `${data.names.length} ${data.names.length === 1 ? "referência territorial" : "referências territoriais"} com fonte.`
                         : "Consulta por bairro ou endereço, inclusive localidades rurais."}
                     </p>
                     {names.length > 0 && (
                       <details key={needle} open={needle.length > 0}>
                         <summary>
-                          Ver {names.length} referências de {name}
+                          Ver {names.length}{" "}
+                          {names.length === 1 ? "referência" : "referências"} de{" "}
+                          {name}
                         </summary>
                         <ul className="coverage-names">
                           {names.map((n) => (
@@ -215,12 +224,17 @@ export default function CoverageExplorer() {
             onChange={(event) => setCity(event.target.value)}
           >
             {allCities.map((name) => (
-              <option key={name}>{name}</option>
+              <option key={name} value={name}>
+                {name}
+                {NEARBY_CITIES.find((item) => item.city === name)
+                  ? `/${NEARBY_CITIES.find((item) => item.city === name)!.state}`
+                  : ""}
+              </option>
             ))}
           </select>
         </label>
       </div>
-      <ProjectPlanner key={city} city={city} />
+      <ProjectPlanner key={city} city={plannerCity} />
     </>
   );
 }
