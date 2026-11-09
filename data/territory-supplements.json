@@ -469,5 +469,947 @@
         "code": null
       }
     ]
+  },
+  {
+    "city": "Agudos do Sul",
+    "source": "https://www.agudosdosul.pr.gov.br/a-cidade/localidades",
+    "year": 2024,
+    "sourceLabel": "relação de localidades da Prefeitura de Agudos do Sul, atualizada em 06/08/2024",
+    "classification": "localidades-portal-municipal",
+    "scopeNote": "Nomes apresentados pelo município como localidades. A página não fornece delimitação nem comprova um inventário de bairros oficiais; a relação foi consultada em 09/11/2026.",
+    "names": [
+      {
+        "name": "Areia",
+        "code": null
+      },
+      {
+        "name": "Buraco do Bugre",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Cerro",
+        "code": null
+      },
+      {
+        "name": "Chimbuva",
+        "code": null
+      },
+      {
+        "name": "Colônia Nova",
+        "code": null
+      },
+      {
+        "name": "Lagoa dos Pretos",
+        "code": null
+      },
+      {
+        "name": "Lagoa dos Souzas",
+        "code": null
+      },
+      {
+        "name": "Lavra",
+        "code": null
+      },
+      {
+        "name": "Leão",
+        "code": null
+      },
+      {
+        "name": "Palmito de Baixo",
+        "code": null
+      },
+      {
+        "name": "Palmito de Cima",
+        "code": null
+      },
+      {
+        "name": "Papanduva",
+        "code": null
+      },
+      {
+        "name": "Pavão",
+        "code": null
+      },
+      {
+        "name": "Pavãozinho",
+        "code": null
+      },
+      {
+        "name": "Pedra Branca",
+        "code": null
+      },
+      {
+        "name": "Pinhal",
+        "code": null
+      },
+      {
+        "name": "Queimados",
+        "code": null
+      },
+      {
+        "name": "Queimados de Cima",
+        "code": null
+      },
+      {
+        "name": "Ribeirão Grande",
+        "code": null
+      },
+      {
+        "name": "Ribeirão Raso",
+        "code": null
+      },
+      {
+        "name": "Ribeirãozinho",
+        "code": null
+      },
+      {
+        "name": "Rio da Várzea",
+        "code": null
+      },
+      {
+        "name": "Sobrado",
+        "code": null
+      },
+      {
+        "name": "Taboão",
+        "code": null
+      },
+      {
+        "name": "Taquara Lisa",
+        "code": null
+      },
+      {
+        "name": "Tarumã",
+        "code": null
+      },
+      {
+        "name": "Troperaba",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Almirante Tamandaré",
+    "source": "https://www.tamandare.pr.gov.br/uploads/c01794bb9da7bff5bd2c4578b7f197bc.pdf",
+    "year": 2026,
+    "sourceLabel": "referências principais do roteiro municipal de coleta seletiva, consultado em 09/11/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Seleção dos nomes territoriais dos cabeçalhos diários do roteiro. Ruas, escolas, órgãos e subáreas não foram convertidos em bairros. O PDF não apresenta data: 2026 é o ano da consulta, não da delimitação. Lista parcial, sem comprovação cadastral ou totalidade.",
+    "names": [
+      {
+        "name": "Areias",
+        "code": null
+      },
+      {
+        "name": "Bonfim",
+        "code": null
+      },
+      {
+        "name": "Botiatuba",
+        "code": null
+      },
+      {
+        "name": "Cachoeira",
+        "code": null
+      },
+      {
+        "name": "Campo Grande",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Colônia Antônio Prado",
+        "code": null
+      },
+      {
+        "name": "Colônia São Venâncio",
+        "code": null
+      },
+      {
+        "name": "Humaitá",
+        "code": null
+      },
+      {
+        "name": "Lamenha Grande",
+        "code": null
+      },
+      {
+        "name": "Lamenha Pequena",
+        "code": null
+      },
+      {
+        "name": "Marmeleiro",
+        "code": null
+      },
+      {
+        "name": "Mato Dentro",
+        "code": null
+      },
+      {
+        "name": "Pacotuba",
+        "code": null
+      },
+      {
+        "name": "Restinga Seca",
+        "code": null
+      },
+      {
+        "name": "Sumidouro",
+        "code": null
+      },
+      {
+        "name": "São Felipe",
+        "code": null
+      },
+      {
+        "name": "São Jorge",
+        "code": null
+      },
+      {
+        "name": "São Miguel",
+        "code": null
+      },
+      {
+        "name": "Taboão",
+        "code": null
+      },
+      {
+        "name": "Tanguá",
+        "code": null
+      },
+      {
+        "name": "Tranqueira",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Adrianópolis",
+    "source": "https://www.adrianopolis.pr.gov.br/noticiasView/73096_A-Secretaria-Municipal-de-Agricultura,-Abastecimento-e-Meio-Ambiente,-segue-realizando-a-imunizacao-de-caes-e-gatos-nos-.html",
+    "year": 2026,
+    "sourceLabel": "notícia municipal de imunização animal publicada em 02/10/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Seis referências citadas pela Prefeitura entre localidades, bairros e comunidades atendidos por uma ação pública. A fonte não classifica individualmente cada nome nem fornece limites. Lista parcial, sem afirmar cadastro completo ou status de bairro oficial.",
+    "names": [
+      {
+        "name": "Barra Grande",
+        "code": null
+      },
+      {
+        "name": "Barrinha",
+        "code": null
+      },
+      {
+        "name": "Capelinha",
+        "code": null
+      },
+      {
+        "name": "Descampado",
+        "code": null
+      },
+      {
+        "name": "Pinhalzinho",
+        "code": null
+      },
+      {
+        "name": "Vila Mota",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Balsa Nova",
+    "source": "https://balsanova.pr.gov.br/noticiasView/?id=3082",
+    "year": 2026,
+    "sourceLabel": "cronograma municipal de coleta comum publicado em 29/10/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Localidades e referências do cronograma, incluindo sede, distritos e conjuntos, sem equipará-los a bairros oficiais. Excluídos nomes de ruas, estradas e a indicação de divisa com Campo Largo. Lista parcial transcrita do quadro de coleta comum; não comprova delimitação nem cobertura cadastral completa.",
+    "names": [
+      {
+        "name": "Balsa Nova (Centro)",
+        "code": null
+      },
+      {
+        "name": "Bicudo",
+        "code": null
+      },
+      {
+        "name": "Boqueirão",
+        "code": null
+      },
+      {
+        "name": "Bugre",
+        "code": null
+      },
+      {
+        "name": "Campo de Dentro",
+        "code": null
+      },
+      {
+        "name": "Ilha do Meio",
+        "code": null
+      },
+      {
+        "name": "Jardim Serrinha",
+        "code": null
+      },
+      {
+        "name": "Mato Chiqueiro",
+        "code": null
+      },
+      {
+        "name": "Mineiros",
+        "code": null
+      },
+      {
+        "name": "Moradias Bonassoli",
+        "code": null
+      },
+      {
+        "name": "Moradias Iguaçu",
+        "code": null
+      },
+      {
+        "name": "Moradias Purunã",
+        "code": null
+      },
+      {
+        "name": "Morro Grande",
+        "code": null
+      },
+      {
+        "name": "Nova Serrinha",
+        "code": null
+      },
+      {
+        "name": "Pessegueiros",
+        "code": null
+      },
+      {
+        "name": "Pinheiro Torto",
+        "code": null
+      },
+      {
+        "name": "Ressaca",
+        "code": null
+      },
+      {
+        "name": "Rincão",
+        "code": null
+      },
+      {
+        "name": "Rio Verde",
+        "code": null
+      },
+      {
+        "name": "Rodeio Chapada",
+        "code": null
+      },
+      {
+        "name": "Rodeio Santo Antônio",
+        "code": null
+      },
+      {
+        "name": "Rodeiozinho",
+        "code": null
+      },
+      {
+        "name": "São Caetano",
+        "code": null
+      },
+      {
+        "name": "São Luiz do Purunã",
+        "code": null
+      },
+      {
+        "name": "Tamanduá",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Campo Magro",
+    "source": "https://campomagro.pr.gov.br/uploads/a_147_0_1_29102022183409.pdf",
+    "year": 2022,
+    "sourceLabel": "referências territoriais do Plano Municipal de Assistência Social 2022–2025, página impressa 30",
+    "classification": "referencias-plano-municipal",
+    "scopeNote": "Nomes territoriais usados em um diagnóstico setorial de 2022–2025, com dados de referência de 2021. Não é cadastro territorial vigente; inclui áreas rurais. A categoria genérica “Rural” foi excluída. Apenas topônimos são reproduzidos, sem indicadores sociais, ranking ou inferências comerciais. Lista parcial.",
+    "names": [
+      {
+        "name": "Barra de Santa Rita",
+        "code": null
+      },
+      {
+        "name": "Campo Novo",
+        "code": null
+      },
+      {
+        "name": "Campo da Cascavel",
+        "code": null
+      },
+      {
+        "name": "Canavial",
+        "code": null
+      },
+      {
+        "name": "Capivara dos Ferreiras",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Colônia Rodrigues",
+        "code": null
+      },
+      {
+        "name": "Conceição da Meia Lua",
+        "code": null
+      },
+      {
+        "name": "Conceição dos Correias",
+        "code": null
+      },
+      {
+        "name": "Conceição dos Tulios",
+        "code": null
+      },
+      {
+        "name": "Dabor",
+        "code": null
+      },
+      {
+        "name": "Ervalzinho",
+        "code": null
+      },
+      {
+        "name": "Freguesia dos Laras",
+        "code": null
+      },
+      {
+        "name": "Jacusal",
+        "code": null
+      },
+      {
+        "name": "Jardim Boa Vista",
+        "code": null
+      },
+      {
+        "name": "Jardim Cecília",
+        "code": null
+      },
+      {
+        "name": "Jardim O Bom Pastor",
+        "code": null
+      },
+      {
+        "name": "Jardim Pioneiro",
+        "code": null
+      },
+      {
+        "name": "Jardim Viviane",
+        "code": null
+      },
+      {
+        "name": "Jardim Água Boa",
+        "code": null
+      },
+      {
+        "name": "Juruqui",
+        "code": null
+      },
+      {
+        "name": "Lagoa da Pedra",
+        "code": null
+      },
+      {
+        "name": "Meia Lua dos Freitas",
+        "code": null
+      },
+      {
+        "name": "Morro da Formiga",
+        "code": null
+      },
+      {
+        "name": "Nova Vila",
+        "code": null
+      },
+      {
+        "name": "Novos Horizontes",
+        "code": null
+      },
+      {
+        "name": "Ouro Fino",
+        "code": null
+      },
+      {
+        "name": "Paina",
+        "code": null
+      },
+      {
+        "name": "Passaúna",
+        "code": null
+      },
+      {
+        "name": "Retiro",
+        "code": null
+      },
+      {
+        "name": "Rio Verde",
+        "code": null
+      },
+      {
+        "name": "Samambaia",
+        "code": null
+      },
+      {
+        "name": "Santa Bárbara",
+        "code": null
+      },
+      {
+        "name": "São Benedito",
+        "code": null
+      },
+      {
+        "name": "São João",
+        "code": null
+      },
+      {
+        "name": "São Roque",
+        "code": null
+      },
+      {
+        "name": "Terra Boa",
+        "code": null
+      },
+      {
+        "name": "Tigre",
+        "code": null
+      },
+      {
+        "name": "Veneza",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Mandirituba",
+    "source": "https://www.mandirituba.pr.gov.br/noticias/mandirituba-realiza-pre-conferencias-de-saude-e-convida-populacao-a-participar-das-decisoes-do-sus",
+    "year": 2026,
+    "sourceLabel": "programação municipal de pré-conferências de saúde publicada em 06/04/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Nomes territoriais que acompanham os locais de reunião. Não se convertem nomes de unidades ou áreas de saúde em bairros. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Areia Branca dos Assis",
+        "code": null
+      },
+      {
+        "name": "Campestre dos Paulas",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Espigão das Antas",
+        "code": null
+      },
+      {
+        "name": "Lagoinha",
+        "code": null
+      },
+      {
+        "name": "Tronco",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Campo do Tenente",
+    "source": "https://www.campodotenente.pr.leg.br/ruas-e-predios",
+    "year": 2026,
+    "sourceLabel": "página Ruas e Prédios da Câmara Municipal, modificada em 06/11/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "A página identifica expressamente Buriti como localidade ao descrever a Rua dos Coqueiros. A referência ao projeto 04/2020 não é tratada como comprovação da aprovação de uma lei. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Buriti",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Cerro Azul",
+    "source": "https://www.cerroazul.pr.gov.br/index.php?idNot=5217&mod=988",
+    "year": 2026,
+    "sourceLabel": "notícia municipal sobre a Escola Rural do Bairro dos Bentos, de 05/02/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Dois bairros rurais expressamente mencionados na notícia da escola. A expressão “adjacências” não foi convertida em nomes adicionais. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Bentos",
+        "code": null
+      },
+      {
+        "name": "Teixeira",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Quitandinha",
+    "source": "https://www.quitandinha.pr.gov.br/saude",
+    "year": 2026,
+    "sourceLabel": "referências locais nos endereços de UBS publicados pela Prefeitura, consultadas em 09/11/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Apenas referências locais apresentadas nos endereços das unidades, não áreas de abrangência de saúde nem inventário de bairros. Página sem data editorial; 2026 indica o ano da consulta. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Campina",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Doce Fino",
+        "code": null
+      },
+      {
+        "name": "Doce Grande",
+        "code": null
+      },
+      {
+        "name": "Lagoa Verde",
+        "code": null
+      },
+      {
+        "name": "Pangaré",
+        "code": null
+      },
+      {
+        "name": "Turvo",
+        "code": null
+      },
+      {
+        "name": "Água Clara de Baixo",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Lapa",
+    "source": "https://www.sanepar.com.br/noticias/sanepar-vistoria-ligacoes-de-esgoto-na-lapa",
+    "year": 2021,
+    "sourceLabel": "comunicado da Sanepar sobre vistorias de esgoto publicado em 08/06/2021",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Nomes usados pela prestadora no comunicado de 2021. Não se presume vigência cadastral atual e não se reutiliza a lei municipal revogada de 1998. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Baixo da Lapa",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Dom Pedro",
+        "code": null
+      },
+      {
+        "name": "Engenho",
+        "code": null
+      },
+      {
+        "name": "Montenegro",
+        "code": null
+      },
+      {
+        "name": "Olaria",
+        "code": null
+      },
+      {
+        "name": "Ronda",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Rio Negro",
+    "source": "https://www.sanepar.com.br/utilidades-publicas/rio-negro-27-12-2025/rio-negro",
+    "year": 2025,
+    "sourceLabel": "localidades do aviso da Sanepar de 27/12/2025",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Referências do aviso operacional de 2025, sem afirmar situação atual do abastecimento. Volta Grande aparecia duas vezes na fonte e foi contada uma vez. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Autódromo",
+        "code": null
+      },
+      {
+        "name": "Bom Jesus",
+        "code": null
+      },
+      {
+        "name": "Passo do Valo",
+        "code": null
+      },
+      {
+        "name": "Tijuco Preto",
+        "code": null
+      },
+      {
+        "name": "Vila Zelinda",
+        "code": null
+      },
+      {
+        "name": "Volta Grande",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Campo Largo",
+    "source": "https://www.sanepar.com.br/utilidades-publicas/campo-largo-curitiba-11-06-2026/campo-largo-curitiba",
+    "year": 2026,
+    "sourceLabel": "localidades de Campo Largo no aviso da Sanepar publicado em 09/06/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "A fonte separa explicitamente Campo Largo de Curitiba; somente os quatro nomes de Campo Largo foram incorporados. Aviso sobre 11/06/2026, sem afirmar situação atual do abastecimento. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Cercadinho",
+        "code": null
+      },
+      {
+        "name": "Jardim Keli Cristina",
+        "code": null
+      },
+      {
+        "name": "Vila Gilcy",
+        "code": null
+      },
+      {
+        "name": "Vila Torres 1",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Rio Branco do Sul",
+    "source": "https://www.sanepar.com.br/utilidades-publicas/rio-branco-do-sul-24-06-2026/rio-branco-do-sul",
+    "year": 2026,
+    "sourceLabel": "referências do aviso operacional da Sanepar de 24/06/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Nomes da lista operacional, sem afirmar situação atual do abastecimento. Repetições de Jardim Minérios e Nossa Senhora de Fátima foram removidas; São Luiz/São Luis e Nodari l ficaram fora por ambiguidade de grafia, sem criar duplicatas. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Albarana",
+        "code": null
+      },
+      {
+        "name": "Alto Prestes",
+        "code": null
+      },
+      {
+        "name": "Centro",
+        "code": null
+      },
+      {
+        "name": "Jardim Garcia",
+        "code": null
+      },
+      {
+        "name": "Jardim Minérios",
+        "code": null
+      },
+      {
+        "name": "Jardim Paraiso",
+        "code": null
+      },
+      {
+        "name": "Jardim Record",
+        "code": null
+      },
+      {
+        "name": "Johnson",
+        "code": null
+      },
+      {
+        "name": "Lasanta",
+        "code": null
+      },
+      {
+        "name": "Madre",
+        "code": null
+      },
+      {
+        "name": "Natânia",
+        "code": null
+      },
+      {
+        "name": "Nodari II",
+        "code": null
+      },
+      {
+        "name": "Nossa Senhora de Fátima",
+        "code": null
+      },
+      {
+        "name": "Papanduva",
+        "code": null
+      },
+      {
+        "name": "Pedro Vosch",
+        "code": null
+      },
+      {
+        "name": "Rancharia",
+        "code": null
+      },
+      {
+        "name": "Santa Terezinha",
+        "code": null
+      },
+      {
+        "name": "Santaria",
+        "code": null
+      },
+      {
+        "name": "Santo Antônio",
+        "code": null
+      },
+      {
+        "name": "São Gabriel",
+        "code": null
+      },
+      {
+        "name": "Tacaniça dos Falcões",
+        "code": null
+      },
+      {
+        "name": "Vila Costa",
+        "code": null
+      },
+      {
+        "name": "Vila Ricarda",
+        "code": null
+      },
+      {
+        "name": "Vila São Pedro",
+        "code": null
+      },
+      {
+        "name": "Vila Velha",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Doutor Ulysses",
+    "source": "https://www.parana.pr.gov.br/aen/Noticia/PR-092-em-Doutor-Ulysses-sera-interditada-devido-risco-de-deslizamento-de-terra",
+    "year": 2026,
+    "sourceLabel": "referências territoriais de notícia do DER/PR publicada em 25/04/2026",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "A notícia estadual identifica acessos aos bairros Figueira e Caraguatá no município. Não se afirma condição viária atual nem se equipara área ESF a bairro. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Caraguatá",
+        "code": null
+      },
+      {
+        "name": "Figueira",
+        "code": null
+      }
+    ]
+  },
+  {
+    "city": "Bocaiúva do Sul",
+    "source": "https://www.bocaiuvadosul.pr.gov.br/legislacao/6ac8f1ab7efe39de72231c2907f317fa.pdf",
+    "year": 2023,
+    "sourceLabel": "localidades do ônibus rural em maio de 2023, página 22 do 2º relatório quadrimestral municipal de saúde",
+    "classification": "referencias-servico-publico",
+    "scopeNote": "Seleção nominal da tabela de localidades atendidas em 2023; sem dados clínicos ou indicadores. Macieira e Ribeirãozinho foram excluídos por incerteza sobre revisão posterior da divisa municipal. A lista histórica não comprova limites atuais. Relação parcial de referências territoriais, sem delimitação cadastral nem comprovação de todos os bairros oficiais.",
+    "names": [
+      {
+        "name": "Antinha",
+        "code": null
+      },
+      {
+        "name": "Aterradinho",
+        "code": null
+      },
+      {
+        "name": "Barra do Capivari",
+        "code": null
+      },
+      {
+        "name": "Bocaina",
+        "code": null
+      },
+      {
+        "name": "Bom Retiro",
+        "code": null
+      },
+      {
+        "name": "Campininha da Barra",
+        "code": null
+      },
+      {
+        "name": "Campo Novo",
+        "code": null
+      },
+      {
+        "name": "Invernada",
+        "code": null
+      },
+      {
+        "name": "Marrecas",
+        "code": null
+      },
+      {
+        "name": "Olaria",
+        "code": null
+      },
+      {
+        "name": "Palmital",
+        "code": null
+      },
+      {
+        "name": "Passa Vinte",
+        "code": null
+      },
+      {
+        "name": "Pederneiras",
+        "code": null
+      },
+      {
+        "name": "Potreirinho",
+        "code": null
+      },
+      {
+        "name": "Rio Abaixo",
+        "code": null
+      },
+      {
+        "name": "Santana",
+        "code": null
+      },
+      {
+        "name": "Vila Angélica",
+        "code": null
+      }
+    ]
   }
 ]

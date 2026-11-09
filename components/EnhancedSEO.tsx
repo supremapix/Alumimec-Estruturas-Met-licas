@@ -1,3 +1,4 @@
+import { NEARBY_CITIES } from "../coverage-area";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { COMPANY_INFO } from "../constants";
@@ -76,7 +77,8 @@ const buildOrganization = () => ({
       "@type": "ContactPoint",
       telephone: `+55${COMPANY_INFO.phone1}`,
       contactType: "sales",
-      areaServed: "Curitiba e região metropolitana",
+      areaServed:
+        "Curitiba, Região Metropolitana e entorno, mediante avaliação do endereço",
       availableLanguage: ["Portuguese"],
     },
   ],
@@ -101,6 +103,10 @@ const buildOrganization = () => ({
       sameAs: "https://www.wikidata.org/wiki/Q986378",
     },
     { "@type": "AdministrativeArea", name: "Região Metropolitana de Curitiba" },
+    ...NEARBY_CITIES.map((city) => ({
+      "@type": "Place",
+      name: `${city.city}/${city.state} (consulta por endereço)`,
+    })),
   ],
   knowsAbout: SERVICE_ENTITIES.map((s) => s.name),
   hasOfferCatalog: {

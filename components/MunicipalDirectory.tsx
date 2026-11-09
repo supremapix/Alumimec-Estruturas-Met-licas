@@ -18,13 +18,9 @@ export default function MunicipalDirectory({ city }: { city: string }) {
     <section className="section wrap" id="bairros">
       <p className="eyebrow">IDENTIFIQUE O ENDEREÇO DA OBRA</p>
       <h2>
-        {[
-          "referencias-servico-publico",
-          "referencias-cartograficas",
-          "mapa-anexo-municipal",
-        ].includes(data.classification)
-          ? "Localidades e referências de "
-          : "Bairros de "}
+        {["malha-ibge", "lei-municipal"].includes(data.classification)
+          ? "Bairros de "
+          : "Localidades e referências de "}
         {city}
       </h2>
       <p>

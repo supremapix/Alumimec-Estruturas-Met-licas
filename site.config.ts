@@ -43,7 +43,7 @@ export const NAP = {
 
 /** Frase de entidade: separa SEDE de ÁREA DE ATENDIMENTO. */
 export const ENTITY_STATEMENT =
-  "A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e todos os municípios da região metropolitana por deslocamento ao local da obra, mediante avaliação do projeto e combinação do atendimento.";
+  "A Alumimec é uma empresa especializada em estruturas metálicas, localizada no bairro Afonso Pena, em São José dos Pinhais, no Paraná, com atendimento em Curitiba e todos os municípios da região metropolitana e localidades do entorno em raio aproximado de 80 km, por deslocamento ao local da obra, mediante avaliação do projeto e combinação do atendimento.";
 
 /** Cidades com relevância comercial comprovada no conteúdo do site. */
 export const PRIORITY_CITIES = [

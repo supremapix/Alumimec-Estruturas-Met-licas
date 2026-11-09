@@ -273,7 +273,7 @@ export default function Home() {
       <section id="regiao" className="section region">
         <div className="wrap split">
           <div>
-            <p className="eyebrow">CURITIBA E REGIÃO METROPOLITANA</p>
+            <p className="eyebrow">CURITIBA, REGIÃO METROPOLITANA E ENTORNO</p>
             <h2>
               Perto da sua ideia.
               <br />
@@ -281,8 +281,9 @@ export default function Home() {
             </h2>
             <p>
               A Alumimec atende Curitiba e todos os municípios da Região
-              Metropolitana por deslocamento ao local da obra. A sede fica em
-              São José dos Pinhais; informe cidade, bairro e CEP para avaliar o
+              Metropolitana, além de localidades do entorno em raio aproximado
+              de 80 km, por deslocamento ao local da obra. A sede fica em São
+              José dos Pinhais; informe cidade, bairro e CEP para avaliar o
               projeto e combinar o atendimento.
             </p>
             <p>
@@ -293,6 +294,9 @@ export default function Home() {
               . Projeto, condições de acesso, logística e agendamento são
               avaliados com a equipe para cada obra.
             </p>
+            <a className="text-link" href="/atendimento">
+              Buscar bairros, municípios e consultar o raio de 80 km ↗
+            </a>
             <a className="text-link" href={cityPath("São José dos Pinhais")}>
               Conheça a sede e prepare sua consulta ↗
             </a>

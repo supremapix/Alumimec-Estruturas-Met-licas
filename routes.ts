@@ -1,3 +1,4 @@
+import { COVERAGE_TITLE, COVERAGE_DESCRIPTION } from "./coverage-area";
 import { APPLICATIONS, applicationPath } from "./application-content";
 import { LOCAL_GUIDES } from "./local-guides";
 import { CITIES, NEIGHBORHOODS, SERVICES } from "./constants";
@@ -19,7 +20,7 @@ export interface RouteConfig {
 export const HOME_TITLE =
   "Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba";
 export const HOME_DESCRIPTION =
-  "Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba e Região Metropolitana: galpões industriais, coberturas metálicas e mezaninos.";
+  "Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba, Região Metropolitana e entorno até 80 km: galpões, coberturas e mezaninos.";
 
 export const servicePath = (name: string) => `/servicos/${slugify(name)}`;
 export const cityPath = (city: string) => `/cidade/${slugify(city)}`;
@@ -110,9 +111,8 @@ export const getAllRoutes = (): RouteConfig[] => {
   );
   routes.push({
     path: "/atendimento",
-    title: "Atendimento em Curitiba e Região Metropolitana | Alumimec",
-    description:
-      "Localize o município, consulte referências de bairros e prepare seu projeto com a Alumimec.",
+    title: COVERAGE_TITLE,
+    description: COVERAGE_DESCRIPTION,
     type: "coverage",
     priority: 0.8,
     changefreq: "monthly",

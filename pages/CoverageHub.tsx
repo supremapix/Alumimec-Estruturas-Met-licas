@@ -1,7 +1,12 @@
 import React from "react";
-import { CITIES, SERVICES } from "../constants";
-import { cityPath, servicePath } from "../routes";
-import territory from "../data/territories.json";
+import { SERVICES } from "../constants";
+import { servicePath } from "../routes";
+import CoverageExplorer from "../components/CoverageExplorer";
+import {
+  COVERAGE_REFERENCE,
+  COVERAGE_TITLE,
+  COVERAGE_DESCRIPTION,
+} from "../coverage-area";
 import EnhancedSEO from "../components/EnhancedSEO";
 import ApplicationLinks from "../components/ApplicationLinks";
 import ContactActions from "../components/ContactActions";
@@ -9,8 +14,8 @@ export default function CoverageHub() {
   return (
     <>
       <EnhancedSEO
-        title="Atendimento em Curitiba e Região Metropolitana | Alumimec"
-        description="Encontre os 29 municípios da RMC, consulte referências de bairros e prepare seu projeto. Atendimento Alumimec por deslocamento ao local da obra."
+        title={COVERAGE_TITLE}
+        description={COVERAGE_DESCRIPTION}
         canonical="/atendimento"
         breadcrumbs={[
           { name: "Início", url: "/" },
@@ -22,7 +27,7 @@ export default function CoverageHub() {
       </nav>
       <section className="section wrap">
         <p className="eyebrow">LOCALIZE SUA OBRA</p>
-        <h1>Atendimento em Curitiba e Região Metropolitana</h1>
+        <h1>Curitiba, Região Metropolitana e entorno até 80 km</h1>
         <p>
           A Alumimec se desloca aos locais onde há obras. A sede fica em São
           José dos Pinhais; as páginas abaixo orientam a consulta em cada
@@ -31,34 +36,29 @@ export default function CoverageHub() {
           e o agendamento.
         </p>
         <ContactActions subject="Quero informar a localidade e preparar meu projeto." />
-        <h2>Escolha o município antes do bairro</h2>
-        <p>
-          Nomes iguais podem identificar locais diferentes. Use rua, número e
-          CEP. Os diretórios distinguem bases territoriais datadas, mapas
-          municipais e listas parciais; não são promessa de uma relação completa
-          de todos os bairros atuais.
-        </p>
-        <ul className="territory-list">
-          {CITIES.map((city) => {
-            const d = territory.municipalities.find((x) => x.city === city)!;
-            return (
-              <li key={city}>
-                <h3>
-                  <a href={cityPath(city)}>{city}</a>
-                </h3>
-                <p>
-                  {d.names.length
-                    ? `${d.names.length} referências identificadas na fonte municipal ou territorial indicada na página.`
-                    : "Consulta por endereço; relação de bairros ainda não consolidada."}
-                </p>
-                <a className="text-link" href={cityPath(city) + "#planejar"}>
-                  Preparar projeto em {city}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="coverage-note">
+          <h2>Uma sede. Atendimento no local da sua obra.</h2>
+          <p>
+            Atendemos os bairros de Curitiba, os 29 municípios da Região
+            Metropolitana e localidades do entorno em um raio aproximado de 80
+            km. Informe o endereço para avaliar o projeto, as condições de
+            acesso, o deslocamento e o agendamento.
+          </p>
+          <p>
+            O raio usa a{" "}
+            <a href={COVERAGE_REFERENCE.source}>
+              referência municipal de São José dos Pinhais
+            </a>{" "}
+            para orientar a consulta. Não é uma medição desde a porta da sede
+            nem quilometragem por estrada. A lista metropolitana segue a{" "}
+            <a href="https://www.amep.pr.gov.br/FAQ/Municipios-da-Regiao-Metropolitana-de-Curitiba">
+              AMEP
+            </a>{" "}
+            e inclui municípios que podem ficar além desse raio.
+          </p>
+        </div>
       </section>
+      <CoverageExplorer />
       <section className="section region">
         <div className="wrap">
           <h2>Conecte a localidade ao serviço</h2>
