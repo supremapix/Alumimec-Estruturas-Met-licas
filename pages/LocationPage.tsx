@@ -34,9 +34,12 @@ export default function LocationPage({
   const path = city ? cityPath(name) : neighborhoodPath(name);
   const curated = LOCAL_GUIDES.find((g) => g.path === path);
   if (curated) return <NeighborhoodGuide guide={curated} />;
-  const title = `${headquarters ? "Sede Alumimec" : "Consulta de estruturas metálicas"} em ${name} | Alumimec`;
+  const priorityCity = city && (headquarters || name === "Araucária");
+  const title = `${priorityCity ? "Estruturas metálicas" : "Consulta de estruturas metálicas"} em ${name} | Alumimec`;
   const description = headquarters
-    ? "Conheça a sede da Alumimec em Afonso Pena, São José dos Pinhais. Endereço, contato e orientações para consultar seu projeto de estrutura metálica."
+    ? "Estruturas metálicas em São José dos Pinhais: consulte galpões, coberturas e mezaninos com a Alumimec. Sede em Afonso Pena; projeto e atendimento sob avaliação."
+    : city && name === "Araucária"
+      ? "Consulte galpões, coberturas e mezaninos para sua obra em Araucária com a Alumimec. Atendimento a partir de São José dos Pinhais, com projeto e acesso avaliados."
     : `Planeje sua consulta de estruturas metálicas para ${name}. Envie endereço, medidas e uso do espaço à Alumimec; atendimento por deslocamento ao local da obra, com projeto e agendamento avaliados pela equipe.`;
   return (
     <>
@@ -89,6 +92,15 @@ export default function LocationPage({
           )}
         </div>
       </section>
+      {priorityCity && (
+        <nav className="section wrap" aria-label={`Planeje sua consulta em ${name}`}>
+          <h2>Do serviço ao pedido de orçamento</h2>
+          <p>Confira o escopo do serviço e depois organize as informações da obra. O planejador prepara uma mensagem para você revisar; não calcula preço nem confirma uma visita.</p>
+          <a className="text-link" href="#planejar">Preparar meu pedido para {name} →</a>
+          <a className="text-link" href={servicePath(SERVICES[0].title)}>Entender o serviço de {SERVICES[0].title.toLowerCase()} →</a>
+          <a className="text-link" href="/#contato">Conferir contatos e falar com a equipe →</a>
+        </nav>
+      )}
       <section className="section wrap">
         <div className="split">
           <div>
@@ -220,3 +232,4 @@ export default function LocationPage({
     </>
   );
 }
+
