@@ -15,3 +15,6 @@ Oportunidade editorial inferida: facilitar a escolha entre expansão e mezanino,
 8 perguntas novas, quatro específicas a cada página. Preservados URLs, telefone, sede, planner e conteúdo anterior. Referência de logo: public/logo-alumimec.jpg. Telefone (41) 99631-5885 confirmado no arquivo oficial e constants.ts. Imagem editorial IA preparada, mas NÃO publicada: logo simplificada pela geração, pendente de fidelidade ao arquivo original.
 
 Pendente: demais municípios/bairros, pesquisa individual por localidade, imagens adicionais específicas, eventual expansão de FAQ estruturado. Não há publicação de falsa entrevista ou case.
+
+## Segundo lote: Pinhais
+Pesquisa pública de estruturas metálicas em Pinhais; páginas oficiais lidas https://www.ieklo.com.br/ e https://www.pirih.com.br/. Ieklo organiza fabricação, proteção e montagem; Pirih enfatiza portfólio. Oportunidade editorial inferida: orientar decisão de contratação por escopo, suprimento, equipamentos futuros e planejamento integrado. Sem copiar cases, números, promessas ou condições comerciais dos concorrentes. Quatro respostas novas somente na página municipal Pinhais. Nenhum dado de cliente privado foi publicado.

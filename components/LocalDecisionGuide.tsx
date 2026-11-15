@@ -1,6 +1,16 @@
 import React from "react";
 
 const guides: Record<string, {title:string;intro:string;items:[string,string][]}> = {
+  "Pinhais": {
+    title: "Estrutura metálica em Pinhais: o que conferir antes de fechar a proposta",
+    intro: "Uma consulta para cobertura, galpão ou mezanino em Pinhais fica mais útil quando separa materiais, fabricação, montagem e preparação do imóvel. O endereço completo define o atendimento; não confunda Pinhais com São José dos Pinhais, onde fica a sede da Alumimec. As orientações abaixo ajudam a organizar a conversa, sem substituir o projeto técnico.",
+    items: [
+      ["Posso comprar os materiais e contratar somente a montagem?", "Apresente essa intenção antes de pedir a proposta e confirme se a equipe aceita esse formato para o serviço. A lista e as especificações precisam ser compatíveis com o projeto. Combine quem compra, confere, transporta e armazena as peças e como serão tratadas faltas ou divergências. Comprar antecipadamente pelo menor preço pode gerar retrabalho se os componentes não atenderem ao escopo."],
+      ["O que precisa aparecer no orçamento de mão de obra?", "Peça a descrição das etapas contratadas e do que depende de terceiros: preparação dos apoios, montagem, fechamento, acabamento e limpeza, conforme o caso. Esclareça equipamentos necessários, transporte, descarga e condições de acesso. Não presuma que a palavra montagem inclui todos os recursos e materiais. Registre exclusões e responsabilidades antes de aprovar."],
+      ["E se eu quiser colocar equipamentos na cobertura depois?", "Informe já na fase de estudo qualquer intenção de instalar equipamentos, painéis ou sistemas suspensos. Peso, posição e forma de ligação precisam de avaliação dos responsáveis técnicos. Não perfure ou sobrecarregue uma cobertura existente com base apenas na aparência, nem use uma foto como prova de capacidade. A mudança de uso exige análise antes da intervenção."],
+      ["Como planejar conforto e montagem sem decidir só pela telha?", "Explique o uso do ambiente, os horários de ocupação e os problemas percebidos. Cobertura, ventilação, iluminação e drenagem devem ser discutidas em conjunto. Para a execução em Pinhais, mostre também entrada, área de descarga e circulação que precisa ser preservada. Peça um cronograma condicionado às etapas do projeto, sem tomar a estimativa inicial como data garantida."],
+    ],
+  },
   "São José dos Pinhais": {
     title: "Faltou espaço: mezanino ou ampliação do galpão?",
     intro: "Para quem planeja uma obra em São José dos Pinhais, a primeira decisão não é comprar mais aço: é entender o que está impedindo o uso do espaço. Estoque apertado, circulação misturada e escritório improvisado pedem estudos diferentes. A sede da Alumimec fica no Afonso Pena; a proposta depende do imóvel, não apenas do bairro.",
