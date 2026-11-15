@@ -1,6 +1,16 @@
 import React from "react";
 
 const guides: Record<string, {title:string;intro:string;items:[string,string][]}> = {
+  "Colombo": {
+    title: "Cobertura ou barracão em Colombo: comece pelo uso do imóvel",
+    intro: "Cobrir uma área para veículos e preparar um barracão para uma oficina são decisões diferentes. Ao pedir atendimento em Colombo, explique o que precisa funcionar no espaço, envie o endereço e mostre os acessos. A Alumimec tem sede em São José dos Pinhais; a consulta não representa uma filial em Colombo nem uma visita já agendada.",
+    items: [
+      ["Quero cobrir o pátio. Preciso mudar a circulação?", "Descreva quais veículos e pessoas usam a área e onde acontecem manobras, carga e descarga. Mostre portões, janelas e passagens que devem permanecer livres. A posição dos apoios e a altura disponível precisam ser estudadas junto com a circulação, não escolhidas apenas para aproveitar toda a área do lote. Medidas iniciais ajudam a conversa, mas não substituem o levantamento técnico."],
+      ["O terreno tem desnível. Posso pedir preço só pela metragem?", "A metragem permite iniciar a consulta, mas não define a solução nem o custo final. Apresente fotos seguras do acesso e informações disponíveis sobre níveis, apoios existentes e histórico de intervenções. O responsável técnico deverá avaliar o terreno e as interfaces necessárias ao projeto. Não escolha fundações ou intervenções no solo por comparação com a obra de um vizinho."],
+      ["Uma cobertura aberta pode virar oficina fechada depois?", "Informe a intenção antes do projeto. Fechamentos, portas, circulação, ventilação e instalações podem mudar as necessidades do espaço e da estrutura. Peça avaliação do uso pretendido e das condições para a futura adaptação. Não considere o fechamento uma simples adição de telhas laterais, nem presuma que a estrutura existente foi preparada para essa mudança."],
+      ["Como registrar o que vou receber e cuidar após a entrega?", "Solicite uma proposta com desenhos ou descrição do escopo, acabamento previsto, itens fornecidos e responsabilidades de montagem. Combine os documentos e orientações que acompanharão a entrega, inclusive como comunicar dúvidas de manutenção e eventuais ocorrências. Pergunte pelas condições de garantia por escrito, sem presumir prazo ou cobertura. Para inspecionar partes elevadas, procure equipe habilitada; não suba na cobertura."],
+    ],
+  },
   "Pinhais": {
     title: "Estrutura metálica em Pinhais: o que conferir antes de fechar a proposta",
     intro: "Uma consulta para cobertura, galpão ou mezanino em Pinhais fica mais útil quando separa materiais, fabricação, montagem e preparação do imóvel. O endereço completo define o atendimento; não confunda Pinhais com São José dos Pinhais, onde fica a sede da Alumimec. As orientações abaixo ajudam a organizar a conversa, sem substituir o projeto técnico.",

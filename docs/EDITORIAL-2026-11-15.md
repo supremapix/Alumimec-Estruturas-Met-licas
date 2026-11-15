@@ -18,3 +18,6 @@ Pendente: demais municípios/bairros, pesquisa individual por localidade, imagen
 
 ## Segundo lote: Pinhais
 Pesquisa pública de estruturas metálicas em Pinhais; páginas oficiais lidas https://www.ieklo.com.br/ e https://www.pirih.com.br/. Ieklo organiza fabricação, proteção e montagem; Pirih enfatiza portfólio. Oportunidade editorial inferida: orientar decisão de contratação por escopo, suprimento, equipamentos futuros e planejamento integrado. Sem copiar cases, números, promessas ou condições comerciais dos concorrentes. Quatro respostas novas somente na página municipal Pinhais. Nenhum dado de cliente privado foi publicado.
+
+## Terceiro lote: Colombo
+Pesquisa pública municipal e leitura de https://agrserralheria.com.br/ e https://metalapex.com.br/barracao-metalico-colombo-almirante-tamandare/. AGR apresenta coberturas, estruturas e reparos; Metal Apex aborda planejamento de barracão. Oportunidade inferida: ajudar a separar uso aberto/fechado, circulação, avaliação do terreno e documentação da entrega. Não reproduzimos alegações geológicas, prazos, estatísticas, testemunhos nem condições comerciais dos concorrentes. Quatro respostas originais em Colombo; sem nova filial, garantia ou aprovação automática. Pesquisa não mede volume nem posição de busca.
