@@ -1,3 +1,4 @@
+import LocalDecisionGuide from "../components/LocalDecisionGuide";
 import MunicipalContext from "../components/MunicipalContext";
 import ApplicationLinks from "../components/ApplicationLinks";
 import ProjectPlanner from "../components/ProjectPlanner";
@@ -210,6 +211,7 @@ export default function LocationPage({
           </div>
         </div>
       </section>
+      {city && <LocalDecisionGuide city={name} />}
       {city && <MunicipalGuide name={name} />}
       {city && <MunicipalContext city={name} />}
       {city && <ProjectPlanner city={name} />}
@@ -232,4 +234,5 @@ export default function LocationPage({
     </>
   );
 }
+
 
