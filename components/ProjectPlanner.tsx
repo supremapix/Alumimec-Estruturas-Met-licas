@@ -60,7 +60,8 @@ export default function ProjectPlanner({ city }: { city: string }) {
   const names =
     territory.municipalities.find((m) => m.city === city)?.names ?? [];
   const topic = prompts[service];
-  const message = `Olá, Alumimec. Quero planejar ${SERVICES[service].title.toLowerCase()} em ${place.trim() ? place.trim() + ", " : ""}${city}.\nObjetivo: ${topic.goal}.\nSituação: ${stage}.\n${notes.trim() ? "Informações iniciais: " + notes.trim() + "\n" : ""}Vou complementar com endereço, CEP, fotos e medidas aproximadas. Gostaria de combinar a avaliação do projeto e o atendimento no local da obra.`;
+  const subject = `Quero planejar ${SERVICES[service].title.toLowerCase()} em ${place.trim() ? place.trim() + ", " : ""}${city}.\nObjetivo: ${topic.goal}.\nSituação: ${stage}.\n${notes.trim() ? "Informações iniciais: " + notes.trim() + "\n" : ""}Vou complementar com endereço, CEP, fotos e medidas aproximadas. Gostaria de combinar a avaliação do projeto e o atendimento no local da obra.`;
+  const message = `Olá, Alumimec! ${subject}`;
   return (
     <section className="section wrap project-planner" id="planejar">
       <p className="eyebrow">PREPARE SEU PEDIDO</p>
@@ -162,7 +163,7 @@ export default function ProjectPlanner({ city }: { city: string }) {
           </details>
           <a
             className="button"
-            href={whatsapp(message)}
+            href={whatsapp(subject)}
             target="_blank"
             rel="noreferrer"
           >
