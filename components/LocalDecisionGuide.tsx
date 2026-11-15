@@ -1,6 +1,16 @@
 import React from "react";
 
 const guides: Record<string, {title:string;intro:string;items:[string,string][]}> = {
+  "Fazenda Rio Grande": {
+    title: "Vai adaptar um imóvel em Fazenda Rio Grande? Planeje antes de fabricar",
+    intro: "Uma loja que precisa de área coberta, um estoque que cresceu e um imóvel alugado exigem decisões diferentes. Para consultar a Alumimec em Fazenda Rio Grande, comece pelo uso pretendido e pelo que já existe no espaço. A fabricação sob medida deve acompanhar um escopo definido, não apenas uma foto de referência.",
+    items: [
+      ["Posso colocar um mezanino em um imóvel alugado?", "Antes de encomendar, alinhe com o proprietário as intervenções pretendidas e registre o que foi combinado. Reúna desenhos disponíveis e descreva o uso do piso superior, as cargas previstas e os acessos necessários. A viabilidade depende de avaliação técnica do imóvel; autorização do proprietário, por si só, não comprova que a estrutura pode receber a intervenção."],
+      ["Se eu mudar de endereço, consigo levar a estrutura?", "Informe essa intenção na consulta. Desmontagem e reinstalação não são garantidas: o novo imóvel pode exigir outras dimensões, apoios e condições de montagem. Peça que o responsável avalie a possibilidade e seus limites no projeto. Considere também retirada, transporte, armazenamento e adequações; não compare uma solução permanente com outra relocável apenas pelo preço inicial."],
+      ["O acesso é estreito. Isso impede uma cobertura ou mezanino?", "Não é possível concluir apenas por uma foto. Mostre o percurso da entrega até a área de montagem, incluindo portões, corredores, curvas e obstáculos aparentes. Informe se existem horários ou áreas compartilhadas que precisam ser preservados. A equipe avaliará a logística e a solução de montagem antes de confirmar o serviço, sem presumir que peças grandes entrarão pelo mesmo caminho usado pelas pessoas."],
+      ["Como evitar encomendar algo diferente do que imaginei?", "Separe função e aparência: diga o que será protegido ou armazenado, quais passagens precisam ficar livres e qual acabamento espera. Marque nas referências o que você quer aproveitar, sem tratá-las como projeto pronto. Antes da fabricação, confirme medidas levantadas, desenho ou descrição aprovada, itens incluídos e como mudanças serão registradas. Envie o endereço completo em Fazenda Rio Grande para não confundir a referência do bairro com outro município."],
+    ],
+  },
   "Colombo": {
     title: "Cobertura ou barracão em Colombo: comece pelo uso do imóvel",
     intro: "Cobrir uma área para veículos e preparar um barracão para uma oficina são decisões diferentes. Ao pedir atendimento em Colombo, explique o que precisa funcionar no espaço, envie o endereço e mostre os acessos. A Alumimec tem sede em São José dos Pinhais; a consulta não representa uma filial em Colombo nem uma visita já agendada.",

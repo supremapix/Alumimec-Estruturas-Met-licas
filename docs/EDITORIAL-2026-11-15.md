@@ -21,3 +21,6 @@ Pesquisa pública de estruturas metálicas em Pinhais; páginas oficiais lidas h
 
 ## Terceiro lote: Colombo
 Pesquisa pública municipal e leitura de https://agrserralheria.com.br/ e https://metalapex.com.br/barracao-metalico-colombo-almirante-tamandare/. AGR apresenta coberturas, estruturas e reparos; Metal Apex aborda planejamento de barracão. Oportunidade inferida: ajudar a separar uso aberto/fechado, circulação, avaliação do terreno e documentação da entrega. Não reproduzimos alegações geológicas, prazos, estatísticas, testemunhos nem condições comerciais dos concorrentes. Quatro respostas originais em Colombo; sem nova filial, garantia ou aprovação automática. Pesquisa não mede volume nem posição de busca.
+
+## Quarto lote: Fazenda Rio Grande
+Pesquisa municipal e leitura pública de https://www.zaffenate.com.br/estruturas-metalicas/ e https://www.efataserralheria.com.br/. Zaffenate relaciona fabricação e aplicação; Efata apresenta projeto e mezaninos. Oportunidade editorial inferida: esclarecer adaptação de imóvel alugado, possibilidade condicionada de relocação, acesso e aprovação do escopo antes da fabricação. Quatro respostas originais; sem copiar condições, histórico ou alegações concorrenciais e sem afirmar demanda medida. Nenhum conselho de dimensionamento ou garantia de desmontagem.
