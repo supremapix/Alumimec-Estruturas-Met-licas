@@ -1,6 +1,15 @@
 import React from "react";
 
 const guides: Record<string, {title:string;intro:string;items:[string,string][]}> = {
+  "Campo Largo": {
+    title: "Cobertura em Campo Largo: renovar sem perder o uso do espaço",
+    intro: "Quem já tem uma área coberta precisa esclarecer se busca trocar o revestimento, corrigir um problema ou mudar a finalidade do ambiente. Para uma consulta em Campo Largo, separe o que existe do que pretende alterar. Essas decisões evitam comparar a troca de telhas com a contratação de uma estrutura nova como se fossem o mesmo serviço.",
+    items: [
+      ["Quero trocar as telhas. Posso manter toda a estrutura?", "O reaproveitamento depende de avaliação, não apenas da ausência de ferrugem visível. Apresente os documentos disponíveis, informe intervenções anteriores e explique o material que deseja instalar. Mudanças de cobertura precisam ser compatíveis com o conjunto existente. Não retire peças ou autorize alterações de apoios antes da análise dos responsáveis; uma cotação por foto não confirma a capacidade da estrutura."],
+      ["Preciso proteger mercadorias durante a reforma. Como organizar?", "Informe quais áreas guardam produtos, onde circulam clientes e quais entregas já estão previstas. Peça que a proposta esclareça a sequência de execução, as áreas temporariamente indisponíveis e quem responde pela retirada ou proteção dos itens. A possibilidade de trabalhar por etapas deve ser estudada; não presuma que o estabelecimento poderá funcionar normalmente durante a intervenção."],
+      ["Quero mais luz, mas sem piorar o conforto. O que explicar?", "Diga em quais horários o espaço é ocupado, onde falta iluminação e quais incômodos você percebe hoje. Leve essa necessidade à avaliação conjunta da cobertura, das aberturas e do uso do ambiente. Peça a identificação dos materiais propostos e suas condições de aplicação e manutenção. Uma imagem clara de um telhado não comprova conforto térmico nem serve para prometer redução de temperatura no seu imóvel."],
+    ],
+  },
   "Fazenda Rio Grande": {
     title: "Vai adaptar um imóvel em Fazenda Rio Grande? Planeje antes de fabricar",
     intro: "Uma loja que precisa de área coberta, um estoque que cresceu e um imóvel alugado exigem decisões diferentes. Para consultar a Alumimec em Fazenda Rio Grande, comece pelo uso pretendido e pelo que já existe no espaço. A fabricação sob medida deve acompanhar um escopo definido, não apenas uma foto de referência.",
