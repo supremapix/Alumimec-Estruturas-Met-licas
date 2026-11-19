@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { COMMERCIAL_WHATSAPP } from "../construction-content";
 import { COMPANY_INFO } from "../constants";
 export const whatsapp = (
   subject = "Gostaria de conversar sobre meu projeto.",
@@ -53,6 +54,10 @@ export default function ContactActions({
       >
         Compartilhar
       </button>
+      {compact && (
+        <a className="button float-commercial-contact" href={COMMERCIAL_WHATSAPP} target="_blank"
+          rel="noopener noreferrer" aria-label="WhatsApp 2">2</a>
+      )}
       <dialog
         className="share-dialog"
         ref={dialog}

@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 
-const routes = JSON.parse(fs.readFileSync(".prerender-routes.json", "utf8"));
+const routes = JSON.parse(fs.readFileSync(".prerender-routes.json", "utf8")).filter((route) => route.type !== "construction");
 const sections = [];
 for (const route of routes) {
   const html = fs.readFileSync(path.join("dist", route.path, "index.html"), "utf8");

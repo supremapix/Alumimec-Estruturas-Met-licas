@@ -19,3 +19,24 @@ Este arquivo é informativo e não garante indexação ou recomendações em sis
 - Atendimento por município e bairro: https://www.alumimec.com.br/atendimento
 
 As páginas incluem orientações visíveis de planejamento, comparação de escopo, interfaces e conservação. A consulta inicial usa endereço, finalidade, fotos seguras e medidas aproximadas. Capacidade estrutural, materiais, requisitos legais, preço e prazo exigem avaliação específica. Fotografias do catálogo não comprovam obras em todas as localidades dos guias.
+
+## Construções comerciais, industriais e rurais
+- Central com os 16 serviços: https://www.alumimec.com.br/construcoes
+- Construção de barracão comercial: https://www.alumimec.com.br/construcoes/barracao-comercial
+- Construção de barracões em Steel Frame: https://www.alumimec.com.br/construcoes/barracoes-steel-frame
+- Construção de galpões comerciais: https://www.alumimec.com.br/construcoes/galpoes-comerciais
+- Construção de estruturas comerciais: https://www.alumimec.com.br/construcoes/estruturas-comerciais
+- Construção de lojas: https://www.alumimec.com.br/construcoes/lojas
+- Construção de salas comerciais: https://www.alumimec.com.br/construcoes/salas-comerciais
+- Construção de escritórios: https://www.alumimec.com.br/construcoes/escritorios
+- Construção de depósitos: https://www.alumimec.com.br/construcoes/depositos
+- Construção de oficinas: https://www.alumimec.com.br/construcoes/oficinas
+- Construção de salões comerciais: https://www.alumimec.com.br/construcoes/saloes-comerciais
+- Construção de estruturas rurais: https://www.alumimec.com.br/construcoes/estruturas-rurais
+- Construção de anexos rurais: https://www.alumimec.com.br/construcoes/anexos-rurais
+- Construção de alojamentos: https://www.alumimec.com.br/construcoes/alojamentos
+- Construção de edificações modulares: https://www.alumimec.com.br/construcoes/edificacoes-modulares
+- Construção de estruturas metálicas leves: https://www.alumimec.com.br/construcoes/estruturas-metalicas-leves
+- Construção de espaços comerciais personalizados: https://www.alumimec.com.br/construcoes/espacos-comerciais-personalizados
+
+Cada página explica finalidade, escopo, limites e dados para consulta. A escolha entre Steel Frame, outras estruturas metálicas e fechamentos depende do projeto. As imagens são ilustrativas e não documentam obras realizadas.

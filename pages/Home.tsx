@@ -1,3 +1,4 @@
+import { ConstructionHomeSection } from "./ConstructionPages";
 import InstagramSection from "../components/InstagramSection";
 import ApplicationLinks from "../components/ApplicationLinks";
 import ContextPreview from "../components/ContextPreview";
@@ -138,6 +139,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <ConstructionHomeSection />
       <section id="sobre" className="section about">
         <div className="wrap split">
           <div>

@@ -1,5 +1,7 @@
 import SemanticContactSection from "./components/SemanticContactSection";
 import ApplicationPage from "./pages/ApplicationPage";
+import { ConstructionHub, ConstructionDetail } from "./pages/ConstructionPages";
+import { CONSTRUCTION_BASE } from "./construction-content";
 import CoverageHub from "./pages/CoverageHub";
 import NeighborhoodGuide from "./pages/NeighborhoodGuide";
 import React from "react";
@@ -47,6 +49,8 @@ const App: React.FC = () => {
             element={<NeighborhoodGuide />}
           />
           <Route path="/servicos/:serviceName" element={<ServicePage />} />
+          <Route path={CONSTRUCTION_BASE} element={<ConstructionHub />} />
+          <Route path={`${CONSTRUCTION_BASE}/:constructionName`} element={<ConstructionDetail />} />
           <Route
             path="/aplicacoes/:applicationName"
             element={<ApplicationPage />}

@@ -98,7 +98,7 @@ const routes = getAllRoutes();
 export function getSemanticContent(pathname: string): SemanticSection | null {
   const path = pathname.replace(/\/$/, "") || "/";
   const route = routes.find((r) => r.path === path);
-  if (!route) return null; // Do not turn 404s or unregistered addresses into landing pages.
+  if (!route || route.type === "construction") return null; // The construction pages have their own guidance and dedicated contact.
   const service = SERVICES.find((s) => servicePath(s.title) === path);
   const local = LOCAL_GUIDES.find((g) => g.path === path);
   const application = APPLICATIONS.find((a) => applicationPath(a.slug) === path);

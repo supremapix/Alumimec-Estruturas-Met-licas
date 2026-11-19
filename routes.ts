@@ -1,3 +1,4 @@
+import { CONSTRUCTION_BASE, CONSTRUCTIONS, CONSTRUCTION_TITLE, CONSTRUCTION_DESCRIPTION, constructionPath, constructionTitle } from "./construction-content";
 import { COVERAGE_TITLE, COVERAGE_DESCRIPTION } from "./coverage-area";
 import { APPLICATIONS, applicationPath } from "./application-content";
 import { LOCAL_GUIDES } from "./local-guides";
@@ -10,7 +11,7 @@ export interface RouteConfig {
   title: string;
   description: string;
   type:
-    "home" | "city" | "neighborhood" | "service" | "application" | "coverage";
+    "home" | "city" | "neighborhood" | "service" | "application" | "coverage" | "construction";
   /** Nome oficial do local (para cidade/bairro). */
   name?: string;
   priority: number;
@@ -117,6 +118,14 @@ export const getAllRoutes = (): RouteConfig[] => {
     priority: 0.8,
     changefreq: "monthly",
   });
+  routes.push({
+    path: CONSTRUCTION_BASE, title: constructionTitle(CONSTRUCTION_TITLE),
+    description: CONSTRUCTION_DESCRIPTION, type: "construction", priority: 0.8, changefreq: "monthly",
+  });
+  CONSTRUCTIONS.forEach((entry) => routes.push({
+    path: constructionPath(entry.slug), title: constructionTitle(entry.title),
+    description: entry.description, type: "construction", priority: 0.7, changefreq: "monthly",
+  }));
   return routes;
 };
 

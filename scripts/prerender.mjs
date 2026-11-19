@@ -64,6 +64,16 @@ async function main() {
   for (const route of routes) {
     try {
       const { html, head, htmlAttributes } = render(route.path);
+      if (route.type === "construction") {
+        const photos = [...html.matchAll(/src="(\/construcoes-media\/[^\"]+)"/g)];
+        const primaryContact = "https://wa.me/5541996646761?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Engeum%20e%20quero%20um%20or%C3%A7amento%20para%20obra%20comercial.";
+        if ((html.match(/<h1(?:\s[^>]*)?>/g) || []).length !== 1 ||
+          !head.includes('href="https://www.alumimec.com.br' + route.path + '"') ||
+          html.split('href="' + primaryContact + '"').length < 3 ||
+          photos.length === 0 || photos.some((photo) => !existsSync(join(distDir, photo[1].slice(1))))) {
+          throw new Error("Construction page requires one H1, canonical, contact and all concept images");
+        }
+      }
 
       let page = template;
 

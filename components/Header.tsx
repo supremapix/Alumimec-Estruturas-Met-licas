@@ -3,6 +3,7 @@ import { COMPANY_INFO } from "../constants";
 export const navigation = [
   ["Início", "/"],
   ["Serviços", "/#servicos"],
+  ["Construções", "/construcoes"],
   ["Galeria", "/#galeria"],
   ["Vídeos", "/#videos"],
   ["Sobre", "/#sobre"],

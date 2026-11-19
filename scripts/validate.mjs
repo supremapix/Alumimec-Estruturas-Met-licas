@@ -116,7 +116,7 @@ for (const width of [320, 360, 390, 430, 1440]) {
   if (width < 800) {
     await page.getByRole("button", { name: "Abrir menu", exact: true }).click();
     await page.screenshot({ path: "docs/qa/menu-" + width + ".png" });
-    assert.equal(await page.locator("#main-navigation a").count(), 8);
+    assert.equal(await page.locator("#main-navigation a").count(), 9);
     await page.keyboard.press("Escape");
     assert.equal(
       await page.locator(".menu-toggle").getAttribute("aria-expanded"),
