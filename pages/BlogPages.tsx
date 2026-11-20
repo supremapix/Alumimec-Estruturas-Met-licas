@@ -49,7 +49,7 @@ export function RoofGuide() {
     <EnhancedSEO title={ROOF_GUIDE_TITLE + " | Alumimec"} description={ROOF_GUIDE_DESCRIPTION}
       canonical={ROOF_GUIDE_PATH} ogImage={BRAND_IMAGE} ogType="article" faqItems={faq}
       breadcrumbs={[home, blog, { name: ROOF_GUIDE_TITLE, url: ROOF_GUIDE_PATH }]} />
-    <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <nav className="wrap breadcrumb" aria-label="Você está aqui"><a href="/">Início</a> / <a href={BLOG_BASE}>Blog</a> / Coberturas metálicas</nav>
     <section className="local-hero"><div className="wrap">
       <p className="eyebrow">ALUMIMEC / PLANEJAMENTO DE COBERTURAS</p>
