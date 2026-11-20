@@ -11,7 +11,7 @@ export interface RouteConfig {
   title: string;
   description: string;
   type:
-    "home" | "city" | "neighborhood" | "service" | "application" | "coverage" | "construction";
+    "home" | "city" | "neighborhood" | "service" | "application" | "coverage" | "construction" | "blog";
   /** Nome oficial do local (para cidade/bairro). */
   name?: string;
   priority: number;
@@ -22,6 +22,11 @@ export const HOME_TITLE =
   "Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba";
 export const HOME_DESCRIPTION =
   "Empresa de estruturas metálicas sediada em São José dos Pinhais/PR, com atendimento em Curitiba, Região Metropolitana e entorno até 80 km: galpões, coberturas e mezaninos.";
+
+export const BLOG_BASE = "/blog";
+export const ROOF_GUIDE_PATH = BLOG_BASE + "/vai-fazer-uma-cobertura-metalica";
+export const ROOF_GUIDE_TITLE = "Vai fazer uma cobertura metálica para sua empresa?";
+export const ROOF_GUIDE_DESCRIPTION = "Compare propostas de cobertura para doca, pátio ou estacionamento: escopo, circulação, montagem com a empresa aberta e conferência na entrega.";
 
 export const servicePath = (name: string) => `/servicos/${slugify(name)}`;
 export const cityPath = (city: string) => `/cidade/${slugify(city)}`;
@@ -126,6 +131,10 @@ export const getAllRoutes = (): RouteConfig[] => {
     path: constructionPath(entry.slug), title: constructionTitle(entry.title),
     description: entry.description, type: "construction", priority: 0.7, changefreq: "monthly",
   }));
+  routes.push({ path: BLOG_BASE, title: "Blog de estruturas metálicas | Alumimec",
+    description: "Guias de planejamento para quem vai contratar coberturas e estruturas metálicas para comércios e indústrias.", type: "blog", priority: 0.6, changefreq: "monthly" });
+  routes.push({ path: ROOF_GUIDE_PATH, title: ROOF_GUIDE_TITLE + " | Alumimec",
+    description: ROOF_GUIDE_DESCRIPTION, type: "blog", priority: 0.6, changefreq: "monthly" });
   return routes;
 };
 
