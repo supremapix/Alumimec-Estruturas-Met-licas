@@ -1,3 +1,5 @@
+import { BlogHub, RoofGuide } from "./pages/BlogPages";
+import { BLOG_BASE, ROOF_GUIDE_PATH } from "./routes";
 import SemanticContactSection from "./components/SemanticContactSection";
 import ApplicationPage from "./pages/ApplicationPage";
 import { ConstructionHub, ConstructionDetail } from "./pages/ConstructionPages";
@@ -56,6 +58,8 @@ const App: React.FC = () => {
             element={<ApplicationPage />}
           />
           <Route path="/atendimento" element={<CoverageHub />} />
+          <Route path={BLOG_BASE} element={<BlogHub />} />
+          <Route path={ROOF_GUIDE_PATH} element={<RoofGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <SemanticContactSection />

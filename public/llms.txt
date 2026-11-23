@@ -40,3 +40,7 @@ As páginas incluem orientações visíveis de planejamento, comparação de esc
 - Construção de espaços comerciais personalizados: https://www.alumimec.com.br/construcoes/espacos-comerciais-personalizados
 
 Cada página explica finalidade, escopo, limites e dados para consulta. A escolha entre Steel Frame, outras estruturas metálicas e fechamentos depende do projeto. As imagens são ilustrativas e não documentam obras realizadas.
+
+## Guias do blog
+- [Blog de estruturas metálicas](https://www.alumimec.com.br/blog).
+- [Vai fazer uma cobertura metálica para sua empresa?](https://www.alumimec.com.br/blog/vai-fazer-uma-cobertura-metalica): como comparar escopos e planejar circulação, drenagem e montagem em comércios.

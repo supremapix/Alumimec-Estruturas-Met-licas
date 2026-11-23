@@ -40,6 +40,7 @@ export default function Footer() {
             <h3>Explore o site</h3>
             <a href="/#aplicacoes">Aplicações e planejamento</a>
             <a href="/atendimento">Municípios e bairros</a>
+            <a href="/blog">Blog de estruturas metálicas</a>
             {navigation.map(([label, url]) => (
               <a key={label} href={url}>
                 {label}
