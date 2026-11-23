@@ -60,10 +60,16 @@ export function RoofGuide() {
       <div className="service-guide">
         <article><h2>Defina o que precisa ficar livre de pilares</h2>
           <p>Em uma doca, marque onde a carroceria encosta, onde portas e rampas abrem e a altura realmente usada nas manobras. Em um estacionamento, registre vagas, corredores e entradas de pedestres. Num pátio de estoque, inclua o raio de giro dos equipamentos. A cobertura que cabe no croqui pode não funcionar no dia a dia se esses pontos forem omitidos.</p></article>
-        {/* FOTO_EDITORIAL_1: fachada inacabada com blocos cinza e metal escuro. Acrescentar a figura só após incorporar o JPEG original verificado. Não atribuir ao acervo/obra Alumimec. */}
+        <figure className="roof-guide-photo">
+          <img src="/editorial/cobertura/fechamento-edificacao-blocos.webp" alt="Edificação em execução, com blocos cinza e fechamento lateral escuro" width={1600} height={1201} loading="lazy" decoding="async" />
+          <figcaption>Foto de referência: fechamento lateral escuro em uma edificação em execução. Não é registro de obra da Alumimec.</figcaption>
+        </figure>
         <article><h2>Compare a estrutura e o que será entregue com ela</h2>
           <p>Peça que as propostas separem levantamento, projeto, apoios ou fundações, estrutura, tratamento de superfície, telhas, arremates, drenagem, transporte, equipamentos e montagem. Se um item ficar com outro fornecedor, anote quem assume e em que etapa. Verifique também o que será entregue ao final, como plantas, orientações de manutenção e condições de garantia.</p></article>
-        {/* FOTO_EDITORIAL_2: chapas metálicas perfiladas empilhadas. Acrescentar a figura só com o JPEG original; sem inferir modelo, fabricante ou desempenho. */}
+        <figure className="roof-guide-photo">
+          <img src="/editorial/cobertura/chapas-perfiladas-empilhadas.webp" alt="Chapas perfiladas empilhadas dentro de um galpão" width={900} height={1600} loading="lazy" decoding="async" />
+          <figcaption>Foto de referência: chapas perfiladas empilhadas. A imagem não comprova a composição nem o desempenho do material.</figcaption>
+        </figure>
         <article><h2>Combine as janelas de montagem sem improvisar</h2>
           <p>Indique o horário de recebimento, as áreas de passagem que não podem ser bloqueadas e possíveis interferências de cabos, portões ou construções vizinhas. Quando houver necessidade de içamento, pergunte como serão combinados o acesso dos equipamentos, o isolamento da área e a reabertura por etapas. Não use a passagem sob a área de montagem antes de autorização da equipe responsável.</p></article>
         <article><h2>Inclua a água da chuva e o conforto no escopo</h2>

@@ -1441,3 +1441,25 @@ body {
   .construction-categories { grid-template-columns: minmax(0, 1fr); }
   .construction-topic-links > .button { flex: 1 1 auto; }
 }
+
+/* Article photos retain their original proportions and remain visually tied to their captions. */
+.section.split .roof-guide-photo {
+  margin: 20px auto 32px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8e1da;
+  border-radius: 16px;
+  background: #f3f7f3;
+}
+.section.split .roof-guide-photo img {
+  display: block;
+  margin-inline: auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(560px, 70vh);
+  aspect-ratio: auto;
+  border-radius: 10px;
+  background: none;
+}
+.section.split .roof-guide-photo figcaption { margin-top: 10px; color: #35463e; }
