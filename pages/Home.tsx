@@ -175,6 +175,10 @@ export default function Home() {
             <figcaption>
               Barracão industrial para Forvia · São José dos Pinhais/PR.
               Registro do portfólio original.
+              <br />
+              <a className="text-link" href={servicePath("galpoes-industriais")}>
+                Veja o que preparar para pedir um orçamento de galpão industrial
+              </a>
             </figcaption>
           </figure>
         </div>
